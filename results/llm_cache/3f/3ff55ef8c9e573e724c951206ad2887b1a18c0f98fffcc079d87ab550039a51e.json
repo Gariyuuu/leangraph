@@ -1,0 +1,1 @@
+{"text": "```lean\nrw [assoc, w], constructor, apply mono_comp, apply mono_comp, assumption\n```", "reasoning": "", "prompt_tokens": 300, "completion_tokens": 26, "reasoning_tokens": 0, "cost_usd": 4.693e-05, "latency_s": 1.8721342086791992, "finish_reason": "stop", "provider": "Alibaba", "key": "3ff55ef8c9e573e724c951206ad2887b1a18c0f98fffcc079d87ab550039a51e", "cached": false}

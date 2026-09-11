@@ -1,0 +1,1 @@
+{"text": "```lean\nby\n  rw [gaussSum_conj]\n  rw [he]\n  rw [hu]\n  rw [mul_one]\n```", "reasoning": "", "prompt_tokens": 1002, "completion_tokens": 35, "reasoning_tokens": 0, "cost_usd": 0.000133159, "latency_s": 2.158857822418213, "finish_reason": "stop", "provider": "Alibaba", "key": "74835c2279de39d4691d1d75e05f736b070138daa5a8fb4148630da1cf4cabfe", "cached": false}

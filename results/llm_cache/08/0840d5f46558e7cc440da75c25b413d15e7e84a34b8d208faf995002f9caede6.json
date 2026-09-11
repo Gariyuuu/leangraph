@@ -1,0 +1,1 @@
+{"text": "```lean\nby\n  obtain ⟨h1, h2⟩ := h\n  apply Finset.card_lt_card\n  exact h1\n```", "reasoning": "", "prompt_tokens": 1023, "completion_tokens": 35, "reasoning_tokens": 0, "cost_usd": 0.000135616, "latency_s": 1.577690839767456, "finish_reason": "stop", "provider": "Alibaba", "key": "0840d5f46558e7cc440da75c25b413d15e7e84a34b8d208faf995002f9caede6", "cached": false}

@@ -1,0 +1,1 @@
+{"text": "```lean\nrw [measure_mono_add_right (Set.Iio z) (Set.Icc z y) (Set.Iic y) hzy]\n```", "reasoning": "", "prompt_tokens": 316, "completion_tokens": 36, "reasoning_tokens": 0, "cost_usd": 5.3352e-05, "latency_s": 1.7827460765838623, "finish_reason": "stop", "provider": "Alibaba", "key": "2c2fd0b5f6ed3c378025c6ae8c41e5ff6706c2e310f55c98976533b716d2970a", "cached": false}

@@ -1,0 +1,1 @@
+{"text": ":= by intro h; exact h", "reasoning": "", "prompt_tokens": 270, "completion_tokens": 11, "reasoning_tokens": 0, "cost_usd": 3.6595e-05, "latency_s": 1.4230608940124512, "finish_reason": "stop", "provider": "Alibaba", "key": "078e5a4c133eb44d6f6e5020587380ecd34a7f04309587efb7ecaac8fdd67cbe", "cached": false}

@@ -1,0 +1,1 @@
+{"text": "```lean\nsimp [Finset.filter, Finset.range, Finset.card, Finset.filter_card]\n```", "reasoning": "", "prompt_tokens": 268, "completion_tokens": 27, "reasoning_tokens": 0, "cost_usd": 4.3641e-05, "latency_s": 1.7813289165496826, "finish_reason": "stop", "provider": "Alibaba", "key": "dfa99dccbda0403d8b9767f83275e8d7ec280d55032f829b18079d3c891d819b", "cached": false}

@@ -1,0 +1,1 @@
+{"text": "```lean\napply CategoryTheory.yoneda_preservesLimitsOfShape {J := Type u} X\n```", "reasoning": "", "prompt_tokens": 1698, "completion_tokens": 27, "reasoning_tokens": 0, "cost_usd": 0.000210951, "latency_s": 1.4283709526062012, "finish_reason": "stop", "provider": "Alibaba", "key": "64e76ad7b2303c6e4de3fb619f36e6546ff57e943f09595a5905f55b60863006", "cached": false}

@@ -1,0 +1,1 @@
+{"text": "```lean\nintro M R\napply eq_card_of_injective\napply MulChar.injective\n```", "reasoning": "", "prompt_tokens": 301, "completion_tokens": 25, "reasoning_tokens": 0, "cost_usd": 4.6592e-05, "latency_s": 2.164961814880371, "finish_reason": "stop", "provider": "Alibaba", "key": "fca1ab46da8f146ee2972bcf98ea5eda9df4a266515aa9417b391f36a3395257", "cached": false}

@@ -1,0 +1,1 @@
+{"text": "```lean\nintro t\napply MeasureTheory.ae_strongly_measurable_exp\nexact hX\n```", "reasoning": "", "prompt_tokens": 315, "completion_tokens": 27, "reasoning_tokens": 0, "cost_usd": 4.914e-05, "latency_s": 1.9310741424560547, "finish_reason": "stop", "provider": "Alibaba", "key": "8d0f6265f72b2291fa8cc49bcfa2c33df7d27024364b8e0f4bbdff84187de613", "cached": false}

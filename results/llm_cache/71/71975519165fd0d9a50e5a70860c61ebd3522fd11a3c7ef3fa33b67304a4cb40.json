@@ -1,0 +1,1 @@
+{"text": "```lean\napply MeasureTheory.Integrable.of_mem_Icc\nuse a b\nexact hm\nexact hb\n```", "reasoning": "", "prompt_tokens": 2033, "completion_tokens": 29, "reasoning_tokens": 0, "cost_usd": 0.000251056, "latency_s": 1.7520771026611328, "finish_reason": "stop", "provider": "Alibaba", "key": "71975519165fd0d9a50e5a70860c61ebd3522fd11a3c7ef3fa33b67304a4cb40", "cached": false}

@@ -1,0 +1,1 @@
+{"text": "```lean\nintros x y h\napply Eq.ofReflexive\nrw [hf x, hf y]\nexact h\n```", "reasoning": "", "prompt_tokens": 1091, "completion_tokens": 31, "reasoning_tokens": 0, "cost_usd": 0.000141752, "latency_s": 2.2272791862487793, "finish_reason": "stop", "provider": "Alibaba", "key": "e1b3770794759a925706016c04fb93ed8f3c6c27f69a92af5cf174886e7c3595", "cached": false}

@@ -1,0 +1,1 @@
+{"text": ":= by\n  intro h\n  intros a b h1\n  obtain ⟨h2, h3⟩ := h1\n  exact h3 ∘ h2", "reasoning": "", "prompt_tokens": 294, "completion_tokens": 39, "reasoning_tokens": 0, "cost_usd": 5.2143e-05, "latency_s": 1.5875473022460938, "finish_reason": "stop", "provider": "Alibaba", "key": "5ba1b038d9dcc608bc152115441d5bf803cc6807e324fcf458318591e2113e5d", "cached": false}

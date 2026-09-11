@@ -1,0 +1,1 @@
+{"text": "```lean\nby\n  rw [encard_union_disjoint]\n  exact hs\n```", "reasoning": "", "prompt_tokens": 562, "completion_tokens": 23, "reasoning_tokens": 0, "cost_usd": 7.6219e-05, "latency_s": 1.2083208560943604, "finish_reason": "stop", "provider": "Alibaba", "key": "de099c5318b24cd9b196039723c22d17c1b5eaf3b940101866ece8c1aa4af2dc", "cached": false}

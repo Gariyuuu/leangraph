@@ -1,0 +1,1 @@
+{"text": "```lean\nintros w\napply_instance\n```", "reasoning": "", "prompt_tokens": 268, "completion_tokens": 14, "reasoning_tokens": 0, "cost_usd": 3.7726e-05, "latency_s": 1.1413769721984863, "finish_reason": "stop", "provider": "Alibaba", "key": "4eb1f29a00fe87c21c6e887541b262ae323bd5b43935ba07bb566df88e4e2e0f", "cached": false}

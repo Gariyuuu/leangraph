@@ -1,0 +1,1 @@
+{"text": "```lean\nintros x y hxy\napply funext\nexact h\n```", "reasoning": "", "prompt_tokens": 278, "completion_tokens": 21, "reasoning_tokens": 0, "cost_usd": 4.2081e-05, "latency_s": 921.844752073288, "finish_reason": "stop", "provider": "Alibaba", "key": "f649d6d057bb1e8c9842774009281e020967ad9172c4849375d284bccad9329a", "cached": false}

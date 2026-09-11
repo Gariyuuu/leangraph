@@ -1,0 +1,1 @@
+{"text": "```lean\n:= by\n  apply (Finite.image _).2\n  exact hf\n  exact hs\n```", "reasoning": "", "prompt_tokens": 600, "completion_tokens": 28, "reasoning_tokens": 0, "cost_usd": 8.294e-05, "latency_s": 1.5256788730621338, "finish_reason": "stop", "provider": "Alibaba", "key": "6c61115cc828456780b323abc01b0ea0629ede61837eecb65bf03caeb77e048d", "cached": false}

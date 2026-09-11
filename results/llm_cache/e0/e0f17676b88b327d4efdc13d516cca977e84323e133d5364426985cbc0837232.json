@@ -1,0 +1,1 @@
+{"text": "```lean\nintro hfs hs\napply finite_bUnion\nuse f\nexact hf\nexact hs\n```", "reasoning": "", "prompt_tokens": 283, "completion_tokens": 27, "reasoning_tokens": 0, "cost_usd": 4.5396e-05, "latency_s": 1.5101869106292725, "finish_reason": "stop", "provider": "Alibaba", "key": "e0f17676b88b327d4efdc13d516cca977e84323e133d5364426985cbc0837232", "cached": false}

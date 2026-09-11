@@ -1,0 +1,1 @@
+{"text": "```lean\nintros hf\napply Summable.clog_one_sub\nuse 1\nexact hf\n```", "reasoning": "", "prompt_tokens": 1132, "completion_tokens": 27, "reasoning_tokens": 0, "cost_usd": 0.000144729, "latency_s": 1.7859418392181396, "finish_reason": "stop", "provider": "Alibaba", "key": "018a21df7102ad346ca6052db0f7b81dbb88b93d4cb3ac8c844d42e05e663d51", "cached": false}

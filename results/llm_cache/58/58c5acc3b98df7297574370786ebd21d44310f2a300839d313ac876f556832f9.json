@@ -1,0 +1,1 @@
+{"text": "```lean\napply Algebra.isAlgebraic_of_subfield_isAlgebraic\n```", "reasoning": "", "prompt_tokens": 286, "completion_tokens": 22, "reasoning_tokens": 0, "cost_usd": 4.3472e-05, "latency_s": 1.5449957847595215, "finish_reason": "stop", "provider": "Alibaba", "key": "58c5acc3b98df7297574370786ebd21d44310f2a300839d313ac876f556832f9", "cached": false}

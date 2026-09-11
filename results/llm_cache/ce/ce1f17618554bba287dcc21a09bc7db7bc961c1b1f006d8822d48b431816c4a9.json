@@ -1,0 +1,1 @@
+{"text": "```lean\nsimp [Nat.mod_eq_mod_of_lt, Nat.pow_two, Nat.add_assoc, Nat.mul_add]\n```", "reasoning": "", "prompt_tokens": 260, "completion_tokens": 29, "reasoning_tokens": 0, "cost_usd": 4.3615e-05, "latency_s": 1.7191731929779053, "finish_reason": "stop", "provider": "Alibaba", "key": "ce1f17618554bba287dcc21a09bc7db7bc961c1b1f006d8822d48b431816c4a9", "cached": false}

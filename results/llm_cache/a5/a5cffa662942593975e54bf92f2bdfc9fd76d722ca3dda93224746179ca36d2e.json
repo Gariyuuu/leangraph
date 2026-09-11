@@ -1,0 +1,1 @@
+{"text": ":= by\n  rw [Real.cos_sq]\n  apply Real.le_one_pow_self", "reasoning": "", "prompt_tokens": 255, "completion_tokens": 21, "reasoning_tokens": 0, "cost_usd": 3.939e-05, "latency_s": 1.3353221416473389, "finish_reason": "stop", "provider": "Alibaba", "key": "a5cffa662942593975e54bf92f2bdfc9fd76d722ca3dda93224746179ca36d2e", "cached": false}

@@ -1,0 +1,1 @@
+{"text": "```lean\nby\n  constructor\n  apply Finset.card_lt_card\n  exact h\n```", "reasoning": "", "prompt_tokens": 565, "completion_tokens": 25, "reasoning_tokens": 0, "cost_usd": 7.748e-05, "latency_s": 1.3698561191558838, "finish_reason": "stop", "provider": "Alibaba", "key": "167fd630e93e03294d0b681472316aa053cef98b4e41acda07c1fb2f2b3f55fc", "cached": false}

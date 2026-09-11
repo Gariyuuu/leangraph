@@ -1,0 +1,11 @@
+[project]
+name = "leangraph"
+version = "0.1.0"
+description = "Verifier-guided LLM agents for formal mathematics in Lean"
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = [
+  "lean: needs the pinned Lean toolchain and Mathlib cache (slow)",
+]

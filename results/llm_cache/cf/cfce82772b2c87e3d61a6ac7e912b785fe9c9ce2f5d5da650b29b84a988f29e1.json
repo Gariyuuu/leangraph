@@ -1,0 +1,1 @@
+{"text": ":= by\n  rw [finsum_eq_card]\n  exact ncard_le_ncard.mp (le_rfl _)", "reasoning": "", "prompt_tokens": 275, "completion_tokens": 29, "reasoning_tokens": 0, "cost_usd": 4.537e-05, "latency_s": 1.4491291046142578, "finish_reason": "stop", "provider": "Alibaba", "key": "cfce82772b2c87e3d61a6ac7e912b785fe9c9ce2f5d5da650b29b84a988f29e1", "cached": false}

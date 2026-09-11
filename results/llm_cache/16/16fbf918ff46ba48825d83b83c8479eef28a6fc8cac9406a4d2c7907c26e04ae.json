@@ -1,0 +1,1 @@
+{"text": "```lean\n:= by\n  apply PFun.lawfulMonad\n  exact PMF\n```", "reasoning": "", "prompt_tokens": 900, "completion_tokens": 25, "reasoning_tokens": 0, "cost_usd": 0.000116675, "latency_s": 1.8649399280548096, "finish_reason": "stop", "provider": "Alibaba", "key": "16fbf918ff46ba48825d83b83c8479eef28a6fc8cac9406a4d2c7907c26e04ae", "cached": false}

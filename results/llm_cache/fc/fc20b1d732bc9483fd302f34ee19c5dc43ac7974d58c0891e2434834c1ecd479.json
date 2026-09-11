@@ -1,0 +1,1 @@
+{"text": "```lean\nhave h0 : f 0 = f (0 + 0) := rfl\nrw hf 0 0 at h0\nexact h0\n```", "reasoning": "", "prompt_tokens": 274, "completion_tokens": 40, "reasoning_tokens": 0, "cost_usd": 5.0258e-05, "latency_s": 1.9264991283416748, "finish_reason": "stop", "provider": "Alibaba", "key": "fc20b1d732bc9483fd302f34ee19c5dc43ac7974d58c0891e2434834c1ecd479", "cached": false}

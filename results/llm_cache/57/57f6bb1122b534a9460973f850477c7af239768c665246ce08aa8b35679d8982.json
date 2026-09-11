@@ -1,0 +1,1 @@
+{"text": "```lean\nintro n f g s h\napply SModEq.prod\nexact h\n```", "reasoning": "", "prompt_tokens": 1220, "completion_tokens": 24, "reasoning_tokens": 0, "cost_usd": 0.00015366, "latency_s": 1.487036943435669, "finish_reason": "stop", "provider": "Alibaba", "key": "57f6bb1122b534a9460973f850477c7af239768c665246ce08aa8b35679d8982", "cached": false}

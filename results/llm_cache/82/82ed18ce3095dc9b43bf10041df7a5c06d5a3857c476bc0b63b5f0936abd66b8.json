@@ -1,0 +1,1 @@
+{"text": "```lean\nintro h\ncases z with n\nsimp [n] at h\ncontradiction\n```", "reasoning": "", "prompt_tokens": 255, "completion_tokens": 27, "reasoning_tokens": 0, "cost_usd": 4.212e-05, "latency_s": 2.082005023956299, "finish_reason": "stop", "provider": "Alibaba", "key": "82ed18ce3095dc9b43bf10041df7a5c06d5a3857c476bc0b63b5f0936abd66b8", "cached": false}

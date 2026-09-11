@@ -1,0 +1,1 @@
+{"text": "```lean\nby simp [g.nums, g.h]\n```", "reasoning": "", "prompt_tokens": 269, "completion_tokens": 18, "reasoning_tokens": 0, "cost_usd": 3.9663e-05, "latency_s": 1.3732669353485107, "finish_reason": "stop", "provider": "Alibaba", "key": "af99df6c58fb3bc4a8a4ecda194d5e86143a73a4adc1df7e9e62e159ed6d1124", "cached": false}

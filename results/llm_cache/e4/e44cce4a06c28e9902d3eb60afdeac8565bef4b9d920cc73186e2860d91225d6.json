@@ -1,0 +1,1 @@
+{"text": ":= by\nintros x y\nassume h1 : f x = f y\napply h at h1\nrfl", "reasoning": "", "prompt_tokens": 1339, "completion_tokens": 29, "reasoning_tokens": 0, "cost_usd": 0.000169858, "latency_s": 1.5024988651275635, "finish_reason": "stop", "provider": "Alibaba", "key": "e44cce4a06c28e9902d3eb60afdeac8565bef4b9d920cc73186e2860d91225d6", "cached": false}

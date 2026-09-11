@@ -1,0 +1,1 @@
+{"text": ":= by\n  constructor\n  intro N f\n  cases f with g h\n  exact h", "reasoning": "", "prompt_tokens": 272, "completion_tokens": 25, "reasoning_tokens": 0, "cost_usd": 4.3199e-05, "latency_s": 66.24927306175232, "finish_reason": "stop", "provider": "Alibaba", "key": "8115f7ea9458a111a99d802662404a781feae795834233a26757ab995794312f", "cached": false}

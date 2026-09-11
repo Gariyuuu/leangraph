@@ -1,0 +1,1 @@
+{"text": ":= by\n  rw [compl_eq_compl]\n  exact measure_complement μ hA", "reasoning": "", "prompt_tokens": 296, "completion_tokens": 24, "reasoning_tokens": 0, "cost_usd": 4.5552e-05, "latency_s": 1.4389188289642334, "finish_reason": "stop", "provider": "Alibaba", "key": "b9604d3b1f08242405c28c8148e8646337fe372c67bff641684f4f01151bab0d", "cached": false}

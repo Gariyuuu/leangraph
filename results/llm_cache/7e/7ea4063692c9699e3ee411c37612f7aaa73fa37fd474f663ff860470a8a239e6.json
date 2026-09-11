@@ -1,0 +1,1 @@
+{"text": "```lean\nintro i₁ i₂ h₁ h₂; exact (disjoint_encard_add h₁ h₂).symm\n```", "reasoning": "", "prompt_tokens": 310, "completion_tokens": 33, "reasoning_tokens": 0, "cost_usd": 5.1285e-05, "latency_s": 1.6673548221588135, "finish_reason": "stop", "provider": "Alibaba", "key": "7ea4063692c9699e3ee411c37612f7aaa73fa37fd474f663ff860470a8a239e6", "cached": false}

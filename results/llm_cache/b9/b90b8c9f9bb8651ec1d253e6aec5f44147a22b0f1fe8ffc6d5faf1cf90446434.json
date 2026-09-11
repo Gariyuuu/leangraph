@@ -1,0 +1,1 @@
+{"text": ":= by\n  rw [subset_def, union_subset_right]\n  exact h", "reasoning": "", "prompt_tokens": 268, "completion_tokens": 20, "reasoning_tokens": 0, "cost_usd": 4.0456e-05, "latency_s": 1.5384609699249268, "finish_reason": "stop", "provider": "Alibaba", "key": "b90b8c9f9bb8651ec1d253e6aec5f44147a22b0f1fe8ffc6d5faf1cf90446434", "cached": false}

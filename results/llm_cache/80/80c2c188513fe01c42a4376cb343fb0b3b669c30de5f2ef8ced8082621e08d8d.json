@@ -1,0 +1,1 @@
+{"text": "```lean\nby rw [add_sq']\n```", "reasoning": "", "prompt_tokens": 1279, "completion_tokens": 14, "reasoning_tokens": 0, "cost_usd": 0.000156013, "latency_s": 1.4053840637207031, "finish_reason": "stop", "provider": "Alibaba", "key": "80c2c188513fe01c42a4376cb343fb0b3b669c30de5f2ef8ced8082621e08d8d", "cached": false}

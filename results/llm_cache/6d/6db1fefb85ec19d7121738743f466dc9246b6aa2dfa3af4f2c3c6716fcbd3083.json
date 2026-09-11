@@ -1,0 +1,1 @@
+{"text": ":= by exact Nat.Prime.odd_of_ne_two p hp h2", "reasoning": "", "prompt_tokens": 680, "completion_tokens": 19, "reasoning_tokens": 0, "cost_usd": 8.8205e-05, "latency_s": 1.419449806213379, "finish_reason": "stop", "provider": "Alibaba", "key": "6db1fefb85ec19d7121738743f466dc9246b6aa2dfa3af4f2c3c6716fcbd3083", "cached": false}

@@ -1,0 +1,1 @@
+{"text": "```lean\nintros a b c h1 h2\napply le_trans\nexact h1\nexact h2\n```", "reasoning": "", "prompt_tokens": 252, "completion_tokens": 29, "reasoning_tokens": 0, "cost_usd": 4.2679e-05, "latency_s": 1.5142290592193604, "finish_reason": "stop", "provider": "Alibaba", "key": "e3ba39d9b312712e2e5934a706bfed2b45198468494db3c8fb083c62bfb83c0c", "cached": false}

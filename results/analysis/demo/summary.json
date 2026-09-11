@@ -1,0 +1,383 @@
+{
+ "run_id": "demo",
+ "configs": {
+  "demo_rag_repair_bm25": {
+   "n": 8,
+   "verified": 1,
+   "rate": 0.125,
+   "ci": [
+    0.022417491199971915,
+    0.4708881850560839
+   ],
+   "success_within": {
+    "0": 0.0,
+    "1": 0.0,
+    "2": 0.125,
+    "3": 0.125,
+    "4": 0.125,
+    "5": 0.125
+   },
+   "median_calls_to_solve": 2,
+   "llm_calls": 30,
+   "tokens": 55364,
+   "cost_usd": 0.008925722,
+   "cost_per_verified": 0.008925722,
+   "tokens_per_verified": 55364.0,
+   "lean_check_s": 2.8305513858795166,
+   "certify_s": 111.31952810287476,
+   "median_lean_check_s": 0.05054306983947754,
+   "timeout_rate": 0.0,
+   "repair_success": 0.125,
+   "n_first_failed": 8,
+   "repeat_rate": 0.36363636363636365,
+   "n_repair_attempts": 22,
+   "mean_retrieval_recall": 0.2857142857142857,
+   "median_proof_lines": 1,
+   "errors_trace": 0
+  }
+ },
+ "by_split": {
+  "demo_rag_repair_bm25": {
+   "mathlib_heldout": {
+    "n": 3,
+    "verified": 0,
+    "rate": 0.0,
+    "ci": [
+     0.0,
+     0.5614970356393196
+    ]
+   },
+   "novel": {
+    "n": 5,
+    "verified": 1,
+    "rate": 0.2,
+    "ci": [
+     0.03622410822563068,
+     0.624465372970005
+    ]
+   }
+  }
+ },
+ "by_family": {
+  "demo_rag_repair_bm25": {
+   "algebra": {
+    "n": 1,
+    "verified": 0,
+    "rate": 0.0,
+    "ci": [
+     0.0,
+     0.7934506882081973
+    ]
+   },
+   "functions": {
+    "n": 1,
+    "verified": 0,
+    "rate": 0.0,
+    "ci": [
+     0.0,
+     0.7934506882081973
+    ]
+   },
+   "inequalities": {
+    "n": 4,
+    "verified": 0,
+    "rate": 0.0,
+    "ci": [
+     0.0,
+     0.4898908403969213
+    ]
+   },
+   "number_theory": {
+    "n": 1,
+    "verified": 1,
+    "rate": 1.0,
+    "ci": [
+     0.20654931179180275,
+     1.0
+    ]
+   },
+   "sets": {
+    "n": 1,
+    "verified": 0,
+    "rate": 0.0,
+    "ci": [
+     0.0,
+     0.7934506882081973
+    ]
+   }
+  }
+ },
+ "by_difficulty": {
+  "demo_rag_repair_bm25": {
+   "mathlib_heldout/easy": {
+    "n": 3,
+    "verified": 0,
+    "rate": 0.0,
+    "ci": [
+     0.0,
+     0.5614970356393196
+    ]
+   },
+   "novel/easy": {
+    "n": 1,
+    "verified": 1,
+    "rate": 1.0,
+    "ci": [
+     0.20654931179180275,
+     1.0
+    ]
+   },
+   "novel/medium": {
+    "n": 4,
+    "verified": 0,
+    "rate": 0.0,
+    "ci": [
+     0.0,
+     0.4898908403969213
+    ]
+   }
+  }
+ },
+ "contrasts": [],
+ "errors": {
+  "classes": [
+   "hallucinated_theorem",
+   "wrong_namespace",
+   "lean3_syntax",
+   "syntax_error",
+   "type_mismatch",
+   "unresolved_metavariable",
+   "instance_resolution_failure",
+   "incorrect_rewrite",
+   "bad_induction",
+   "wrong_tactic",
+   "valid_but_wrong",
+   "timeout",
+   "forbidden",
+   "no_proof",
+   "checker_rejected",
+   "other"
+  ],
+  "total": {
+   "syntax_error": 5,
+   "type_mismatch": 9,
+   "lean3_syntax": 6,
+   "wrong_tactic": 3,
+   "incorrect_rewrite": 3,
+   "wrong_namespace": 3
+  },
+  "per_config": {
+   "demo_rag_repair_bm25": {
+    "syntax_error": 5,
+    "type_mismatch": 9,
+    "lean3_syntax": 6,
+    "wrong_tactic": 3,
+    "incorrect_rewrite": 3,
+    "wrong_namespace": 3
+   }
+  },
+  "repair_by_class": {
+   "syntax_error": {
+    "n": 5,
+    "next_round_verified": 1,
+    "rate": 0.2
+   },
+   "type_mismatch": {
+    "n": 6,
+    "next_round_verified": 0,
+    "rate": 0.0
+   },
+   "lean3_syntax": {
+    "n": 5,
+    "next_round_verified": 0,
+    "rate": 0.0
+   },
+   "wrong_tactic": {
+    "n": 2,
+    "next_round_verified": 0,
+    "rate": 0.0
+   },
+   "incorrect_rewrite": {
+    "n": 2,
+    "next_round_verified": 0,
+    "rate": 0.0
+   },
+   "wrong_namespace": {
+    "n": 2,
+    "next_round_verified": 0,
+    "rate": 0.0
+   }
+  },
+  "examples": {
+   "syntax_error": [
+    {
+     "task_id": "novel_nt_03",
+     "config": "demo_rag_repair_bm25",
+     "proof": ":= by apply Nat.Prime.odd_of_ne_two hp h2",
+     "output": "3:65: error: unsolved goals\np : \u2115\nhp : Nat.Prime p\nh2 : p \u2260 2\n\u22a2 Odd p\n4:2: error: unexpected token ':='; expected command"
+    },
+    {
+     "task_id": "novel_fun_04",
+     "config": "demo_rag_repair_bm25",
+     "proof": ":= by\n  have : f 0 = f (0 + 0) := by rfl\n  rw [hf] at this\n  exact eq.symm this",
+     "output": "3:79: error: unsolved goals\nf : \u211d \u2192 \u211d\nhf : \u2200 (x y : \u211d), f (x + y) = f x + f y\n\u22a2 f 0 = 0\n4:2: error: unexpected token ':='; expected command"
+    },
+    {
+     "task_id": "novel_set_03",
+     "config": "demo_rag_repair_bm25",
+     "proof": ":= by\n  have h3 : A \u2286 C := Set.Subset.trans h\u2081 h\u2082\n  rw [Set.diff_eq]\n  exact Set.subset_empty_iff.2 h3",
+     "output": "3:87: error: unsolved goals\n\u03b1 : Type u_1\nA B C : Set \u03b1\nh\u2081 : A \u2286 B\nh\u2082 : B \u2286 C\n\u22a2 A \\ C = \u2205\n4:2: error: unexpected token ':='; expected command"
+    },
+    {
+     "task_id": "mh_ineq_664419",
+     "config": "demo_rag_repair_bm25",
+     "proof": ":= by\n  rw [Sum.elim_le_elim_iff]\n  split; intro h\n  \u00b7 exact (le_zero_iff_neg_zero h).mp\n  \u00b7 exact (le_zero_iff_neg_zero h).mp",
+     "output": "3:151: error: unsolved goals\n\u03b1\u2081 : Type u_1\n\u03b1\u2082 : Type u_2\n\u03b2 : Type u_3\ninst\u271d\u00b9 : LE \u03b2\ninst\u271d : Zero \u03b2\nv\u2081 : \u03b1\u2081 \u2192 \u03b2\nv\u2082 : \u03b1\u2082 \u2192 \u03b2\n\u22a2 0 \u2264 Sum.elim v\u2081 v\u2082 \u2194 0 \u2264 v\u2081 \u2227 0 \u2264 v\u2082\n4:2: error: unexpected token ':='; expected command"
+    },
+    {
+     "task_id": "mh_ineq_fea870",
+     "config": "demo_rag_repair_bm25",
+     "proof": "cases n\ncase zero =>\n  split\n  { intro h\n    rw [pow_zero] at h\n    exact \u27e81, h\u27e9 }\n  { rintro (h1 | h2)\n    { exact false.elim h1 }\n    { rcases h2 with (h3 | h4)\n      { exact false.elim h3 }\n      { exact h4 } } }\ncase (succ n) =>\n  split\n  { intro h\n    refine \u27e8n.nthRoot a, _\u27e9\n    rw [h, n.nthRoot_pow_self] }\n  { rintro (h1 | h2)\n    { exact false.elim h1 }\n    { rcases h2 with (h3 | h4)\n      ",
+     "output": "15:6: error: unexpected token '('; expected '_' or identifier\n6:4: error: Tactic `split` failed: Could not split an `if` or `match` expression in the goal\n\nHint: If you meant to destruct this structure, use the `cases` tactic instead\n\nHint: Use `set_option trace.split.failure true` to display additional diagnostic information\n\na : \u2115\n\u22a2 (\u2203 x, x ^ 0 = a) \u2194 0 = 0 \u2227 a = 1 \u2228 0 \u2260 0 \u2227 Nat.nthRoot 0 a ^ 0 "
+    }
+   ],
+   "type_mismatch": [
+    {
+     "task_id": "novel_ineq_02",
+     "config": "demo_rag_repair_bm25",
+     "proof": "have := Real.cosh_log x\nrw [Real.cosh_log] at this\nhave : Real.cosh (Real.log x) \u2265 1 := by apply Real.cosh_ge_one\nrw [this] at this\nsimpa only [mul_two, add_div, div_eq_mul_inv, inv_eq_one_div] using this",
+     "output": "4:24: error: Application type mismatch: The argument\n  x\nhas type\n  \u211d\nof sort `Type` but is expected to have type\n  0 < ?m.21\nof sort `Prop` in the application\n  Real.cosh_log x\n3:58: error: unsolved goals\nx : \u211d\nhx : 0 < x\n\u22a2 x + 1 / x \u2265 2"
+    },
+    {
+     "task_id": "novel_ineq_02",
+     "config": "demo_rag_repair_bm25",
+     "proof": "have h : Real.cosh (Real.log x) = (x + x\u207b\u00b9) / 2 := Real.cosh_log x\nhave h' : Real.cosh (Real.log x) \u2265 1 := Real.cosh_ge_one (Real.log x)\nrw [h] at h'\nsimpa only [mul_two, add_div, div_eq_mul_inv, inv_eq_one_div] using h'",
+     "output": "4:67: error: Application type mismatch: The argument\n  x\nhas type\n  \u211d\nof sort `Type` but is expected to have type\n  0 < x\nof sort `Prop` in the application\n  Real.cosh_log x\n5:42: error: Unknown constant `Real.cosh_ge_one`\n7:2: error: Tactic `simp` failed with a nested error:\nmaximum recursion depth has been reached\nuse `set_option maxRecDepth <num>` to increase limit\nuse `set_option diagnostics t"
+    },
+    {
+     "task_id": "novel_ineq_02",
+     "config": "demo_rag_repair_bm25",
+     "proof": "have h : Real.cosh (Real.log x) = (x + x\u207b\u00b9) / 2 := Real.cosh_log x\nhave h' : Real.cosh (Real.log x) \u2265 1 := by apply Real.cosh_ge_one\nrw [h] at h'\nsimpa only [mul_two, add_div, div_eq_mul_inv, inv_eq_one_div] using h'",
+     "output": "4:67: error: Application type mismatch: The argument\n  x\nhas type\n  \u211d\nof sort `Type` but is expected to have type\n  0 < x\nof sort `Prop` in the application\n  Real.cosh_log x\n5:51: error: Unknown constant `Real.cosh_ge_one`\n7:2: error: Tactic `simp` failed with a nested error:\nmaximum recursion depth has been reached\nuse `set_option maxRecDepth <num>` to increase limit\nuse `set_option diagnostics t"
+    },
+    {
+     "task_id": "novel_ineq_02",
+     "config": "demo_rag_repair_bm25",
+     "proof": "have h : Real.cosh (Real.log x) = (x + x\u207b\u00b9) / 2 := Real.cosh_log x\nhave h' : Real.cosh (Real.log x) \u2265 1 := by apply Real.cosh_ge_one\nrw [h] at h'\nsimpa only [mul_two, add_div, div_eq_mul_inv, inv_eq_one_div] using h'",
+     "output": "4:67: error: Application type mismatch: The argument\n  x\nhas type\n  \u211d\nof sort `Type` but is expected to have type\n  0 < x\nof sort `Prop` in the application\n  Real.cosh_log x\n5:51: error: Unknown constant `Real.cosh_ge_one`\n7:2: error: Tactic `simp` failed with a nested error:\nmaximum recursion depth has been reached\nuse `set_option maxRecDepth <num>` to increase limit\nuse `set_option diagnostics t"
+    },
+    {
+     "task_id": "novel_fun_04",
+     "config": "demo_rag_repair_bm25",
+     "proof": "have : f 0 = f (0 + 0) := rfl\nrw [hf] at this\nexact eq.symm this",
+     "output": "4:28: error: Type mismatch\n  rfl\nhas type\n  ?m.30 = ?m.30\nbut is expected to have type\n  f 0 = f (0 + 0)"
+    },
+    {
+     "task_id": "novel_fun_04",
+     "config": "demo_rag_repair_bm25",
+     "proof": "have : f 0 = f (0 + 0) := rfl\nrw [hf] at this\nexact eq.symm this",
+     "output": "4:28: error: Type mismatch\n  rfl\nhas type\n  ?m.30 = ?m.30\nbut is expected to have type\n  f 0 = f (0 + 0)"
+    }
+   ],
+   "lean3_syntax": [
+    {
+     "task_id": "novel_alg_06",
+     "config": "demo_rag_repair_bm25",
+     "proof": "{\n  cases h with h1 h2,\n  rw [h1, h2],\n  left,\n  exact Eq.refl 2,\n  right,\n  exact Eq.refl 3\n}",
+     "output": "5:18: error: unknown tactic\n5:12: error: Invalid syntax for case analysis tactic: The `with` keyword must be followed by a tactic or by an alternative (e.g. `| zero =>`), but here it is followed by the identifier `h1`."
+    },
+    {
+     "task_id": "novel_alg_06",
+     "config": "demo_rag_repair_bm25",
+     "proof": "have h_eq : x ^ 2 = 5 * x - 6 := by rw h\nhave h_factored : (x - 2) * (x - 3) = 0 :=\n  by rw [h_eq, sub_sub, mul_sub, sub_eq_zero]\ncases h_factored with h1 h2\nleft; exact h1\nright; exact h2",
+     "output": "4:40: error: unexpected identifier; expected '['\n4:35: error: unsolved goals\nx : \u211d\nh : x ^ 2 - 5 * x + 6 = 0\n\u22a2 x ^ 2 = 5 * x - 6\n3:73: error: unsolved goals\nx : \u211d\nh : x ^ 2 - 5 * x + 6 = 0\nh_eq : x ^ 2 = 5 * x - 6\n\u22a2 x = 2 \u2228 x = 3"
+    },
+    {
+     "task_id": "novel_alg_06",
+     "config": "demo_rag_repair_bm25",
+     "proof": "have h_eq : x ^ 2 = 5 * x - 6 := by rw h\nhave h_factored : (x - 2) * (x - 3) = 0 :=\n  by rw [h_eq, sub_sub, mul_sub, sub_eq_zero]\ncases h_factored with h1 h2\nleft; exact h1\nright; exact h2",
+     "output": "4:40: error: unexpected identifier; expected '['\n4:35: error: unsolved goals\nx : \u211d\nh : x ^ 2 - 5 * x + 6 = 0\n\u22a2 x ^ 2 = 5 * x - 6\n3:73: error: unsolved goals\nx : \u211d\nh : x ^ 2 - 5 * x + 6 = 0\nh_eq : x ^ 2 = 5 * x - 6\n\u22a2 x = 2 \u2228 x = 3"
+    },
+    {
+     "task_id": "novel_alg_06",
+     "config": "demo_rag_repair_bm25",
+     "proof": "have h_eq : x ^ 2 = 5 * x - 6 := by rw h\nhave h_factored : (x - 2) * (x - 3) = 0 :=\n  by rw [h_eq, sub_sub, mul_sub, sub_eq_zero]\ncases h_factored with h1 h2\nleft; exact h1\nright; exact h2",
+     "output": "4:40: error: unexpected identifier; expected '['\n4:35: error: unsolved goals\nx : \u211d\nh : x ^ 2 - 5 * x + 6 = 0\n\u22a2 x ^ 2 = 5 * x - 6\n3:73: error: unsolved goals\nx : \u211d\nh : x ^ 2 - 5 * x + 6 = 0\nh_eq : x ^ 2 = 5 * x - 6\n\u22a2 x = 2 \u2228 x = 3"
+    },
+    {
+     "task_id": "mh_ineq_7f6f03",
+     "config": "demo_rag_repair_bm25",
+     "proof": "-- Since f is an order ring homomorphism from \u03b1 to \u03b1, and \u03b1 is a field, linear ordered,\n-- strictly ordered ring, and archimedean, we can use the fact that such a homomorphism\n-- must be the identity.\n--\n-- The key idea is that any order-preserving ring homomorphism from an archimedean\n-- ordered field to itself is the identity. This follows from the fact that the image\n-- of 1 under f must be 1, ",
+     "output": "3:141: error: unsolved goals\n\u03b1 : Type u_1\ninst\u271d\u00b3 : Field \u03b1\ninst\u271d\u00b2 : LinearOrder \u03b1\ninst\u271d\u00b9 : IsStrictOrderedRing \u03b1\ninst\u271d : Archimedean \u03b1\nf : \u03b1 \u2192+*o \u03b1\none : \u2115 := 1\n\u22a2 f = OrderRingHom.id \u03b1\n20:15: error: unexpected token ':'; expected command"
+    },
+    {
+     "task_id": "mh_ineq_fea870",
+     "config": "demo_rag_repair_bm25",
+     "proof": "cases n with n0,\n{ intro h,\n  rw [n0, pow_zero, one_pow] at h,\n  exact \u27e81, h\u27e9 }\n{ intro h,\n  split,\n  { rintro \u27e8x, hx\u27e9,\n    refine \u27e8x, _\u27e9,\n    rw [hx, n.nthRoot_pow_self],\n    exact Nat.nthRoot_pow_self_le _ _ },\n  { rintro (h1 | h2),\n    { exact false.elim h1 },\n    { rcases h2 with (h3 | h4),\n      { exact false.elim h3 },\n      { refine \u27e8_, _\u27e9,\n        exact h4,\n        exact Nat.nthRoot_pow_se",
+     "output": "4:16: error: unknown tactic\n4:10: error: Invalid syntax for case analysis tactic: The `with` keyword must be followed by a tactic or by an alternative (e.g. `| zero =>`), but here it is followed by the identifier `n0`."
+    }
+   ],
+   "wrong_tactic": [
+    {
+     "task_id": "novel_fun_04",
+     "config": "demo_rag_repair_bm25",
+     "proof": "have : f 0 = f (0 + 0) := by rfl\nrw [hf] at this\nexact eq.symm this",
+     "output": "4:31: error: Tactic `rfl` failed: The left-hand side\n  f 0\nis not definitionally equal to the right-hand side\n  f (0 + 0)\n\nf : \u211d \u2192 \u211d\nhf : \u2200 (x y : \u211d), f (x + y) = f x + f y\n\u22a2 f 0 = f (0 + 0)\n6:8: error: Unknown identifier `eq.symm`"
+    },
+    {
+     "task_id": "mh_ineq_fea870",
+     "config": "demo_rag_repair_bm25",
+     "proof": "cases n\ncase zero =>\n  split\n  { intro h\n    rw [pow_zero] at h\n    exact \u27e81, h\u27e9 }\n  { rintro (h1 | h2)\n    { exact false.elim h1 }\n    { rcases h2 with (h3 | h4)\n      { exact false.elim h3 }\n      { exact h4 } } }\ncase succ n =>\n  split\n  { intro h\n    refine \u27e8n.nthRoot a, _\u27e9\n    rw [h, n.nthRoot_pow_self] }\n  { rintro (h1 | h2)\n    { exact false.elim h1 }\n    { rcases h2 with (h3 | h4)\n      { ",
+     "output": "6:4: error: Tactic `split` failed: Could not split an `if` or `match` expression in the goal\n\nHint: If you meant to destruct this structure, use the `cases` tactic instead\n\nHint: Use `set_option trace.split.failure true` to display additional diagnostic information\n\na : \u2115\n\u22a2 (\u2203 x, x ^ 0 = a) \u2194 0 = 0 \u2227 a = 1 \u2228 0 \u2260 0 \u2227 Nat.nthRoot 0 a ^ 0 = a\n16:4: error: Tactic `split` failed: Could not split an `if"
+    },
+    {
+     "task_id": "mh_ineq_fea870",
+     "config": "demo_rag_repair_bm25",
+     "proof": "cases n\ncase zero =>\n  split\n  { intro h\n    rw [pow_zero] at h\n    exact \u27e81, h\u27e9 }\n  { rintro (h1 | h2)\n    { exact false.elim h1 }\n    { rcases h2 with (h3 | h4)\n      { exact false.elim h3 }\n      { exact h4 } } }\ncase succ n =>\n  split\n  { intro h\n    refine \u27e8n.nthRoot a, _\u27e9\n    rw [h, n.nthRoot_pow_self] }\n  { rintro (h1 | h2)\n    { exact false.elim h1 }\n    { rcases h2 with (h3 | h4)\n      { ",
+     "output": "6:4: error: Tactic `split` failed: Could not split an `if` or `match` expression in the goal\n\nHint: If you meant to destruct this structure, use the `cases` tactic instead\n\nHint: Use `set_option trace.split.failure true` to display additional diagnostic information\n\na : \u2115\n\u22a2 (\u2203 x, x ^ 0 = a) \u2194 0 = 0 \u2227 a = 1 \u2228 0 \u2260 0 \u2227 Nat.nthRoot 0 a ^ 0 = a\n16:4: error: Tactic `split` failed: Could not split an `if"
+    }
+   ],
+   "incorrect_rewrite": [
+    {
+     "task_id": "mh_ineq_664419",
+     "config": "demo_rag_repair_bm25",
+     "proof": "rw [Sum.elim_le_elim_iff] <;> split; intro h; exact (le_zero_iff_neg_zero h).mp",
+     "output": "4:6: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern\n  Sum.elim ?m.21 ?m.23 \u2264 Sum.elim ?m.22 ?m.24\nin the target expression\n  0 \u2264 Sum.elim v\u2081 v\u2082 \u2194 0 \u2264 v\u2081 \u2227 0 \u2264 v\u2082\n\n\u03b1\u2081 : Type u_1\n\u03b1\u2082 : Type u_2\n\u03b2 : Type u_3\ninst\u271d\u00b9 : LE \u03b2\ninst\u271d : Zero \u03b2\nv\u2081 : \u03b1\u2081 \u2192 \u03b2\nv\u2082 : \u03b1\u2082 \u2192 \u03b2\n\u22a2 0 \u2264 Sum.elim v\u2081 v\u2082 \u2194 0 \u2264 v\u2081 \u2227 0 \u2264 v\u2082"
+    },
+    {
+     "task_id": "mh_ineq_664419",
+     "config": "demo_rag_repair_bm25",
+     "proof": "rw [Sum.elim_le_elim_iff]\nsplit; intro h\n\u00b7 exact (le_zero_iff_neg_zero h).mp\n\u00b7 exact (le_zero_iff_neg_zero h).mp",
+     "output": "4:6: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern\n  Sum.elim ?m.21 ?m.23 \u2264 Sum.elim ?m.22 ?m.24\nin the target expression\n  0 \u2264 Sum.elim v\u2081 v\u2082 \u2194 0 \u2264 v\u2081 \u2227 0 \u2264 v\u2082\n\n\u03b1\u2081 : Type u_1\n\u03b1\u2082 : Type u_2\n\u03b2 : Type u_3\ninst\u271d\u00b9 : LE \u03b2\ninst\u271d : Zero \u03b2\nv\u2081 : \u03b1\u2081 \u2192 \u03b2\nv\u2082 : \u03b1\u2082 \u2192 \u03b2\n\u22a2 0 \u2264 Sum.elim v\u2081 v\u2082 \u2194 0 \u2264 v\u2081 \u2227 0 \u2264 v\u2082"
+    },
+    {
+     "task_id": "mh_ineq_664419",
+     "config": "demo_rag_repair_bm25",
+     "proof": "rw [Sum.elim_le_elim_iff]\nsplit; intro h\n\u00b7 exact (le_zero_iff_neg_zero h).mp\n\u00b7 exact (le_zero_iff_neg_zero h).mp",
+     "output": "4:6: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern\n  Sum.elim ?m.21 ?m.23 \u2264 Sum.elim ?m.22 ?m.24\nin the target expression\n  0 \u2264 Sum.elim v\u2081 v\u2082 \u2194 0 \u2264 v\u2081 \u2227 0 \u2264 v\u2082\n\n\u03b1\u2081 : Type u_1\n\u03b1\u2082 : Type u_2\n\u03b2 : Type u_3\ninst\u271d\u00b9 : LE \u03b2\ninst\u271d : Zero \u03b2\nv\u2081 : \u03b1\u2081 \u2192 \u03b2\nv\u2082 : \u03b1\u2082 \u2192 \u03b2\n\u22a2 0 \u2264 Sum.elim v\u2081 v\u2082 \u2194 0 \u2264 v\u2081 \u2227 0 \u2264 v\u2082"
+    }
+   ],
+   "wrong_namespace": [
+    {
+     "task_id": "mh_ineq_7f6f03",
+     "config": "demo_rag_repair_bm25",
+     "proof": "-- Show that f(1) = 1\nhave h1 : f 1 = 1 :=\n  by\n    rw [ring_hom.map_one]\n    exact eq_of_idempotent (by simp) (by simp)\n\n-- Show that f(n) = n for all integers n\nlet rec show_int : \u2124 \u2192 \u03b1 \u2192 Prop :=\n  fun n x => by\n    induction' n with n ih\n    \u00b7 exact (by rw [int.cast_zero])\n    \u00b7 exact (by rw [int.cast_add, ih n (f x), ih n x])\n\n-- Show that f fixes the interval [n, n + 1) for all integers n\nlet",
+     "output": "7:10: error: Unknown identifier `ring_hom.map_one`\n13:6: error: Type mismatch when assigning motive\n  fun n => Prop\nhas type\n  \u2124 \u2192 Type\nof sort `Type 1` but is expected to have type\n  \u2124 \u2192 Prop\nof sort `Type`\n21:22: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern\n  ?m.58 < ?m.59\nin the target expression\n  Prop\n\n\u03b1 : Type u_1\ninst\u271d\u00b3 : Field \u03b1\ninst\u271d\u00b2 : LinearOrder \u03b1\ninst\u271d\u00b9 : "
+    },
+    {
+     "task_id": "mh_ineq_7f6f03",
+     "config": "demo_rag_repair_bm25",
+     "proof": "-- Show that f(1) = 1\nhave h1 : f 1 = 1 :=\n  by\n    rw [ring_hom.map_one]\n    exact eq_of_idempotent (by simp) (by simp)\n\n-- Show that f(n) = n for all integers n\nlet rec show_int : \u2124 \u2192 \u03b1 \u2192 Prop :=\n  fun n x => by\n    induction' n with n ih\n    \u00b7 exact (by rw [int.cast_zero])\n    \u00b7 exact (by rw [int.cast_add, ih n (f x), ih n x])\n\n-- Show that f fixes the interval [n, n + 1) for all integers n\nlet",
+     "output": "7:10: error: Unknown identifier `ring_hom.map_one`\n13:6: error: Type mismatch when assigning motive\n  fun n => Prop\nhas type\n  \u2124 \u2192 Type\nof sort `Type 1` but is expected to have type\n  \u2124 \u2192 Prop\nof sort `Type`\n21:22: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern\n  ?m.58 < ?m.59\nin the target expression\n  Prop\n\n\u03b1 : Type u_1\ninst\u271d\u00b3 : Field \u03b1\ninst\u271d\u00b2 : LinearOrder \u03b1\ninst\u271d\u00b9 : "
+    },
+    {
+     "task_id": "mh_ineq_7f6f03",
+     "config": "demo_rag_repair_bm25",
+     "proof": "-- Show that f(1) = 1\nhave h1 : f 1 = 1 :=\n  by\n    rw [ring_hom.map_one]\n    exact eq_of_idempotent (by simp) (by simp)\n\n-- Show that f(n) = n for all integers n\nlet rec show_int : \u2124 \u2192 \u03b1 \u2192 Prop :=\n  fun n x => by\n    induction' n with n ih\n    \u00b7 exact (by rw [int.cast_zero])\n    \u00b7 exact (by rw [int.cast_add, ih n (f x), ih n x])\n\n-- Show that f fixes the interval [n, n + 1) for all integers n\nlet",
+     "output": "7:10: error: Unknown identifier `ring_hom.map_one`\n13:6: error: Type mismatch when assigning motive\n  fun n => Prop\nhas type\n  \u2124 \u2192 Type\nof sort `Type 1` but is expected to have type\n  \u2124 \u2192 Prop\nof sort `Type`\n21:22: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern\n  ?m.58 < ?m.59\nin the target expression\n  Prop\n\n\u03b1 : Type u_1\ninst\u271d\u00b3 : Field \u03b1\ninst\u271d\u00b2 : LinearOrder \u03b1\ninst\u271d\u00b9 : "
+    }
+   ]
+  }
+ },
+ "difficulty_correlations": {}
+}

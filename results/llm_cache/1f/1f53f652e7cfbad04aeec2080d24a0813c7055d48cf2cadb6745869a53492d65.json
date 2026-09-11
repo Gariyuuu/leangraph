@@ -1,0 +1,1 @@
+{"text": "```lean\nby\n  rw [Set.compl_union]\n  exact iff.rfl\n```", "reasoning": "", "prompt_tokens": 511, "completion_tokens": 24, "reasoning_tokens": 0, "cost_usd": 7.0707e-05, "latency_s": 1.4081299304962158, "finish_reason": "stop", "provider": "Alibaba", "key": "1f53f652e7cfbad04aeec2080d24a0813c7055d48cf2cadb6745869a53492d65", "cached": false}

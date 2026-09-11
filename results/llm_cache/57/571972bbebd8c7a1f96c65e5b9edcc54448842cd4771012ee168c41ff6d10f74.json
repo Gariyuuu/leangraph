@@ -1,0 +1,1 @@
+{"text": "```lean\nrw [g.nums_def, g.h_def, eq_self_iff_true]\n```", "reasoning": "", "prompt_tokens": 672, "completion_tokens": 24, "reasoning_tokens": 0, "cost_usd": 8.9544e-05, "latency_s": 1.8446009159088135, "finish_reason": "stop", "provider": "Alibaba", "key": "571972bbebd8c7a1f96c65e5b9edcc54448842cd4771012ee168c41ff6d10f74", "cached": false}

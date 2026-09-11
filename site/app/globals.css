@@ -1,0 +1,90 @@
+/* LeanGraph site
+ * macrostructure: workbench — persistent side rail, dense data panels
+ * direction: "proof ledger" — austere, technical, credible; paper ground, ink text,
+ *   one blue accent shared with chart slot 1. Not SaaS, not marketing.
+ * rule: a verified/failed state is always an icon + a word, never colour alone.
+ * chart colours: dataviz reference palette slots 1-4, validated light and dark
+ *   (scripts/validate_palette.js); solid hairline grids; one axis per chart.
+ */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --paper: #f9f9f7;
+  --paper-2: #fcfcfb;
+  --paper-3: #f0efec;
+  --ink: #0b0b0b;
+  --ink-2: #52514e;
+  --ink-3: #6f6d68;
+  --line: #e1e0d9;
+  --axis: #c3c2b7;
+  --accent: #1c5cab;
+  --accent-wash: #e7f0fc;
+  --ok: #006300;
+  --ok-wash: #e6f4e6;
+  --bad: #b42525;
+  --bad-wash: #fbeaea;
+  --warn: #8a5a00;
+  --series-1: #2a78d6;
+  --series-2: #eb6834;
+  --series-3: #1baf7a;
+  --series-4: #eda100;
+  --series-muted: #c3c2b7;
+  --code-bg: #f3f2ee;
+}
+
+:root.dark {
+  color-scheme: dark;
+  --paper: #0d0d0d;
+  --paper-2: #1a1a19;
+  --paper-3: #232322;
+  --ink: #ffffff;
+  --ink-2: #c3c2b7;
+  --ink-3: #a3a29a;
+  --line: #2c2c2a;
+  --axis: #383835;
+  --accent: #86b6ef;
+  --accent-wash: #16263b;
+  --ok: #4fc34f;
+  --ok-wash: #132613;
+  --bad: #f08080;
+  --bad-wash: #2e1515;
+  --warn: #e0b24a;
+  --series-1: #3987e5;
+  --series-2: #d95926;
+  --series-3: #199e70;
+  --series-4: #c98500;
+  --series-muted: #4a4a47;
+  --code-bg: #151514;
+}
+
+html, body { overflow-x: clip; }
+body { background: var(--paper); color: var(--ink); font-family: var(--font-sans), system-ui, sans-serif; }
+h1, h2, h3 { overflow-wrap: anywhere; min-width: 0; }
+
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+
+.num { font-variant-numeric: tabular-nums; }
+
+pre.lean, code.lean {
+  font-family: var(--font-mono), ui-monospace, monospace;
+  font-size: 0.8125rem;
+  line-height: 1.55;
+  background: var(--code-bg);
+  color: var(--ink);
+}
+pre.lean { padding: 0.75rem 1rem; border: 1px solid var(--line); border-radius: 6px; overflow-x: auto; white-space: pre; }
+
+.table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 6px; background: var(--paper-2); }
+.table-wrap table { width: 100%; border-collapse: collapse; font-size: 0.8125rem; }
+.table-wrap th { text-align: left; font-weight: 600; color: var(--ink-2); background: var(--paper-3); padding: 0.5rem 0.75rem; white-space: nowrap; }
+.table-wrap td { padding: 0.5rem 0.75rem; border-top: 1px solid var(--line); vertical-align: top; }
+.table-wrap td.r, .table-wrap th.r { text-align: right; font-variant-numeric: tabular-nums; }
+
+.panel { border: 1px solid var(--line); border-radius: 6px; background: var(--paper-2); padding: 1rem 1.25rem; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}

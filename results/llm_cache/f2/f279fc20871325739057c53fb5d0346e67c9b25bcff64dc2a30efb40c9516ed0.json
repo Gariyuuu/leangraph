@@ -1,0 +1,1 @@
+{"text": ":= by\n  rw [Set.Iic, Set.Iio]\n  apply_fun (fun x => x - 1) at hb\n  exact hb", "reasoning": "", "prompt_tokens": 295, "completion_tokens": 36, "reasoning_tokens": 0, "cost_usd": 5.0895e-05, "latency_s": 1.7034811973571777, "finish_reason": "stop", "provider": "Alibaba", "key": "f279fc20871325739057c53fb5d0346e67c9b25bcff64dc2a30efb40c9516ed0", "cached": false}

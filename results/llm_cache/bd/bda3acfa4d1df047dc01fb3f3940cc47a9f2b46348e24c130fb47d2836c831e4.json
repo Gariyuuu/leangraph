@@ -1,0 +1,1 @@
+{"text": "```lean\n  intro h\n  constructor\n  apply Hg\n  exact h\n  apply Hf\n  exact h\n```", "reasoning": "", "prompt_tokens": 523, "completion_tokens": 33, "reasoning_tokens": 0, "cost_usd": 7.6206e-05, "latency_s": 2.1630871295928955, "finish_reason": "stop", "provider": "Alibaba", "key": "bda3acfa4d1df047dc01fb3f3940cc47a9f2b46348e24c130fb47d2836c831e4", "cached": false}

@@ -1,0 +1,1 @@
+{"text": "```lean\nintro h; obtain ⟨x, y⟩ := h; rw [not_true, not_true] at h; exact h\n```", "reasoning": "", "prompt_tokens": 246, "completion_tokens": 34, "reasoning_tokens": 0, "cost_usd": 4.4252e-05, "latency_s": 2.745850086212158, "finish_reason": "stop", "provider": "Alibaba", "key": "789f198d9bb0195d14a85bf7ed833a3ecbaede0d7f6b847877788d9aedb2cc5a", "cached": false}

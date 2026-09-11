@@ -1,0 +1,1 @@
+{"text": "```lean\nintro x y; intro h; cases h with h1 h2; exact false.elim (h1 h2)\n```", "reasoning": "", "prompt_tokens": 245, "completion_tokens": 33, "reasoning_tokens": 0, "cost_usd": 4.368e-05, "latency_s": 2.6516547203063965, "finish_reason": "stop", "provider": "Alibaba", "key": "a0339a5612a044a5d598165319d211d7aca286fa2558a071156985201e47aec4", "cached": false}

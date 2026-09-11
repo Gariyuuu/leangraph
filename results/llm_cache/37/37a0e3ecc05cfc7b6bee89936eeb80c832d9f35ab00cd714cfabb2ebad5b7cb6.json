@@ -1,0 +1,1 @@
+{"text": "```lean\napply mono.eq_of_arrow_eq; exact w\n```", "reasoning": "", "prompt_tokens": 300, "completion_tokens": 18, "reasoning_tokens": 0, "cost_usd": 4.329e-05, "latency_s": 1.285933017730713, "finish_reason": "stop", "provider": "Alibaba", "key": "37a0e3ecc05cfc7b6bee89936eeb80c832d9f35ab00cd714cfabb2ebad5b7cb6", "cached": false}

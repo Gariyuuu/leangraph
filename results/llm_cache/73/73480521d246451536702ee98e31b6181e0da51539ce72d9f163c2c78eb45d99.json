@@ -1,0 +1,1 @@
+{"text": "```lean\nintro h; exact h\n```", "reasoning": "", "prompt_tokens": 246, "completion_tokens": 14, "reasoning_tokens": 0, "cost_usd": 3.5152e-05, "latency_s": 1.3266727924346924, "finish_reason": "stop", "provider": "Alibaba", "key": "73480521d246451536702ee98e31b6181e0da51539ce72d9f163c2c78eb45d99", "cached": false}

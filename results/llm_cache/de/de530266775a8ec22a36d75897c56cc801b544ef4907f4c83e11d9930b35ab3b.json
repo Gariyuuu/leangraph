@@ -1,0 +1,1 @@
+{"text": "```lean\nintros\nconstructor\napply ProbabilityTheory.hasGaussianLaw_neg\nexact hX\n```", "reasoning": "", "prompt_tokens": 335, "completion_tokens": 25, "reasoning_tokens": 0, "cost_usd": 5.057e-05, "latency_s": 1.68491530418396, "finish_reason": "stop", "provider": "Alibaba", "key": "de530266775a8ec22a36d75897c56cc801b544ef4907f4c83e11d9930b35ab3b", "cached": false}

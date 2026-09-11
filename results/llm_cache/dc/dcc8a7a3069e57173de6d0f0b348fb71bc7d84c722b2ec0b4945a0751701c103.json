@@ -1,0 +1,1 @@
+{"text": "```lean\nrw [Rat.addSubmonoid_closure_range_pow n (Nat.succ_ne_zero 0) hn]\n```", "reasoning": "", "prompt_tokens": 760, "completion_tokens": 31, "reasoning_tokens": 0, "cost_usd": 0.000103025, "latency_s": 1.7815277576446533, "finish_reason": "stop", "provider": "Alibaba", "key": "dcc8a7a3069e57173de6d0f0b348fb71bc7d84c722b2ec0b4945a0751701c103", "cached": false}

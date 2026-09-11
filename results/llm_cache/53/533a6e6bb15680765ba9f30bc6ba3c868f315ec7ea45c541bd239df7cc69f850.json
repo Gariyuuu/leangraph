@@ -1,0 +1,1 @@
+{"text": "```lean\nintro x h\nrw [pow_two]\napply dvd_mul_right\nexact h\n```", "reasoning": "", "prompt_tokens": 264, "completion_tokens": 25, "reasoning_tokens": 0, "cost_usd": 4.2263e-05, "latency_s": 1.4625489711761475, "finish_reason": "stop", "provider": "Alibaba", "key": "533a6e6bb15680765ba9f30bc6ba3c868f315ec7ea45c541bd239df7cc69f850", "cached": false}

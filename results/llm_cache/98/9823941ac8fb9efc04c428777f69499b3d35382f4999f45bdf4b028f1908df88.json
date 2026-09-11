@@ -1,0 +1,1 @@
+{"text": "```lean\nby\n  intro n\n  apply ProbabilityTheory.mgf_deriv_at_zero\n  exact h\n```", "reasoning": "", "prompt_tokens": 1148, "completion_tokens": 28, "reasoning_tokens": 0, "cost_usd": 0.000147056, "latency_s": 1.7042779922485352, "finish_reason": "stop", "provider": "Alibaba", "key": "9823941ac8fb9efc04c428777f69499b3d35382f4999f45bdf4b028f1908df88", "cached": false}

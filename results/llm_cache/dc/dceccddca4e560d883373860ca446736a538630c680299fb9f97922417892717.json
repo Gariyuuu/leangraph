@@ -1,0 +1,1 @@
+{"text": "```lean\nintro hfg\ncontradiction hfg hf hg\n```", "reasoning": "", "prompt_tokens": 326, "completion_tokens": 20, "reasoning_tokens": 0, "cost_usd": 4.7242e-05, "latency_s": 1.4644551277160645, "finish_reason": "stop", "provider": "Alibaba", "key": "dceccddca4e560d883373860ca446736a538630c680299fb9f97922417892717", "cached": false}

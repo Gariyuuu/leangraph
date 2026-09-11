@@ -1,0 +1,1 @@
+{"text": ":= by\n  have := IsIso.comp_isIso f g\n  exact this", "reasoning": "", "prompt_tokens": 1035, "completion_tokens": 21, "reasoning_tokens": 0, "cost_usd": 0.00013065, "latency_s": 2.016948938369751, "finish_reason": "stop", "provider": "Alibaba", "key": "9b8f87c203c0b2d97ae8ff716f524dba62d6180831722e6cda7394a5d4cebeb8", "cached": false}

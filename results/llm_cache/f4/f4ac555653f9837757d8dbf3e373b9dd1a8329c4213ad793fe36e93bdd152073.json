@@ -1,0 +1,1 @@
+{"text": "```lean\nsimp [h₁, h₂] at *\nrw [add_sub_assoc, add_right_inj]\nsimp\n```", "reasoning": "", "prompt_tokens": 275, "completion_tokens": 31, "reasoning_tokens": 0, "cost_usd": 4.628e-05, "latency_s": 1.2962310314178467, "finish_reason": "stop", "provider": "Alibaba", "key": "f4ac555653f9837757d8dbf3e373b9dd1a8329c4213ad793fe36e93bdd152073", "cached": false}

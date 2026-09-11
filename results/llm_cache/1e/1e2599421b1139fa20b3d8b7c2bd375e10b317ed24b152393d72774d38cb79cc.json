@@ -1,0 +1,1 @@
+{"text": ":= by\n  rw [finsum_eq_card]\n  exact ncard_eq_card' s", "reasoning": "", "prompt_tokens": 275, "completion_tokens": 24, "reasoning_tokens": 0, "cost_usd": 4.3095e-05, "latency_s": 1.562079906463623, "finish_reason": "stop", "provider": "Alibaba", "key": "1e2599421b1139fa20b3d8b7c2bd375e10b317ed24b152393d72774d38cb79cc", "cached": false}

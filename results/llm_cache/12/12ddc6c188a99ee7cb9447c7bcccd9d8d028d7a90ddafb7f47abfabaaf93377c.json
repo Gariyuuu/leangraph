@@ -1,0 +1,1 @@
+{"text": "```lean\nintro i j hneq hdisj\nrw [encard_union_disjoint]\nexact hs hneq hdisj\n```", "reasoning": "", "prompt_tokens": 308, "completion_tokens": 35, "reasoning_tokens": 0, "cost_usd": 5.1961e-05, "latency_s": 1.5163688659667969, "finish_reason": "stop", "provider": "Alibaba", "key": "12ddc6c188a99ee7cb9447c7bcccd9d8d028d7a90ddafb7f47abfabaaf93377c", "cached": false}

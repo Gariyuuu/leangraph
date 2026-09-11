@@ -1,0 +1,1 @@
+{"text": ":= by\n  rw [h₁] at h₃\n  rw [h₂] at h₃\n  simp only [h₃]", "reasoning": "", "prompt_tokens": 287, "completion_tokens": 37, "reasoning_tokens": 0, "cost_usd": 5.0414e-05, "latency_s": 1.5152568817138672, "finish_reason": "stop", "provider": "Alibaba", "key": "6ca70028ed3722ad9e55e6ac408a8ae12e733c41c7842c1b34c7173601132870", "cached": false}

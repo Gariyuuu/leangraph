@@ -1,0 +1,9 @@
+LeanGraph includes material from Mathlib.
+
+corpus/tasks.jsonl, the per-theorem files under site/data/, and trace files under results/ contain theorem
+statements and reference proof text taken from Mathlib (https://github.com/leanprover-community/mathlib4),
+version v4.33.1 (commit 0df444a3), copyright the mathlib Community and contributors, licensed under the
+Apache License, Version 2.0: https://github.com/leanprover-community/mathlib4/blob/master/LICENSE
+
+Statements were re-rendered by Lean's pretty-printer from the compiled declarations; reference proofs are verbatim
+source excerpts. The theorem name `lg_target` replaces each original name in every prompt and rendered statement.

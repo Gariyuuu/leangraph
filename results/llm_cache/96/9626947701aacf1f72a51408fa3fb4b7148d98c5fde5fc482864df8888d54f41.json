@@ -1,0 +1,1 @@
+{"text": "```lean\nintro w\napply (UnivLE.of_ess_surj w)\n```", "reasoning": "", "prompt_tokens": 268, "completion_tokens": 23, "reasoning_tokens": 0, "cost_usd": 4.1821e-05, "latency_s": 1.6674530506134033, "finish_reason": "stop", "provider": "Alibaba", "key": "9626947701aacf1f72a51408fa3fb4b7148d98c5fde5fc482864df8888d54f41", "cached": false}

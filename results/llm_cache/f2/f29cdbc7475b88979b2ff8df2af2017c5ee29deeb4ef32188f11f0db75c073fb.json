@@ -1,0 +1,1 @@
+{"text": ":= by\n  rw [Real.cos_sq]\n  exact Real.le_one (Real.pow_nonneg _ _)", "reasoning": "", "prompt_tokens": 255, "completion_tokens": 26, "reasoning_tokens": 0, "cost_usd": 4.1665e-05, "latency_s": 1.4907240867614746, "finish_reason": "stop", "provider": "Alibaba", "key": "f29cdbc7475b88979b2ff8df2af2017c5ee29deeb4ef32188f11f0db75c073fb", "cached": false}

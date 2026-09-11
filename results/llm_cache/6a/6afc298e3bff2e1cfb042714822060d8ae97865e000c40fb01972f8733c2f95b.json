@@ -1,0 +1,1 @@
+{"text": "```lean\nintro u hu\nrw [gaussSum_conj]\nrw [he]\nrw [hu]\nrw [mul_one]\n```", "reasoning": "", "prompt_tokens": 350, "completion_tokens": 33, "reasoning_tokens": 0, "cost_usd": 5.5965e-05, "latency_s": 1.5272650718688965, "finish_reason": "stop", "provider": "Alibaba", "key": "6afc298e3bff2e1cfb042714822060d8ae97865e000c40fb01972f8733c2f95b", "cached": false}

@@ -1,0 +1,10 @@
+{"task_id": "mh_cate_097148", "config": {"name": "repair_prompt_b"}, "error": "RuntimeError('LLM call failed after 5 attempts: HTTP 429')", "verified": false}
+{"task_id": "mh_cate_6496c7", "config": {"name": "repair_prompt_b"}, "error": "RuntimeError('LLM call failed after 5 attempts: HTTP 429')", "verified": false}
+{"task_id": "mh_cate_ea624f", "config": {"name": "repair_prompt_b"}, "error": "RuntimeError('LLM call failed after 5 attempts: HTTP 429')", "verified": false}
+{"task_id": "mh_cate_cd9a3b", "config": {"name": "repair_prompt_b"}, "error": "RuntimeError('LLM call failed after 5 attempts: HTTP 429')", "verified": false}
+{"task_id": "mh_cate_640afd", "config": {"name": "repair_prompt_b"}, "error": "RuntimeError('LLM call failed after 5 attempts: HTTP 429')", "verified": false}
+{"task_id": "novel_fun_04", "config": {"name": "repair_prompt_b"}, "error": "RuntimeError('LLM call failed after 5 attempts: HTTP 502')", "verified": false}
+{"task_id": "novel_prob_01", "config": {"name": "repair_prompt_b"}, "error": "RuntimeError('LLM call failed after 5 attempts: HTTP 502')", "verified": false}
+{"task_id": "novel_fun_06", "config": {"name": "repair_prompt_b"}, "error": "RuntimeError('LLM call failed after 5 attempts: HTTP 502')", "verified": false}
+{"task_id": "novel_cat_03", "config": {"name": "repair_prompt_b"}, "error": "RuntimeError('LLM call failed after 5 attempts: HTTP 502')", "verified": false}
+{"task_id": "novel_prob_03", "config": {"name": "repair_prompt_b"}, "error": "RuntimeError('LLM call failed after 5 attempts: HTTP 502')", "verified": false}

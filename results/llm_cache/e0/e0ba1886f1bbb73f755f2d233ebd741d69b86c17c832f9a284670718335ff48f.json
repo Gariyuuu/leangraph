@@ -1,0 +1,1 @@
+{"text": "```lean\nintro i\napply disjointed_eq_compl_sup\nexact (partialSups f).supr\n```", "reasoning": "", "prompt_tokens": 344, "completion_tokens": 29, "reasoning_tokens": 0, "cost_usd": 5.3443e-05, "latency_s": 1.55246901512146, "finish_reason": "stop", "provider": "Alibaba", "key": "e0ba1886f1bbb73f755f2d233ebd741d69b86c17c832f9a284670718335ff48f", "cached": false}

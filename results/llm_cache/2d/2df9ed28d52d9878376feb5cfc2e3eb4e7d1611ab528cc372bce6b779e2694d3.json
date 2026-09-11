@@ -1,0 +1,1 @@
+{"text": "```lean\nintros x\nrw [hf 0 x, hf 0 0]\nsimp only [add_zero, add_left_neg]\n```", "reasoning": "", "prompt_tokens": 279, "completion_tokens": 34, "reasoning_tokens": 0, "cost_usd": 4.8113e-05, "latency_s": 1.576578140258789, "finish_reason": "stop", "provider": "Alibaba", "key": "2df9ed28d52d9878376feb5cfc2e3eb4e7d1611ab528cc372bce6b779e2694d3", "cached": false}

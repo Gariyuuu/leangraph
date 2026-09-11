@@ -1,0 +1,1 @@
+{"text": "```lean\nrw [hf 0 x, hf x (-x), add_left_cancel_iff, hf 0 (-x), hf 0 x]\n```", "reasoning": "", "prompt_tokens": 281, "completion_tokens": 36, "reasoning_tokens": 0, "cost_usd": 4.9257e-05, "latency_s": 1.7346198558807373, "finish_reason": "stop", "provider": "Alibaba", "key": "23e1338bad1f1d466dd7fb64627cf681565701d34db6819a3d8885284a5aa567", "cached": false}

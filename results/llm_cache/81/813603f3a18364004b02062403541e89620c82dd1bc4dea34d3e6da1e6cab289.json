@@ -1,0 +1,1 @@
+{"text": "```lean\nintro a\nrw [supr_add]\napply supr_add\n```", "reasoning": "", "prompt_tokens": 325, "completion_tokens": 22, "reasoning_tokens": 0, "cost_usd": 4.8035e-05, "latency_s": 2.1981499195098877, "finish_reason": "stop", "provider": "Alibaba", "key": "813603f3a18364004b02062403541e89620c82dd1bc4dea34d3e6da1e6cab289", "cached": false}

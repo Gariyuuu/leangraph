@@ -1,0 +1,1 @@
+{"text": "```lean\nrw [natAbs_eq, natAbs_eq, eq_comm]; constructor; intro h; rw [h]\n```", "reasoning": "", "prompt_tokens": 263, "completion_tokens": 30, "reasoning_tokens": 0, "cost_usd": 4.4421e-05, "latency_s": 1.840937852859497, "finish_reason": "stop", "provider": "Alibaba", "key": "eead53d0a57d1cef64d39dcb29c30acfc4ee44821eb6231f882e6663ef4a25e2", "cached": false}

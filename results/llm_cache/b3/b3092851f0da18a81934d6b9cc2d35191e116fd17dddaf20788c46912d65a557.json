@@ -1,0 +1,1 @@
+{"text": "```lean\nintro p hp h2\nconstructor\napply Nat.Prime.not_even\nexact hp\nexact h2\n```", "reasoning": "", "prompt_tokens": 264, "completion_tokens": 30, "reasoning_tokens": 0, "cost_usd": 4.4538e-05, "latency_s": 1.9462690353393555, "finish_reason": "stop", "provider": "Alibaba", "key": "b3092851f0da18a81934d6b9cc2d35191e116fd17dddaf20788c46912d65a557", "cached": false}

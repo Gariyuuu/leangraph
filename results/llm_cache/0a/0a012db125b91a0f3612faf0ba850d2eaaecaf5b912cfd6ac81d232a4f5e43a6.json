@@ -1,0 +1,1 @@
+{"text": "```lean\nintros Hf Hg\nintro h\napply Hf\nconstructor\napply Hg\nexact h\n```", "reasoning": "", "prompt_tokens": 292, "completion_tokens": 30, "reasoning_tokens": 0, "cost_usd": 4.7814e-05, "latency_s": 1.3916406631469727, "finish_reason": "stop", "provider": "Alibaba", "key": "0a012db125b91a0f3612faf0ba850d2eaaecaf5b912cfd6ac81d232a4f5e43a6", "cached": false}

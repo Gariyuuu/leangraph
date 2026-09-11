@@ -1,0 +1,55 @@
+name: ci
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  fast:
+    name: Python tests (no Lean)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -r requirements.txt
+      - run: python -m pytest -q -m "not lean"
+
+  lean-fixture:
+    name: Lean fixture + verifier
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install elan
+        run: |
+          curl -sSf https://elan.lean-lang.org/elan-init.sh | sh -s -- -y --default-toolchain none
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Cache Mathlib build
+        uses: actions/cache@v4
+        with:
+          path: lean_env/.lake
+          key: mathlib-${{ hashFiles('lean_env/lake-manifest.json', 'lean_env/lean-toolchain') }}
+      - name: Fetch pinned Mathlib
+        working-directory: lean_env
+        run: lake exe cache get && lake build LeangraphEnv
+      - name: Tiny theorem fixture
+        working-directory: lean_env
+        run: |
+          out=$(lake env lean ../tests/fixtures/tiny_theorem.lean)
+          echo "$out"
+          echo "$out" | grep -q "'lg_fixture' depends on axioms: \[propext, Classical.choice, Quot.sound\]"
+      - name: Build the Lean REPL at the pinned commit
+        run: |
+          git clone https://github.com/leanprover-community/repl.git .lean_repl
+          cd .lean_repl && git checkout "$(cat ../lean_env/repl.commit)"
+          cp ../lean_env/lean-toolchain lean-toolchain && lake build
+      - run: pip install -r requirements.txt
+      - name: Verifier on the fixture subset
+        env:
+          LG_TEST_WORKERS: "2"
+        run: python -m pytest -q -m lean tests/test_verify_lean.py -k "ring or unknown_ident or sorryAx or accepts_and_rejects"

@@ -1,0 +1,1 @@
+{"text": "```lean\nby cases n with m; constructor; exact ⟨0, 0, 0, m⟩\n```", "reasoning": "", "prompt_tokens": 274, "completion_tokens": 29, "reasoning_tokens": 0, "cost_usd": 4.5253e-05, "latency_s": 1.3498356342315674, "finish_reason": "stop", "provider": "Alibaba", "key": "316fd2264091910da07a5f861fe7b4017ccf081fecd786bbe47faf86923b57f9", "cached": false}

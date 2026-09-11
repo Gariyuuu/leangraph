@@ -1,0 +1,1 @@
+{"text": ":= by\n  rw [Finset.sum_range]\n  congr\n  apply Nat.choose_sum_eq_two_pow_self", "reasoning": "", "prompt_tokens": 268, "completion_tokens": 27, "reasoning_tokens": 0, "cost_usd": 4.3641e-05, "latency_s": 1.7761940956115723, "finish_reason": "stop", "provider": "Alibaba", "key": "20518d85c4e31cd63cea320ad3aa672883cd68502c3de113a35f13481b33509c", "cached": false}

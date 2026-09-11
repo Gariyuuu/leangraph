@@ -1,0 +1,1 @@
+{"text": "```lean\nintro h; intro n; apply not.elim; assume h1: not n; apply h; assumption\n```", "reasoning": "", "prompt_tokens": 246, "completion_tokens": 31, "reasoning_tokens": 0, "cost_usd": 4.2887e-05, "latency_s": 1.8836748600006104, "finish_reason": "stop", "provider": "Alibaba", "key": "8007b2367afc2cb005e49611e38cfe19953160deff713a5fb0119af6f6067bec", "cached": false}

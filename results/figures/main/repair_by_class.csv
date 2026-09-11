@@ -1,0 +1,14 @@
+class,n,next_round_verified,rate
+hallucinated_theorem,311,0,0.0
+type_mismatch,98,0,0.0
+unresolved_metavariable,9,0,0.0
+instance_resolution_failure,6,0,0.0
+bad_induction,6,0,0.0
+syntax_error,409,1,0.0024449877750611247
+wrong_tactic,229,1,0.004366812227074236
+forbidden,345,3,0.008695652173913044
+other,88,1,0.011363636363636364
+wrong_namespace,82,1,0.012195121951219513
+incorrect_rewrite,82,1,0.012195121951219513
+lean3_syntax,302,13,0.04304635761589404
+valid_but_wrong,18,3,0.16666666666666666

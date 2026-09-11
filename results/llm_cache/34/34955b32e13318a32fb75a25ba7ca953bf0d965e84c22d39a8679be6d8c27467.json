@@ -1,0 +1,1 @@
+{"text": "```lean\nintros a b h,\napply Int.natAbs_strictMono_on_Ici,\nexact h\n```", "reasoning": "", "prompt_tokens": 253, "completion_tokens": 28, "reasoning_tokens": 0, "cost_usd": 4.2341e-05, "latency_s": 1.3406689167022705, "finish_reason": "stop", "provider": "Alibaba", "key": "34955b32e13318a32fb75a25ba7ca953bf0d965e84c22d39a8679be6d8c27467", "cached": false}

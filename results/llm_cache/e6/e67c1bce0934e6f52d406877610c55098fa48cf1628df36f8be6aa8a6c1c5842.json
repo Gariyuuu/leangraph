@@ -1,0 +1,1 @@
+{"text": "```lean\nintro a\napply (ProbabilityTheory.singularPart_measurable (κ a) (η a))\n```", "reasoning": "", "prompt_tokens": 334, "completion_tokens": 28, "reasoning_tokens": 0, "cost_usd": 5.1818e-05, "latency_s": 1.5320029258728027, "finish_reason": "stop", "provider": "Alibaba", "key": "e67c1bce0934e6f52d406877610c55098fa48cf1628df36f8be6aa8a6c1c5842", "cached": false}

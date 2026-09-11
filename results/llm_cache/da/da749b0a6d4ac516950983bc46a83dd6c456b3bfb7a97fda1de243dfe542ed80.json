@@ -1,0 +1,1 @@
+{"text": "```lean\n  apply (Mono.eq_of_cancel_left f); exact w\n```", "reasoning": "", "prompt_tokens": 599, "completion_tokens": 21, "reasoning_tokens": 0, "cost_usd": 7.9638e-05, "latency_s": 1.3060991764068604, "finish_reason": "stop", "provider": "Alibaba", "key": "da749b0a6d4ac516950983bc46a83dd6c456b3bfb7a97fda1de243dfe542ed80", "cached": false}

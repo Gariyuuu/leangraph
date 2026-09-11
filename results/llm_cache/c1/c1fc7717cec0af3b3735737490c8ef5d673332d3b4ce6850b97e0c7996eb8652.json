@@ -1,0 +1,1 @@
+{"text": "```lean\nrw [Iic_eq_Iio_union_Icc, integral_add]\n```", "reasoning": "", "prompt_tokens": 316, "completion_tokens": 22, "reasoning_tokens": 0, "cost_usd": 4.6982e-05, "latency_s": 1.4038898944854736, "finish_reason": "stop", "provider": "Alibaba", "key": "c1fc7717cec0af3b3735737490c8ef5d673332d3b4ce6850b97e0c7996eb8652", "cached": false}

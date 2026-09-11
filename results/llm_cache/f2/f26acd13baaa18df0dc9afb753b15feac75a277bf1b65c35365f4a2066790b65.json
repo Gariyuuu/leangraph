@@ -1,0 +1,1 @@
+{"text": "```lean\nintro hfs hs\napply finset.image_finite\napply hf\napply hs\n```", "reasoning": "", "prompt_tokens": 283, "completion_tokens": 26, "reasoning_tokens": 0, "cost_usd": 4.4941e-05, "latency_s": 2.0882418155670166, "finish_reason": "stop", "provider": "Alibaba", "key": "f26acd13baaa18df0dc9afb753b15feac75a277bf1b65c35365f4a2066790b65", "cached": false}

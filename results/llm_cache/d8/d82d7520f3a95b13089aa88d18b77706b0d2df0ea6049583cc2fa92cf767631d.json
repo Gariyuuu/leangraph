@@ -1,0 +1,1 @@
+{"text": "```lean\nintros h\nobtain ⟨a, H⟩ := h\nconstructor\nexact H\nexact t.erase a\n```", "reasoning": "", "prompt_tokens": 283, "completion_tokens": 31, "reasoning_tokens": 0, "cost_usd": 4.7216e-05, "latency_s": 1.6561949253082275, "finish_reason": "stop", "provider": "Alibaba", "key": "d82d7520f3a95b13089aa88d18b77706b0d2df0ea6049583cc2fa92cf767631d", "cached": false}

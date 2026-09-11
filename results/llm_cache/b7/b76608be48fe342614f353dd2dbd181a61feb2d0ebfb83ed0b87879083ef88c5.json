@@ -1,0 +1,1 @@
+{"text": "```lean\nintro p hp h2\napply odd_of_not_div_two\nuse 2\nexact h2\n```", "reasoning": "", "prompt_tokens": 264, "completion_tokens": 29, "reasoning_tokens": 0, "cost_usd": 4.4083e-05, "latency_s": 1.3203282356262207, "finish_reason": "stop", "provider": "Alibaba", "key": "b76608be48fe342614f353dd2dbd181a61feb2d0ebfb83ed0b87879083ef88c5", "cached": false}

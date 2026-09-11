@@ -1,0 +1,1 @@
+{"text": "```lean\nintro f g h\napply CategoryTheory.Injective.hom_ext I p\nexact h\n```", "reasoning": "", "prompt_tokens": 1047, "completion_tokens": 26, "reasoning_tokens": 0, "cost_usd": 0.000134329, "latency_s": 1.599721908569336, "finish_reason": "stop", "provider": "Alibaba", "key": "819d54a154866ba970eff9af785b4f9d6dd4047ac0240abc555db15f17dfaaae", "cached": false}

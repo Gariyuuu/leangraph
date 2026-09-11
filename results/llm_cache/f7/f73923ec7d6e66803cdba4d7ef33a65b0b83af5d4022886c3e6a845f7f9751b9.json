@@ -1,0 +1,1 @@
+{"text": "```lean\nby\n  apply MeasureTheory.ae_strongly_measurable_exp\n  exact hX\n```", "reasoning": "", "prompt_tokens": 903, "completion_tokens": 28, "reasoning_tokens": 0, "cost_usd": 0.000118391, "latency_s": 1.5911779403686523, "finish_reason": "stop", "provider": "Alibaba", "key": "f73923ec7d6e66803cdba4d7ef33a65b0b83af5d4022886c3e6a845f7f9751b9", "cached": false}

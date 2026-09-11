@@ -1,0 +1,1 @@
+{"text": "```lean\nintros h\nconstructor\napply Finset.card_lt_card\nexact h\n```", "reasoning": "", "prompt_tokens": 271, "completion_tokens": 23, "reasoning_tokens": 0, "cost_usd": 4.2172e-05, "latency_s": 1.8851351737976074, "finish_reason": "stop", "provider": "Alibaba", "key": "e734d9e22cd5ed7fd83b34eb8cce81b3d43e06a855b86e0df1d0ae540ddea600", "cached": false}

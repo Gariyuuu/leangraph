@@ -1,0 +1,1 @@
+{"text": "```lean\nrw [pow_two, pow_two, congr_pow h]\n```", "reasoning": "", "prompt_tokens": 277, "completion_tokens": 20, "reasoning_tokens": 0, "cost_usd": 4.1509e-05, "latency_s": 1.874182939529419, "finish_reason": "stop", "provider": "Alibaba", "key": "f44d84ed081259672abba0306544861562a4377a6104a3cc2903552813c02e35", "cached": false}

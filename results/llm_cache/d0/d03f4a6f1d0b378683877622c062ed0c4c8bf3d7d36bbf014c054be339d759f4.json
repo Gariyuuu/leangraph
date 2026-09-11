@@ -1,0 +1,1 @@
+{"text": "```lean\nintros H\napply mul_left_mono\nexact H\n```", "reasoning": "", "prompt_tokens": 189, "completion_tokens": 19, "reasoning_tokens": 0, "cost_usd": 3.0758e-05, "latency_s": 31.700095891952515, "finish_reason": "stop", "provider": "Alibaba", "key": "d03f4a6f1d0b378683877622c062ed0c4c8bf3d7d36bbf014c054be339d759f4", "cached": false}

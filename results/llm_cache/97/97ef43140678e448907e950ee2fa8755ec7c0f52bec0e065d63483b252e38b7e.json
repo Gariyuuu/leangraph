@@ -1,0 +1,1 @@
+{"text": ":= by\n  intro h\n  constructor\n  intro x\n  intro hxs\n  rw [h]\n  exact hxs", "reasoning": "", "prompt_tokens": 438, "completion_tokens": 32, "reasoning_tokens": 0, "cost_usd": 6.5806e-05, "latency_s": 2.5933890342712402, "finish_reason": "stop", "provider": "Alibaba", "key": "97ef43140678e448907e950ee2fa8755ec7c0f52bec0e065d63483b252e38b7e", "cached": false}

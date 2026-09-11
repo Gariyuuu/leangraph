@@ -1,0 +1,1 @@
+{"text": "```lean\nintro t s\napply ncard_le_sum\nintros i hi\nexact (s i).ncard\n```", "reasoning": "", "prompt_tokens": 299, "completion_tokens": 30, "reasoning_tokens": 0, "cost_usd": 4.8633e-05, "latency_s": 1.4502573013305664, "finish_reason": "stop", "provider": "Alibaba", "key": "ea8f1be577599e809d1443acc2b9b84c898526b6e361f94060e1091ca6b6d1c3", "cached": false}

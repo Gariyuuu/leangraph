@@ -1,0 +1,1 @@
+{"text": "```lean\nrw [Set.powersetCard.coe_compl, Set.powersetCard.coe_compl]\n```", "reasoning": "", "prompt_tokens": 872, "completion_tokens": 30, "reasoning_tokens": 0, "cost_usd": 0.000115674, "latency_s": 1.7937519550323486, "finish_reason": "stop", "provider": "Alibaba", "key": "3008193e3dd6a98c82c67304fdc748b3422fb3931ab3d844257f05c14bd21ac0", "cached": false}

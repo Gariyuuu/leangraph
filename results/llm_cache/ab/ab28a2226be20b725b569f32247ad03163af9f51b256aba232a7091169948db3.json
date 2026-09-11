@@ -1,0 +1,1 @@
+{"text": ":= by\n  constructor\n  all_goals {\n    apply_instance\n  }", "reasoning": "", "prompt_tokens": 624, "completion_tokens": 20, "reasoning_tokens": 0, "cost_usd": 8.2108e-05, "latency_s": 1.4025638103485107, "finish_reason": "stop", "provider": "Alibaba", "key": "ab28a2226be20b725b569f32247ad03163af9f51b256aba232a7091169948db3", "cached": false}

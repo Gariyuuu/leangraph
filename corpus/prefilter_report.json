@@ -1,0 +1,6 @@
+{
+ "dropped": {
+  "statement_uses_heldout_constant": 15008
+ },
+ "kept": 2985
+}

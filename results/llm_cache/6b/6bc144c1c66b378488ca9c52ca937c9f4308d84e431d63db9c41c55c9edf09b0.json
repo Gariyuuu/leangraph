@@ -1,0 +1,1 @@
+{"text": "```lean\nby\n  apply Summable.clog_one_sub\n  use (-1 : ℂ)\n  exact hf\n```", "reasoning": "", "prompt_tokens": 1493, "completion_tokens": 32, "reasoning_tokens": 0, "cost_usd": 0.000189241, "latency_s": 1.4441721439361572, "finish_reason": "stop", "provider": "Alibaba", "key": "6bc144c1c66b378488ca9c52ca937c9f4308d84e431d63db9c41c55c9edf09b0", "cached": false}

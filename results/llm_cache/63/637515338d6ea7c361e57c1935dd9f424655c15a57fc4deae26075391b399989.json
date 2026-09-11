@@ -1,0 +1,1 @@
+{"text": "```lean\nuse @CategoryTheory.CardinalDirectedPoset κ X\nexact hX\nexact le_rfl\n```", "reasoning": "", "prompt_tokens": 1609, "completion_tokens": 29, "reasoning_tokens": 0, "cost_usd": 0.000201448, "latency_s": 1.7142419815063477, "finish_reason": "stop", "provider": "Alibaba", "key": "637515338d6ea7c361e57c1935dd9f424655c15a57fc4deae26075391b399989", "cached": false}

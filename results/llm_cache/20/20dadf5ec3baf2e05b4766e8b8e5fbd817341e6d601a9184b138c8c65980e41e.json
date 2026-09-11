@@ -1,0 +1,1 @@
+{"text": ":= by\n  rw [supr_add]\n  exact supr_add' hf", "reasoning": "", "prompt_tokens": 325, "completion_tokens": 21, "reasoning_tokens": 0, "cost_usd": 4.758e-05, "latency_s": 1.3967511653900146, "finish_reason": "stop", "provider": "Alibaba", "key": "20dadf5ec3baf2e05b4766e8b8e5fbd817341e6d601a9184b138c8c65980e41e", "cached": false}

@@ -1,0 +1,2523 @@
+{
+ "run_id": "main",
+ "n_tasks": 174,
+ "configs": {
+  "direct": {
+   "n": 174,
+   "verified": 1,
+   "rate": 0.005747126436781609,
+   "ci": [
+    0.0010152303461971126,
+    0.031831210062251196
+   ],
+   "success_within": {
+    "0": 0.0,
+    "1": 0.005747126436781609,
+    "2": 0.005747126436781609,
+    "3": 0.005747126436781609,
+    "4": 0.005747126436781609,
+    "5": 0.005747126436781609
+   },
+   "median_calls_to_solve": 1,
+   "llm_calls": 174,
+   "tokens": 104753,
+   "cost_usd": 0.030374929000000012,
+   "cost_per_verified": 0.030374929000000012,
+   "tokens_per_verified": 104753.0,
+   "lean_check_s": 4.530299186706543,
+   "certify_s": 12.238156080245972,
+   "median_lean_check_s": 0.016584157943725586,
+   "timeout_rate": 0.0,
+   "repair_success": null,
+   "n_first_failed": 0,
+   "repeat_rate": null,
+   "n_repair_attempts": 0,
+   "mean_retrieval_recall": null,
+   "median_proof_lines": 1,
+   "errors_trace": 0,
+   "harness_errors_unresolved": 0
+  },
+  "direct_at4": {
+   "n": 174,
+   "verified": 2,
+   "rate": 0.011494252873563218,
+   "ci": [
+    0.003157819159172318,
+    0.04093459287243357
+   ],
+   "success_within": {
+    "0": 0.0,
+    "1": 0.005747126436781609,
+    "2": 0.011494252873563218,
+    "3": 0.011494252873563218,
+    "4": 0.011494252873563218,
+    "5": 0.011494252873563218
+   },
+   "median_calls_to_solve": 1.5,
+   "llm_calls": 691,
+   "tokens": 411650,
+   "cost_usd": 0.11860698199999999,
+   "cost_per_verified": 0.05930349099999999,
+   "tokens_per_verified": 205825.0,
+   "lean_check_s": 75.05822563171387,
+   "certify_s": 534.5561010837555,
+   "median_lean_check_s": 0.017973899841308594,
+   "timeout_rate": 0.0,
+   "repair_success": null,
+   "n_first_failed": 0,
+   "repeat_rate": null,
+   "n_repair_attempts": 0,
+   "mean_retrieval_recall": null,
+   "median_proof_lines": 1.0,
+   "errors_trace": 0,
+   "harness_errors_unresolved": 0
+  },
+  "direct_prompt_b": {
+   "n": 174,
+   "verified": 5,
+   "rate": 0.028735632183908046,
+   "ci": [
+    0.012335289746966486,
+    0.06549503715411213
+   ],
+   "success_within": {
+    "0": 0.0,
+    "1": 0.028735632183908046,
+    "2": 0.028735632183908046,
+    "3": 0.028735632183908046,
+    "4": 0.028735632183908046,
+    "5": 0.028735632183908046
+   },
+   "median_calls_to_solve": 1,
+   "llm_calls": 174,
+   "tokens": 82020,
+   "cost_usd": 0.020149037999999987,
+   "cost_per_verified": 0.0040298075999999974,
+   "tokens_per_verified": 16404.0,
+   "lean_check_s": 6.421184778213501,
+   "certify_s": 988.2934579849243,
+   "median_lean_check_s": 0.011958837509155273,
+   "timeout_rate": 0.0,
+   "repair_success": null,
+   "n_first_failed": 0,
+   "repeat_rate": null,
+   "n_repair_attempts": 0,
+   "mean_retrieval_recall": null,
+   "median_proof_lines": 1,
+   "errors_trace": 0,
+   "harness_errors_unresolved": 0
+  },
+  "full": {
+   "n": 174,
+   "verified": 13,
+   "rate": 0.07471264367816093,
+   "ci": [
+    0.044179472631162085,
+    0.12361862725517717
+   ],
+   "success_within": {
+    "0": 0.0,
+    "1": 0.0,
+    "2": 0.040229885057471264,
+    "3": 0.05747126436781609,
+    "4": 0.06896551724137931,
+    "5": 0.07471264367816093
+   },
+   "median_calls_to_solve": 2,
+   "llm_calls": 841,
+   "tokens": 1952639,
+   "cost_usd": 0.33317674,
+   "cost_per_verified": 0.025628980000000003,
+   "tokens_per_verified": 150203.0,
+   "lean_check_s": 49.12353539466858,
+   "certify_s": 743.7453880310059,
+   "median_lean_check_s": 0.009940862655639648,
+   "timeout_rate": 0.0,
+   "repair_success": 0.03592814371257485,
+   "n_first_failed": 167,
+   "repeat_rate": 0.49898580121703856,
+   "n_repair_attempts": 493,
+   "mean_retrieval_recall": 0.10696730912212939,
+   "median_proof_lines": 1,
+   "errors_trace": 0,
+   "harness_errors_unresolved": 0
+  },
+  "full_no_retrieval": {
+   "n": 174,
+   "verified": 9,
+   "rate": 0.05172413793103448,
+   "ci": [
+    0.027447779413209576,
+    0.09536643398049935
+   ],
+   "success_within": {
+    "0": 0.0,
+    "1": 0.0,
+    "2": 0.04597701149425287,
+    "3": 0.05172413793103448,
+    "4": 0.05172413793103448,
+    "5": 0.05172413793103448
+   },
+   "median_calls_to_solve": 2,
+   "llm_calls": 844,
+   "tokens": 1405154,
+   "cost_usd": 0.265651867,
+   "cost_per_verified": 0.02951687411111111,
+   "tokens_per_verified": 156128.22222222222,
+   "lean_check_s": 22.553133487701416,
+   "certify_s": 1021.8905892372131,
+   "median_lean_check_s": 0.013865947723388672,
+   "timeout_rate": 0.0,
+   "repair_success": 0.006024096385542169,
+   "n_first_failed": 166,
+   "repeat_rate": 0.5786290322580645,
+   "n_repair_attempts": 496,
+   "mean_retrieval_recall": null,
+   "median_proof_lines": 1,
+   "errors_trace": 0,
+   "harness_errors_unresolved": 0
+  },
+  "rag": {
+   "n": 174,
+   "verified": 3,
+   "rate": 0.017241379310344827,
+   "ci": [
+    0.0058806608379346256,
+    0.049457722816828836
+   ],
+   "success_within": {
+    "0": 0.0,
+    "1": 0.017241379310344827,
+    "2": 0.017241379310344827,
+    "3": 0.017241379310344827,
+    "4": 0.017241379310344827,
+    "5": 0.017241379310344827
+   },
+   "median_calls_to_solve": 1,
+   "llm_calls": 174,
+   "tokens": 198715,
+   "cost_usd": 0.03588206699999999,
+   "cost_per_verified": 0.011960688999999997,
+   "tokens_per_verified": 66238.33333333333,
+   "lean_check_s": 28.536600589752197,
+   "certify_s": 381.9780340194702,
+   "median_lean_check_s": 0.03544259071350098,
+   "timeout_rate": 0.0,
+   "repair_success": null,
+   "n_first_failed": 0,
+   "repeat_rate": null,
+   "n_repair_attempts": 0,
+   "mean_retrieval_recall": 0.10696730912212939,
+   "median_proof_lines": 1,
+   "errors_trace": 0,
+   "harness_errors_unresolved": 0
+  },
+  "repair": {
+   "n": 174,
+   "verified": 11,
+   "rate": 0.06321839080459771,
+   "ci": [
+    0.03566345099561542,
+    0.10964270564440869
+   ],
+   "success_within": {
+    "0": 0.0,
+    "1": 0.005747126436781609,
+    "2": 0.05172413793103448,
+    "3": 0.06321839080459771,
+    "4": 0.06321839080459771,
+    "5": 0.06321839080459771
+   },
+   "median_calls_to_solve": 2,
+   "llm_calls": 675,
+   "tokens": 861900,
+   "cost_usd": 0.16476418400000004,
+   "cost_per_verified": 0.014978562181818185,
+   "tokens_per_verified": 78354.54545454546,
+   "lean_check_s": 14.135121583938599,
+   "certify_s": 137.84946703910828,
+   "median_lean_check_s": 0.013445854187011719,
+   "timeout_rate": 0.0,
+   "repair_success": 0.057803468208092484,
+   "n_first_failed": 173,
+   "repeat_rate": 0.4311377245508982,
+   "n_repair_attempts": 501,
+   "mean_retrieval_recall": null,
+   "median_proof_lines": 1,
+   "errors_trace": 0,
+   "harness_errors_unresolved": 0
+  },
+  "repair_prompt_b": {
+   "n": 174,
+   "verified": 12,
+   "rate": 0.06896551724137931,
+   "ci": [
+    0.039888087932065774,
+    0.1166640403311159
+   ],
+   "success_within": {
+    "0": 0.0,
+    "1": 0.028735632183908046,
+    "2": 0.05747126436781609,
+    "3": 0.06321839080459771,
+    "4": 0.06896551724137931,
+    "5": 0.06896551724137931
+   },
+   "median_calls_to_solve": 2.0,
+   "llm_calls": 670,
+   "tokens": 703436,
+   "cost_usd": 0.12933910599999998,
+   "cost_per_verified": 0.010778258833333332,
+   "tokens_per_verified": 58619.666666666664,
+   "lean_check_s": 15.013453722000122,
+   "certify_s": 159.97020554542542,
+   "median_lean_check_s": 0.010925531387329102,
+   "timeout_rate": 0.0,
+   "repair_success": 0.04142011834319527,
+   "n_first_failed": 169,
+   "repeat_rate": 0.46774193548387094,
+   "n_repair_attempts": 496,
+   "mean_retrieval_recall": null,
+   "median_proof_lines": 1.0,
+   "errors_trace": 0,
+   "harness_errors_unresolved": 0
+  },
+  "template": {
+   "n": 174,
+   "verified": 46,
+   "rate": 0.26436781609195403,
+   "ci": [
+    0.20444442675824406,
+    0.33447073669229527
+   ],
+   "success_within": {
+    "0": 0.26436781609195403,
+    "1": 0.26436781609195403,
+    "2": 0.26436781609195403,
+    "3": 0.26436781609195403,
+    "4": 0.26436781609195403,
+    "5": 0.26436781609195403
+   },
+   "median_calls_to_solve": 0.0,
+   "llm_calls": 0,
+   "tokens": 0,
+   "cost_usd": 0.0,
+   "cost_per_verified": 0.0,
+   "tokens_per_verified": 0.0,
+   "lean_check_s": 258.9055416584015,
+   "certify_s": 8777.517516374588,
+   "median_lean_check_s": 0.02831101417541504,
+   "timeout_rate": 0.0,
+   "repair_success": null,
+   "n_first_failed": 0,
+   "repeat_rate": null,
+   "n_repair_attempts": 0,
+   "mean_retrieval_recall": null,
+   "median_proof_lines": 1.0,
+   "errors_trace": 0,
+   "harness_errors_unresolved": 0
+  }
+ },
+ "by_split": {
+  "direct": {
+   "mathlib_heldout": {
+    "n": 121,
+    "verified": 0,
+    "rate": 0.0,
+    "ci": [
+     0.0,
+     0.030770698417971906
+    ]
+   },
+   "novel": {
+    "n": 53,
+    "verified": 1,
+    "rate": 0.018867924528301886,
+    "ci": [
+     0.003338453351346229,
+     0.09942912151851983
+    ]
+   }
+  },
+  "direct_at4": {
+   "mathlib_heldout": {
+    "n": 121,
+    "verified": 0,
+    "rate": 0.0,
+    "ci": [
+     0.0,
+     0.030770698417971906
+    ]
+   },
+   "novel": {
+    "n": 53,
+    "verified": 2,
+    "rate": 0.03773584905660377,
+    "ci": [
+     0.01041028718205747,
+     0.12754287298702952
+    ]
+   }
+  },
+  "direct_prompt_b": {
+   "mathlib_heldout": {
+    "n": 121,
+    "verified": 1,
+    "rate": 0.008264462809917356,
+    "ci": [
+     0.0014603733692841972,
+     0.0453306440831014
+    ]
+   },
+   "novel": {
+    "n": 53,
+    "verified": 4,
+    "rate": 0.07547169811320754,
+    "ci": [
+     0.029739554880261795,
+     0.17858477588726707
+    ]
+   }
+  },
+  "full": {
+   "mathlib_heldout": {
+    "n": 121,
+    "verified": 5,
+    "rate": 0.04132231404958678,
+    "ci": [
+     0.01777748596258366,
+     0.09309480762745669
+    ]
+   },
+   "novel": {
+    "n": 53,
+    "verified": 8,
+    "rate": 0.1509433962264151,
+    "ci": [
+     0.07852417810670369,
+     0.2705424938577089
+    ]
+   }
+  },
+  "full_no_retrieval": {
+   "mathlib_heldout": {
+    "n": 121,
+    "verified": 7,
+    "rate": 0.05785123966942149,
+    "ci": [
+     0.028302753327594174,
+     0.11461017833127356
+    ]
+   },
+   "novel": {
+    "n": 53,
+    "verified": 2,
+    "rate": 0.03773584905660377,
+    "ci": [
+     0.01041028718205747,
+     0.12754287298702952
+    ]
+   }
+  },
+  "rag": {
+   "mathlib_heldout": {
+    "n": 121,
+    "verified": 1,
+    "rate": 0.008264462809917356,
+    "ci": [
+     0.0014603733692841972,
+     0.0453306440831014
+    ]
+   },
+   "novel": {
+    "n": 53,
+    "verified": 2,
+    "rate": 0.03773584905660377,
+    "ci": [
+     0.01041028718205747,
+     0.12754287298702952
+    ]
+   }
+  },
+  "repair": {
+   "mathlib_heldout": {
+    "n": 121,
+    "verified": 8,
+    "rate": 0.06611570247933884,
+    "ci": [
+     0.03387971981040343,
+     0.125053530882878
+    ]
+   },
+   "novel": {
+    "n": 53,
+    "verified": 3,
+    "rate": 0.05660377358490566,
+    "ci": [
+     0.019436661333595676,
+     0.15370208413471226
+    ]
+   }
+  },
+  "repair_prompt_b": {
+   "mathlib_heldout": {
+    "n": 121,
+    "verified": 8,
+    "rate": 0.06611570247933884,
+    "ci": [
+     0.03387971981040343,
+     0.125053530882878
+    ]
+   },
+   "novel": {
+    "n": 53,
+    "verified": 4,
+    "rate": 0.07547169811320754,
+    "ci": [
+     0.029739554880261795,
+     0.17858477588726707
+    ]
+   }
+  },
+  "template": {
+   "mathlib_heldout": {
+    "n": 121,
+    "verified": 12,
+    "rate": 0.09917355371900827,
+    "ci": [
+     0.05764523623233908,
+     0.16536929059859706
+    ]
+   },
+   "novel": {
+    "n": 53,
+    "verified": 34,
+    "rate": 0.6415094339622641,
+    "ci": [
+     0.5069114144879365,
+     0.7569804752562205
+    ]
+   }
+  }
+ },
+ "by_family": {
+  "direct": {
+   "algebra": {
+    "n": 30,
+    "verified": 0,
+    "rate": 0.0,
+    "ci": [
+     0.0,
+     0.11351339476145204
+    ]
+   },
+   "category_theory": {
+    "n": 24,
+    "verified": 1,
+    "rate": 0.041666666666666664,
+    "ci": [
+     0.007393456083597231,
+     0.20241806658845338
+    ]
+   },
+   "functions": {
+    "n": 13,
+    "verified": 0,
+    "rate": 0.0,
+    "ci": [
+     0.0,
+     0.22809537513180025
+    ]
+   },
+   "inequalities": {
+    "n": 30,
+    "verified": 0,
+    "rate": 0.0,
+    "ci": [
+     0.0,
+     0.11351339476145204
+    ]
+   },
+   "number_theory": {
+    "n": 30,
+    "verified": 0,
+    "rate": 0.0,
+    "ci": [
+     0.0,
+     0.11351339476145204
+    ]
+   },
+   "probability": {
+    "n": 24,
+    "verified": 0,
+    "rate": 0.0,
+    "ci": [
+     0.0,
+     0.13797620655132792
+    ]
+   },
+   "sets": {
+    "n": 23,
+    "verified": 0,
+    "rate": 0.0,
+    "ci": [
+     0.0,
+     0.14311662038507353
+    ]
+   }
+  },
+  "direct_at4": {
+   "algebra": {
+    "n": 30,
+    "verified": 0,
+    "rate": 0.0,
+    "ci": [
+     0.0,
+     0.11351339476145204
+    ]
+   },
+   "category_theory": {
+    "n": 24,
+    "verified": 1,
+    "rate": 0.041666666666666664,
+    "ci": [
+     0.007393456083597231,
+     0.20241806658845338
+    ]
+   },
+   "functions": {
+    "n": 13,
+    "verified": 0,
+    "rate": 0.0,
+    "ci": [
+     0.0,
+     0.22809537513180025
+    ]
+   },
+   "inequalities": {
+    "n": 30,
+    "verified": 0,
+    "rate": 0.0,
+    "ci": [
+     0.0,
+     0.11351339476145204
+    ]
+   },
+   "number_theory": {
+    "n": 30,
+    "verified": 1,
+    "rate": 0.03333333333333333,
+    "ci": [
+     0.005908590316197979,
+     0.16670391146115726
+    ]
+   },
+   "probability": {
+    "n": 24,
+    "verified": 0,
+    "rate": 0.0,
+    "ci": [
+     0.0,
+     0.13797620655132792
+    ]
+   },
+   "sets": {
+    "n": 23,
+    "verified": 0,
+    "rate": 0.0,
+    "ci": [
+     0.0,
+     0.14311662038507353
+    ]
+   }
+  },
+  "direct_prompt_b": {
+   "algebra": {
+    "n": 30,
+    "verified": 3,
+    "rate": 0.1,
+    "ci": [
+     0.034599888477418676,
+     0.25621082733174294
+    ]
+   },
+   "category_theory": {
+    "n": 24,
+    "verified": 1,
+    "rate": 0.041666666666666664,
+    "ci": [
+     0.007393456083597231,
+     0.20241806658845338
+    ]
+   },
+   "functions": {
+    "n": 13,
+    "verified": 0,
+    "rate": 0.0,
+    "ci": [
+     0.0,
+     0.22809537513180025
+    ]
+   },
+   "inequalities": {
+    "n": 30,
+    "verified": 0,
+    "rate": 0.0,
+    "ci": [
+     0.0,
+     0.11351339476145204
+    ]
+   },
+   "number_theory": {
+    "n": 30,
+    "verified": 1,
+    "rate": 0.03333333333333333,
+    "ci": [
+     0.005908590316197979,
+     0.16670391146115726
+    ]
+   },
+   "probability": {
+    "n": 24,
+    "verified": 0,
+    "rate": 0.0,
+    "ci": [
+     0.0,
+     0.13797620655132792
+    ]
+   },
+   "sets": {
+    "n": 23,
+    "verified": 0,
+    "rate": 0.0,
+    "ci": [
+     0.0,
+     0.14311662038507353
+    ]
+   }
+  },
+  "full": {
+   "algebra": {
+    "n": 30,
+    "verified": 2,
+    "rate": 0.06666666666666667,
+    "ci": [
+     0.018477023624516812,
+     0.21323458516874166
+    ]
+   },
+   "category_theory": {
+    "n": 24,
+    "verified": 2,
+    "rate": 0.08333333333333333,
+    "ci": [
+     0.023158815087796655,
+     0.25848802370497664
+    ]
+   },
+   "functions": {
+    "n": 13,
+    "verified": 0,
+    "rate": 0.0,
+    "ci": [
+     0.0,
+     0.22809537513180025
+    ]
+   },
+   "inequalities": {
+    "n": 30,
+    "verified": 3,
+    "rate": 0.1,
+    "ci": [
+     0.034599888477418676,
+     0.25621082733174294
+    ]
+   },
+   "number_theory": {
+    "n": 30,
+    "verified": 3,
+    "rate": 0.1,
+    "ci": [
+     0.034599888477418676,
+     0.25621082733174294
+    ]
+   },
+   "probability": {
+    "n": 24,
+    "verified": 1,
+    "rate": 0.041666666666666664,
+    "ci": [
+     0.007393456083597231,
+     0.20241806658845338
+    ]
+   },
+   "sets": {
+    "n": 23,
+    "verified": 2,
+    "rate": 0.08695652173913043,
+    "ci": [
+     0.02418000426569174,
+     0.26795981257415163
+    ]
+   }
+  },
+  "full_no_retrieval": {
+   "algebra": {
+    "n": 30,
+    "verified": 3,
+    "rate": 0.1,
+    "ci": [
+     0.034599888477418676,
+     0.25621082733174294
+    ]
+   },
+   "category_theory": {
+    "n": 24,
+    "verified": 1,
+    "rate": 0.041666666666666664,
+    "ci": [
+     0.007393456083597231,
+     0.20241806658845338
+    ]
+   },
+   "functions": {
+    "n": 13,
+    "verified": 1,
+    "rate": 0.07692307692307693,
+    "ci": [
+     0.013710421090226002,
+     0.33313951171360495
+    ]
+   },
+   "inequalities": {
+    "n": 30,
+    "verified": 3,
+    "rate": 0.1,
+    "ci": [
+     0.034599888477418676,
+     0.25621082733174294
+    ]
+   },
+   "number_theory": {
+    "n": 30,
+    "verified": 1,
+    "rate": 0.03333333333333333,
+    "ci": [
+     0.005908590316197979,
+     0.16670391146115726
+    ]
+   },
+   "probability": {
+    "n": 24,
+    "verified": 0,
+    "rate": 0.0,
+    "ci": [
+     0.0,
+     0.13797620655132792
+    ]
+   },
+   "sets": {
+    "n": 23,
+    "verified": 0,
+    "rate": 0.0,
+    "ci": [
+     0.0,
+     0.14311662038507353
+    ]
+   }
+  },
+  "rag": {
+   "algebra": {
+    "n": 30,
+    "verified": 0,
+    "rate": 0.0,
+    "ci": [
+     0.0,
+     0.11351339476145204
+    ]
+   },
+   "category_theory": {
+    "n": 24,
+    "verified": 0,
+    "rate": 0.0,
+    "ci": [
+     0.0,
+     0.13797620655132792
+    ]
+   },
+   "functions": {
+    "n": 13,
+    "verified": 0,
+    "rate": 0.0,
+    "ci": [
+     0.0,
+     0.22809537513180025
+    ]
+   },
+   "inequalities": {
+    "n": 30,
+    "verified": 1,
+    "rate": 0.03333333333333333,
+    "ci": [
+     0.005908590316197979,
+     0.16670391146115726
+    ]
+   },
+   "number_theory": {
+    "n": 30,
+    "verified": 0,
+    "rate": 0.0,
+    "ci": [
+     0.0,
+     0.11351339476145204
+    ]
+   },
+   "probability": {
+    "n": 24,
+    "verified": 1,
+    "rate": 0.041666666666666664,
+    "ci": [
+     0.007393456083597231,
+     0.20241806658845338
+    ]
+   },
+   "sets": {
+    "n": 23,
+    "verified": 1,
+    "rate": 0.043478260869565216,
+    "ci": [
+     0.007716666057951342,
+     0.20991155255450708
+    ]
+   }
+  },
+  "repair": {
+   "algebra": {
+    "n": 30,
+    "verified": 3,
+    "rate": 0.1,
+    "ci": [
+     0.034599888477418676,
+     0.25621082733174294
+    ]
+   },
+   "category_theory": {
+    "n": 24,
+    "verified": 2,
+    "rate": 0.08333333333333333,
+    "ci": [
+     0.023158815087796655,
+     0.25848802370497664
+    ]
+   },
+   "functions": {
+    "n": 13,
+    "verified": 0,
+    "rate": 0.0,
+    "ci": [
+     0.0,
+     0.22809537513180025
+    ]
+   },
+   "inequalities": {
+    "n": 30,
+    "verified": 4,
+    "rate": 0.13333333333333333,
+    "ci": [
+     0.053096554471124636,
+     0.29681326835394023
+    ]
+   },
+   "number_theory": {
+    "n": 30,
+    "verified": 2,
+    "rate": 0.06666666666666667,
+    "ci": [
+     0.018477023624516812,
+     0.21323458516874166
+    ]
+   },
+   "probability": {
+    "n": 24,
+    "verified": 0,
+    "rate": 0.0,
+    "ci": [
+     0.0,
+     0.13797620655132792
+    ]
+   },
+   "sets": {
+    "n": 23,
+    "verified": 0,
+    "rate": 0.0,
+    "ci": [
+     0.0,
+     0.14311662038507353
+    ]
+   }
+  },
+  "repair_prompt_b": {
+   "algebra": {
+    "n": 30,
+    "verified": 4,
+    "rate": 0.13333333333333333,
+    "ci": [
+     0.053096554471124636,
+     0.29681326835394023
+    ]
+   },
+   "category_theory": {
+    "n": 24,
+    "verified": 2,
+    "rate": 0.08333333333333333,
+    "ci": [
+     0.023158815087796655,
+     0.25848802370497664
+    ]
+   },
+   "functions": {
+    "n": 13,
+    "verified": 0,
+    "rate": 0.0,
+    "ci": [
+     0.0,
+     0.22809537513180025
+    ]
+   },
+   "inequalities": {
+    "n": 30,
+    "verified": 4,
+    "rate": 0.13333333333333333,
+    "ci": [
+     0.053096554471124636,
+     0.29681326835394023
+    ]
+   },
+   "number_theory": {
+    "n": 30,
+    "verified": 2,
+    "rate": 0.06666666666666667,
+    "ci": [
+     0.018477023624516812,
+     0.21323458516874166
+    ]
+   },
+   "probability": {
+    "n": 24,
+    "verified": 0,
+    "rate": 0.0,
+    "ci": [
+     0.0,
+     0.13797620655132792
+    ]
+   },
+   "sets": {
+    "n": 23,
+    "verified": 0,
+    "rate": 0.0,
+    "ci": [
+     0.0,
+     0.14311662038507353
+    ]
+   }
+  },
+  "template": {
+   "algebra": {
+    "n": 30,
+    "verified": 10,
+    "rate": 0.3333333333333333,
+    "ci": [
+     0.19230497996726426,
+     0.5121994849532199
+    ]
+   },
+   "category_theory": {
+    "n": 24,
+    "verified": 5,
+    "rate": 0.20833333333333334,
+    "ci": [
+     0.0924482529436571,
+     0.40470453421128416
+    ]
+   },
+   "functions": {
+    "n": 13,
+    "verified": 7,
+    "rate": 0.5384615384615384,
+    "ci": [
+     0.2914379555856289,
+     0.7679393232503864
+    ]
+   },
+   "inequalities": {
+    "n": 30,
+    "verified": 7,
+    "rate": 0.23333333333333334,
+    "ci": [
+     0.11792388080557864,
+     0.40928326306719587
+    ]
+   },
+   "number_theory": {
+    "n": 30,
+    "verified": 5,
+    "rate": 0.16666666666666666,
+    "ci": [
+     0.07336542325431777,
+     0.33564350658665026
+    ]
+   },
+   "probability": {
+    "n": 24,
+    "verified": 4,
+    "rate": 0.16666666666666666,
+    "ci": [
+     0.06678676282131818,
+     0.3585307082129004
+    ]
+   },
+   "sets": {
+    "n": 23,
+    "verified": 8,
+    "rate": 0.34782608695652173,
+    "ci": [
+     0.1881127584380146,
+     0.5510966477661382
+    ]
+   }
+  }
+ },
+ "by_difficulty": {
+  "direct": {
+   "mathlib_heldout/easy": {
+    "n": 38,
+    "verified": 0,
+    "rate": 0.0,
+    "ci": [
+     0.0,
+     0.09180986954097846
+    ]
+   },
+   "mathlib_heldout/hard": {
+    "n": 42,
+    "verified": 0,
+    "rate": 0.0,
+    "ci": [
+     0.0,
+     0.08379879207691124
+    ]
+   },
+   "mathlib_heldout/medium": {
+    "n": 41,
+    "verified": 0,
+    "rate": 0.0,
+    "ci": [
+     0.0,
+     0.08566757142012449
+    ]
+   },
+   "novel/easy": {
+    "n": 22,
+    "verified": 1,
+    "rate": 0.045454545454545456,
+    "ci": [
+     0.008069427531839066,
+     0.21798046029102053
+    ]
+   },
+   "novel/hard": {
+    "n": 7,
+    "verified": 0,
+    "rate": 0.0,
+    "ci": [
+     -3.584186066408377e-17,
+     0.35433043867586833
+    ]
+   },
+   "novel/medium": {
+    "n": 24,
+    "verified": 0,
+    "rate": 0.0,
+    "ci": [
+     0.0,
+     0.13797620655132792
+    ]
+   }
+  },
+  "direct_at4": {
+   "mathlib_heldout/easy": {
+    "n": 38,
+    "verified": 0,
+    "rate": 0.0,
+    "ci": [
+     0.0,
+     0.09180986954097846
+    ]
+   },
+   "mathlib_heldout/hard": {
+    "n": 42,
+    "verified": 0,
+    "rate": 0.0,
+    "ci": [
+     0.0,
+     0.08379879207691124
+    ]
+   },
+   "mathlib_heldout/medium": {
+    "n": 41,
+    "verified": 0,
+    "rate": 0.0,
+    "ci": [
+     0.0,
+     0.08566757142012449
+    ]
+   },
+   "novel/easy": {
+    "n": 22,
+    "verified": 2,
+    "rate": 0.09090909090909091,
+    "ci": [
+     0.025295428762322658,
+     0.278149470278251
+    ]
+   },
+   "novel/hard": {
+    "n": 7,
+    "verified": 0,
+    "rate": 0.0,
+    "ci": [
+     -3.584186066408377e-17,
+     0.35433043867586833
+    ]
+   },
+   "novel/medium": {
+    "n": 24,
+    "verified": 0,
+    "rate": 0.0,
+    "ci": [
+     0.0,
+     0.13797620655132792
+    ]
+   }
+  },
+  "direct_prompt_b": {
+   "mathlib_heldout/easy": {
+    "n": 38,
+    "verified": 1,
+    "rate": 0.02631578947368421,
+    "ci": [
+     0.004660587634200073,
+     0.1349487624572532
+    ]
+   },
+   "mathlib_heldout/hard": {
+    "n": 42,
+    "verified": 0,
+    "rate": 0.0,
+    "ci": [
+     0.0,
+     0.08379879207691124
+    ]
+   },
+   "mathlib_heldout/medium": {
+    "n": 41,
+    "verified": 0,
+    "rate": 0.0,
+    "ci": [
+     0.0,
+     0.08566757142012449
+    ]
+   },
+   "novel/easy": {
+    "n": 22,
+    "verified": 3,
+    "rate": 0.13636363636363635,
+    "ci": [
+     0.04749003676945512,
+     0.33334987348883255
+    ]
+   },
+   "novel/hard": {
+    "n": 7,
+    "verified": 0,
+    "rate": 0.0,
+    "ci": [
+     -3.584186066408377e-17,
+     0.35433043867586833
+    ]
+   },
+   "novel/medium": {
+    "n": 24,
+    "verified": 1,
+    "rate": 0.041666666666666664,
+    "ci": [
+     0.007393456083597231,
+     0.20241806658845338
+    ]
+   }
+  },
+  "full": {
+   "mathlib_heldout/easy": {
+    "n": 38,
+    "verified": 2,
+    "rate": 0.05263157894736842,
+    "ci": [
+     0.01455420801606684,
+     0.17285462262586127
+    ]
+   },
+   "mathlib_heldout/hard": {
+    "n": 42,
+    "verified": 2,
+    "rate": 0.047619047619047616,
+    "ci": [
+     0.013157524790312864,
+     0.15789852518403538
+    ]
+   },
+   "mathlib_heldout/medium": {
+    "n": 41,
+    "verified": 1,
+    "rate": 0.024390243902439025,
+    "ci": [
+     0.004318531521135854,
+     0.12595062178093377
+    ]
+   },
+   "novel/easy": {
+    "n": 22,
+    "verified": 6,
+    "rate": 0.2727272727272727,
+    "ci": [
+     0.13150760211464035,
+     0.48151734179678934
+    ]
+   },
+   "novel/hard": {
+    "n": 7,
+    "verified": 0,
+    "rate": 0.0,
+    "ci": [
+     -3.584186066408377e-17,
+     0.35433043867586833
+    ]
+   },
+   "novel/medium": {
+    "n": 24,
+    "verified": 2,
+    "rate": 0.08333333333333333,
+    "ci": [
+     0.023158815087796655,
+     0.25848802370497664
+    ]
+   }
+  },
+  "full_no_retrieval": {
+   "mathlib_heldout/easy": {
+    "n": 38,
+    "verified": 6,
+    "rate": 0.15789473684210525,
+    "ci": [
+     0.07443863371721297,
+     0.3041681191266144
+    ]
+   },
+   "mathlib_heldout/hard": {
+    "n": 42,
+    "verified": 1,
+    "rate": 0.023809523809523808,
+    "ci": [
+     0.004215404087799039,
+     0.1232120169378307
+    ]
+   },
+   "mathlib_heldout/medium": {
+    "n": 41,
+    "verified": 0,
+    "rate": 0.0,
+    "ci": [
+     0.0,
+     0.08566757142012449
+    ]
+   },
+   "novel/easy": {
+    "n": 22,
+    "verified": 2,
+    "rate": 0.09090909090909091,
+    "ci": [
+     0.025295428762322658,
+     0.278149470278251
+    ]
+   },
+   "novel/hard": {
+    "n": 7,
+    "verified": 0,
+    "rate": 0.0,
+    "ci": [
+     -3.584186066408377e-17,
+     0.35433043867586833
+    ]
+   },
+   "novel/medium": {
+    "n": 24,
+    "verified": 0,
+    "rate": 0.0,
+    "ci": [
+     0.0,
+     0.13797620655132792
+    ]
+   }
+  },
+  "rag": {
+   "mathlib_heldout/easy": {
+    "n": 38,
+    "verified": 0,
+    "rate": 0.0,
+    "ci": [
+     0.0,
+     0.09180986954097846
+    ]
+   },
+   "mathlib_heldout/hard": {
+    "n": 42,
+    "verified": 1,
+    "rate": 0.023809523809523808,
+    "ci": [
+     0.004215404087799039,
+     0.1232120169378307
+    ]
+   },
+   "mathlib_heldout/medium": {
+    "n": 41,
+    "verified": 0,
+    "rate": 0.0,
+    "ci": [
+     0.0,
+     0.08566757142012449
+    ]
+   },
+   "novel/easy": {
+    "n": 22,
+    "verified": 1,
+    "rate": 0.045454545454545456,
+    "ci": [
+     0.008069427531839066,
+     0.21798046029102053
+    ]
+   },
+   "novel/hard": {
+    "n": 7,
+    "verified": 0,
+    "rate": 0.0,
+    "ci": [
+     -3.584186066408377e-17,
+     0.35433043867586833
+    ]
+   },
+   "novel/medium": {
+    "n": 24,
+    "verified": 1,
+    "rate": 0.041666666666666664,
+    "ci": [
+     0.007393456083597231,
+     0.20241806658845338
+    ]
+   }
+  },
+  "repair": {
+   "mathlib_heldout/easy": {
+    "n": 38,
+    "verified": 6,
+    "rate": 0.15789473684210525,
+    "ci": [
+     0.07443863371721297,
+     0.3041681191266144
+    ]
+   },
+   "mathlib_heldout/hard": {
+    "n": 42,
+    "verified": 1,
+    "rate": 0.023809523809523808,
+    "ci": [
+     0.004215404087799039,
+     0.1232120169378307
+    ]
+   },
+   "mathlib_heldout/medium": {
+    "n": 41,
+    "verified": 1,
+    "rate": 0.024390243902439025,
+    "ci": [
+     0.004318531521135854,
+     0.12595062178093377
+    ]
+   },
+   "novel/easy": {
+    "n": 22,
+    "verified": 3,
+    "rate": 0.13636363636363635,
+    "ci": [
+     0.04749003676945512,
+     0.33334987348883255
+    ]
+   },
+   "novel/hard": {
+    "n": 7,
+    "verified": 0,
+    "rate": 0.0,
+    "ci": [
+     -3.584186066408377e-17,
+     0.35433043867586833
+    ]
+   },
+   "novel/medium": {
+    "n": 24,
+    "verified": 0,
+    "rate": 0.0,
+    "ci": [
+     0.0,
+     0.13797620655132792
+    ]
+   }
+  },
+  "repair_prompt_b": {
+   "mathlib_heldout/easy": {
+    "n": 38,
+    "verified": 6,
+    "rate": 0.15789473684210525,
+    "ci": [
+     0.07443863371721297,
+     0.3041681191266144
+    ]
+   },
+   "mathlib_heldout/hard": {
+    "n": 42,
+    "verified": 1,
+    "rate": 0.023809523809523808,
+    "ci": [
+     0.004215404087799039,
+     0.1232120169378307
+    ]
+   },
+   "mathlib_heldout/medium": {
+    "n": 41,
+    "verified": 1,
+    "rate": 0.024390243902439025,
+    "ci": [
+     0.004318531521135854,
+     0.12595062178093377
+    ]
+   },
+   "novel/easy": {
+    "n": 22,
+    "verified": 3,
+    "rate": 0.13636363636363635,
+    "ci": [
+     0.04749003676945512,
+     0.33334987348883255
+    ]
+   },
+   "novel/hard": {
+    "n": 7,
+    "verified": 0,
+    "rate": 0.0,
+    "ci": [
+     -3.584186066408377e-17,
+     0.35433043867586833
+    ]
+   },
+   "novel/medium": {
+    "n": 24,
+    "verified": 1,
+    "rate": 0.041666666666666664,
+    "ci": [
+     0.007393456083597231,
+     0.20241806658845338
+    ]
+   }
+  },
+  "template": {
+   "mathlib_heldout/easy": {
+    "n": 38,
+    "verified": 10,
+    "rate": 0.2631578947368421,
+    "ci": [
+     0.1497162118660356,
+     0.4200884631796911
+    ]
+   },
+   "mathlib_heldout/hard": {
+    "n": 42,
+    "verified": 1,
+    "rate": 0.023809523809523808,
+    "ci": [
+     0.004215404087799039,
+     0.1232120169378307
+    ]
+   },
+   "mathlib_heldout/medium": {
+    "n": 41,
+    "verified": 1,
+    "rate": 0.024390243902439025,
+    "ci": [
+     0.004318531521135854,
+     0.12595062178093377
+    ]
+   },
+   "novel/easy": {
+    "n": 22,
+    "verified": 16,
+    "rate": 0.7272727272727273,
+    "ci": [
+     0.5184826582032106,
+     0.8684923978853596
+    ]
+   },
+   "novel/hard": {
+    "n": 7,
+    "verified": 2,
+    "rate": 0.2857142857142857,
+    "ci": [
+     0.0822189232492833,
+     0.6410655504689459
+    ]
+   },
+   "novel/medium": {
+    "n": 24,
+    "verified": 16,
+    "rate": 0.6666666666666666,
+    "ci": [
+     0.46706316684738447,
+     0.8202780976355062
+    ]
+   }
+  }
+ },
+ "configs_partial": {
+  "rag_repair": {
+   "n": 173,
+   "harness_errors_unresolved": 1
+  },
+  "rag_repair_bm25": {
+   "n": 9,
+   "harness_errors_unresolved": 0
+  }
+ },
+ "contrasts": [
+  {
+   "name": "feedback_repair",
+   "treatment": "repair",
+   "control": "direct",
+   "question": "RQ2 compiler-feedback repair vs one draft",
+   "n": 174,
+   "rate_treatment": 0.06321839080459771,
+   "rate_control": 0.005747126436781609,
+   "diff": 0.05747126436781609,
+   "diff_ci": [
+    0.022988505747126436,
+    0.09195402298850575
+   ],
+   "only_a": 10,
+   "only_b": 0,
+   "p": 0.001953125,
+   "p_holm": 0.01171875
+  },
+  {
+   "name": "repair_vs_equal_budget",
+   "treatment": "repair",
+   "control": "direct_at4",
+   "question": "RQ2 repair vs independent resampling at equal LLM calls",
+   "n": 174,
+   "rate_treatment": 0.06321839080459771,
+   "rate_control": 0.011494252873563218,
+   "diff": 0.05172413793103448,
+   "diff_ci": [
+    0.022988505747126436,
+    0.08620689655172414
+   ],
+   "only_a": 9,
+   "only_b": 0,
+   "p": 0.00390625,
+   "p_holm": 0.01953125
+  },
+  {
+   "name": "retrieval",
+   "treatment": "rag",
+   "control": "direct",
+   "question": "RQ1 retrieval, single draft",
+   "n": 174,
+   "rate_treatment": 0.017241379310344827,
+   "rate_control": 0.005747126436781609,
+   "diff": 0.011494252873563218,
+   "diff_ci": [
+    -0.011494252873563218,
+    0.034482758620689655
+   ],
+   "only_a": 3,
+   "only_b": 1,
+   "p": 0.625,
+   "p_holm": 1.0
+  },
+  {
+   "name": "agentic_vs_direct",
+   "treatment": "full",
+   "control": "direct",
+   "question": "Primary: full agent vs direct generation",
+   "n": 174,
+   "rate_treatment": 0.07471264367816093,
+   "rate_control": 0.005747126436781609,
+   "diff": 0.06896551724137931,
+   "diff_ci": [
+    0.034482758620689655,
+    0.10919540229885058
+   ],
+   "only_a": 12,
+   "only_b": 0,
+   "p": 0.00048828125,
+   "p_holm": 0.00341796875
+  },
+  {
+   "name": "abl_retrieval",
+   "treatment": "full",
+   "control": "full_no_retrieval",
+   "question": "Ablation: retrieval",
+   "n": 174,
+   "rate_treatment": 0.07471264367816093,
+   "rate_control": 0.05172413793103448,
+   "diff": 0.022988505747126436,
+   "diff_ci": [
+    -0.017241379310344827,
+    0.06321839080459771
+   ],
+   "only_a": 9,
+   "only_b": 5,
+   "p": 0.4239501953125,
+   "p_holm": 1.0
+  },
+  {
+   "name": "template_vs_direct",
+   "treatment": "direct",
+   "control": "template",
+   "question": "LLM vs no-LLM automation",
+   "n": 174,
+   "rate_treatment": 0.005747126436781609,
+   "rate_control": 0.26436781609195403,
+   "diff": -0.25862068965517243,
+   "diff_ci": [
+    -0.3218390804597701,
+    -0.19540229885057472
+   ],
+   "only_a": 0,
+   "only_b": 45,
+   "p": 5.684341886080802e-14,
+   "p_holm": 4.547473508864641e-13
+  },
+  {
+   "name": "prompt_direct",
+   "treatment": "direct_prompt_b",
+   "control": "direct",
+   "question": "Prompt sensitivity: paraphrased prompt, direct",
+   "n": 174,
+   "rate_treatment": 0.028735632183908046,
+   "rate_control": 0.005747126436781609,
+   "diff": 0.022988505747126436,
+   "diff_ci": [
+    0.005747126436781609,
+    0.04597701149425287
+   ],
+   "only_a": 4,
+   "only_b": 0,
+   "p": 0.125,
+   "p_holm": 0.5
+  },
+  {
+   "name": "prompt_repair",
+   "treatment": "repair_prompt_b",
+   "control": "repair",
+   "question": "Prompt sensitivity: paraphrased prompt, repair",
+   "n": 174,
+   "rate_treatment": 0.06896551724137931,
+   "rate_control": 0.06321839080459771,
+   "diff": 0.005747126436781609,
+   "diff_ci": [
+    0.0,
+    0.017241379310344827
+   ],
+   "only_a": 1,
+   "only_b": 0,
+   "p": 1.0,
+   "p_holm": 1.0
+  }
+ ],
+ "errors": {
+  "classes": [
+   "hallucinated_theorem",
+   "wrong_namespace",
+   "lean3_syntax",
+   "syntax_error",
+   "type_mismatch",
+   "unresolved_metavariable",
+   "instance_resolution_failure",
+   "incorrect_rewrite",
+   "bad_induction",
+   "wrong_tactic",
+   "valid_but_wrong",
+   "timeout",
+   "forbidden",
+   "no_proof",
+   "checker_rejected",
+   "other"
+  ],
+  "total": {
+   "syntax_error": 895,
+   "wrong_tactic": 2288,
+   "hallucinated_theorem": 586,
+   "lean3_syntax": 633,
+   "type_mismatch": 171,
+   "other": 560,
+   "wrong_namespace": 154,
+   "incorrect_rewrite": 144,
+   "valid_but_wrong": 266,
+   "forbidden": 466,
+   "checker_rejected": 1,
+   "unresolved_metavariable": 12,
+   "instance_resolution_failure": 23,
+   "bad_induction": 8,
+   "timeout": 1
+  },
+  "per_config": {
+   "direct": {
+    "syntax_error": 56,
+    "wrong_tactic": 39,
+    "hallucinated_theorem": 23,
+    "lean3_syntax": 37,
+    "type_mismatch": 5,
+    "other": 3,
+    "wrong_namespace": 4,
+    "incorrect_rewrite": 3,
+    "valid_but_wrong": 3
+   },
+   "direct_at4": {
+    "lean3_syntax": 146,
+    "syntax_error": 221,
+    "wrong_tactic": 155,
+    "hallucinated_theorem": 87,
+    "wrong_namespace": 24,
+    "other": 11,
+    "type_mismatch": 15,
+    "incorrect_rewrite": 24,
+    "forbidden": 1,
+    "valid_but_wrong": 5
+   },
+   "direct_prompt_b": {
+    "lean3_syntax": 27,
+    "hallucinated_theorem": 34,
+    "wrong_tactic": 49,
+    "syntax_error": 46,
+    "wrong_namespace": 4,
+    "forbidden": 2,
+    "type_mismatch": 2,
+    "incorrect_rewrite": 3,
+    "other": 2
+   },
+   "full": {
+    "forbidden": 222,
+    "syntax_error": 95,
+    "wrong_namespace": 19,
+    "hallucinated_theorem": 48,
+    "other": 48,
+    "type_mismatch": 41,
+    "lean3_syntax": 102,
+    "checker_rejected": 1,
+    "wrong_tactic": 34,
+    "incorrect_rewrite": 38,
+    "valid_but_wrong": 6
+   },
+   "full_no_retrieval": {
+    "wrong_tactic": 34,
+    "wrong_namespace": 30,
+    "forbidden": 208,
+    "lean3_syntax": 110,
+    "hallucinated_theorem": 69,
+    "type_mismatch": 42,
+    "syntax_error": 92,
+    "unresolved_metavariable": 7,
+    "other": 29,
+    "instance_resolution_failure": 5,
+    "incorrect_rewrite": 31,
+    "valid_but_wrong": 4
+   },
+   "rag": {
+    "wrong_tactic": 58,
+    "lean3_syntax": 27,
+    "syntax_error": 47,
+    "type_mismatch": 7,
+    "other": 9,
+    "hallucinated_theorem": 11,
+    "instance_resolution_failure": 2,
+    "wrong_namespace": 2,
+    "incorrect_rewrite": 6,
+    "valid_but_wrong": 1,
+    "forbidden": 1
+   },
+   "repair": {
+    "wrong_tactic": 103,
+    "hallucinated_theorem": 137,
+    "syntax_error": 175,
+    "lean3_syntax": 106,
+    "wrong_namespace": 35,
+    "type_mismatch": 28,
+    "forbidden": 17,
+    "other": 21,
+    "incorrect_rewrite": 22,
+    "instance_resolution_failure": 3,
+    "bad_induction": 5,
+    "valid_but_wrong": 12
+   },
+   "repair_prompt_b": {
+    "hallucinated_theorem": 177,
+    "wrong_tactic": 106,
+    "other": 26,
+    "syntax_error": 163,
+    "type_mismatch": 27,
+    "lean3_syntax": 78,
+    "incorrect_rewrite": 17,
+    "wrong_namespace": 36,
+    "instance_resolution_failure": 3,
+    "unresolved_metavariable": 5,
+    "forbidden": 15,
+    "bad_induction": 3,
+    "valid_but_wrong": 2
+   },
+   "template": {
+    "wrong_tactic": 1710,
+    "instance_resolution_failure": 10,
+    "valid_but_wrong": 233,
+    "other": 411,
+    "type_mismatch": 4,
+    "timeout": 1
+   }
+  },
+  "repair_by_class": {
+   "forbidden": {
+    "n": 345,
+    "next_round_verified": 3,
+    "rate": 0.008695652173913044
+   },
+   "syntax_error": {
+    "n": 409,
+    "next_round_verified": 1,
+    "rate": 0.0024449877750611247
+   },
+   "wrong_namespace": {
+    "n": 82,
+    "next_round_verified": 1,
+    "rate": 0.012195121951219513
+   },
+   "hallucinated_theorem": {
+    "n": 311,
+    "next_round_verified": 0,
+    "rate": 0.0
+   },
+   "other": {
+    "n": 88,
+    "next_round_verified": 1,
+    "rate": 0.011363636363636364
+   },
+   "type_mismatch": {
+    "n": 98,
+    "next_round_verified": 0,
+    "rate": 0.0
+   },
+   "lean3_syntax": {
+    "n": 302,
+    "next_round_verified": 13,
+    "rate": 0.04304635761589404
+   },
+   "checker_rejected": {
+    "n": 1,
+    "next_round_verified": 0,
+    "rate": 0.0
+   },
+   "wrong_tactic": {
+    "n": 229,
+    "next_round_verified": 1,
+    "rate": 0.004366812227074236
+   },
+   "incorrect_rewrite": {
+    "n": 82,
+    "next_round_verified": 1,
+    "rate": 0.012195121951219513
+   },
+   "valid_but_wrong": {
+    "n": 18,
+    "next_round_verified": 3,
+    "rate": 0.16666666666666666
+   },
+   "unresolved_metavariable": {
+    "n": 9,
+    "next_round_verified": 0,
+    "rate": 0.0
+   },
+   "instance_resolution_failure": {
+    "n": 6,
+    "next_round_verified": 0,
+    "rate": 0.0
+   },
+   "bad_induction": {
+    "n": 6,
+    "next_round_verified": 0,
+    "rate": 0.0
+   }
+  },
+  "examples": {
+   "syntax_error": [
+    {
+     "task_id": "mh_cate_431372",
+     "config": "direct",
+     "proof": "apply CategoryTheory.Limits.hasColimitsOfShape_of_hasBinaryProducts_of_hasInitialObject;\n  \u00b7 apply FintypeCat.hasBinaryProducts\n  \u00b7 apply FintypeCat.hasInitialObject",
+     "output": "4:8: error: Unknown identifier `CategoryTheory.Limits.hasColimitsOfShape_of_hasBinaryProducts_of_hasInitialObject`\n5:4: error: No goals to be solved\n6:4: error: unexpected token '\u00b7'; expected command"
+    },
+    {
+     "task_id": "mh_cate_b3526c",
+     "config": "direct",
+     "proof": "constructor\nintro f h\nrcases hZ (p \u226b f) with \u27e8g, hg\u27e9\nuse [g, hg]\nexact (CategoryTheory.Mono.map_injective i).mp (h.trans (i \u226b p \u226b f))",
+     "output": "6:15: error: expected token\n6:9: error: Function expected at\n  hZ\nbut this term has type\n  CategoryTheory.Limits.IsZero Z\n\nNote: Expected a function because this term is being applied to the argument\n  failed to pretty print term (use 'set_option pp.rawOnError true' for raw representation)"
+    },
+    {
+     "task_id": "mh_cate_6496c7",
+     "config": "direct",
+     "proof": "intro A\nobtain \u27e8a, h\u2081, h\u2082\u27e9 := A\nconstructor\n\u00b7 exact (adj.counit.app (F.obj A.A))\n\u00b7 exact (adj.unit.app (G.obj A.A))\n\u00b7 exact (adj.counit naturality at (F.obj A.A))\n\u00b7 exact (adj.unit naturality at (G.obj A.A))\n\u00b7 refine (adj.counit.associates (F.obj A.A) (F.obj A.A) _)\n  exact (adj.unit.associates (G.obj A.A) (G.obj A.A) _)\n\u00b7 exact (adj.counit.is_right_inverse (F.obj A.A))\n\u00b7 exact (adj.unit.is_left_i",
+     "output": "9:32: error: unexpected token 'at'; expected ')', ',' or ':'"
+    },
+    {
+     "task_id": "mh_cate_097148",
+     "config": "direct",
+     "proof": "intro \u03ba \u03c4 \u03c6;\napply CategoryTheory.Limits.preserves_limits_of_adequate;\nintros F;\napply CategoryTheory.Limits.preserves_limit_of_adequate;\nintros F;\napply CategoryTheory.Limits.preserves_limit_of_adequate;\nintros F;\napply CategoryTheory.Limits.preserves_limit_of_adequate;\nintros F;\napply CategoryTheory.Limits.preserves_limit_of_adequate;\nintros F;\napply CategoryTheory.Limits.preserves_limit_of_adeq",
+     "output": "69:51: error: unexpected token '...'; expected term"
+    },
+    {
+     "task_id": "mh_cate_a4e517",
+     "config": "direct",
+     "proof": "apply CategoryTheory.Limits.preserves_colimits_of_shape_of_preserves_colimits_of_shape;\napply CategoryTheory.Limits.preserves_colimits_of_shape_of_preserves_colimits_of_shape;\napply CategoryTheory.Limits.preserves_colimits_of_shape_of_preserves_colimits_of_shape;\napply CategoryTheory.Limits.preserves_colimits_of_shape_of_preserves_colimits_of_shape;\napply CategoryTheory.Limits.preserves_colimits_o",
+     "output": "31:7: error: unexpected token '...'; expected '(', '+', '-' or term\n4:8: error: Unknown identifier `CategoryTheory.Limits.preserves_colimits_of_shape_of_preserves_colimits_of_shape`"
+    },
+    {
+     "task_id": "mh_cate_7a05c0",
+     "config": "direct",
+     "proof": "intro \u03ba'\nobtain \u27e8\u03ba'', h\u27e9 := CategoryTheory.isCardinalPresentable.exists_cardinal_le \u03ba\nhave := CategoryTheory.IsCardinalAccessibleCategory.isCardinalFiltered_iff _ _ _\napply this\nconstructor\n\u00b7 exact h\n\u00b7 intro f\n  haveI := CategoryTheory.IsCardinalAccessibleCategory.isCardinalAccessible C \u03ba\n  haveI := CategoryTheory.isCardinalPresentable.isCardinalPresented C \u03ba\n  haveI := CategoryTheory.isCardinalPr",
+     "output": "44:61: error: unexpected token '...'; expected term"
+    }
+   ],
+   "wrong_tactic": [
+    {
+     "task_id": "mh_cate_9a8e08",
+     "config": "direct",
+     "proof": "intro J\napply CategoryTheory.Limits.preserves_limits_of_yoneda\napply CategoryTheory.Limits.preserves_limits_of_essential_surjectivity\napply CategoryTheory.Limits.preserves_limits_of_subcanonical\nexact J.Subcanonical",
+     "output": "4:8: error: Tactic `introN` failed: There are no additional binders or `let` bindings in the goal to introduce\n\nC : Type u\ninst\u271d\u00b9 : CategoryTheory.Category.{v, u} C\nJ : CategoryTheory.GrothendieckTopology C\ninst\u271d : J.Subcanonical\n\u22a2 CategoryTheory.Limits.PreservesLimitsOfSize.{u_1, u_2, v, max u v, u, max u (v + 1)} J.yoneda"
+    },
+    {
+     "task_id": "mh_cate_94f544",
+     "config": "direct",
+     "proof": "intros X Y f g h H\u2081 H\u2082\napply CategoryTheory.MorphismProperty.monomorphisms.IsStableUnderCobaseChange'\nconstructor\napply CategoryTheory.Limits.isMono_of_pullback_of_isMono\napply H\u2081\napply H\u2082",
+     "output": "4:2: error: Tactic `introN` failed: There are no additional binders or `let` bindings in the goal to introduce\n\n\u22a2 (CategoryTheory.MorphismProperty.monomorphisms (Type u)).IsStableUnderCobaseChange"
+    },
+    {
+     "task_id": "mh_cate_640afd",
+     "config": "direct",
+     "proof": "intro h'\napply CategoryTheory.IsPullback.of_limit_preserving\n  (CategoryTheory.Limits.preserves_limit_of_is_pullback h)\n  (CategoryTheory.Limits.cospan sq.f\u2082\u2084 sq.f\u2083\u2084)\n  F",
+     "output": "4:8: error: Tactic `introN` failed: There are no additional binders or `let` bindings in the goal to introduce\n\nC : Type u\ninst\u271d\u00b2 : CategoryTheory.Category.{v, u} C\nD : Type u'\ninst\u271d\u00b9 : CategoryTheory.Category.{v', u'} D\nsq : CategoryTheory.Square C\nh : sq.IsPullback\nF : CategoryTheory.Functor C D\ninst\u271d : CategoryTheory.Limits.PreservesLimit (CategoryTheory.Limits.cospan sq.f\u2082\u2084 sq.f\u2083\u2084) F\n\u22a2 (sq.map"
+    },
+    {
+     "task_id": "mh_cate_5dd50c",
+     "config": "direct",
+     "proof": "intro h_mono\nsplit\n\u00b7 intro h_iso\n  have h : CategoryTheory.IsIso c.snd := h_iso\n  have h' : CategoryTheory.IsIso c.fst := by\n    rw [CategoryTheory.Limits.PullbackCone.\u03c0_app]\n    exact (h_iso.trans (CategoryTheory.Limits.PullbackCone.\u03c0_app _ _)).symm\n  exact CategoryTheory.Mono.of_isIso h'\n\u00b7 intro h_mono\n  have h : CategoryTheory.IsIso c.snd := by\n    apply CategoryTheory.IsIso.of_injective\n    rw",
+     "output": "4:8: error: Tactic `introN` failed: There are no additional binders or `let` bindings in the goal to introduce\n\nC : Type u_1\ninst\u271d : CategoryTheory.Category.{v_1, u_1} C\nX Y : C\nf : X \u27f6 Y\nc : CategoryTheory.Limits.PullbackCone f f\nhc : CategoryTheory.Limits.IsLimit c\n\u22a2 CategoryTheory.Mono f \u2194 CategoryTheory.IsIso c.snd"
+    },
+    {
+     "task_id": "mh_cate_79488e",
+     "config": "direct",
+     "proof": "intros w\napply (UnivLE.of_ess_surj w)",
+     "output": "4:2: error: Tactic `introN` failed: There are no additional binders or `let` bindings in the goal to introduce\n\nw : CategoryTheory.uliftFunctor.{u, v}.EssSurj\n\u22a2 UnivLE.{max u v, v}"
+    },
+    {
+     "task_id": "mh_cate_bb5ced",
+     "config": "direct",
+     "proof": "intro h\napply le_rfl",
+     "output": "5:2: error: Tactic `apply` failed: could not unify the type of `@le_rfl`\n  \u2200 {\u03b1 : Type ?u.26} [inst : Preorder \u03b1] {a : \u03b1}, a \u2264 a\nwith the goal\n  \u2200 \u2983Y : C\u2984 (f : h \u27f6 Y),\n    (CategoryTheory.MorphismProperty.coproducts.{t, v, u} W).pushouts.transfiniteCompositionsOfShape J f \u2192 W.rlp.llp f\n\nC : Type u\ninst\u271d\u2074 : CategoryTheory.Category.{v, u} C\nW : CategoryTheory.MorphismProperty C\nJ : Type w\ninst\u271d\u00b3 : L"
+    }
+   ],
+   "hallucinated_theorem": [
+    {
+     "task_id": "mh_cate_15119d",
+     "config": "direct",
+     "proof": "rw [Nat.card_eq, CategoryTheory.nat_trans_obj_map_eq, CategoryTheory.isomorphic_map]",
+     "output": "4:19: error: Unknown identifier `CategoryTheory.nat_trans_obj_map_eq`\n3:186: error: unsolved goals\nC : Type u\u2081\ninst\u271d : CategoryTheory.Category.{u\u2082, u\u2081} C\nF : CategoryTheory.Functor C FintypeCat\nX Y : C\ni : X \u2245 Y\n\u22a2 (if x : Finite (F.obj X).obj then Fintype.card (F.obj X).obj else 0) = Nat.card (F.obj Y).obj"
+    },
+    {
+     "task_id": "mh_cate_cd9a3b",
+     "config": "direct",
+     "proof": "constructor\nintro f\napply P.isoModSerre.leftCalculusOfFractions\nexact f",
+     "output": "6:22: error: Invalid field `leftCalculusOfFractions`: The environment does not contain `Function.leftCalculusOfFractions`, so it is not possible to project the field `leftCalculusOfFractions` from an expression\n  P.isoModSerre\nof type `\u2983X Y : C\u2984 \u2192 (X \u27f6 Y) \u2192 Prop`\n7:8: error: Unknown identifier `f`"
+    },
+    {
+     "task_id": "mh_prob_eba19e",
+     "config": "direct",
+     "proof": "intro a\napply ProbabilityTheory.singularPart_measurable\nexact (ProbabilityTheory.isFiniteKernel.singularPart_measurable \u03ba).2\nexact (ProbabilityTheory.isFiniteKernel.singularPart_measurable \u03b7).2",
+     "output": "5:8: error: Unknown identifier `ProbabilityTheory.singularPart_measurable`\n6:2: error: No goals to be solved"
+    },
+    {
+     "task_id": "mh_prob_3344fd",
+     "config": "direct",
+     "proof": "rw [Iic_eq_Iio_union_Icc, integral_add]",
+     "output": "4:6: error: Unknown identifier `Iic_eq_Iio_union_Icc`\n3:160: error: unsolved goals\ny z : \u211d\nf : \u211d \u2192 ENNReal\nhzy : z \u2264 y\n\u22a2 \u222b\u207b (x : \u211d) in Set.Iic y, f x = (\u222b\u207b (x : \u211d) in Set.Iio z, f x) + \u222b\u207b (x : \u211d) in Set.Icc z y, f x"
+    },
+    {
+     "task_id": "mh_prob_7642f8",
+     "config": "direct",
+     "proof": "intros\nconstructor\napply ProbabilityTheory.hasGaussianLaw_neg\nexact hX",
+     "output": "6:8: error: Unknown identifier `ProbabilityTheory.hasGaussianLaw_neg`\n7:2: error: No goals to be solved"
+    },
+    {
+     "task_id": "mh_ineq_f31a9a",
+     "config": "direct",
+     "proof": "rw [pow_log, log_def, exp_add, mul_comm, exp_mul]",
+     "output": "4:6: error: Unknown identifier `pow_log`\n3:70: error: unsolved goals\nx : ENNReal\ny : \u211d\n\u22a2 x ^ y = (\u2191y * x.log).exp"
+    }
+   ],
+   "lean3_syntax": [
+    {
+     "task_id": "mh_cate_a78895",
+     "config": "direct",
+     "proof": "apply_instance\nobtain {subobject_classifier} := CategoryTheory.EssentiallySmall.hasSubobjectClassifier_of_essentially_small C\napply (CategoryTheory.Functor.map_subobject_classifier subobject_classifier)",
+     "output": "4:3: error: unknown tactic\n3:193: error: unsolved goals\nC : Type u\ninst\u271d\u00b9 : CategoryTheory.Category.{v, u} C\ninst\u271d : CategoryTheory.EssentiallySmall.{w, v, u} C\n\u22a2 CategoryTheory.HasSubobjectClassifier (CategoryTheory.Functor C\u1d52\u1d56 (Type w))"
+    },
+    {
+     "task_id": "mh_cate_ea624f",
+     "config": "direct",
+     "proof": "refl",
+     "output": "4:3: error: unknown tactic\n3:129: error: unsolved goals\n\u03b1 : Type u_1\ninst\u271d : Preorder \u03b1\ni j : \u03b1\nh : i \u2264 j\n\u22a2 Set.initialSegIicIicOfLE h = Set.initialSegIicIicOfLE h"
+    },
+    {
+     "task_id": "mh_cate_63c919",
+     "config": "direct",
+     "proof": "```lean\nintro hX\napply CategoryTheory.IsCardinalPresentable.ofLimitPreservingOfHasCardinalLT\n\u00b7 exact hX\n\u00b7 intro F\n  obtain \u27e8I, f, lim\u27e9 := CategoryTheory.Limits.hasLimit (CategoryTheory.Limits.limitFunctor _)\n  have : \u2200 (i : I), Cardinal.mk (f i) < \u03ba := by\n    intro i\n    apply hX\n    exact (CategoryTheory.Limits.isLimitLimitFunctor _ _).limitIsLimit\n  let \u03c7 : \u2115 \u2192 Cardinal := \u03bb n, Cardinal.mk (f (I",
+     "output": "3:140: error: unsolved goals\nX : Type u\n\u03ba : Cardinal.{u}\nhX : HasCardinalLT X \u03ba\ninst\u271d : Fact \u03ba.IsRegular\n\u22a2 CategoryTheory.IsCardinalPresentable X \u03ba\n4:2: error: unexpected token '`'; expected command"
+    },
+    {
+     "task_id": "mh_func_7a8899",
+     "config": "direct",
+     "proof": "intro f g h,\napply not.intro,\nassume hfg : f = g,\ncases hfg with f g,\nexact h f g",
+     "output": "3:46: error: unsolved goals\nf g : Bool\nh : (!f) = !g\n\u22a2 f = g\n4:13: error: unexpected token ','; expected command"
+    },
+    {
+     "task_id": "mh_ineq_5013c9",
+     "config": "direct",
+     "proof": "refl",
+     "output": "4:3: error: unknown tactic\n3:130: error: unsolved goals\nR : Type u_1\ninst\u271d\u00b2 : Semiring R\ninst\u271d\u00b9 : PartialOrder R\ninst\u271d : IsOrderedRing R\n\u22a2 Subsemiring.nonneg R = Subsemiring.nonneg R"
+    },
+    {
+     "task_id": "mh_ineq_fea870",
+     "config": "direct",
+     "proof": "intro h\nsplit\n\u00b7 intro h1\n  cases h1 with h2 h3\n  constructor\n  \u00b7 exact h2\n  \u00b7 exact h3\n\u00b7 intro h1\n  by_cases h2: n = 0\n  \u00b7 constructor\n    \u00b7 exact h2\n    \u00b7 exact (nat.one_pow n).symm\n  \u00b7 constructor\n    \u00b7 exact h1.1\n    \u00b7 rw [nat.nth_root_def]\n      have h3: n \u2260 0 := h1.1\n      have h4: a = n.nthRoot a ^ n := h1.2\n      exact h4",
+     "output": "7:19: error: unknown tactic"
+    }
+   ],
+   "type_mismatch": [
+    {
+     "task_id": "mh_func_e6d870",
+     "config": "direct",
+     "proof": "intro h; exact h",
+     "output": "4:11: error: Type mismatch\n  h\nhas type\n  Bool\nof sort `Type` but is expected to have type\n  (!!h) = h\nof sort `Prop`"
+    },
+    {
+     "task_id": "mh_alge_2bbbef",
+     "config": "direct",
+     "proof": "rw [g.nums]\nrw [g.h]",
+     "output": "4:6: error: Invalid rewrite argument: Expected an equality or iff proof or definition name, but `g.nums ?a\u271d` is a value of type\n  K\n\nNote: The target expression is not type-correct under the `implicit` transparency level, which may have triggered the failure. This is usually caused by unfolding of semireducible definitions in prior tactic steps. Use `set_option linter.tacticCheckInstances true` to"
+    },
+    {
+     "task_id": "novel_alg_03",
+     "config": "direct",
+     "proof": "have h4 : a + b + c = 18 := add_assoc (a + b) c 5\nrw [h\u2081] at h4\nrw [h\u2082] at h4\nrw [h\u2083] at h4\nsimp only [h4, add_left_cancel]\nexact eq_of_sub_eq_zero (sub_eq_zero.1 (add_sub_add_right h4 5 7))",
+     "output": "4:30: error: Type mismatch\n  add_assoc (a + b) c 5\nhas type\n  a + b + c + 5 = a + b + (c + 5)\nbut is expected to have type\n  a + b + c = 18\n6:6: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern\n  b + c\nin the target expression\n  5 + c = 18\n\na b c : \u211a\nh\u2081 : a + b = 5\nh\u2082 : b + c = 7\nh\u2083 : a + c = 6\nh4 : 5 + c = 18\n\u22a2 a = 2"
+    },
+    {
+     "task_id": "novel_set_08",
+     "config": "direct",
+     "proof": "constructor\n\u00b7 intro h\n  ext x\n  exact h x\n\u00b7 intro h\n  ext x\n  exact iff.intro (h x) (fun _ => True.intro)",
+     "output": "7:12: error: Application type mismatch: The argument\n  x\nhas type\n  \u03b1\nof sort `Type u_1` but is expected to have type\n  ?m.19 \u2208 A\nof sort `Prop` in the application\n  h x\n9:4: error: This extensionality tactic only applies to equalities, not\n  \u2200 \u2983a : \u03b1\u2984, a \u2208 A \u2192 a \u2208 B"
+    },
+    {
+     "task_id": "novel_fun_04",
+     "config": "direct",
+     "proof": "have h0 : f 0 = f (0 + 0) := rfl\nrw [hf 0 0] at h0\nrw [h0]",
+     "output": "4:31: error: Type mismatch\n  rfl\nhas type\n  ?m.30 = ?m.30\nbut is expected to have type\n  f 0 = f (0 + 0)"
+    },
+    {
+     "task_id": "mh_cate_15119d",
+     "config": "direct_at4",
+     "proof": "apply Nat.card_congr;\nexact i.hom",
+     "output": "5:2: error: Type mismatch\n  i.hom\nhas type\n  X \u27f6 Y\nof sort `Type u\u2082` but is expected to have type\n  (F.obj X).obj \u2243 (F.obj Y).obj\nof sort `Type u_1`"
+    }
+   ],
+   "other": [
+    {
+     "task_id": "mh_ineq_04b8ca",
+     "config": "direct",
+     "proof": "rw [Set.Iic, Set.Iio]\napply_fun (fun x => x - 1) at hb\nexact hb",
+     "output": "5:2: error: apply_fun can only handle negations of equality."
+    },
+    {
+     "task_id": "novel_alg_09",
+     "config": "direct",
+     "proof": "rw [Real.log_pow, Real.log_pos hx]",
+     "output": "4:20: error: Invalid rewrite argument: Expected an equality or iff proof or definition name, but `Real.log_pos ?m.28` is a proof of\n  0 < Real.log ?m.27"
+    },
+    {
+     "task_id": "novel_set_06",
+     "config": "direct",
+     "proof": "have h : S = {n | n % 2 = 0} := hS\nconstructor\n\u00b7 rw [h]\n  exact \u27e84, mod_two_eq_zero 4\u27e9\n\u00b7 rw [h]\n  contrapose!\n  intro h3\n  rw [h3]\n  exact mod_two_ne_zero 3 rfl",
+     "output": "7:10: error: Insufficient number of fields for `\u27e8...\u27e9` constructor: Constructor `Eq.refl` does not have explicit fields, but 2 were provided\n9:4: error: Tactic `contrapose` failed: the goal `3 \u2209 {n | n % 2 = 0}` is not of the form `_ \u2192 _` or `_ \u2194 _`\n\ncase right\nS : Set \u2115\nhS h : S = {n | n % 2 = 0}\n\u22a2 3 \u2209 {n | n % 2 = 0}"
+    },
+    {
+     "task_id": "mh_cate_b3526c",
+     "config": "direct_at4",
+     "proof": "constructor\nintros f h\nrefine \u27e8_, _\u27e9\n\u00b7 exact (CategoryTheory.Injective.lift I p hZ f h)\n\u00b7 intro g\n  ext\n  exact (CategoryTheory.Mono.leftCancel i).mp (CategoryTheory.Injective.rightCancel I p hZ g)",
+     "output": "6:9: error: Invalid `\u27e8...\u27e9` notation: The expected type\n  \u2200 (sq : CategoryTheory.CommSq f i p h), sq.HasLift\nis not an inductive type\n\nNote: This notation can only be used when the expected type is an inductive type with a single constructor\n7:2: error: No goals to be solved"
+    },
+    {
+     "task_id": "mh_prob_dbcf26",
+     "config": "direct_at4",
+     "proof": "refine' MeasureTheory.NullSingletonClass.mk _ _\n\u00b7 intro x\n  rw [MeasureTheory.null_set_iff]\n  intro h\u03bcx\n  contrapose! h\u03bcx\n  exact (MeasureTheory.IsGaussian.null_not_dirac \u03bc).mp h\u03bcx\n\u00b7 intro s hs\n  apply MeasureTheory.measure_mono\n  exact hs",
+     "output": "4:10: error: Function expected at\n  { measure_singleton := ?m.22 }\nbut this term has type\n  MeasureTheory.NullSingletonClass ?m.21\n\nNote: Expected a function because this term is being applied to the argument\n  _\n5:2: error: No goals to be solved"
+    },
+    {
+     "task_id": "mh_prob_741109",
+     "config": "direct_at4",
+     "proof": "rw [pow_nonneg hp, pow_nonneg hp, log_exp, log_exp, max_eq]\napply le_mul_of_nonneg_right (Real.exp (t * x) + Real.exp (-t * x))\n  (Real.exp (t * x) + Real.exp (-t * x) \u2265 0)\n  (by simp [Real.exp_nonneg])\n  (by simp [Real.exp_nonneg])",
+     "output": "4:6: error: Invalid rewrite argument: Expected an equality or iff proof or definition name, but `pow_nonneg hp ?n` is a proof of\n  0 \u2264 p ^ ?n"
+    }
+   ],
+   "wrong_namespace": [
+    {
+     "task_id": "mh_ineq_f31eb9",
+     "config": "direct",
+     "proof": "constructor\nintro x\napply le_Inf\nintro h\nuse 0\nexact le_zero (le_of_neg_le_zero h)",
+     "output": "6:8: error: Unknown identifier `le_Inf`\n7:8: error: No goals to be solved"
+    },
+    {
+     "task_id": "mh_alge_740845",
+     "config": "direct",
+     "proof": "constructor\nintro n\ninduction' n with d hd\ncase zero => exact ZeroObject.instance\ncase succ d =>\n  obtain \u27e8X, Y, i, p, iso\u27e9 := HasFiniteBiproducts.of_binary_biproduct (hd d)\n  let Z := X \u2295 Y\n  let i' : Z \u27f6 Z := CategoryTheory.Limits.biprod.inl\n  let p' : Z \u27f6 Z := CategoryTheory.Limits.biprod.inr\n  let iso' := CategoryTheory.Limits.biprod.\u03b9\u2081_iso\n  exact { biprod := Z, inl := i', inr := p', \u03b9\u2081_iso :",
+     "output": "7:21: error: Unknown identifier `ZeroObject.instance`\n9:32: error: Unknown identifier `HasFiniteBiproducts.of_binary_biproduct`\n9:11: error: Tactic `rcases` failed: `x\u271d : ?m.22` is not an inductive datatype"
+    },
+    {
+     "task_id": "novel_set_04",
+     "config": "direct",
+     "proof": "ext x\nrw [set.compl_eq]\nsplit\n\u00b7 intros h\n  rw [set.mem_inter] at h\n  exact (set.mem_compl.mp h).1\n\u00b7 intros h\n  rw [set.mem_inter] at h\n  exact (set.mem_compl.mp h).2",
+     "output": "5:6: error: Unknown constant `MonadStateOf.set.compl_eq`\n3:68: error: unsolved goals\n\u03b1 : Type u_1\nA B : Set \u03b1\nx : \u03b1\n\u22a2 x \u2208 (A \u222a B)\u1d9c \u2194 x \u2208 A\u1d9c \u2229 B\u1d9c"
+    },
+    {
+     "task_id": "novel_prob_01",
+     "config": "direct",
+     "proof": "rw [PMF.bernoulli_def, PMF.to_ennreal, ENNReal.ofReal_ofNonNeg, NNReal.toENNReal]",
+     "output": "3:45: warning: `PMF.bernoulli` has been deprecated: Use `ProbabilityTheory.bernoulliMeasure` instead\n\nNote: The updated constant has a different type:\n  {X : Type u_1} \u2192 [inst : MeasurableSpace X] \u2192 X \u2192 X \u2192 \u2191unitInterval \u2192 MeasureTheory.Measure X\ninstead of\n  (p : NNReal) \u2192 p \u2264 1 \u2192 PMF Bool\n\nNote: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x."
+    },
+    {
+     "task_id": "mh_cate_cd9a3b",
+     "config": "direct_at4",
+     "proof": "refine HasLeftCalculusOfFractions.mk _ _ _\n\u00b7 exact P.isoModSerre.leftCalculusOfFractions\n\u00b7 intro X\n  constructor\n  \u00b7 exact P.isoModSerre.leftCalculusOfFractions.isLocalisation\n  \u00b7 intro f\n    constructor\n    \u00b7 exact P.isoModSerre.leftCalculusOfFractions.isLocalisation\n    \u00b7 intro g\n      constructor\n      \u00b7 exact P.isoModSerre.leftCalculusOfFractions.isLocalisation\n      \u00b7 intro h\n        construc",
+     "output": "4:9: error: Unknown identifier `HasLeftCalculusOfFractions.mk`\n5:2: error: No goals to be solved"
+    },
+    {
+     "task_id": "mh_cate_a78895",
+     "config": "direct_at4",
+     "proof": "let F := CategoryTheory.Functor C\u1d52\u1d56 (Type w)\nlet S := CategoryTheory.SubobjectClassifier.ofEssentiallySmall F\nexact S.2",
+     "output": "5:11: error: Unknown identifier `CategoryTheory.SubobjectClassifier.ofEssentiallySmall`\n3:193: error: unsolved goals\nC : Type u\ninst\u271d\u00b9 : CategoryTheory.Category.{v, u} C\ninst\u271d : CategoryTheory.EssentiallySmall.{w, v, u} C\nF : Type (max v w u (w + 1)) := CategoryTheory.Functor C\u1d52\u1d56 (Type w)\n\u22a2 CategoryTheory.HasSubobjectClassifier (CategoryTheory.Functor C\u1d52\u1d56 (Type w))"
+    }
+   ],
+   "incorrect_rewrite": [
+    {
+     "task_id": "mh_sets_64ee0a",
+     "config": "direct",
+     "proof": "rw [lt_iff_le_and_ne]\nconstructor\n\u00b7 exact (le_card_subset_right h).trans (le_trans (le_card_subset_left h) (le_refl _))\n\u00b7 rintro rfl\n  exact h.not_le rfl",
+     "output": "4:6: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern\n  ?m.10 < ?m.11\nin the target expression\n  s.card \u22d6 t.card\n\n\u03b1 : Type u_1\ns t : Finset \u03b1\nh : s \u22d6 t\n\u22a2 s.card \u22d6 t.card"
+    },
+    {
+     "task_id": "novel_alg_04",
+     "config": "direct",
+     "proof": "have h3 : x = (10 + 4) / 2 := by rw [h\u2081, h\u2082, add_sub_eq]\nhave h4 : y = (10 - 4) / 2 := by rw [h\u2081, h\u2082, sub_add_eq]\nrw [h3, h4]\nsimp []",
+     "output": "4:39: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern\n  x + y\nin the target expression\n  x = (10 + 4) / 2\n\nx y : \u211d\nh\u2081 : x + y = 10\nh\u2082 : x - y = 4\n\u22a2 x = (10 + 4) / 2\n5:39: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern\n  x + y\nin the target expression\n  y = (10 - 4) / 2\n\nx y : \u211d\nh\u2081 : x + y = 10\nh\u2082 : x - y = 4\nh3 : x = (10 + 4) / 2\n\u22a2 y = (10 - 4) "
+    },
+    {
+     "task_id": "novel_fun_06",
+     "config": "direct",
+     "proof": "have : f 0 = 0 := by rw [hf 0 0, hf 0 0]\nlet x' := x\nlet y' := -x\nrw [hf x' y', hf 0 y']\nsimp only [add_right_neg, this]",
+     "output": "4:27: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern\n  f (0 + 0)\nin the target expression\n  f 0 = 0\n\nf : \u211d \u2192 \u211d\nhf : \u2200 (x y : \u211d), f (x + y) = f x + f y\nx : \u211d\n\u22a2 f 0 = 0\n7:6: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern\n  f (x' + y')\nin the target expression\n  f (-x) = -f x\n\nf : \u211d \u2192 \u211d\nhf : \u2200 (x y : \u211d), f (x + y) = f x + f y\nx : \u211d\nthis : f 0 = 0\n"
+    },
+    {
+     "task_id": "mh_prob_741109",
+     "config": "direct_at4",
+     "proof": "rw [Real.exp_add, Real.exp_neg]\nhave h1 : |x| ^ p = (Real.exp (t * x) * Real.exp (-t * x)) ^ (p / 2) :=\n  by\n    rw [Real.exp_add, Real.exp_neg]\n    rw [Real.exp_mul, Real.exp_mul]\n    rw [Real.exp_add, Real.exp_neg]\n    simp only [Real.exp_zero, Real.exp_one, Real.pow_mul, Real.pow_one, Real.pow_zero]\n    exact congr_arg Real.exp (mul_self_eq_sq _)\nhave h2 : (p / |t|) ^ p * max (Real.exp (t * x))",
+     "output": "4:6: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern\n  Real.exp (?x + ?y)\nin the target expression\n  |x| ^ p \u2264 (p / |t|) ^ p * max (Real.exp (t * x)) (Real.exp (-t * x))\n\nx t p : \u211d\nhp : 0 \u2264 p\nht : t \u2260 0\n\u22a2 |x| ^ p \u2264 (p / |t|) ^ p * max (Real.exp (t * x)) (Real.exp (-t * x))"
+    },
+    {
+     "task_id": "mh_sets_64ee0a",
+     "config": "direct_at4",
+     "proof": "rw [lt_iff_le_and_ne]\nconstructor\n\u00b7 exact (le_card_subset_right h).trans (le_trans (le_card_subset_left h) (le_refl _))\n\u00b7 rintro rfl\n  exact h.not_le rfl",
+     "output": "4:6: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern\n  ?m.10 < ?m.11\nin the target expression\n  s.card \u22d6 t.card\n\n\u03b1 : Type u_1\ns t : Finset \u03b1\nh : s \u22d6 t\n\u22a2 s.card \u22d6 t.card"
+    },
+    {
+     "task_id": "mh_alge_17fd53",
+     "config": "direct_at4",
+     "proof": "rw [hm, hm]",
+     "output": "4:6: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern\n  m + n\nin the target expression\n  Set.powersetCard.compl hm = Set.powersetCard.compl hm\n\n\u03b1 : Type u_1\nn : \u2115\ninst\u271d\u00b9 : DecidableEq \u03b1\ninst\u271d : Fintype \u03b1\nm : \u2115\nhm : m + n = Fintype.card \u03b1\n\u22a2 Set.powersetCard.compl hm = Set.powersetCard.compl hm"
+    }
+   ],
+   "valid_but_wrong": [
+    {
+     "task_id": "novel_ineq_02",
+     "config": "direct",
+     "proof": "have h1 : x + 1 / x = (x^2 + 1) / x := by ring\nhave h2 : x^2 + 1 \u2265 2 * x := by linarith [hx]\nrw [h1]\napply div_le_of_le_mul_right hx\nexact h2",
+     "output": "4:44: info: Try this:\n  [apply] ring_nf\n  \n  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.\n    \n  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.\n4:41: error: unsolved goals\nx : \u211d\nhx : 0 < x\n\u22a2 x + x\u207b\u00b9 = x ^ 2 * x\u207b\u00b9 + x\u207b\u00b9\n5:34: error: l"
+    },
+    {
+     "task_id": "novel_nt_10",
+     "config": "direct",
+     "proof": "norm_num",
+     "output": "3:45: error: unsolved goals\n\u22a2 Nat.choose 10 3 = 120"
+    },
+    {
+     "task_id": "novel_set_07",
+     "config": "direct",
+     "proof": "simp [Finset.filter, Finset.range, Finset.card, Finset.mem_range, Finset.mem_filter]",
+     "output": "3:88: error: unsolved goals\n\u22a2 (Multiset.filter (fun n => n % 3 = 0) {0}).card = 1\n4:50: warning: This simp argument is unused:\n  Finset.mem_range\n\nHint: Omit it from the simp argument list.\n  [apply] simp [Finset.filter, Finset.range, Finset.card, Finset.mem_filter]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\n4:68: warning: This simp argument is unused:\n  Finse"
+    },
+    {
+     "task_id": "novel_alg_05",
+     "config": "direct_at4",
+     "proof": "rw [Finset.sum_range]\nsimp only [Nat.add_one, Nat.add_assoc, Nat.add_left_comm, Nat.mul_add, Nat.add_mul]\nring",
+     "output": "6:2: info: Try this:\n  [apply] ring_nf\n  \n  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.\n    \n  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.\n3:85: error: unsolved goals\nn : \u2115\n\u22a2 \u2211 x, (\u2191x * 2).succ = n.succ ^ 2\n5:26: warning: This si"
+    },
+    {
+     "task_id": "novel_ineq_02",
+     "config": "direct_at4",
+     "proof": "have h1 : x + 1 / x = (x^2 + 1) / x := by ring\nhave h2 : x^2 + 1 \u2265 2 * x := by linarith [hx]\nrw [h1]\napply div_le_of_le_mul_right hx\nexact h2",
+     "output": "4:44: info: Try this:\n  [apply] ring_nf\n  \n  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.\n    \n  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.\n4:41: error: unsolved goals\nx : \u211d\nhx : 0 < x\n\u22a2 x + x\u207b\u00b9 = x ^ 2 * x\u207b\u00b9 + x\u207b\u00b9\n5:34: error: l"
+    },
+    {
+     "task_id": "novel_ineq_02",
+     "config": "direct_at4",
+     "proof": "have h1 : x + 1 / x = (x^2 + 1) / x := by ring_nf\nhave h2 : x^2 + 1 \u2265 2 * x := by apply sq_nonneg; rw [sub_eq_zero]; rw [mul_right_comm]; rw [mul_one]; linarith\nrw [h1]\napply div_nonneg_of_nonneg_denom\n\u00b7 exact h2\n\u00b7 exact hx",
+     "output": "4:41: error: unsolved goals\nx : \u211d\nhx : 0 < x\n\u22a2 x + x\u207b\u00b9 = x ^ 2 * x\u207b\u00b9 + x\u207b\u00b9\n5:34: error: Tactic `apply` failed: could not unify the conclusion of `@sq_nonneg`\n  0 \u2264 ?a ^ 2\nwith the goal\n  x ^ 2 + 1 \u2265 2 * x\n\nNote: The full type of `@sq_nonneg` is\n  \u2200 {R : Type ?u.64} [inst : Semiring R] [inst_1 : LinearOrder R] [ExistsAddOfLE R] [PosMulMono R] [AddLeftMono R]\n    (a : R), 0 \u2264 a ^ 2\n\nx : \u211d\nhx : 0 < x"
+    }
+   ],
+   "forbidden": [
+    {
+     "task_id": "mh_numb_485b85",
+     "config": "direct_at4",
+     "proof": "intro x; intro h;\nhave : \u2200 n : \u2115, (fwdDiff 1)^[n] (\u21d1f) 0 = 0 := by\n  induction' x with n h IH\n  case zero => rfl\n  case succ n =>\n    have : (fwdDiff 1)^[n+1] (\u21d1f) 0 = 0 :=\n      congrArg (fun f => (fwdDiff 1)^[n+1] f 0) (by simp [fwdDiff])\n      sorry\n    exact this\nend\napply Filter.Tendsto_const",
+     "output": "rejected before compilation: forbidden token(s): sorry"
+    },
+    {
+     "task_id": "mh_numb_ca43f0",
+     "config": "direct_prompt_b",
+     "proof": "intro x hx\nlet n := \u230ax\u230b\u208a\nhave h1 : n \u2264 x := floor_le\nhave h2 : n \u2265 1 := le_of_lt (lt_trans (lt_one_of_gt hx) (le_rfl))\nhave h3 : Real.log 4 * x / Real.log \u221ax + \u221ax \u2265 0 :=\n  add_nonneg (div_nonneg (mul_nonneg (le_refl (Real.log 4)) (le_refl x))\n              (le_refl (\u221ax)))\nlet h4 : Real.log \u221ax > 0 :=\n  lt_trans (lt_zero_of_neg (Real.log_pos (sqrt_pos (le_refl x))))\n           (le_refl (Real.log \u221ax)",
+     "output": "rejected before compilation: forbidden token(s): sorry"
+    },
+    {
+     "task_id": "novel_ineq_09",
+     "config": "direct_prompt_b",
+     "proof": "induction n with d hd,\n  case lg_target 0 => sorry, -- This case is not reachable due to hn\n  case lg_target (d+1) =>\n    have h1 : d + 1 \u2264 2 ^ d := hd,\n    have h2 : 2 * (2 ^ d) = 2 ^ (d + 1) := by rw [pow_add, mul_two],\n    rw [h2] at h1,\n    exact le_trans h1 (le_add_right 1 (2 ^ d))",
+     "output": "rejected before compilation: forbidden token(s): sorry"
+    },
+    {
+     "task_id": "mh_cate_097148",
+     "config": "full",
+     "proof": "import CategoryTheory.Limits\nimport CategoryTheory.Preadditive\nimport CategoryTheory.Yoneda\n\nopen CategoryTheory\n\ntheorem lg_target {C : Type u} [CategoryTheory.Category.{v, u} C] [CategoryTheory.Preadditive C] (X : C) :\n  CategoryTheory.Limits.PreservesLimits (CategoryTheory.preadditiveYoneda.obj X) := by\n  haveI : CategoryTheory.Limits.HasLimitsOfShape J C := sorry\n  haveI : CategoryTheory.Limit",
+     "output": "rejected before compilation: forbidden token(s): sorry, command"
+    },
+    {
+     "task_id": "mh_cate_097148",
+     "config": "full",
+     "proof": "import CategoryTheory.Limits\nimport CategoryTheory.Preadditive\nimport CategoryTheory.Yoneda\n\nopen CategoryTheory\n\ntheorem lg_target {C : Type u} [CategoryTheory.Category.{v, u} C] [CategoryTheory.Preadditive C] (X : C) :\n  CategoryTheory.Limits.PreservesLimits (CategoryTheory.preadditiveYoneda.obj X) := by\n  exact CategoryTheory.yoneda_preservesLimits X",
+     "output": "rejected before compilation: forbidden token(s): command"
+    },
+    {
+     "task_id": "mh_cate_097148",
+     "config": "full",
+     "proof": "import CategoryTheory.Limits\nimport CategoryTheory.Preadditive\nimport CategoryTheory.Yoneda\n\nopen CategoryTheory\n\ntheorem lg_target {C : Type u} [CategoryTheory.Category.{v, u} C] [CategoryTheory.Preadditive C] (X : C) :\n  CategoryTheory.Limits.PreservesLimits (CategoryTheory.preadditiveYoneda.obj X) := by\n  exact CategoryTheory.yoneda_preservesLimits X",
+     "output": "rejected before compilation: forbidden token(s): command"
+    }
+   ],
+   "checker_rejected": [
+    {
+     "task_id": "mh_prob_7d2670",
+     "config": "full",
+     "proof": "-- Since X has a Gaussian law, it is integrable by the properties of Gaussian distributions.\n-- In particular, Gaussian distributions on Euclidean spaces have finite moments of all orders.\n-- We can use the fact that the integral of X with respect to P exists and is finite.\n-- This follows from the lemma `ProbabilityTheory.HasLaw.integral_eq` which gives an explicit expression for the integral.\n--",
+     "output": "The proof was rejected by the final checker: banned_premise:ProbabilityTheory.HasGaussianLaw.integrable"
+    }
+   ],
+   "unresolved_metavariable": [
+    {
+     "task_id": "mh_prob_9ba5af",
+     "config": "full_no_retrieval",
+     "proof": "have h_cont : Continuous (fun x => Real.exp (-(b * x))) := by\n  refine Continuous.comp _ _\n  \u00b7 exact Continuous.neg\n  \u00b7 exact Continuous.mul_left b\nhave h_measurable : MeasurableSet (Set.Ioc 0 x) := by\n  rw [MeasurableSet.def]\n  exact is_open_Ioc.measurable\nhave h_integrable : MeasureTheory.IntegrableOn (fun x => Real.exp (-(b * x))) (Set.Ioc 0 x) MeasureTheory.volume :=\n  by\n  have h3 : Continuou",
+     "output": "5:29: error: don't know how to synthesize placeholder for argument `hf`\ncontext:\nb x : \u211d\nhb : 0 < b\n\u22a2 Continuous fun x => Complex.exp \u2191(-(b * x))\n5:27: error: don't know how to synthesize placeholder for argument `hg`\ncontext:\nb x : \u211d\nhb : 0 < b\n\u22a2 Continuous Complex.re\n9:8: error: Unknown constant `MeasurableSet.def`\n14:10: error: Unknown constant `ContinuousOn.def`\n16:10: error: Unknown identifie"
+    },
+    {
+     "task_id": "mh_prob_9ba5af",
+     "config": "full_no_retrieval",
+     "proof": "have h_cont : Continuous (fun x => Real.exp (-(b * x))) := by\n  refine Continuous.comp _ _\n  \u00b7 exact Continuous.neg\n  \u00b7 exact Continuous.mul_left b\nhave h_measurable : MeasurableSet (Set.Ioc 0 x) := by\n  rw [MeasurableSet.def]\n  exact is_open_Ioc.measurable\nhave h_integrable : MeasureTheory.IntegrableOn (fun x => Real.exp (-(b * x))) (Set.Ioc 0 x) MeasureTheory.volume :=\n  by\n  have h3 : Continuou",
+     "output": "5:29: error: don't know how to synthesize placeholder for argument `hf`\ncontext:\nb x : \u211d\nhb : 0 < b\n\u22a2 Continuous fun x => Complex.exp \u2191(-(b * x))\n5:27: error: don't know how to synthesize placeholder for argument `hg`\ncontext:\nb x : \u211d\nhb : 0 < b\n\u22a2 Continuous Complex.re\n9:8: error: Unknown constant `MeasurableSet.def`\n14:10: error: Unknown constant `ContinuousOn.def`\n16:10: error: Unknown identifie"
+    },
+    {
+     "task_id": "mh_prob_9ba5af",
+     "config": "full_no_retrieval",
+     "proof": "have h_cont : Continuous (fun x => Real.exp (-(b * x))) := by\n  refine Continuous.comp _ _\n  \u00b7 exact Continuous.neg\n  \u00b7 exact Continuous.mul_left b\nhave h_measurable : MeasurableSet (Set.Ioc 0 x) := by\n  rw [MeasurableSet.def]\n  exact is_open_Ioc.measurable\nhave h_integrable : MeasureTheory.IntegrableOn (fun x => Real.exp (-(b * x))) (Set.Ioc 0 x) MeasureTheory.volume :=\n  by\n  have h3 : Continuou",
+     "output": "5:29: error: don't know how to synthesize placeholder for argument `hf`\ncontext:\nb x : \u211d\nhb : 0 < b\n\u22a2 Continuous fun x => Complex.exp \u2191(-(b * x))\n5:27: error: don't know how to synthesize placeholder for argument `hg`\ncontext:\nb x : \u211d\nhb : 0 < b\n\u22a2 Continuous Complex.re\n9:8: error: Unknown constant `MeasurableSet.def`\n14:10: error: Unknown constant `ContinuousOn.def`\n16:10: error: Unknown identifie"
+    },
+    {
+     "task_id": "mh_sets_3ff207",
+     "config": "full_no_retrieval",
+     "proof": "let max_s := s.sup\nlet min_t := t.inf\nhave h_max_s : \u2200 x \u2208 s, x < max_s := s.sup_le\nhave h_min_t : \u2200 y \u2208 t, min_t < y := le_tinf\nhave h_between : \u2203 b, max_s < b \u2227 b < min_t :=\n  DenseOrder.exists_between_iff.2 \u27e8max_s, min_t\u27e9\nrcases h_between with \u27e8b, h1, h2\u27e9\nexact \u27e8b, h1, h2\u27e9",
+     "output": "4:15: error: typeclass instance problem is stuck\n  OrderBot ?m.30\n\nNote: Lean will not try to resolve this typeclass instance problem because the first and second type arguments to `OrderBot` contain metavariables. These arguments must be fully determined before Lean will try to resolve the typeclass.\n\nHint: Adding type annotations and supplying implicit arguments to functions can give Lean more i"
+    },
+    {
+     "task_id": "mh_sets_3ff207",
+     "config": "full_no_retrieval",
+     "proof": "let max_s := s.sup\nlet min_t := t.inf\nhave h_max_s : \u2200 x \u2208 s, x < max_s := s.sup_le\nhave h_min_t : \u2200 y \u2208 t, min_t < y := le_tinf\nhave h_between : \u2203 b, max_s < b \u2227 b < min_t :=\n  DenseOrder.exists_between_iff.2 \u27e8max_s, min_t\u27e9\nrcases h_between with \u27e8b, h1, h2\u27e9\nexact \u27e8b, h1, h2\u27e9",
+     "output": "4:15: error: typeclass instance problem is stuck\n  OrderBot ?m.30\n\nNote: Lean will not try to resolve this typeclass instance problem because the first and second type arguments to `OrderBot` contain metavariables. These arguments must be fully determined before Lean will try to resolve the typeclass.\n\nHint: Adding type annotations and supplying implicit arguments to functions can give Lean more i"
+    },
+    {
+     "task_id": "mh_sets_3ff207",
+     "config": "full_no_retrieval",
+     "proof": "let max_s := s.sup\nlet min_t := t.inf\nhave h_max_s : \u2200 x \u2208 s, x < max_s := s.sup_le\nhave h_min_t : \u2200 y \u2208 t, min_t < y := le_tinf\nhave h_between : \u2203 b, max_s < b \u2227 b < min_t :=\n  DenseOrder.exists_between_iff.2 \u27e8max_s, min_t\u27e9\nrcases h_between with \u27e8b, h1, h2\u27e9\nexact \u27e8b, h1, h2\u27e9",
+     "output": "4:15: error: typeclass instance problem is stuck\n  OrderBot ?m.30\n\nNote: Lean will not try to resolve this typeclass instance problem because the first and second type arguments to `OrderBot` contain metavariables. These arguments must be fully determined before Lean will try to resolve the typeclass.\n\nHint: Adding type annotations and supplying implicit arguments to functions can give Lean more i"
+    }
+   ],
+   "instance_resolution_failure": [
+    {
+     "task_id": "mh_ineq_2410e2",
+     "config": "full_no_retrieval",
+     "proof": "let n := Fintype.card \u03b9\nlet s_f := \u2211 i, f i\nlet s_g := \u2211 i, g i\nlet s_fg := \u2211 i, f i * g i\n\nhave h1 : s_fg \u2264 (s_f * s_g) / n :=\n  by\n    rw [Nat.cast_div]\n    apply div_le_div\n    exact (Nat.cast_pos n).trans (mul_pos (Nat.cast_pos n) (Nat.cast_pos s_f) (Nat.cast_pos s_g))\n    apply le_mul_div\n    exact (le_mul_div s_f s_g n).trans (Antivary.sum_le_div hfg)\n\nhave h2 : (s_f * s_g) / n \u2264 (s_f * s_g)",
+     "output": "9:19: error: failed to synthesize instance of type class\n  HDiv \u03b1 \u2115 ?m.87\n\nHint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.\n17:12: error: failed to synthesize instance of type class\n  HDiv \u03b1 \u2115 ?m.104\n\nHint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command."
+    },
+    {
+     "task_id": "mh_ineq_2410e2",
+     "config": "full_no_retrieval",
+     "proof": "let n := Fintype.card \u03b9\nlet s_f := \u2211 i, f i\nlet s_g := \u2211 i, g i\nlet s_fg := \u2211 i, f i * g i\n\nhave h1 : s_fg \u2264 (s_f * s_g) / n :=\n  by\n    rw [Nat.cast_div]\n    apply div_le_div\n    exact (Nat.cast_pos n).trans (mul_pos (Nat.cast_pos n) (Nat.cast_pos s_f) (Nat.cast_pos s_g))\n    apply le_mul_div\n    exact (le_mul_div s_f s_g n).trans (Antivary.sum_le_div hfg)\n\nhave h2 : (s_f * s_g) / n \u2264 (s_f * s_g)",
+     "output": "9:19: error: failed to synthesize instance of type class\n  HDiv \u03b1 \u2115 ?m.87\n\nHint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.\n17:12: error: failed to synthesize instance of type class\n  HDiv \u03b1 \u2115 ?m.104\n\nHint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command."
+    },
+    {
+     "task_id": "mh_sets_8f88f1",
+     "config": "full_no_retrieval",
+     "proof": "let a := (t \\ s).choose\nhave h1 : a \u2208 t := by exact Set.mem_union_left _ (Set.mem_set_of_eq.mp (t \\ s).choose_spec.2)\nhave h2 : a \u2209 s := by exact (t \\ s).choose_spec.1\nhave h3 : t.erase a = s :=\n  by\n    rw [Finset.erase_union_right_iff]\n    exact \u27e8h2, Finset.subset.antisymm (Finset.subset.trans (Finset.subset_union_left _) h) (Finset.subset.refl _)\u27e9\nexact \u27e8a, h1, h2, h3\u27e9",
+     "output": "4:11: error: failed to synthesize instance of type class\n  DecidablePred p\u271d\n\nHint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.\n5:12: error: failed to synthesize instance of type class\n  Membership ((p : \u03b1 \u2192 Prop) \u2192 (\u2203! a, a \u2208 t \\ s \u2227 p a) \u2192 \u03b1) (Finset \u03b1)\n\nHint: Type class instance resolution failures can be inspected with th"
+    },
+    {
+     "task_id": "mh_sets_8f88f1",
+     "config": "full_no_retrieval",
+     "proof": "let a := (t \\ s).choose\nhave h1 : a \u2208 t := (t \\ s).choose_spec.2\nhave h2 : a \u2209 s := (t \\ s).choose_spec.1\nhave h3 : t.erase a = s :=\n  by\n    rw [Finset.erase_union_right_iff]\n    exact \u27e8h2, Finset.subset.antisymm (Finset.subset.trans (Finset.subset_union_left _) h) Finset.subset.refl\u27e9\nexact \u27e8a, h1, h2, h3\u27e9",
+     "output": "4:11: error: failed to synthesize instance of type class\n  DecidablePred p\u271d\n\nHint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.\n5:12: error: failed to synthesize instance of type class\n  Membership ((p : \u03b1 \u2192 Prop) \u2192 (\u2203! a, a \u2208 t \\ s \u2227 p a) \u2192 \u03b1) (Finset \u03b1)\n\nHint: Type class instance resolution failures can be inspected with th"
+    },
+    {
+     "task_id": "mh_sets_8f88f1",
+     "config": "full_no_retrieval",
+     "proof": "let a := (t \\ s).choose\nhave h1 : a \u2208 t := (t \\ s).choose_spec.2\nhave h2 : a \u2209 s := (t \\ s).choose_spec.1\nhave h3 : t.erase a = s :=\n  by\n    rw [Finset.erase_union_right_iff]\n    exact \u27e8h2, Finset.subset.antisymm (Finset.subset.trans (Finset.subset_union_left _) h) Finset.subset.refl\u27e9\nexact \u27e8a, h1, h2, h3\u27e9",
+     "output": "4:11: error: failed to synthesize instance of type class\n  DecidablePred p\u271d\n\nHint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.\n5:12: error: failed to synthesize instance of type class\n  Membership ((p : \u03b1 \u2192 Prop) \u2192 (\u2203! a, a \u2208 t \\ s \u2227 p a) \u2192 \u03b1) (Finset \u03b1)\n\nHint: Type class instance resolution failures can be inspected with th"
+    },
+    {
+     "task_id": "mh_prob_d34b98",
+     "config": "rag",
+     "proof": "intro k hr\nlet f := fun n => \u2191(n.choose k) * p n ^ k\nlet g := fun n => \u2191n * p n\nhave h1 : Filter.Tendsto g Filter.atTop (nhds r) := hr\nhave h2 : \u2200 (n : \u2115), 0 \u2264 g n := by intro n; simp [g, n.choose, p, mul_nonneg]\nhave h3 : \u2200 (n : \u2115), 0 \u2264 p n := by intro n; simp [p, mul_nonneg]\nhave h4 : \u2200 (n : \u2115), 0 \u2264 f n := by intro n; simp [f, n.choose, p, pow_nonneg, mul_nonneg]\nlet s := fun n => \u2191(n.choose k) ",
+     "output": "5:36: error: failed to synthesize instance of type class\n  HPow \u211d (Set \u211d) ?m.57\n\nHint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.\n5:31: error: Application type mismatch: The argument\n  k\nhas type\n  Set \u211d\nbut is expected to have type\n  \u2115\nin the application\n  n.choose k\n3:208: error: unsolved goals\np : \u2115 \u2192 \u211d\nr : \u211d\nk\u271d : \u2115\nhr\u271d "
+    }
+   ],
+   "bad_induction": [
+    {
+     "task_id": "mh_numb_485b85",
+     "config": "repair",
+     "proof": "intro n\ninduction' n with d hd\n\u00b7 simp only [functor.pow_zero, nat.cast_zero, zero_add, add_zero]\n  exact tendsto_const_nhds\n\u00b7 rw [functor.pow_succ, fwdDiff_pow]\n  simp only [nat.cast_succ, add_assoc, add_left_comm, add_left_inj]\n  have : (fwdDiff 1)^[d + 1] (\u21d1f) 0 = (fwdDiff 1)^[d] (fwdDiff 1 (\u21d1f)) 0\n  rw [this]\n  refine' tendsto.comp _ (tendsto_const_nhds)\n  exact tendsto_id\n  exact hd",
+     "output": "5:2: error: Tactic `induction` failed: major premise type is not an inductive type\n  E \u2192 Prop\n\nExplanation: the `induction` tactic is for constructor-based reasoning as well as for applying custom induction principles with a 'using' clause or a registered '@[induction_eliminator]' theorem. The above type neither is an inductive type nor has a registered theorem.\n\np : \u2115\nhp : Fact (Nat.Prime p)\nE : "
+    },
+    {
+     "task_id": "mh_numb_485b85",
+     "config": "repair",
+     "proof": "intro n\ninduction' n with d hd\n\u00b7 simp only [functor.pow_zero, nat.cast_zero, zero_add, add_zero]\n  exact tendsto_const_nhds\n\u00b7 rw [functor.pow_succ, fwdDiff_pow]\n  simp only [nat.cast_succ, add_assoc, add_left_comm, add_left_inj]\n  have : (fwdDiff 1)^[d + 1] (\u21d1f) 0 = (fwdDiff 1)^[d] (fwdDiff 1 (\u21d1f)) 0\n  rw [this]\n  refine' tendsto.comp _ (tendsto_const_nhds)\n  exact tendsto_id\n  exact hd",
+     "output": "5:2: error: Tactic `induction` failed: major premise type is not an inductive type\n  E \u2192 Prop\n\nExplanation: the `induction` tactic is for constructor-based reasoning as well as for applying custom induction principles with a 'using' clause or a registered '@[induction_eliminator]' theorem. The above type neither is an inductive type nor has a registered theorem.\n\np : \u2115\nhp : Fact (Nat.Prime p)\nE : "
+    },
+    {
+     "task_id": "mh_numb_485b85",
+     "config": "repair",
+     "proof": "intro n\ninduction' n with d hd\n\u00b7 simp only [functor.pow_zero, nat.cast_zero, zero_add, add_zero]\n  exact tendsto_const_nhds\n\u00b7 rw [functor.pow_succ, fwdDiff_pow]\n  simp only [nat.cast_succ, add_assoc, add_left_comm, add_left_inj]\n  have : (fwdDiff 1)^[d + 1] (\u21d1f) 0 = (fwdDiff 1)^[d] (fwdDiff 1 (\u21d1f)) 0\n  rw [this]\n  refine' tendsto.comp _ (tendsto_const_nhds)\n  exact tendsto_id\n  exact hd",
+     "output": "5:2: error: Tactic `induction` failed: major premise type is not an inductive type\n  E \u2192 Prop\n\nExplanation: the `induction` tactic is for constructor-based reasoning as well as for applying custom induction principles with a 'using' clause or a registered '@[induction_eliminator]' theorem. The above type neither is an inductive type nor has a registered theorem.\n\np : \u2115\nhp : Fact (Nat.Prime p)\nE : "
+    },
+    {
+     "task_id": "novel_fun_01",
+     "config": "repair",
+     "proof": "intro x y\ncases h : (g \u2218 f) x = (g \u2218 f) y\napply hg at h\napply hf at h\nexact h",
+     "output": "5:2: error: Tactic `cases` failed: major premise type is not an inductive type\n  Prop\n\nExplanation: the `cases` tactic is for constructor-based reasoning as well as for applying custom cases principles with a 'using' clause or a registered '@[cases_eliminator]' theorem. The above type neither is an inductive type nor has a registered theorem.\n\nConsider using the 'by_cases' tactic, which does true/"
+    },
+    {
+     "task_id": "novel_fun_01",
+     "config": "repair",
+     "proof": "intro x y\ncases h : (g \u2218 f) x = (g \u2218 f) y\napply hg at h\napply hf at h\nexact h",
+     "output": "5:2: error: Tactic `cases` failed: major premise type is not an inductive type\n  Prop\n\nExplanation: the `cases` tactic is for constructor-based reasoning as well as for applying custom cases principles with a 'using' clause or a registered '@[cases_eliminator]' theorem. The above type neither is an inductive type nor has a registered theorem.\n\nConsider using the 'by_cases' tactic, which does true/"
+    },
+    {
+     "task_id": "mh_sets_185b9a",
+     "config": "repair_prompt_b",
+     "proof": "constructor\nobtain \u27e8t, ht\u27e9 := hf\nobtain \u27e8u, hu\u27e9 := hs\napply Finset.image_finite\nexact ht\nexact hu",
+     "output": "5:9: error: Tactic `cases` failed with a nested error:\nTactic `induction` failed: recursor `Finite.casesOn` can only eliminate into `Prop`\n\ncase a\n\u03b1 : Type u\n\u03b2 : Type v\nf : Set (\u03b1 \u2192 \u03b2)\ns : Set \u03b1\nhs : s.Finite\nhf : f.Finite\n\u22a2 \u2191(f.seq s) \u2243 Fin (?m.11 hf)"
+    }
+   ],
+   "timeout": [
+    {
+     "task_id": "mh_numb_7d6af5",
+     "config": "template",
+     "proof": "exact?",
+     "output": "4:2: error: (deterministic) timeout at `whnf`, maximum number of heartbeats (200000) has been reached\n\nNote: Use `set_option maxHeartbeats <num>` to set the limit.\n\nHint: Additional diagnostic information may be available using the `set_option diagnostics true` command."
+    }
+   ]
+  }
+ },
+ "difficulty_correlations": {
+  "ref_proof_lines": {
+   "spearman_rho": -0.3311749991322937,
+   "p": 0.00020694750713369557,
+   "n": 121
+  },
+  "ref_tactic_diversity": {
+   "spearman_rho": -0.306276673058054,
+   "p": 0.0006341704605681479,
+   "n": 121
+  },
+  "gt_premises_reachable": {
+   "spearman_rho": -0.34781666399673805,
+   "p": 9.266127498544248e-05,
+   "n": 121
+  },
+  "type_depth": {
+   "spearman_rho": -0.09469430296423686,
+   "p": 0.30153425803204226,
+   "n": 121
+  },
+  "statement_chars": {
+   "spearman_rho": -0.13702247390974204,
+   "p": 0.1339566104464722,
+   "n": 121
+  },
+  "difficulty_score": {
+   "spearman_rho": -0.3134377523299686,
+   "p": 0.00046408965380583824,
+   "n": 121
+  },
+  "binder_groups": {
+   "spearman_rho": -0.08635370640310168,
+   "p": 0.3462993399541458,
+   "n": 121
+  }
+ }
+}

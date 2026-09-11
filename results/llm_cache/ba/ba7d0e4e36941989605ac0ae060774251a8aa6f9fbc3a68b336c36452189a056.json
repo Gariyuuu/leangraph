@@ -1,0 +1,1 @@
+{"text": ":= by\n  rw [hf 0 0]\n  rfl", "reasoning": "", "prompt_tokens": 274, "completion_tokens": 18, "reasoning_tokens": 0, "cost_usd": 4.0248e-05, "latency_s": 1.3375918865203857, "finish_reason": "stop", "provider": "Alibaba", "key": "ba7d0e4e36941989605ac0ae060774251a8aa6f9fbc3a68b336c36452189a056", "cached": false}

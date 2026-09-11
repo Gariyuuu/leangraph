@@ -1,0 +1,1 @@
+{"text": "```lean\nby\n  have := Nat.divisors_eq_of_prime_pow hp\n  rw [this]\n  rfl\n```", "reasoning": "", "prompt_tokens": 172, "completion_tokens": 30, "reasoning_tokens": 0, "cost_usd": 3.3774e-05, "latency_s": 1.8997628688812256, "finish_reason": "stop", "provider": "Alibaba", "key": "8ce6f2c28caae8ed070404ce437550de14fa5129748edaacd87e3cffd7ed58d3", "cached": false}

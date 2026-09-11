@@ -1,0 +1,35 @@
+{
+ "counts": {
+  "mathlib_heldout/dev/algebra": 5,
+  "mathlib_heldout/dev/category_theory": 5,
+  "mathlib_heldout/dev/inequalities": 5,
+  "mathlib_heldout/dev/number_theory": 5,
+  "mathlib_heldout/dev/probability": 5,
+  "mathlib_heldout/dev/sets": 4,
+  "mathlib_heldout/test/algebra": 20,
+  "mathlib_heldout/test/category_theory": 20,
+  "mathlib_heldout/test/functions": 6,
+  "mathlib_heldout/test/inequalities": 20,
+  "mathlib_heldout/test/number_theory": 20,
+  "mathlib_heldout/test/probability": 20,
+  "mathlib_heldout/test/sets": 15,
+  "novel/test/algebra": 10,
+  "novel/test/category_theory": 4,
+  "novel/test/functions": 7,
+  "novel/test/inequalities": 10,
+  "novel/test/number_theory": 10,
+  "novel/test/probability": 4,
+  "novel/test/sets": 8
+ },
+ "difficulty": {
+  "mathlib_heldout/easy": 50,
+  "mathlib_heldout/hard": 50,
+  "mathlib_heldout/medium": 50,
+  "novel/easy": 22,
+  "novel/hard": 7,
+  "novel/medium": 24
+ },
+ "novel_authored": 53,
+ "novel_certified": 53,
+ "roundtrip_failures_skipped": 100
+}

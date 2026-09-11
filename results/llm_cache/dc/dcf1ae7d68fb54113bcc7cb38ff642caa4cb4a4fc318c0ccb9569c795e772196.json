@@ -1,0 +1,1 @@
+{"text": "```lean\nby\n  constructor\n  exact Finite.prod hf hs\n```", "reasoning": "", "prompt_tokens": 812, "completion_tokens": 20, "reasoning_tokens": 0, "cost_usd": 0.000104104, "latency_s": 1.6102561950683594, "finish_reason": "stop", "provider": "Alibaba", "key": "dcf1ae7d68fb54113bcc7cb38ff642caa4cb4a4fc318c0ccb9569c795e772196", "cached": false}

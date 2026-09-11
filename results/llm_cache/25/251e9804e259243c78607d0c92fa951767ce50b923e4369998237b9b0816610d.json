@@ -1,0 +1,1 @@
+{"text": "```lean\nintros x y hxy\napply Function.Injective.eq_of_apply_eq\nexact hxy\n```", "reasoning": "", "prompt_tokens": 817, "completion_tokens": 27, "reasoning_tokens": 0, "cost_usd": 0.000107874, "latency_s": 1.4487450122833252, "finish_reason": "stop", "provider": "Alibaba", "key": "251e9804e259243c78607d0c92fa951767ce50b923e4369998237b9b0816610d", "cached": false}

@@ -1,0 +1,1 @@
+{"text": "```lean\nrw [pow_log, log_def, exp_add, mul_comm, exp_mul]\n```", "reasoning": "", "prompt_tokens": 265, "completion_tokens": 25, "reasoning_tokens": 0, "cost_usd": 4.238e-05, "latency_s": 1.5263721942901611, "finish_reason": "stop", "provider": "Alibaba", "key": "4ee967afba3b042a0a4ae9052ec51109d2c026bd5a1283e0558d612379d80f63", "cached": false}

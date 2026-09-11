@@ -1,0 +1,1 @@
+{"text": "```lean\nhave : Subsemiring.nonneg R = Subsemiring.nonneg R := rfl\nexact this\n```", "reasoning": "", "prompt_tokens": 551, "completion_tokens": 31, "reasoning_tokens": 0, "cost_usd": 7.8572e-05, "latency_s": 1.3453569412231445, "finish_reason": "stop", "provider": "Alibaba", "key": "eea6628ab96245324cddcd5b36898ed3cc2a6e96a303382c262d0480214b2a1a", "cached": false}

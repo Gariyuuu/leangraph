@@ -1,0 +1,1 @@
+{"text": "```lean\nby\n  intro x h\n  apply ProbabilityTheory.cgf_analytic_on\n  exact h\n```", "reasoning": "", "prompt_tokens": 464, "completion_tokens": 30, "reasoning_tokens": 0, "cost_usd": 6.7938e-05, "latency_s": 1.2857489585876465, "finish_reason": "stop", "provider": "Alibaba", "key": "4afaa33d39f5b1c21752880703cd8831773bbdef8135c751451c14ae3ed12474", "cached": false}

@@ -1,0 +1,1 @@
+{"text": "```lean\nintro a\nrw [supr_add_left_mono]\nexact hf\n```", "reasoning": "", "prompt_tokens": 323, "completion_tokens": 22, "reasoning_tokens": 0, "cost_usd": 4.7801e-05, "latency_s": 1.75876784324646, "finish_reason": "stop", "provider": "Alibaba", "key": "3e286d8c4e90056ca347244218b02ca9738f3af1ef632c971f2c31e0ad112c87", "cached": false}

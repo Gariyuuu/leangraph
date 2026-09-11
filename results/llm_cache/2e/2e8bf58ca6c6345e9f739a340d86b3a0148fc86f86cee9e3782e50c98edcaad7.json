@@ -1,0 +1,1 @@
+{"text": "```lean\nintro a g h\napply smul_comm_class.smul_comm\nexact smul_conj_act_smul\n```", "reasoning": "", "prompt_tokens": 307, "completion_tokens": 31, "reasoning_tokens": 0, "cost_usd": 5.0024e-05, "latency_s": 66.24343729019165, "finish_reason": "stop", "provider": "Alibaba", "key": "2e8bf58ca6c6345e9f739a340d86b3a0148fc86f86cee9e3782e50c98edcaad7", "cached": false}

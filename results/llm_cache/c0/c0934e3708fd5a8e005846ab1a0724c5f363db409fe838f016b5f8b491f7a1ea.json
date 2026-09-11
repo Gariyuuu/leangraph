@@ -1,0 +1,1 @@
+{"text": "```lean\nrw Set.compl_union\n```", "reasoning": "", "prompt_tokens": 1038, "completion_tokens": 14, "reasoning_tokens": 0, "cost_usd": 0.000127816, "latency_s": 1.5023748874664307, "finish_reason": "stop", "provider": "Alibaba", "key": "c0934e3708fd5a8e005846ab1a0724c5f363db409fe838f016b5f8b491f7a1ea", "cached": false}

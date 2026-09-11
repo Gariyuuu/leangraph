@@ -1,0 +1,1 @@
+{"text": "```lean\nintro n\napply ProbabilityTheory.mgf_deriv_at_zero\nexact h\n```", "reasoning": "", "prompt_tokens": 331, "completion_tokens": 23, "reasoning_tokens": 0, "cost_usd": 4.9192e-05, "latency_s": 1.3106169700622559, "finish_reason": "stop", "provider": "Alibaba", "key": "64e06af7f0cb03f3690b0be9cd10a5c3631c49d025963276e5add52bc00611f9", "cached": false}

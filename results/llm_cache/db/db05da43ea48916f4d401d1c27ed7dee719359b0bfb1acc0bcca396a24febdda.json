@@ -1,0 +1,1 @@
+{"text": "```lean\nintros w\nconstructor\napply CategoryTheory.UnivLE.ofEssSurj\nexact w\n```", "reasoning": "", "prompt_tokens": 266, "completion_tokens": 27, "reasoning_tokens": 0, "cost_usd": 4.3407e-05, "latency_s": 1.7374439239501953, "finish_reason": "stop", "provider": "Alibaba", "key": "db05da43ea48916f4d401d1c27ed7dee719359b0bfb1acc0bcca396a24febdda", "cached": false}

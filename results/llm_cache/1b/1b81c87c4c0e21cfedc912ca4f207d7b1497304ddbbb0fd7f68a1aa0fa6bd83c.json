@@ -1,0 +1,1 @@
+{"text": "```lean\nintro hX\napply MeasureTheory.integrable_of_has_gaussian_law\nexact hX\n```", "reasoning": "", "prompt_tokens": 344, "completion_tokens": 29, "reasoning_tokens": 0, "cost_usd": 5.3443e-05, "latency_s": 23.573426961898804, "finish_reason": "stop", "provider": "Alibaba", "key": "1b81c87c4c0e21cfedc912ca4f207d7b1497304ddbbb0fd7f68a1aa0fa6bd83c", "cached": false}

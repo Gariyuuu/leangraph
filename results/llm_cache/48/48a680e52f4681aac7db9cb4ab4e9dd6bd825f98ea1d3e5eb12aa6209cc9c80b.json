@@ -1,0 +1,1 @@
+{"text": "```lean\nrw Real.log_rpow hx 3\n```", "reasoning": "", "prompt_tokens": 1257, "completion_tokens": 17, "reasoning_tokens": 0, "cost_usd": 0.000154804, "latency_s": 1.7852098941802979, "finish_reason": "stop", "provider": "Alibaba", "key": "48a680e52f4681aac7db9cb4ab4e9dd6bd825f98ea1d3e5eb12aa6209cc9c80b", "cached": false}

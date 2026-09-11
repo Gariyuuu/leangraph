@@ -1,0 +1,1 @@
+{"text": ":= by\n  ext x\n  rw [set.inter_union_distrib]", "reasoning": "", "prompt_tokens": 279, "completion_tokens": 20, "reasoning_tokens": 0, "cost_usd": 4.1743e-05, "latency_s": 1.908355951309204, "finish_reason": "stop", "provider": "Alibaba", "key": "2d099fd8e661da7c8179b1f0dac5621674b65c1b2e391d0f9baaf3a5d9c5e4c5", "cached": false}

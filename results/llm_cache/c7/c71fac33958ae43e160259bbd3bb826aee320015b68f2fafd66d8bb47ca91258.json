@@ -1,0 +1,1 @@
+{"text": ":= by\n  have h0 : f 0 = f (0 + 0) := rfl\n  rw [hf 0 0] at h0\n  rw [h0]", "reasoning": "", "prompt_tokens": 274, "completion_tokens": 45, "reasoning_tokens": 0, "cost_usd": 5.2533e-05, "latency_s": 2.161957263946533, "finish_reason": "stop", "provider": "Alibaba", "key": "c71fac33958ae43e160259bbd3bb826aee320015b68f2fafd66d8bb47ca91258", "cached": false}

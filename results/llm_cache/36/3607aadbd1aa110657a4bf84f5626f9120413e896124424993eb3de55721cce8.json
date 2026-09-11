@@ -1,0 +1,1 @@
+{"text": "```lean\nintro hb\napply MeasureTheory.integrableOn_exp_neg_linear\nexact hb\n```", "reasoning": "", "prompt_tokens": 284, "completion_tokens": 25, "reasoning_tokens": 0, "cost_usd": 4.4603e-05, "latency_s": 1.3107917308807373, "finish_reason": "stop", "provider": "Alibaba", "key": "3607aadbd1aa110657a4bf84f5626f9120413e896124424993eb3de55721cce8", "cached": false}

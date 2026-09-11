@@ -1,0 +1,1 @@
+{"text": ":= by\n  rw [pow_two]\n  ring_simps", "reasoning": "", "prompt_tokens": 272, "completion_tokens": 16, "reasoning_tokens": 0, "cost_usd": 3.9104e-05, "latency_s": 1.2039449214935303, "finish_reason": "stop", "provider": "Alibaba", "key": "43a0371aaa9b865cfe0ca8b0c4d38df113777c0702b097dc9dfc29e71738c02a", "cached": false}

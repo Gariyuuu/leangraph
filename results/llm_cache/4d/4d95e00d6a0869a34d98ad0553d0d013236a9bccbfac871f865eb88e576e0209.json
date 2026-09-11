@@ -1,0 +1,1 @@
+{"text": "```lean\nby intro a b; apply le_of_sub_le; exact hf; exact le_refl\n```", "reasoning": "", "prompt_tokens": 1239, "completion_tokens": 26, "reasoning_tokens": 0, "cost_usd": 0.000156793, "latency_s": 1.7141261100769043, "finish_reason": "stop", "provider": "Alibaba", "key": "4d95e00d6a0869a34d98ad0553d0d013236a9bccbfac871f865eb88e576e0209", "cached": false}

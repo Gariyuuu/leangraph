@@ -1,0 +1,1 @@
+{"text": "```lean\nconstructor; exact IsIso.comp_isIso f g\n```", "reasoning": "", "prompt_tokens": 1637, "completion_tokens": 19, "reasoning_tokens": 0, "cost_usd": 0.000200174, "latency_s": 1.3576018810272217, "finish_reason": "stop", "provider": "Alibaba", "key": "549105f140d4313d700525e4f53d4638ef59782c625ff1b6a858ee3bab3d3551", "cached": false}

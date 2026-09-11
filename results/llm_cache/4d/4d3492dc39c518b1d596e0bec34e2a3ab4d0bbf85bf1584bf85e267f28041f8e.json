@@ -1,0 +1,1 @@
+{"text": "```lean\nintros s h\napply analytic_on_subset\napply analytic_on_lseries\nexact h\n```", "reasoning": "", "prompt_tokens": 276, "completion_tokens": 26, "reasoning_tokens": 0, "cost_usd": 4.4122e-05, "latency_s": 4.6028218269348145, "finish_reason": "stop", "provider": "Alibaba", "key": "4d3492dc39c518b1d596e0bec34e2a3ab4d0bbf85bf1584bf85e267f28041f8e", "cached": false}

@@ -1,0 +1,1 @@
+{"text": "```lean\next x\nconstructor\n· rw [h]\n  exact Or.inl x\n· exact Or.inr x\n```", "reasoning": "", "prompt_tokens": 266, "completion_tokens": 32, "reasoning_tokens": 0, "cost_usd": 4.5682e-05, "latency_s": 1.463076114654541, "finish_reason": "stop", "provider": "Alibaba", "key": "a145cd13c1c7ab05db41aa274a4bf245b8ef8c268115751dfb002359576cdc01", "cached": false}

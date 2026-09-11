@@ -1,0 +1,1 @@
+{"text": "```lean\napply mono_of_left_cancellation; exact w\n```", "reasoning": "", "prompt_tokens": 300, "completion_tokens": 18, "reasoning_tokens": 0, "cost_usd": 4.329e-05, "latency_s": 1.4367051124572754, "finish_reason": "stop", "provider": "Alibaba", "key": "18c3d61227b3badf469566056e2ca464c275675b4434f3ae8cf8ac8785f311ab", "cached": false}

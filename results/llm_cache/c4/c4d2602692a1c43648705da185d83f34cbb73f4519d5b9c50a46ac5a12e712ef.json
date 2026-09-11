@@ -1,0 +1,1 @@
+{"text": ":= by\n  rw [pow_two]\n  exact mod_eq_mod (pow_mod 2 a 5) (pow_mod 2 b 5) 5 h", "reasoning": "", "prompt_tokens": 277, "completion_tokens": 39, "reasoning_tokens": 0, "cost_usd": 5.0154e-05, "latency_s": 1.616487979888916, "finish_reason": "stop", "provider": "Alibaba", "key": "c4d2602692a1c43648705da185d83f34cbb73f4519d5b9c50a46ac5a12e712ef", "cached": false}

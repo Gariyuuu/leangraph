@@ -1,0 +1,1 @@
+{"text": "```lean\napply Nat.card_congr;\nexact i.hom\n```", "reasoning": "", "prompt_tokens": 1377, "completion_tokens": 18, "reasoning_tokens": 0, "cost_usd": 0.000169299, "latency_s": 1.3873448371887207, "finish_reason": "stop", "provider": "Alibaba", "key": "74547cb2076616e8ab9b328dbffd8331eb2240d56bc80c25554a53014440478d", "cached": false}

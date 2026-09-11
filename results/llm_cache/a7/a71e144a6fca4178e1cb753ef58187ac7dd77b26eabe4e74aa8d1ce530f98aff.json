@@ -1,0 +1,1 @@
+{"text": "```lean\nintro a b\napply (le_of_sub_le f a b)\napply hf\napply le_refl\n```", "reasoning": "", "prompt_tokens": 331, "completion_tokens": 29, "reasoning_tokens": 0, "cost_usd": 5.1922e-05, "latency_s": 1.797778844833374, "finish_reason": "stop", "provider": "Alibaba", "key": "a71e144a6fca4178e1cb753ef58187ac7dd77b26eabe4e74aa8d1ce530f98aff", "cached": false}

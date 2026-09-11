@@ -1,0 +1,1 @@
+{"text": ":= by\n  intro h\n  intro h'\n  have := mono_comp f g h h'\n  exact this", "reasoning": "", "prompt_tokens": 294, "completion_tokens": 28, "reasoning_tokens": 0, "cost_usd": 4.7138e-05, "latency_s": 1.5645849704742432, "finish_reason": "stop", "provider": "Alibaba", "key": "9223216a31a54976966220bb5150a24a8820d3d01f079771a282223bdb2295c0", "cached": false}

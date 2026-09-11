@@ -1,0 +1,1 @@
+{"text": "```lean\napply Finite.prod Finite.finite_set Finite.finite_set\n```", "reasoning": "", "prompt_tokens": 552, "completion_tokens": 20, "reasoning_tokens": 0, "cost_usd": 7.3684e-05, "latency_s": 1.3006761074066162, "finish_reason": "stop", "provider": "Alibaba", "key": "bdd4b8366c5344d612f53f4c486812514f30104c9aa61328ca6a46b9986f3672", "cached": false}

@@ -1,0 +1,1 @@
+{"text": "```lean\nby\n  apply SModEq.prod\n  exact h\n```", "reasoning": "", "prompt_tokens": 1456, "completion_tokens": 21, "reasoning_tokens": 0, "cost_usd": 0.000179907, "latency_s": 4.428267002105713, "finish_reason": "stop", "provider": "Alibaba", "key": "e6dabb00c13b94bfdca375309305f9ba67398ce0485255092c775cad2dd9b931", "cached": false}

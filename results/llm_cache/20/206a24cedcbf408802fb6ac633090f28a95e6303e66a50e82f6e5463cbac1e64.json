@@ -1,0 +1,1 @@
+{"text": "```lean\n  intros x y hxy\n  apply Function.Injective.eq_of_apply_eq\n  exact hxy\n```", "reasoning": "", "prompt_tokens": 557, "completion_tokens": 30, "reasoning_tokens": 0, "cost_usd": 7.8819e-05, "latency_s": 1.5146245956420898, "finish_reason": "stop", "provider": "Alibaba", "key": "206a24cedcbf408802fb6ac633090f28a95e6303e66a50e82f6e5463cbac1e64", "cached": false}

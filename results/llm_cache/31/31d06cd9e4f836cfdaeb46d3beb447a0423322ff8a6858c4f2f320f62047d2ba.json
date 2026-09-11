@@ -1,0 +1,1 @@
+{"text": "```lean\n:= by\n  have := Set.Finite.image2 (fun f => f) hf hs\n  exact this\n```", "reasoning": "", "prompt_tokens": 992, "completion_tokens": 32, "reasoning_tokens": 0, "cost_usd": 0.000130624, "latency_s": 2.515875816345215, "finish_reason": "stop", "provider": "Alibaba", "key": "31d06cd9e4f836cfdaeb46d3beb447a0423322ff8a6858c4f2f320f62047d2ba", "cached": false}

@@ -1,0 +1,1 @@
+{"text": "```lean\nby\n  rw [pow_two, pow_two]\n  apply add_right_inj\n  linarith\n```", "reasoning": "", "prompt_tokens": 261, "completion_tokens": 30, "reasoning_tokens": 0, "cost_usd": 4.4187e-05, "latency_s": 1.6487040519714355, "finish_reason": "stop", "provider": "Alibaba", "key": "23c64afccd4fece294b4fe51150981434bda118f06dd86beef80b13a2a7d4229", "cached": false}

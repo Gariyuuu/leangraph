@@ -1,0 +1,1 @@
+{"text": "```lean\nby exact α.hom ≫ α.inv = 𝟙 X\n```", "reasoning": "", "prompt_tokens": 1151, "completion_tokens": 23, "reasoning_tokens": 0, "cost_usd": 0.000145132, "latency_s": 1.5774879455566406, "finish_reason": "stop", "provider": "Alibaba", "key": "c52354700adfd4f14ae51a2935501a5218f6b58f534df401a19e06d628a46e01", "cached": false}

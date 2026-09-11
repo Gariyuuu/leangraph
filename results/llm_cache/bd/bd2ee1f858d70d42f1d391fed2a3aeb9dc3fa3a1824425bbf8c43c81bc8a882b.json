@@ -1,0 +1,1 @@
+{"text": "```lean\nby cases a with n; constructor; simp [pow, mod_eq_mod, n]\n```", "reasoning": "", "prompt_tokens": 269, "completion_tokens": 26, "reasoning_tokens": 0, "cost_usd": 4.3303e-05, "latency_s": 1.524522066116333, "finish_reason": "stop", "provider": "Alibaba", "key": "bd2ee1f858d70d42f1d391fed2a3aeb9dc3fa3a1824425bbf8c43c81bc8a882b", "cached": false}

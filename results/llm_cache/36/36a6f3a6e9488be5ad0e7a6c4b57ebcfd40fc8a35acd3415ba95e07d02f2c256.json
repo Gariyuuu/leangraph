@@ -1,0 +1,1 @@
+{"text": ":= by exact Nat.sum_range_choose n", "reasoning": "", "prompt_tokens": 639, "completion_tokens": 12, "reasoning_tokens": 0, "cost_usd": 8.0223e-05, "latency_s": 1.2110941410064697, "finish_reason": "stop", "provider": "Alibaba", "key": "36a6f3a6e9488be5ad0e7a6c4b57ebcfd40fc8a35acd3415ba95e07d02f2c256", "cached": false}

@@ -1,0 +1,1 @@
+{"text": "```lean\nrw [finset.sum_eq_card, finset.coe_set_eq]\n```", "reasoning": "", "prompt_tokens": 275, "completion_tokens": 23, "reasoning_tokens": 0, "cost_usd": 4.264e-05, "latency_s": 1.5996160507202148, "finish_reason": "stop", "provider": "Alibaba", "key": "75ca78155b199711efb9df6b2a2a2a69f0cf0b9bd7c1f38dde100be89ba7e025", "cached": false}

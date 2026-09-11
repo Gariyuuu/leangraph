@@ -1,0 +1,1 @@
+{"text": "```lean\nintro x; exact not.intro (assume h: not x, h.elim x)\n```", "reasoning": "", "prompt_tokens": 246, "completion_tokens": 26, "reasoning_tokens": 0, "cost_usd": 4.0612e-05, "latency_s": 1.8344919681549072, "finish_reason": "stop", "provider": "Alibaba", "key": "e0d138b4c366d615ef0827f86076c22df16586842a849070ad0211f4e3653c0a", "cached": false}

@@ -1,0 +1,1 @@
+{"text": ":= by\n  rw [Set.inter_union_distrib_left]\n  exact Set.union_comm (A ∩ B) (A ∩ C)", "reasoning": "", "prompt_tokens": 635, "completion_tokens": 34, "reasoning_tokens": 0, "cost_usd": 8.9765e-05, "latency_s": 1.898315191268921, "finish_reason": "stop", "provider": "Alibaba", "key": "a8b565caba5afad9134581f21d9ea80567f6d9eecb56992bbe32e0e94afdc300", "cached": false}

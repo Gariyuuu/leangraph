@@ -1,0 +1,1 @@
+{"text": "```lean\nby apply PFun.lawfulMonad\n```", "reasoning": "", "prompt_tokens": 430, "completion_tokens": 17, "reasoning_tokens": 0, "cost_usd": 5.8045e-05, "latency_s": 1.2220327854156494, "finish_reason": "stop", "provider": "Alibaba", "key": "b9eba7f90b0b447c59c178499733c5887ede461e897edfc1c60bc595a9c7fe4f", "cached": false}

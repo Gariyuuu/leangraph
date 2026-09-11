@@ -1,0 +1,1 @@
+{"text": ":= by\n  rw [add_mul_self]\n  rw [mul_two]\n  ring_simps", "reasoning": "", "prompt_tokens": 272, "completion_tokens": 23, "reasoning_tokens": 0, "cost_usd": 4.2289e-05, "latency_s": 1.52329683303833, "finish_reason": "stop", "provider": "Alibaba", "key": "50a522e2947d203be8617192961a5c2f0b7b9ba2033ab7b1c19b891d8821fe51", "cached": false}

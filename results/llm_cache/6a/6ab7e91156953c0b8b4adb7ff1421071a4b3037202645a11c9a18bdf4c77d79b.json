@@ -1,0 +1,1 @@
+{"text": "```lean\napply CategoryTheory.HasProjectiveResolutions.of_enough_projectives\n```", "reasoning": "", "prompt_tokens": 283, "completion_tokens": 22, "reasoning_tokens": 0, "cost_usd": 4.3121e-05, "latency_s": 1.309870958328247, "finish_reason": "stop", "provider": "Alibaba", "key": "6ab7e91156953c0b8b4adb7ff1421071a4b3037202645a11c9a18bdf4c77d79b", "cached": false}

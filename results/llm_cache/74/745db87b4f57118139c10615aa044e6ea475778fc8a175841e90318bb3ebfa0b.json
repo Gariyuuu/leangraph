@@ -1,0 +1,1 @@
+{"text": "```lean\nby\n  rw [MeasureTheory.measure_compl_le_one μ s]\n```", "reasoning": "", "prompt_tokens": 522, "completion_tokens": 23, "reasoning_tokens": 0, "cost_usd": 7.1539e-05, "latency_s": 1.4187140464782715, "finish_reason": "stop", "provider": "Alibaba", "key": "745db87b4f57118139c10615aa044e6ea475778fc8a175841e90318bb3ebfa0b", "cached": false}

@@ -1,0 +1,1 @@
+{"text": ":= by\n  constructor\n  exact Submonoid.coe_oneLE M\n  exact Submonoid.coe_oneLE M", "reasoning": "", "prompt_tokens": 1230, "completion_tokens": 31, "reasoning_tokens": 0, "cost_usd": 0.000158015, "latency_s": 1.8736672401428223, "finish_reason": "stop", "provider": "Alibaba", "key": "107a669c465152958794d7057c9d9a2cb121fc545dae2bb19b0a26fc6f2d6012", "cached": false}

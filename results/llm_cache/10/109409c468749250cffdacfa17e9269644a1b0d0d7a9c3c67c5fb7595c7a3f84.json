@@ -1,0 +1,1 @@
+{"text": "```lean\nintro h\napply le_rfl\n```", "reasoning": "", "prompt_tokens": 330, "completion_tokens": 16, "reasoning_tokens": 0, "cost_usd": 4.589e-05, "latency_s": 1.5321669578552246, "finish_reason": "stop", "provider": "Alibaba", "key": "109409c468749250cffdacfa17e9269644a1b0d0d7a9c3c67c5fb7595c7a3f84", "cached": false}

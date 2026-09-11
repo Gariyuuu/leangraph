@@ -1,0 +1,1 @@
+{"text": "```lean\nby\n  rw [supr_add_left_mono]\n  exact hf\n```", "reasoning": "", "prompt_tokens": 862, "completion_tokens": 23, "reasoning_tokens": 0, "cost_usd": 0.000111319, "latency_s": 1.348863124847412, "finish_reason": "stop", "provider": "Alibaba", "key": "fdd4edbbc7c0cc574d34c93ddbe03f5afbc3f0174e2419212f78da1cc4a3e6ed", "cached": false}

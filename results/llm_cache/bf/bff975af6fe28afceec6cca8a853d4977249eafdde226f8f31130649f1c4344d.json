@@ -1,0 +1,1 @@
+{"text": "```lean\napply CategoryTheory.isCardinalPresentable_of_le\nuse κ\nexact hX\n```", "reasoning": "", "prompt_tokens": 1542, "completion_tokens": 26, "reasoning_tokens": 0, "cost_usd": 0.000192244, "latency_s": 1.359055995941162, "finish_reason": "stop", "provider": "Alibaba", "key": "bff975af6fe28afceec6cca8a853d4977249eafdde226f8f31130649f1c4344d", "cached": false}

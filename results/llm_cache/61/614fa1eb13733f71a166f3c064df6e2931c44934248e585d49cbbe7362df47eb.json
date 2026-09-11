@@ -1,0 +1,1 @@
+{"text": ":= by\n  rw [Finset.sum_range]\n  rw [Nat.cast_add]\n  rw [Nat.cast_mul]\n  norm_num", "reasoning": "", "prompt_tokens": 277, "completion_tokens": 32, "reasoning_tokens": 0, "cost_usd": 4.6969e-05, "latency_s": 1.5564401149749756, "finish_reason": "stop", "provider": "Alibaba", "key": "614fa1eb13733f71a166f3c064df6e2931c44934248e585d49cbbe7362df47eb", "cached": false}

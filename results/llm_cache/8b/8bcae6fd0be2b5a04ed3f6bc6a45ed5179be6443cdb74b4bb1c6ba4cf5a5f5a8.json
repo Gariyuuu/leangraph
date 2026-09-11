@@ -1,0 +1,1 @@
+{"text": "```lean\nintros\nunfold partialSups\nsimp [fun x => f x + c, add_right_mono]\n```", "reasoning": "", "prompt_tokens": 230, "completion_tokens": 29, "reasoning_tokens": 0, "cost_usd": 4.0105e-05, "latency_s": 32.03363299369812, "finish_reason": "stop", "provider": "Alibaba", "key": "8bcae6fd0be2b5a04ed3f6bc6a45ed5179be6443cdb74b4bb1c6ba4cf5a5f5a8", "cached": false}

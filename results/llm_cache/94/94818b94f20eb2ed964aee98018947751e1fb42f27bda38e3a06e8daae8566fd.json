@@ -1,0 +1,1 @@
+{"text": "```lean\nby\n  rw [h]\n  apply or.intro_left\n  ring\n```", "reasoning": "", "prompt_tokens": 273, "completion_tokens": 24, "reasoning_tokens": 0, "cost_usd": 4.2861e-05, "latency_s": 1.321023941040039, "finish_reason": "stop", "provider": "Alibaba", "key": "94818b94f20eb2ed964aee98018947751e1fb42f27bda38e3a06e8daae8566fd", "cached": false}

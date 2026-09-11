@@ -1,0 +1,1 @@
+{"text": "```lean\napply SModEq.prod\nuse ℕ\nuse Ideal.span {n}\nexact h\n```", "reasoning": "", "prompt_tokens": 1834, "completion_tokens": 26, "reasoning_tokens": 0, "cost_usd": 0.000226408, "latency_s": 1.7486951351165771, "finish_reason": "stop", "provider": "Alibaba", "key": "1e625cf4c14b80f473c871306c39f417df11a43bea4276b7058396c09127c2be", "cached": false}

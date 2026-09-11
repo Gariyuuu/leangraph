@@ -1,0 +1,1 @@
+{"text": "```lean\ntheorem lg_target : Nat.choose 10 3 = 120 := by\n  norm_num [Nat.choose]\n```", "reasoning": "", "prompt_tokens": 348, "completion_tokens": 34, "reasoning_tokens": 0, "cost_usd": 5.6186e-05, "latency_s": 1.3817558288574219, "finish_reason": "stop", "provider": "Alibaba", "key": "6af9963961f5739dbf92ce53295c818622014b2269a61cf15178a590f8085c2c", "cached": false}

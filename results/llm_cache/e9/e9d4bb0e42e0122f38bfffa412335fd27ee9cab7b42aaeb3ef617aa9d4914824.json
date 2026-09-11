@@ -1,0 +1,1 @@
+{"text": "```lean\nsimp [Nat.choose]\n```", "reasoning": "", "prompt_tokens": 253, "completion_tokens": 13, "reasoning_tokens": 0, "cost_usd": 3.5516e-05, "latency_s": 1.4522299766540527, "finish_reason": "stop", "provider": "Alibaba", "key": "e9d4bb0e42e0122f38bfffa412335fd27ee9cab7b42aaeb3ef617aa9d4914824", "cached": false}

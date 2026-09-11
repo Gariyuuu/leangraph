@@ -1,0 +1,1 @@
+{"text": ":= by\n  have := MeasureTheory.measure_le_one μ s\n  exact this", "reasoning": "", "prompt_tokens": 283, "completion_tokens": 21, "reasoning_tokens": 0, "cost_usd": 4.2666e-05, "latency_s": 1.5594937801361084, "finish_reason": "stop", "provider": "Alibaba", "key": "b685bf818cca8e1227ca7f13a5bc5f3475cf9d935cdbead95eadc2b8cf86782f", "cached": false}

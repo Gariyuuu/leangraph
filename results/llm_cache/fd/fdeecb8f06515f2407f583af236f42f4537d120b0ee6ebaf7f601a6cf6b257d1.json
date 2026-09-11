@@ -1,0 +1,1 @@
+{"text": "```lean\nintros k\napply Algebra.IsAlgebraic.of_subfield\nexact k\n```", "reasoning": "", "prompt_tokens": 284, "completion_tokens": 24, "reasoning_tokens": 0, "cost_usd": 4.4148e-05, "latency_s": 1.7774107456207275, "finish_reason": "stop", "provider": "Alibaba", "key": "fdeecb8f06515f2407f583af236f42f4537d120b0ee6ebaf7f601a6cf6b257d1", "cached": false}

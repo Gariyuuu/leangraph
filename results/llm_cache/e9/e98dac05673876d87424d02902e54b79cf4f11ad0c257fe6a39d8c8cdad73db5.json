@@ -1,0 +1,1 @@
+{"text": "```lean\nby\n  cases h with h1 h2\n  apply Finset.card_lt_card\n  exact h1\n```", "reasoning": "", "prompt_tokens": 864, "completion_tokens": 32, "reasoning_tokens": 0, "cost_usd": 0.000115648, "latency_s": 1.4674930572509766, "finish_reason": "stop", "provider": "Alibaba", "key": "e98dac05673876d87424d02902e54b79cf4f11ad0c257fe6a39d8c8cdad73db5", "cached": false}

@@ -1,0 +1,1 @@
+{"text": "```lean\nhave : g.nums 0 = g.h := rfl\nexact this\n```", "reasoning": "", "prompt_tokens": 520, "completion_tokens": 24, "reasoning_tokens": 0, "cost_usd": 7.176e-05, "latency_s": 1.4737040996551514, "finish_reason": "stop", "provider": "Alibaba", "key": "ef1dff87da5de8a3cda19d6a132e802575c44f5f5e77ac80c6af35be4e4b97d6", "cached": false}

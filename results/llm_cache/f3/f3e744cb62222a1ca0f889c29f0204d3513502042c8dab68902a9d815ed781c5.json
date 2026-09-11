@@ -1,0 +1,1 @@
+{"text": "```lean\nintros a b\napply hf\nexact le_tsub_add α a b\n```", "reasoning": "", "prompt_tokens": 1535, "completion_tokens": 24, "reasoning_tokens": 0, "cost_usd": 0.000190515, "latency_s": 1.5275788307189941, "finish_reason": "stop", "provider": "Alibaba", "key": "f3e744cb62222a1ca0f889c29f0204d3513502042c8dab68902a9d815ed781c5", "cached": false}

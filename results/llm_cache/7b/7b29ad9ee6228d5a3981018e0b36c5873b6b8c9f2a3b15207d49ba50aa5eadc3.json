@@ -1,0 +1,1 @@
+{"text": "```lean\nrw [inv_mul, mul_inv]\n```", "reasoning": "", "prompt_tokens": 272, "completion_tokens": 16, "reasoning_tokens": 0, "cost_usd": 3.9104e-05, "latency_s": 1.2425458431243896, "finish_reason": "stop", "provider": "Alibaba", "key": "7b29ad9ee6228d5a3981018e0b36c5873b6b8c9f2a3b15207d49ba50aa5eadc3", "cached": false}

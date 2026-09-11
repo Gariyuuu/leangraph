@@ -1,0 +1,1 @@
+{"text": "```lean\nby exact α.hom_inv_id\n```", "reasoning": "", "prompt_tokens": 1627, "completion_tokens": 15, "reasoning_tokens": 0, "cost_usd": 0.000197184, "latency_s": 1.2233998775482178, "finish_reason": "stop", "provider": "Alibaba", "key": "564f9c22f1faea1118810d01094784512f251560f476f12db779b343374533c0", "cached": false}

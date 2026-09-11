@@ -1,0 +1,1 @@
+{"text": ":= by\n  rw [pow_two]\n  exact congr_arg (λ x, x ^ 2) h", "reasoning": "", "prompt_tokens": 277, "completion_tokens": 27, "reasoning_tokens": 0, "cost_usd": 4.4694e-05, "latency_s": 1.4097528457641602, "finish_reason": "stop", "provider": "Alibaba", "key": "0ed56ff110bf4b1420882f579b2b8dcbafdb7b5ef81ffd5da1d4aada4f1c971e", "cached": false}

@@ -1,0 +1,1 @@
+{"text": "```lean\nexact Real.cos_sq_le_one x\n```", "reasoning": "", "prompt_tokens": 724, "completion_tokens": 16, "reasoning_tokens": 0, "cost_usd": 9.1988e-05, "latency_s": 1.3122010231018066, "finish_reason": "stop", "provider": "Alibaba", "key": "3ee213424c21bfc960afb44fbf1da7cfc0a7896ca75dbfc8108aa33c3ca6744b", "cached": false}

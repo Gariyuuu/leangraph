@@ -1,0 +1,1 @@
+{"text": "```lean\nhave h_odd : Odd p := Nat.Prime.odd_of_ne_two hp h2\nexact h_odd\n```", "reasoning": "", "prompt_tokens": 878, "completion_tokens": 31, "reasoning_tokens": 0, "cost_usd": 0.000116831, "latency_s": 2.137894868850708, "finish_reason": "stop", "provider": "Alibaba", "key": "909591f48ed096ff2642e3500fb9ad6a671218e1c4d9151ddd67ba17daa1cc86", "cached": false}

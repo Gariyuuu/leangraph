@@ -1,0 +1,1 @@
+{"text": "```lean\nintro w\nconstructor\napply (CategoryTheory.UnivLE.ofEssSurj w)\n```", "reasoning": "", "prompt_tokens": 268, "completion_tokens": 26, "reasoning_tokens": 0, "cost_usd": 4.3186e-05, "latency_s": 11.386872053146362, "finish_reason": "stop", "provider": "Alibaba", "key": "7dcd9256a9dc448044692232be4909656c13df7f0fe9bc1d61dbfc3bf541662a", "cached": false}

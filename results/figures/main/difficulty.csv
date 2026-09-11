@@ -1,0 +1,10 @@
+config,tier,rate
+template,mathlib_heldout/easy,0.2631578947368421
+template,mathlib_heldout/medium,0.024390243902439025
+template,mathlib_heldout/hard,0.023809523809523808
+direct,mathlib_heldout/easy,0.0
+direct,mathlib_heldout/medium,0.0
+direct,mathlib_heldout/hard,0.0
+full,mathlib_heldout/easy,0.05263157894736842
+full,mathlib_heldout/medium,0.024390243902439025
+full,mathlib_heldout/hard,0.047619047619047616

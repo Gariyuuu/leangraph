@@ -1,0 +1,1 @@
+{"text": "```lean\nintro h\nobtain ⟨a, ha⟩ := h\nuse a\nexact ha\n```", "reasoning": "", "prompt_tokens": 283, "completion_tokens": 27, "reasoning_tokens": 0, "cost_usd": 4.5396e-05, "latency_s": 1.9022400379180908, "finish_reason": "stop", "provider": "Alibaba", "key": "6842249bcc2a7e81829bf3a5fb1675377fc83d798b62238192ad08e9603240cc", "cached": false}

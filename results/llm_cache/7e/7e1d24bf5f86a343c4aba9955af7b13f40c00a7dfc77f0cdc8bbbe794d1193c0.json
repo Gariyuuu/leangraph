@@ -1,0 +1,1 @@
+{"text": "```lean\nhave h_pow : a ^ 2 ≡ b ^ 2 [ZMOD 5] := Int.ModEq.pow 2 h\nexact h_pow\n```", "reasoning": "", "prompt_tokens": 898, "completion_tokens": 41, "reasoning_tokens": 0, "cost_usd": 0.000123721, "latency_s": 1.6424098014831543, "finish_reason": "stop", "provider": "Alibaba", "key": "7e1d24bf5f86a343c4aba9955af7b13f40c00a7dfc77f0cdc8bbbe794d1193c0", "cached": false}
