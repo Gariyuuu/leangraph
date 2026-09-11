@@ -73,6 +73,20 @@ model the owner has to supply; until then it is answered only by the reasoning-o
 * A `SIGSTOP`ped process keeps its memory. Pausing the embedder did not relieve pressure; killing it dropped swap from ~10 GB to 2.5 GB.
   Run embeddings when no REPL is up: `python -c "from leangraph.retrieval import *; build_dense_embeddings(load_premises())"` (resumable in 20k chunks).
 
+## Release status (2026-09-11)
+
+* **Public repo:** https://github.com/Gariyuuu/leangraph (MIT code; Mathlib content Apache-2.0, see NOTICE).
+* **Live site:** https://leangraph.vercel.app (Vercel project `leangraph`, Root Directory `site`, framework Next.js,
+  SSO protection off; the domain was read from the project's own domain list). Pushes to `main` redeploy.
+  CLI deploys must run from the repo root with `.vercelignore` (uploads only `site/`, ~9 MB); without it the upload
+  exceeds Vercel's 10 MB request limit.
+* **This is an interim release:** 9 of 15 configurations complete. The main grid was stopped at 14:5x because free disk
+  fell to ~2.1 GB (other sessions' swap, not this project). BM25 retrieval + repair had 38/174 traces; retrieval +
+  repair 173/174; dense retrieval + repair and the three full-agent ablations not started. Resume when free disk is
+  back above ~4 GB: `LG_MIN_FREE_GB_GRID=4 bash scripts/run_main_grid.sh >> results/main_grid.log 2>&1`, then
+  analysis → figures → paper → README results → export → `npm run build` → `scripts/site_smoke.mjs` → `make freeze`
+  → commit + push (the site redeploys itself).
+
 ## Next steps, in order
 
 1. Dense embeddings → `make retrieve` (retrieval benchmark). 7/13 chunks saved; the build resumes from
