@@ -68,6 +68,7 @@ def repo(tmp_path, monkeypatch):
     monkeypatch.setattr(paper, "ROOT", tmp_path)
     monkeypatch.setattr(export_site, "ROOT", tmp_path)
     monkeypatch.setattr(export_site, "SITE_DATA", tmp_path / "site" / "data")
+    monkeypatch.setattr(export_site, "SITE_PUBLIC", tmp_path / "site_public")  # never the real site/public
     monkeypatch.setattr(export_site, "ENV_DOC", tmp_path / "docs" / "ENVIRONMENT.md")
     return tmp_path
 
