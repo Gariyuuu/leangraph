@@ -1,0 +1,6 @@
+# Upload only the web app: the project's Root Directory is site/ and the build needs nothing else.
+# (Without this, `vercel deploy` from the repo root tries to upload the Lean toolchain, corpus and caches.)
+/*
+!/site
+/site/node_modules
+/site/.next

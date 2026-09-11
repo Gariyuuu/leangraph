@@ -21,3 +21,5 @@ results/.certify/
 results/raw/
 results/main_grid.log
 results/site_smoke/
+.vercel
+.env*
