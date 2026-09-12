@@ -1,0 +1,1 @@
+{"text": "```lean\nrw [Multiset.Icc_eq_setIcc, Set.Icc_add_Icc]\n```", "reasoning": "", "prompt_tokens": 1649, "completion_tokens": 26, "reasoning_tokens": 0, "cost_usd": 0.000204763, "latency_s": 1.4520230293273926, "finish_reason": "stop", "provider": "Alibaba", "key": "fb6b4f1d6a99a1ef42ae2a66e60b6979abaa91385606a98cebfac10de263dbdb", "cached": false}

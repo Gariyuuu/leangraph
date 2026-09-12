@@ -1,0 +1,1 @@
+{"text": "```lean\napply Finset.card_lt_card\nexact h\n```", "reasoning": "", "prompt_tokens": 1323, "completion_tokens": 18, "reasoning_tokens": 0, "cost_usd": 0.000162981, "latency_s": 1.3793702125549316, "finish_reason": "stop", "provider": "Alibaba", "key": "182206531b5523de2165ff54c21122d6e9d89ad6c8104ebbc3e986f476cde6b2", "cached": false}

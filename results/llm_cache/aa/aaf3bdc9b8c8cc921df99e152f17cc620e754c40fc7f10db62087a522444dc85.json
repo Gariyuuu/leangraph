@@ -1,0 +1,1 @@
+{"text": "```lean\nrw Submonoid.coe_oneLE\n```", "reasoning": "", "prompt_tokens": 805, "completion_tokens": 17, "reasoning_tokens": 0, "cost_usd": 0.00010192, "latency_s": 1.1567859649658203, "finish_reason": "stop", "provider": "Alibaba", "key": "aaf3bdc9b8c8cc921df99e152f17cc620e754c40fc7f10db62087a522444dc85", "cached": false}

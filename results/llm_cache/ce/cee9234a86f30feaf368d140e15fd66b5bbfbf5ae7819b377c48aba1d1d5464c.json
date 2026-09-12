@@ -1,0 +1,1 @@
+{"text": "```lean\nrw [Sub.sub_eq_pred, Set.Iic_pred_eq_Iio_of_not_isMin hb]\n```", "reasoning": "", "prompt_tokens": 1740, "completion_tokens": 28, "reasoning_tokens": 0, "cost_usd": 0.00021632, "latency_s": 1.475538730621338, "finish_reason": "stop", "provider": "Alibaba", "key": "cee9234a86f30feaf368d140e15fd66b5bbfbf5ae7819b377c48aba1d1d5464c", "cached": false}

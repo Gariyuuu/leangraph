@@ -1,0 +1,1 @@
+{"text": ":= by\n  intro h\n  rw [CategoryTheory.CategoryStruct.comp]\n  exact h", "reasoning": "", "prompt_tokens": 1198, "completion_tokens": 23, "reasoning_tokens": 0, "cost_usd": 0.000150631, "latency_s": 1.346039056777954, "finish_reason": "stop", "provider": "Alibaba", "key": "cc2c99801810989c867c285fee8e67773e666686952288fce573771901b45338", "cached": false}

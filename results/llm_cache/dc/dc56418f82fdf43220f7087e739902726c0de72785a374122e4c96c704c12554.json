@@ -1,0 +1,1 @@
+{"text": "```lean\nby rw [CategoryTheory.Iso.hom_inv_id]\n```", "reasoning": "", "prompt_tokens": 1277, "completion_tokens": 19, "reasoning_tokens": 0, "cost_usd": 0.000158054, "latency_s": 1.458833932876587, "finish_reason": "stop", "provider": "Alibaba", "key": "dc56418f82fdf43220f7087e739902726c0de72785a374122e4c96c704c12554", "cached": false}

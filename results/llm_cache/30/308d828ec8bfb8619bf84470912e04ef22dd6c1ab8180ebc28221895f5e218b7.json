@@ -1,0 +1,1 @@
+{"text": "```lean\nintros h;\nrw [Finset.val_inj];\nexact h\n```", "reasoning": "", "prompt_tokens": 725, "completion_tokens": 22, "reasoning_tokens": 0, "cost_usd": 9.4835e-05, "latency_s": 1.318145990371704, "finish_reason": "stop", "provider": "Alibaba", "key": "308d828ec8bfb8619bf84470912e04ef22dd6c1ab8180ebc28221895f5e218b7", "cached": false}

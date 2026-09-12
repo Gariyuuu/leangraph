@@ -1,0 +1,1 @@
+{"text": "```lean\napply Finset.map_add_left_Icc\n```", "reasoning": "", "prompt_tokens": 1745, "completion_tokens": 17, "reasoning_tokens": 0, "cost_usd": 0.0002119, "latency_s": 1.589425802230835, "finish_reason": "stop", "provider": "Alibaba", "key": "a1d264d7f4862d41c511912e9dd1779e3c53633511335911064d9910b0b13f56", "cached": false}

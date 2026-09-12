@@ -1,0 +1,1 @@
+{"text": ":= by\n  rw [disjointed_succ]\n  exact disjointed_succ._proof_1", "reasoning": "", "prompt_tokens": 1440, "completion_tokens": 24, "reasoning_tokens": 0, "cost_usd": 0.0001794, "latency_s": 1.3089778423309326, "finish_reason": "stop", "provider": "Alibaba", "key": "15c98b62edc651a69d09fd5fb8bdbb062f5f6515a199094ee453a12c4cfbec5c", "cached": false}

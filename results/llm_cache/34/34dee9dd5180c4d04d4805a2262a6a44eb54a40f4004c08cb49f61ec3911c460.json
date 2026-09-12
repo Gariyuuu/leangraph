@@ -1,0 +1,1 @@
+{"text": "```lean\nintro hf hs\napply Set.Finite.image\nuse (fun x => x)\nexact hs\n```", "reasoning": "", "prompt_tokens": 741, "completion_tokens": 28, "reasoning_tokens": 0, "cost_usd": 9.9437e-05, "latency_s": 1.356907844543457, "finish_reason": "stop", "provider": "Alibaba", "key": "34dee9dd5180c4d04d4805a2262a6a44eb54a40f4004c08cb49f61ec3911c460", "cached": false}

@@ -1,0 +1,1 @@
+{"text": "```lean\nhave : f 0 = f (0 + 0) := rfl\nrw hf at this\nsimp only [this]\n```", "reasoning": "", "prompt_tokens": 723, "completion_tokens": 34, "reasoning_tokens": 0, "cost_usd": 0.000100061, "latency_s": 1.5286839008331299, "finish_reason": "stop", "provider": "Alibaba", "key": "988484ce1543b44903c20d87380ae55f758bf095e8d62dcf09f918c750862daa", "cached": false}

@@ -114,7 +114,9 @@ def chat(
     temperature: float = 0.6,
     seed: int | None = None,
     sample: int = 0,
-    timeout: float = 600.0,
+    # The gateway sometimes accepts a connection and never answers; a long timeout then blocks a worker for
+    # minutes per attempt (measured: 17.8 min of wall time for 2 calls worth 6 s of latency). Fail fast, retry.
+    timeout: float = 120.0,
     retries: int = 6,
     offline: bool = False,
 ) -> Completion:

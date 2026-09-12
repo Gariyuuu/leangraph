@@ -1,0 +1,1 @@
+{"text": "```lean\napply Int.ModEq.pow 5 h 2\n```", "reasoning": "", "prompt_tokens": 1033, "completion_tokens": 19, "reasoning_tokens": 0, "cost_usd": 0.000129506, "latency_s": 1.448293924331665, "finish_reason": "stop", "provider": "Alibaba", "key": "e08753eed8689db6abd7d1fb6c2723e1082657cd05e4d06f90de579af120613a", "cached": false}

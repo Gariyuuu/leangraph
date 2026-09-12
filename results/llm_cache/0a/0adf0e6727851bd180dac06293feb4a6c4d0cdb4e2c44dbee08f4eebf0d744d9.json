@@ -1,0 +1,1 @@
+{"text": "```lean\n:= by\n  exact MeasureTheory.prob_le_one μ s\n```", "reasoning": "", "prompt_tokens": 1303, "completion_tokens": 21, "reasoning_tokens": 0, "cost_usd": 0.000162006, "latency_s": 1.4232981204986572, "finish_reason": "stop", "provider": "Alibaba", "key": "0adf0e6727851bd180dac06293feb4a6c4d0cdb4e2c44dbee08f4eebf0d744d9", "cached": false}

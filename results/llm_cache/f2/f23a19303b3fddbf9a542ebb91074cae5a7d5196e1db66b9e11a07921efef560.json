@@ -1,0 +1,1 @@
+{"text": ":= by\n  constructor\n  exact Subsemiring.nonneg R\n  exact Subsemiring.nonneg R", "reasoning": "", "prompt_tokens": 847, "completion_tokens": 29, "reasoning_tokens": 0, "cost_usd": 0.000112294, "latency_s": 1.9073538780212402, "finish_reason": "stop", "provider": "Alibaba", "key": "f23a19303b3fddbf9a542ebb91074cae5a7d5196e1db66b9e11a07921efef560", "cached": false}

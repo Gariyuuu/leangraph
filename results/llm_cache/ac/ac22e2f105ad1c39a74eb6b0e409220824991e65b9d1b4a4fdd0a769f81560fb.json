@@ -1,0 +1,1 @@
+{"text": "```lean\nintros hb\nhave h : 0 < b := hb\napply exp_neg_integrableOn_Ioi h\n```", "reasoning": "", "prompt_tokens": 778, "completion_tokens": 32, "reasoning_tokens": 0, "cost_usd": 0.000105586, "latency_s": 1.6142420768737793, "finish_reason": "stop", "provider": "Alibaba", "key": "ac22e2f105ad1c39a74eb6b0e409220824991e65b9d1b4a4fdd0a769f81560fb", "cached": false}

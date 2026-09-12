@@ -1,0 +1,1 @@
+{"text": "```lean\nby\n  rw [α.hom ≫ α.inv, α.hom_comp_inv]\n  exact id_rhs\n```", "reasoning": "", "prompt_tokens": 1442, "completion_tokens": 30, "reasoning_tokens": 0, "cost_usd": 0.000182364, "latency_s": 1.6527910232543945, "finish_reason": "stop", "provider": "Alibaba", "key": "3d9e9fffb0f3d5c60c615c9c0913ea7799846ba87712ec4a2a87afb34f1c18cf", "cached": false}

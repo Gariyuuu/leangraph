@@ -1,0 +1,1 @@
+{"text": ":= by\n  rw [Set.union_comm]\n  exact Set.subset_union_of_subset_right h B", "reasoning": "", "prompt_tokens": 614, "completion_tokens": 25, "reasoning_tokens": 0, "cost_usd": 8.3213e-05, "latency_s": 1.3699719905853271, "finish_reason": "stop", "provider": "Alibaba", "key": "bf3306897af94f0639df9bbde1daf4b480e0e3da6613733c6a8a140982ff3939", "cached": false}

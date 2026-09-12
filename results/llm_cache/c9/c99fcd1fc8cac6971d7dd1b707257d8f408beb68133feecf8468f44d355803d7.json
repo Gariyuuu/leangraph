@@ -1,0 +1,1 @@
+{"text": ":= by\n  rw Set.compl_union\n  exact Set.inter_comm A B", "reasoning": "", "prompt_tokens": 649, "completion_tokens": 21, "reasoning_tokens": 0, "cost_usd": 8.5488e-05, "latency_s": 1.3108420372009277, "finish_reason": "stop", "provider": "Alibaba", "key": "c99fcd1fc8cac6971d7dd1b707257d8f408beb68133feecf8468f44d355803d7", "cached": false}

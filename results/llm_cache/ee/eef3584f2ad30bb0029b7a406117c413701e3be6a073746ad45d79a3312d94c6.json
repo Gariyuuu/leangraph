@@ -1,0 +1,1 @@
+{"text": "```lean\nintro f s\napply Finite.Set.finite_image2\nexact f\nexact s\n```", "reasoning": "", "prompt_tokens": 824, "completion_tokens": 26, "reasoning_tokens": 0, "cost_usd": 0.000108238, "latency_s": 1.7406721115112305, "finish_reason": "stop", "provider": "Alibaba", "key": "eef3584f2ad30bb0029b7a406117c413701e3be6a073746ad45d79a3312d94c6", "cached": false}

@@ -1,0 +1,1 @@
+{"text": "```lean\n:= by norm_num [Nat.choose_eq_fast_choose, Nat.choose 10 3]\n```", "reasoning": "", "prompt_tokens": 797, "completion_tokens": 27, "reasoning_tokens": 0, "cost_usd": 0.000105534, "latency_s": 1.6972339153289795, "finish_reason": "stop", "provider": "Alibaba", "key": "53a9f517d6f0572cdb7f9ade9e2d6a604150f9132e3672b5416ee02d6303b8fc", "cached": false}

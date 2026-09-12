@@ -1,0 +1,1 @@
+{"text": "```lean\napply mono_of_mono_fac f (g ≫ f) (h ≫ f) w\n```", "reasoning": "", "prompt_tokens": 1212, "completion_tokens": 28, "reasoning_tokens": 0, "cost_usd": 0.000154544, "latency_s": 1.608335256576538, "finish_reason": "stop", "provider": "Alibaba", "key": "04e6a8e9c144c6238009772bffa40c7ce9c15f9b2550cf1e713b6aac3626d153", "cached": false}

@@ -1,0 +1,1 @@
+{"text": "```lean\nby\n  rw [Function.Surjective.right_cancellable hf g h hg]\n  exact rfl\n```", "reasoning": "", "prompt_tokens": 1765, "completion_tokens": 29, "reasoning_tokens": 0, "cost_usd": 0.0002197, "latency_s": 1.966378927230835, "finish_reason": "stop", "provider": "Alibaba", "key": "6e459b3a50a6e9cadcd422899d277627b323397c6e6d734ee563f3c12ecd7171", "cached": false}

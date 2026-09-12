@@ -1,0 +1,1 @@
+{"text": "```lean\nlet ⟨x, h⟩ := (Module.exists_dual_forall_apply_eq_one K M f).mp (h)\n```", "reasoning": "", "prompt_tokens": 1332, "completion_tokens": 32, "reasoning_tokens": 0, "cost_usd": 0.000170404, "latency_s": 1.6600968837738037, "finish_reason": "stop", "provider": "Alibaba", "key": "27fb1737c174c0516fb9cd9c03846d13e397cfdee1bdee75a5bbfa551c06e2d3", "cached": false}

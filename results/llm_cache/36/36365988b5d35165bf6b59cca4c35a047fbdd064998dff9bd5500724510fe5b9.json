@@ -1,0 +1,1 @@
+{"text": "```lean\nintro s\napply Subring.toIsOrderedRing\nusing [s]\n```", "reasoning": "", "prompt_tokens": 1134, "completion_tokens": 23, "reasoning_tokens": 0, "cost_usd": 0.000143143, "latency_s": 2.115602970123291, "finish_reason": "stop", "provider": "Alibaba", "key": "36365988b5d35165bf6b59cca4c35a047fbdd064998dff9bd5500724510fe5b9", "cached": false}

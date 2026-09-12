@@ -1,0 +1,1 @@
+{"text": "```lean\nintros w\napply univLE_of_max\nexact univLE_max\n```", "reasoning": "", "prompt_tokens": 592, "completion_tokens": 24, "reasoning_tokens": 0, "cost_usd": 8.0184e-05, "latency_s": 1.3062691688537598, "finish_reason": "stop", "provider": "Alibaba", "key": "ca6a768abcad9534996d88f23114f4737cf4d847ee36db4d33f5d75d148e7f87", "cached": false}

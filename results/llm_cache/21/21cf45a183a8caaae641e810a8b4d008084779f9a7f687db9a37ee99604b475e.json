@@ -1,0 +1,1 @@
+{"text": ":= by\n  apply MeasureTheory.Integrable.of_mem_Icc\n  exact hm\n  exact hb", "reasoning": "", "prompt_tokens": 1328, "completion_tokens": 26, "reasoning_tokens": 0, "cost_usd": 0.000167206, "latency_s": 1.4783501625061035, "finish_reason": "stop", "provider": "Alibaba", "key": "21cf45a183a8caaae641e810a8b4d008084779f9a7f687db9a37ee99604b475e", "cached": false}

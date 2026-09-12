@@ -1,0 +1,1 @@
+{"text": "```lean\nrw [α.hom ≫ α.inv, CategoryTheory.Iso.hom_eq_inv α α.symm]\n```", "reasoning": "", "prompt_tokens": 962, "completion_tokens": 29, "reasoning_tokens": 0, "cost_usd": 0.000125749, "latency_s": 1.5806641578674316, "finish_reason": "stop", "provider": "Alibaba", "key": "0ad87086053b58381e41628686e2da7093793a2118d0244dab33739f0fdcd1ae", "cached": false}

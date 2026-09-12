@@ -1,0 +1,1 @@
+{"text": "```lean\nintro x y\nrw [h at (f x) (f y)]\nexact rfl\n```", "reasoning": "", "prompt_tokens": 1270, "completion_tokens": 27, "reasoning_tokens": 0, "cost_usd": 0.000160875, "latency_s": 1.4221501350402832, "finish_reason": "stop", "provider": "Alibaba", "key": "c66985f20d24f5fc4b2f37d2ebbba83229cc02b3be0a7551025906be365dc594", "cached": false}

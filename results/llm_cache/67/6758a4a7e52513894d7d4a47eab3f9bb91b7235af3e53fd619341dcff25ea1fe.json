@@ -1,0 +1,1 @@
+{"text": "```lean\napply (CategoryTheory.cancel_mono f).2\nexact w\n```", "reasoning": "", "prompt_tokens": 1710, "completion_tokens": 21, "reasoning_tokens": 0, "cost_usd": 0.000209625, "latency_s": 1.4842896461486816, "finish_reason": "stop", "provider": "Alibaba", "key": "6758a4a7e52513894d7d4a47eab3f9bb91b7235af3e53fd619341dcff25ea1fe", "cached": false}

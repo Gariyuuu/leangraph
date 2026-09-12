@@ -1,0 +1,1 @@
+{"text": "```lean\nintros x y h\napply hg at h\napply hf at h\nexact h\n```", "reasoning": "", "prompt_tokens": 1430, "completion_tokens": 26, "reasoning_tokens": 0, "cost_usd": 0.00017914, "latency_s": 1.5092442035675049, "finish_reason": "stop", "provider": "Alibaba", "key": "0c4235be9530d87baf2866383ad05702d4b31b1c04866ce437c0adc1ebdea822", "cached": false}

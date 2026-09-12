@@ -1,0 +1,1 @@
+{"text": "```lean\nby\n  exact ProbabilityTheory.HasGaussianLaw.integrable hX\n```", "reasoning": "", "prompt_tokens": 2224, "completion_tokens": 24, "reasoning_tokens": 0, "cost_usd": 0.000271128, "latency_s": 1.728896141052246, "finish_reason": "stop", "provider": "Alibaba", "key": "1ace2b5570a1bc95c6004fb338c495bdd680c7fdc4b8f601bb3a2391354a1795", "cached": false}

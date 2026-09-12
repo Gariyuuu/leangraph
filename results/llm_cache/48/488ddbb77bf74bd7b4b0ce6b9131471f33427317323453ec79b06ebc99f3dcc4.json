@@ -1,0 +1,1 @@
+{"text": ":= by\n  constructor\n  exact id_rhs", "reasoning": "", "prompt_tokens": 1012, "completion_tokens": 14, "reasoning_tokens": 0, "cost_usd": 0.000124774, "latency_s": 1.205847978591919, "finish_reason": "stop", "provider": "Alibaba", "key": "488ddbb77bf74bd7b4b0ce6b9131471f33427317323453ec79b06ebc99f3dcc4", "cached": false}

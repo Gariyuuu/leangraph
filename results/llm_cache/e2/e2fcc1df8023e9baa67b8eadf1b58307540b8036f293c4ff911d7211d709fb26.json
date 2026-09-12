@@ -1,0 +1,1 @@
+{"text": "```lean\nrw [Real.log_mul, Real.log_pow]\n```", "reasoning": "", "prompt_tokens": 533, "completion_tokens": 18, "reasoning_tokens": 0, "cost_usd": 7.0551e-05, "latency_s": 1.296010971069336, "finish_reason": "stop", "provider": "Alibaba", "key": "e2fcc1df8023e9baa67b8eadf1b58307540b8036f293c4ff911d7211d709fb26", "cached": false}

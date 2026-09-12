@@ -1,0 +1,1 @@
+{"text": ":= by\n  have : f 0 = f (0 + 0) := by rfl\n  rw [hf] at this\n  exact this.symm", "reasoning": "", "prompt_tokens": 1246, "completion_tokens": 38, "reasoning_tokens": 0, "cost_usd": 0.000163072, "latency_s": 1.7145907878875732, "finish_reason": "stop", "provider": "Alibaba", "key": "e81b18140829a618d3c40bc7a133b9b6d5585f7bf48c64b8d72393d596a49870", "cached": false}

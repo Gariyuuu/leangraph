@@ -1,0 +1,1 @@
+{"text": "```lean\nrw [Finset.sum_range_id]\nsimp only [Nat.div_mul_cancel (n + 1) 2]\n```", "reasoning": "", "prompt_tokens": 1303, "completion_tokens": 32, "reasoning_tokens": 0, "cost_usd": 0.000167011, "latency_s": 1.4760451316833496, "finish_reason": "stop", "provider": "Alibaba", "key": "570b94d316316e78c5f6133f0fbc9afdf215f6ef2d96407cc98c439185d923e9", "cached": false}

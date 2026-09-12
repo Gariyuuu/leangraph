@@ -1,0 +1,1 @@
+{"text": "```lean\nrw [α.hom ≫ α.inv, CategoryTheory.Iso.hom_inv_id]\n```", "reasoning": "", "prompt_tokens": 971, "completion_tokens": 25, "reasoning_tokens": 0, "cost_usd": 0.000124982, "latency_s": 1.4329142570495605, "finish_reason": "stop", "provider": "Alibaba", "key": "2309d69132affba9e29b5450b44f625bb4379a3993050e02a346326cfd435640", "cached": false}

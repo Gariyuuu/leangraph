@@ -1,0 +1,1 @@
+{"text": ":= by\n  intro x y\n  cases h with z hz\n  rw hz at h1\n  exact h1", "reasoning": "", "prompt_tokens": 1470, "completion_tokens": 32, "reasoning_tokens": 0, "cost_usd": 0.00018655, "latency_s": 2.7943379878997803, "finish_reason": "stop", "provider": "Alibaba", "key": "238f5d29d2d162922ba48ea0fb2e94abf3e0739d9d24adf069a7ea45cf6c54b0", "cached": false}

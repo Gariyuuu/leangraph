@@ -171,3 +171,24 @@ the same tasks). Configurations still running, or holding unresolved harness err
 `configs_partial` with their counts and appear only in the interim status banner and paragraph. Tested with a
 half-finished configuration and with an unresolved harness error. Separately, the abstract's and the site's
 "best agent" are now chosen among the six headline configurations, not the prompt-sensitivity variants.
+
+## 2026-09-12 · Gateway hangs requests; fail fast instead of waiting
+The resumed grid slowed to ~12 theorems/hour on `full_no_feedback` while the gateway answered a one-off probe in
+1.3 s. A thread sample showed the workers were not in retry back-off (0 sleep frames) but blocked in network reads
+(20 frames): the gateway had accepted connections and never answered. With the client's then-600-second
+request timeout, each hung attempt blocked a worker for ten minutes before retrying, up to 7 attempts; one trace
+recorded 17.8 minutes of wall time for 2 calls worth 6 s of measured latency. Fixes: the request timeout is now
+120 s (healthy replies take 1–13 s in this tier), and `scripts/run_main_grid.sh` takes `LG_CONCURRENCY`
+(default 8), with the remaining ablations run at 4 to reduce pressure on a struggling gateway. Neither changes any
+recorded result: cached replies, traces and verdicts are untouched.
+
+## 2026-09-12 · The "400 Bad Request" errors are upstream provider flakes: retry them
+A probe sent 12 requests of two fixed shapes (a tiny health check and a normal proof request), 2 seconds apart:
+6 returned HTTP 200 and 6 returned HTTP 400, for both shapes, every 400 with the body
+`{"error":{"message":"Provider returned error","type":"invalid_request_error","code":"invalid_request"}}`.
+The same request succeeds and fails, so the 400 is the upstream provider failing and the gateway relaying it,
+not a malformed request. This explains the earlier bursts of 400s (repair and full − retrieval each tripped the
+circuit breaker, then completed on retry). `leangraph/llm.py` already retries 4xx with back-off and keeps
+the body (a change made earlier, on the evidence of those retries); this probe confirms the cause. With ~50%
+of attempts failing and 7 attempts per call, a call fails outright about 0.8% of the time, and those tasks
+are retried by the grid.

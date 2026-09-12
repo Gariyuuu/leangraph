@@ -1,0 +1,1 @@
+{"text": "```lean\nexact Nat.sum_range_choose n\n```", "reasoning": "", "prompt_tokens": 590, "completion_tokens": 15, "reasoning_tokens": 0, "cost_usd": 7.5855e-05, "latency_s": 1.1181488037109375, "finish_reason": "stop", "provider": "Alibaba", "key": "5541947ad2474356cdfa8bbd7b6322be5c11315b71d9267e34451a18acdb8766", "cached": false}

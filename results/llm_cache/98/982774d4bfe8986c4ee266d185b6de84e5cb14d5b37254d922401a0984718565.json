@@ -1,0 +1,1 @@
+{"text": "```lean\nrw [Multiset.coe_map, Multiset.coe_Icc]\napply Finset.map_add_left_Icc\n```", "reasoning": "", "prompt_tokens": 1177, "completion_tokens": 32, "reasoning_tokens": 0, "cost_usd": 0.000152269, "latency_s": 1.5410327911376953, "finish_reason": "stop", "provider": "Alibaba", "key": "982774d4bfe8986c4ee266d185b6de84e5cb14d5b37254d922401a0984718565", "cached": false}

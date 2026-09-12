@@ -1,0 +1,1 @@
+{"text": "```lean\nintros h,\nconstructor,\napply Finset.val_inj,\nexact h\n```", "reasoning": "", "prompt_tokens": 657, "completion_tokens": 23, "reasoning_tokens": 0, "cost_usd": 8.7334e-05, "latency_s": 1.2691237926483154, "finish_reason": "stop", "provider": "Alibaba", "key": "3f31a9d30749ea9077cc90d53623e2a7f07e27780fa6721e1d05003a23a63996", "cached": false}

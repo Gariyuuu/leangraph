@@ -64,7 +64,7 @@ run_until_done() {
     [ "$left" = 0 ] && { echo "$(ts) [$label] complete"; return 0; }
     wait_disk "${LG_MIN_FREE_GB_GRID:-5}"
     wait_gateway
-    $PY -m leangraph.run "$@" --split test --run-id main --workers $WORKERS --concurrency 8 2>&1 \
+    $PY -m leangraph.run "$@" --split test --run-id main --workers $WORKERS --concurrency "${LG_CONCURRENCY:-8}" 2>&1 \
       | grep -viE warning | grep -E "STOPPED|Traceback" | tail -5
     echo "$(ts) [$label] run exited with status ${PIPESTATUS[0]}"
     left=$(remaining "$@"); [ "$left" = 0 ] && { echo "$(ts) [$label] complete"; return 0; }

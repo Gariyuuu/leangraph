@@ -1,0 +1,1 @@
+{"text": "```lean\nrw hS\nconstructor\napply Nat.even 4\napply Nat.not_even 3\n```", "reasoning": "", "prompt_tokens": 1354, "completion_tokens": 28, "reasoning_tokens": 0, "cost_usd": 0.000171158, "latency_s": 1.5640041828155518, "finish_reason": "stop", "provider": "Alibaba", "key": "740c0b18705c51c25f2dd218ad0eecde32b307510f92964eebaf1286893fb2d0", "cached": false}

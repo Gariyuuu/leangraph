@@ -1,0 +1,1 @@
+{"text": "```lean\napply Finset.prod_nat_mod n (λ x, f x) (λ x, g x)\n```", "reasoning": "", "prompt_tokens": 1752, "completion_tokens": 29, "reasoning_tokens": 0, "cost_usd": 0.000218179, "latency_s": 1.4678418636322021, "finish_reason": "stop", "provider": "Alibaba", "key": "99028f5e95662409694e480c9540d9420da0c1e743ba2ce6628fbfdc36d3411a", "cached": false}

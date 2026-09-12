@@ -1,0 +1,1 @@
+{"text": "```lean\nrw Set.compl_union\nexact Set.inter_comm A B\n```", "reasoning": "", "prompt_tokens": 1073, "completion_tokens": 21, "reasoning_tokens": 0, "cost_usd": 0.000135096, "latency_s": 1.5762579441070557, "finish_reason": "stop", "provider": "Alibaba", "key": "8ced394cecbc1b140c3be7275b7167af7341ad6ca688630d90e68192bd31cf49", "cached": false}

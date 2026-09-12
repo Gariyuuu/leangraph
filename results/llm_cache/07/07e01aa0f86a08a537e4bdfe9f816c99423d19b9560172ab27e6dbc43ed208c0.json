@@ -1,0 +1,1 @@
+{"text": "```lean\nexact Nat.Prime.odd_of_ne_two p hp h2\n```", "reasoning": "", "prompt_tokens": 595, "completion_tokens": 22, "reasoning_tokens": 0, "cost_usd": 7.9625e-05, "latency_s": 1.231684923171997, "finish_reason": "stop", "provider": "Alibaba", "key": "07e01aa0f86a08a537e4bdfe9f816c99423d19b9560172ab27e6dbc43ed208c0", "cached": false}

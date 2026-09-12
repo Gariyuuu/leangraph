@@ -1,0 +1,1 @@
+{"text": "```lean\napply Order.exists_between_finsets\n```", "reasoning": "", "prompt_tokens": 921, "completion_tokens": 15, "reasoning_tokens": 0, "cost_usd": 0.000114582, "latency_s": 1.2356300354003906, "finish_reason": "stop", "provider": "Alibaba", "key": "12997990dcf7137d90ef1f50953f8dd909d0a386547500a58a1a30bdf3775cd6", "cached": false}

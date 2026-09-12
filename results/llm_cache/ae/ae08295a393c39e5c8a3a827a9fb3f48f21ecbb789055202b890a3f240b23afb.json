@@ -1,0 +1,1 @@
+{"text": "```lean\napply CategoryTheory.IsIso.of_isIso_comp_left\nassumption\nassumption\n```", "reasoning": "", "prompt_tokens": 1637, "completion_tokens": 25, "reasoning_tokens": 0, "cost_usd": 0.000202904, "latency_s": 1.4426689147949219, "finish_reason": "stop", "provider": "Alibaba", "key": "ae08295a393c39e5c8a3a827a9fb3f48f21ecbb789055202b890a3f240b23afb", "cached": false}

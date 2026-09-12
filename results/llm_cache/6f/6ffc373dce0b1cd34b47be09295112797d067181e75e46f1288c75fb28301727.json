@@ -1,0 +1,1 @@
+{"text": "```lean\nintro f hf\napply Function.not_injective\nexact hf\n```", "reasoning": "", "prompt_tokens": 480, "completion_tokens": 21, "reasoning_tokens": 0, "cost_usd": 6.5715e-05, "latency_s": 1.2074179649353027, "finish_reason": "stop", "provider": "Alibaba", "key": "6ffc373dce0b1cd34b47be09295112797d067181e75e46f1288c75fb28301727", "cached": false}

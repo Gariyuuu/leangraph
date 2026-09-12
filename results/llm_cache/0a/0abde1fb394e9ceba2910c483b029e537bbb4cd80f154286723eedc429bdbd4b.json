@@ -1,0 +1,1 @@
+{"text": ":= by\n  apply Int.ModEq.pow\n  exact h\n  exact 2", "reasoning": "", "prompt_tokens": 699, "completion_tokens": 22, "reasoning_tokens": 0, "cost_usd": 9.1793e-05, "latency_s": 1.3529181480407715, "finish_reason": "stop", "provider": "Alibaba", "key": "0abde1fb394e9ceba2910c483b029e537bbb4cd80f154286723eedc429bdbd4b", "cached": false}

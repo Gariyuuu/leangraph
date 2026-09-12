@@ -1,0 +1,1 @@
+{"text": "```lean\nby rw [Multiset.map_ofFinset, Finset.image_add_left_Icc]\n```", "reasoning": "", "prompt_tokens": 2147, "completion_tokens": 26, "reasoning_tokens": 0, "cost_usd": 0.000263029, "latency_s": 1.834594964981079, "finish_reason": "stop", "provider": "Alibaba", "key": "88475e1d266a6e06d368e156583fea5943b8128e7772ce57bdfe08835e29b080", "cached": false}

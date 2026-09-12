@@ -1,0 +1,1 @@
+{"text": "```lean\nconstructor\nintro p\napply not_not p\n```", "reasoning": "", "prompt_tokens": 1225, "completion_tokens": 18, "reasoning_tokens": 0, "cost_usd": 0.000151515, "latency_s": 1.466491937637329, "finish_reason": "stop", "provider": "Alibaba", "key": "d7aae6a01964ee1daea4030b6e6a1e169e7f73ba7baa86606f378a61af0b96a7", "cached": false}

@@ -187,3 +187,20 @@ def test_seed_changes_request_and_key_only_when_given(monkeypatch, tmp_path):
     c1 = llm.chat(msgs, sample=0, seed=1001)
     assert "seed" not in bodies[0] and bodies[1]["seed"] == 1001
     assert c0.key == llm.cache_key("m", msgs, {"max_tokens": 6000, "temperature": 0.6}, 0) and c1.key != c0.key
+
+
+def test_client_error_is_retried_then_reported_with_body(monkeypatch, tmp_path):
+    """The gateway relays intermittent upstream failures as HTTP 400 ("Provider returned error"), so 4xx is retried."""
+    from leangraph import llm
+    monkeypatch.setattr(llm, "CACHE_DIR", tmp_path)
+    monkeypatch.setattr(llm, "RPM", 0)
+    monkeypatch.setattr(llm, "llm_config", lambda: {"base_url": "http://x", "api_key": "k", "model": "m"})
+    monkeypatch.setattr(llm.time, "sleep", lambda s: None)
+    seq = [_FakeResp(400, "Provider returned error"), _FakeResp(200, data=_ok_payload())]
+    monkeypatch.setattr(llm.httpx, "post", lambda *a, **k: seq.pop(0))
+    assert llm.chat([{"role": "user", "content": "hi"}], sample=993).text.startswith("```lean")
+    calls = []
+    monkeypatch.setattr(llm.httpx, "post", lambda *a, **k: calls.append(1) or _FakeResp(400, "maximum context length exceeded"))
+    with pytest.raises(RuntimeError, match="failed after 7 attempts.*HTTP 400.*maximum context length"):
+        llm.chat([{"role": "user", "content": "hi"}], sample=994)
+    assert len(calls) == 7

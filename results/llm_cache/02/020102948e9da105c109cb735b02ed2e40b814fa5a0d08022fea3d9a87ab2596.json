@@ -1,0 +1,1 @@
+{"text": "```lean\nrw [ENNReal.log_rpow, ENNReal.exp_log]\n```", "reasoning": "", "prompt_tokens": 594, "completion_tokens": 22, "reasoning_tokens": 0, "cost_usd": 7.9508e-05, "latency_s": 1.5781548023223877, "finish_reason": "stop", "provider": "Alibaba", "key": "020102948e9da105c109cb735b02ed2e40b814fa5a0d08022fea3d9a87ab2596", "cached": false}

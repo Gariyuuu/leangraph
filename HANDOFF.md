@@ -53,6 +53,10 @@ model the owner has to supply; until then it is answered only by the reasoning-o
 * **2026-09-11 ~03:00: the gateway went fully down** (`api.gariyuuu.com` returns HTTP 530 "Cloudflare Tunnel error"
   for `/models` and chat). The tunnel/gateway does not run on this Mac; the owner must restart it.
   `scripts/run_main_grid.sh` waits for it (checks every 5 minutes, up to 4 hours per attempt, 6 attempts).
+* **The gateway can accept a connection and never answer.** Symptom: workers blocked in network reads (not
+  sleeping), traces with large `wall_s` but tiny `llm_latency_s`, and no new files in `results/llm_cache`.
+  The client's request timeout is 120 s for this reason; do not raise it. `LG_CONCURRENCY` (default 8) lowers
+  parallel pressure — the last ablations ran at 4.
 * **The gateway allows 60 requests/minute across all clients** (other projects share it). `llm.py` throttles to
   `LG_LLM_RPM` (default 50) per process: run one LLM pipeline at a time.
 * **The model gateway can go down mid-run** (pilot 2: HTTP 502 / Cloudflare 530 / 524). Errored tasks go to a
