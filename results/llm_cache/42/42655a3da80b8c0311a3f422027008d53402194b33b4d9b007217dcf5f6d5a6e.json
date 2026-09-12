@@ -1,0 +1,1 @@
+{"text": "```lean\napply add_sq' \n```", "reasoning": "", "prompt_tokens": 1370, "completion_tokens": 13, "reasoning_tokens": 0, "cost_usd": 0.000166205, "latency_s": 1.424023151397705, "finish_reason": "stop", "provider": "Alibaba", "key": "42655a3da80b8c0311a3f422027008d53402194b33b4d9b007217dcf5f6d5a6e", "cached": false}

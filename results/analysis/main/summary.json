@@ -142,6 +142,76 @@
    "errors_trace": 0,
    "harness_errors_unresolved": 0
   },
+  "full_no_feedback": {
+   "n": 174,
+   "verified": 10,
+   "rate": 0.05747126436781609,
+   "ci": [
+    0.03151344485480629,
+    0.10254674016206021
+   ],
+   "success_within": {
+    "0": 0.0,
+    "1": 0.0,
+    "2": 0.040229885057471264,
+    "3": 0.05172413793103448,
+    "4": 0.05747126436781609,
+    "5": 0.05747126436781609
+   },
+   "median_calls_to_solve": 2.0,
+   "llm_calls": 844,
+   "tokens": 1820390,
+   "cost_usd": 0.31076717099999995,
+   "cost_per_verified": 0.031076717099999995,
+   "tokens_per_verified": 182039.0,
+   "lean_check_s": 15.73635482788086,
+   "certify_s": 2516.9833941459656,
+   "median_lean_check_s": 0.011360406875610352,
+   "timeout_rate": 0.0,
+   "repair_success": 0.017964071856287425,
+   "n_first_failed": 167,
+   "repeat_rate": 0.5705645161290323,
+   "n_repair_attempts": 496,
+   "mean_retrieval_recall": 0.10696730912212939,
+   "median_proof_lines": 1.0,
+   "errors_trace": 0,
+   "harness_errors_unresolved": 0
+  },
+  "full_no_memory": {
+   "n": 174,
+   "verified": 11,
+   "rate": 0.06321839080459771,
+   "ci": [
+    0.03566345099561542,
+    0.10964270564440869
+   ],
+   "success_within": {
+    "0": 0.0,
+    "1": 0.0,
+    "2": 0.040229885057471264,
+    "3": 0.05747126436781609,
+    "4": 0.06321839080459771,
+    "5": 0.06321839080459771
+   },
+   "median_calls_to_solve": 2,
+   "llm_calls": 842,
+   "tokens": 1705014,
+   "cost_usd": 0.302986801,
+   "cost_per_verified": 0.027544254636363633,
+   "tokens_per_verified": 155001.27272727274,
+   "lean_check_s": 11.57124662399292,
+   "certify_s": 162.23847723007202,
+   "median_lean_check_s": 0.007995009422302246,
+   "timeout_rate": 0.0,
+   "repair_success": 0.023952095808383235,
+   "n_first_failed": 167,
+   "repeat_rate": 0.5364372469635628,
+   "n_repair_attempts": 494,
+   "mean_retrieval_recall": 0.10696730912212939,
+   "median_proof_lines": 1,
+   "errors_trace": 0,
+   "harness_errors_unresolved": 0
+  },
   "full_no_retrieval": {
    "n": 174,
    "verified": 9,
@@ -177,6 +247,41 @@
    "errors_trace": 0,
    "harness_errors_unresolved": 0
   },
+  "full_no_skeleton": {
+   "n": 174,
+   "verified": 13,
+   "rate": 0.07471264367816093,
+   "ci": [
+    0.044179472631162085,
+    0.12361862725517717
+   ],
+   "success_within": {
+    "0": 0.0,
+    "1": 0.0,
+    "2": 0.05172413793103448,
+    "3": 0.06321839080459771,
+    "4": 0.06896551724137931,
+    "5": 0.07471264367816093
+   },
+   "median_calls_to_solve": 2,
+   "llm_calls": 838,
+   "tokens": 1571091,
+   "cost_usd": 0.25086636900000003,
+   "cost_per_verified": 0.019297413000000003,
+   "tokens_per_verified": 120853.15384615384,
+   "lean_check_s": 27.27891707420349,
+   "certify_s": 184.91539931297302,
+   "median_lean_check_s": 0.01665639877319336,
+   "timeout_rate": 0.0,
+   "repair_success": 0.024242424242424242,
+   "n_first_failed": 165,
+   "repeat_rate": 0.42857142857142855,
+   "n_repair_attempts": 490,
+   "mean_retrieval_recall": 0.10696730912212939,
+   "median_proof_lines": 1,
+   "errors_trace": 0,
+   "harness_errors_unresolved": 0
+  },
   "rag": {
    "n": 174,
    "verified": 3,
@@ -208,6 +313,111 @@
    "repeat_rate": null,
    "n_repair_attempts": 0,
    "mean_retrieval_recall": 0.10696730912212939,
+   "median_proof_lines": 1,
+   "errors_trace": 0,
+   "harness_errors_unresolved": 0
+  },
+  "rag_repair": {
+   "n": 174,
+   "verified": 8,
+   "rate": 0.04597701149425287,
+   "ci": [
+    0.023478649574440114,
+    0.08808959219611123
+   ],
+   "success_within": {
+    "0": 0.0,
+    "1": 0.017241379310344827,
+    "2": 0.028735632183908046,
+    "3": 0.04597701149425287,
+    "4": 0.04597701149425287,
+    "5": 0.04597701149425287
+   },
+   "median_calls_to_solve": 2.0,
+   "llm_calls": 680,
+   "tokens": 1187433,
+   "cost_usd": 0.18680161499999975,
+   "cost_per_verified": 0.02335020187499997,
+   "tokens_per_verified": 148429.125,
+   "lean_check_s": 272.43278646469116,
+   "certify_s": 1176.476403951645,
+   "median_lean_check_s": 0.033043622970581055,
+   "timeout_rate": 0.0014705882352941176,
+   "repair_success": 0.029239766081871343,
+   "n_first_failed": 171,
+   "repeat_rate": 0.42292490118577075,
+   "n_repair_attempts": 506,
+   "mean_retrieval_recall": 0.10696730912212939,
+   "median_proof_lines": 1.0,
+   "errors_trace": 0,
+   "harness_errors_unresolved": 0
+  },
+  "rag_repair_bm25": {
+   "n": 174,
+   "verified": 13,
+   "rate": 0.07471264367816093,
+   "ci": [
+    0.044179472631162085,
+    0.12361862725517717
+   ],
+   "success_within": {
+    "0": 0.0,
+    "1": 0.034482758620689655,
+    "2": 0.05172413793103448,
+    "3": 0.05747126436781609,
+    "4": 0.07471264367816093,
+    "5": 0.07471264367816093
+   },
+   "median_calls_to_solve": 2,
+   "llm_calls": 671,
+   "tokens": 1262354,
+   "cost_usd": 0.19871922199999995,
+   "cost_per_verified": 0.015286093999999997,
+   "tokens_per_verified": 97104.15384615384,
+   "lean_check_s": 56.11943817138672,
+   "certify_s": 214.0540132522583,
+   "median_lean_check_s": 0.013367652893066406,
+   "timeout_rate": 0.0,
+   "repair_success": 0.041666666666666664,
+   "n_first_failed": 168,
+   "repeat_rate": 0.4084507042253521,
+   "n_repair_attempts": 497,
+   "mean_retrieval_recall": 0.08248143284730383,
+   "median_proof_lines": 1,
+   "errors_trace": 0,
+   "harness_errors_unresolved": 0
+  },
+  "rag_repair_dense": {
+   "n": 174,
+   "verified": 9,
+   "rate": 0.05172413793103448,
+   "ci": [
+    0.027447779413209576,
+    0.09536643398049935
+   ],
+   "success_within": {
+    "0": 0.0,
+    "1": 0.017241379310344827,
+    "2": 0.028735632183908046,
+    "3": 0.04597701149425287,
+    "4": 0.05172413793103448,
+    "5": 0.05172413793103448
+   },
+   "median_calls_to_solve": 2,
+   "llm_calls": 680,
+   "tokens": 1163873,
+   "cost_usd": 0.18708067299999995,
+   "cost_per_verified": 0.020786741444444437,
+   "tokens_per_verified": 129319.22222222222,
+   "lean_check_s": 23.76610493659973,
+   "certify_s": 126.27731275558472,
+   "median_lean_check_s": 0.015736103057861328,
+   "timeout_rate": 0.0,
+   "repair_success": 0.03508771929824561,
+   "n_first_failed": 171,
+   "repeat_rate": 0.42292490118577075,
+   "n_repair_attempts": 506,
+   "mean_retrieval_recall": 0.07923767948709264,
    "median_proof_lines": 1,
    "errors_trace": 0,
    "harness_errors_unresolved": 0
@@ -399,6 +609,46 @@
     ]
    }
   },
+  "full_no_feedback": {
+   "mathlib_heldout": {
+    "n": 121,
+    "verified": 4,
+    "rate": 0.03305785123966942,
+    "ci": [
+     0.012929181304333298,
+     0.08192279325129337
+    ]
+   },
+   "novel": {
+    "n": 53,
+    "verified": 6,
+    "rate": 0.11320754716981132,
+    "ci": [
+     0.052930309167799734,
+     0.22576519219817098
+    ]
+   }
+  },
+  "full_no_memory": {
+   "mathlib_heldout": {
+    "n": 121,
+    "verified": 4,
+    "rate": 0.03305785123966942,
+    "ci": [
+     0.012929181304333298,
+     0.08192279325129337
+    ]
+   },
+   "novel": {
+    "n": 53,
+    "verified": 7,
+    "rate": 0.1320754716981132,
+    "ci": [
+     0.06547853248798569,
+     0.24840255417720594
+    ]
+   }
+  },
   "full_no_retrieval": {
    "mathlib_heldout": {
     "n": 121,
@@ -419,6 +669,26 @@
     ]
    }
   },
+  "full_no_skeleton": {
+   "mathlib_heldout": {
+    "n": 121,
+    "verified": 5,
+    "rate": 0.04132231404958678,
+    "ci": [
+     0.01777748596258366,
+     0.09309480762745669
+    ]
+   },
+   "novel": {
+    "n": 53,
+    "verified": 8,
+    "rate": 0.1509433962264151,
+    "ci": [
+     0.07852417810670369,
+     0.2705424938577089
+    ]
+   }
+  },
   "rag": {
    "mathlib_heldout": {
     "n": 121,
@@ -436,6 +706,66 @@
     "ci": [
      0.01041028718205747,
      0.12754287298702952
+    ]
+   }
+  },
+  "rag_repair": {
+   "mathlib_heldout": {
+    "n": 121,
+    "verified": 4,
+    "rate": 0.03305785123966942,
+    "ci": [
+     0.012929181304333298,
+     0.08192279325129337
+    ]
+   },
+   "novel": {
+    "n": 53,
+    "verified": 4,
+    "rate": 0.07547169811320754,
+    "ci": [
+     0.029739554880261795,
+     0.17858477588726707
+    ]
+   }
+  },
+  "rag_repair_bm25": {
+   "mathlib_heldout": {
+    "n": 121,
+    "verified": 7,
+    "rate": 0.05785123966942149,
+    "ci": [
+     0.028302753327594174,
+     0.11461017833127356
+    ]
+   },
+   "novel": {
+    "n": 53,
+    "verified": 6,
+    "rate": 0.11320754716981132,
+    "ci": [
+     0.052930309167799734,
+     0.22576519219817098
+    ]
+   }
+  },
+  "rag_repair_dense": {
+   "mathlib_heldout": {
+    "n": 121,
+    "verified": 2,
+    "rate": 0.01652892561983471,
+    "ci": [
+     0.004544593505246764,
+     0.058266742981552516
+    ]
+   },
+   "novel": {
+    "n": 53,
+    "verified": 7,
+    "rate": 0.1320754716981132,
+    "ci": [
+     0.06547853248798569,
+     0.24840255417720594
     ]
    }
   },
@@ -761,6 +1091,136 @@
     ]
    }
   },
+  "full_no_feedback": {
+   "algebra": {
+    "n": 30,
+    "verified": 1,
+    "rate": 0.03333333333333333,
+    "ci": [
+     0.005908590316197979,
+     0.16670391146115726
+    ]
+   },
+   "category_theory": {
+    "n": 24,
+    "verified": 2,
+    "rate": 0.08333333333333333,
+    "ci": [
+     0.023158815087796655,
+     0.25848802370497664
+    ]
+   },
+   "functions": {
+    "n": 13,
+    "verified": 0,
+    "rate": 0.0,
+    "ci": [
+     0.0,
+     0.22809537513180025
+    ]
+   },
+   "inequalities": {
+    "n": 30,
+    "verified": 2,
+    "rate": 0.06666666666666667,
+    "ci": [
+     0.018477023624516812,
+     0.21323458516874166
+    ]
+   },
+   "number_theory": {
+    "n": 30,
+    "verified": 2,
+    "rate": 0.06666666666666667,
+    "ci": [
+     0.018477023624516812,
+     0.21323458516874166
+    ]
+   },
+   "probability": {
+    "n": 24,
+    "verified": 1,
+    "rate": 0.041666666666666664,
+    "ci": [
+     0.007393456083597231,
+     0.20241806658845338
+    ]
+   },
+   "sets": {
+    "n": 23,
+    "verified": 2,
+    "rate": 0.08695652173913043,
+    "ci": [
+     0.02418000426569174,
+     0.26795981257415163
+    ]
+   }
+  },
+  "full_no_memory": {
+   "algebra": {
+    "n": 30,
+    "verified": 2,
+    "rate": 0.06666666666666667,
+    "ci": [
+     0.018477023624516812,
+     0.21323458516874166
+    ]
+   },
+   "category_theory": {
+    "n": 24,
+    "verified": 1,
+    "rate": 0.041666666666666664,
+    "ci": [
+     0.007393456083597231,
+     0.20241806658845338
+    ]
+   },
+   "functions": {
+    "n": 13,
+    "verified": 0,
+    "rate": 0.0,
+    "ci": [
+     0.0,
+     0.22809537513180025
+    ]
+   },
+   "inequalities": {
+    "n": 30,
+    "verified": 2,
+    "rate": 0.06666666666666667,
+    "ci": [
+     0.018477023624516812,
+     0.21323458516874166
+    ]
+   },
+   "number_theory": {
+    "n": 30,
+    "verified": 3,
+    "rate": 0.1,
+    "ci": [
+     0.034599888477418676,
+     0.25621082733174294
+    ]
+   },
+   "probability": {
+    "n": 24,
+    "verified": 1,
+    "rate": 0.041666666666666664,
+    "ci": [
+     0.007393456083597231,
+     0.20241806658845338
+    ]
+   },
+   "sets": {
+    "n": 23,
+    "verified": 2,
+    "rate": 0.08695652173913043,
+    "ci": [
+     0.02418000426569174,
+     0.26795981257415163
+    ]
+   }
+  },
   "full_no_retrieval": {
    "algebra": {
     "n": 30,
@@ -826,6 +1286,71 @@
     ]
    }
   },
+  "full_no_skeleton": {
+   "algebra": {
+    "n": 30,
+    "verified": 0,
+    "rate": 0.0,
+    "ci": [
+     0.0,
+     0.11351339476145204
+    ]
+   },
+   "category_theory": {
+    "n": 24,
+    "verified": 2,
+    "rate": 0.08333333333333333,
+    "ci": [
+     0.023158815087796655,
+     0.25848802370497664
+    ]
+   },
+   "functions": {
+    "n": 13,
+    "verified": 1,
+    "rate": 0.07692307692307693,
+    "ci": [
+     0.013710421090226002,
+     0.33313951171360495
+    ]
+   },
+   "inequalities": {
+    "n": 30,
+    "verified": 3,
+    "rate": 0.1,
+    "ci": [
+     0.034599888477418676,
+     0.25621082733174294
+    ]
+   },
+   "number_theory": {
+    "n": 30,
+    "verified": 3,
+    "rate": 0.1,
+    "ci": [
+     0.034599888477418676,
+     0.25621082733174294
+    ]
+   },
+   "probability": {
+    "n": 24,
+    "verified": 1,
+    "rate": 0.041666666666666664,
+    "ci": [
+     0.007393456083597231,
+     0.20241806658845338
+    ]
+   },
+   "sets": {
+    "n": 23,
+    "verified": 3,
+    "rate": 0.13043478260869565,
+    "ci": [
+     0.04537659058182972,
+     0.32127482448539857
+    ]
+   }
+  },
   "rag": {
    "algebra": {
     "n": 30,
@@ -888,6 +1413,201 @@
     "ci": [
      0.007716666057951342,
      0.20991155255450708
+    ]
+   }
+  },
+  "rag_repair": {
+   "algebra": {
+    "n": 30,
+    "verified": 1,
+    "rate": 0.03333333333333333,
+    "ci": [
+     0.005908590316197979,
+     0.16670391146115726
+    ]
+   },
+   "category_theory": {
+    "n": 24,
+    "verified": 1,
+    "rate": 0.041666666666666664,
+    "ci": [
+     0.007393456083597231,
+     0.20241806658845338
+    ]
+   },
+   "functions": {
+    "n": 13,
+    "verified": 1,
+    "rate": 0.07692307692307693,
+    "ci": [
+     0.013710421090226002,
+     0.33313951171360495
+    ]
+   },
+   "inequalities": {
+    "n": 30,
+    "verified": 1,
+    "rate": 0.03333333333333333,
+    "ci": [
+     0.005908590316197979,
+     0.16670391146115726
+    ]
+   },
+   "number_theory": {
+    "n": 30,
+    "verified": 1,
+    "rate": 0.03333333333333333,
+    "ci": [
+     0.005908590316197979,
+     0.16670391146115726
+    ]
+   },
+   "probability": {
+    "n": 24,
+    "verified": 1,
+    "rate": 0.041666666666666664,
+    "ci": [
+     0.007393456083597231,
+     0.20241806658845338
+    ]
+   },
+   "sets": {
+    "n": 23,
+    "verified": 2,
+    "rate": 0.08695652173913043,
+    "ci": [
+     0.02418000426569174,
+     0.26795981257415163
+    ]
+   }
+  },
+  "rag_repair_bm25": {
+   "algebra": {
+    "n": 30,
+    "verified": 3,
+    "rate": 0.1,
+    "ci": [
+     0.034599888477418676,
+     0.25621082733174294
+    ]
+   },
+   "category_theory": {
+    "n": 24,
+    "verified": 1,
+    "rate": 0.041666666666666664,
+    "ci": [
+     0.007393456083597231,
+     0.20241806658845338
+    ]
+   },
+   "functions": {
+    "n": 13,
+    "verified": 1,
+    "rate": 0.07692307692307693,
+    "ci": [
+     0.013710421090226002,
+     0.33313951171360495
+    ]
+   },
+   "inequalities": {
+    "n": 30,
+    "verified": 3,
+    "rate": 0.1,
+    "ci": [
+     0.034599888477418676,
+     0.25621082733174294
+    ]
+   },
+   "number_theory": {
+    "n": 30,
+    "verified": 2,
+    "rate": 0.06666666666666667,
+    "ci": [
+     0.018477023624516812,
+     0.21323458516874166
+    ]
+   },
+   "probability": {
+    "n": 24,
+    "verified": 1,
+    "rate": 0.041666666666666664,
+    "ci": [
+     0.007393456083597231,
+     0.20241806658845338
+    ]
+   },
+   "sets": {
+    "n": 23,
+    "verified": 2,
+    "rate": 0.08695652173913043,
+    "ci": [
+     0.02418000426569174,
+     0.26795981257415163
+    ]
+   }
+  },
+  "rag_repair_dense": {
+   "algebra": {
+    "n": 30,
+    "verified": 1,
+    "rate": 0.03333333333333333,
+    "ci": [
+     0.005908590316197979,
+     0.16670391146115726
+    ]
+   },
+   "category_theory": {
+    "n": 24,
+    "verified": 2,
+    "rate": 0.08333333333333333,
+    "ci": [
+     0.023158815087796655,
+     0.25848802370497664
+    ]
+   },
+   "functions": {
+    "n": 13,
+    "verified": 1,
+    "rate": 0.07692307692307693,
+    "ci": [
+     0.013710421090226002,
+     0.33313951171360495
+    ]
+   },
+   "inequalities": {
+    "n": 30,
+    "verified": 2,
+    "rate": 0.06666666666666667,
+    "ci": [
+     0.018477023624516812,
+     0.21323458516874166
+    ]
+   },
+   "number_theory": {
+    "n": 30,
+    "verified": 2,
+    "rate": 0.06666666666666667,
+    "ci": [
+     0.018477023624516812,
+     0.21323458516874166
+    ]
+   },
+   "probability": {
+    "n": 24,
+    "verified": 1,
+    "rate": 0.041666666666666664,
+    "ci": [
+     0.007393456083597231,
+     0.20241806658845338
+    ]
+   },
+   "sets": {
+    "n": 23,
+    "verified": 0,
+    "rate": 0.0,
+    "ci": [
+     0.0,
+     0.14311662038507353
     ]
    }
   },
@@ -1312,6 +2032,118 @@
     ]
    }
   },
+  "full_no_feedback": {
+   "mathlib_heldout/easy": {
+    "n": 38,
+    "verified": 1,
+    "rate": 0.02631578947368421,
+    "ci": [
+     0.004660587634200073,
+     0.1349487624572532
+    ]
+   },
+   "mathlib_heldout/hard": {
+    "n": 42,
+    "verified": 2,
+    "rate": 0.047619047619047616,
+    "ci": [
+     0.013157524790312864,
+     0.15789852518403538
+    ]
+   },
+   "mathlib_heldout/medium": {
+    "n": 41,
+    "verified": 1,
+    "rate": 0.024390243902439025,
+    "ci": [
+     0.004318531521135854,
+     0.12595062178093377
+    ]
+   },
+   "novel/easy": {
+    "n": 22,
+    "verified": 4,
+    "rate": 0.18181818181818182,
+    "ci": [
+     0.07306884532528965,
+     0.3851660761507122
+    ]
+   },
+   "novel/hard": {
+    "n": 7,
+    "verified": 0,
+    "rate": 0.0,
+    "ci": [
+     -3.584186066408377e-17,
+     0.35433043867586833
+    ]
+   },
+   "novel/medium": {
+    "n": 24,
+    "verified": 2,
+    "rate": 0.08333333333333333,
+    "ci": [
+     0.023158815087796655,
+     0.25848802370497664
+    ]
+   }
+  },
+  "full_no_memory": {
+   "mathlib_heldout/easy": {
+    "n": 38,
+    "verified": 1,
+    "rate": 0.02631578947368421,
+    "ci": [
+     0.004660587634200073,
+     0.1349487624572532
+    ]
+   },
+   "mathlib_heldout/hard": {
+    "n": 42,
+    "verified": 2,
+    "rate": 0.047619047619047616,
+    "ci": [
+     0.013157524790312864,
+     0.15789852518403538
+    ]
+   },
+   "mathlib_heldout/medium": {
+    "n": 41,
+    "verified": 1,
+    "rate": 0.024390243902439025,
+    "ci": [
+     0.004318531521135854,
+     0.12595062178093377
+    ]
+   },
+   "novel/easy": {
+    "n": 22,
+    "verified": 5,
+    "rate": 0.22727272727272727,
+    "ci": [
+     0.10123039921206702,
+     0.4343995334816488
+    ]
+   },
+   "novel/hard": {
+    "n": 7,
+    "verified": 0,
+    "rate": 0.0,
+    "ci": [
+     -3.584186066408377e-17,
+     0.35433043867586833
+    ]
+   },
+   "novel/medium": {
+    "n": 24,
+    "verified": 2,
+    "rate": 0.08333333333333333,
+    "ci": [
+     0.023158815087796655,
+     0.25848802370497664
+    ]
+   }
+  },
   "full_no_retrieval": {
    "mathlib_heldout/easy": {
     "n": 38,
@@ -1368,6 +2200,62 @@
     ]
    }
   },
+  "full_no_skeleton": {
+   "mathlib_heldout/easy": {
+    "n": 38,
+    "verified": 2,
+    "rate": 0.05263157894736842,
+    "ci": [
+     0.01455420801606684,
+     0.17285462262586127
+    ]
+   },
+   "mathlib_heldout/hard": {
+    "n": 42,
+    "verified": 2,
+    "rate": 0.047619047619047616,
+    "ci": [
+     0.013157524790312864,
+     0.15789852518403538
+    ]
+   },
+   "mathlib_heldout/medium": {
+    "n": 41,
+    "verified": 1,
+    "rate": 0.024390243902439025,
+    "ci": [
+     0.004318531521135854,
+     0.12595062178093377
+    ]
+   },
+   "novel/easy": {
+    "n": 22,
+    "verified": 6,
+    "rate": 0.2727272727272727,
+    "ci": [
+     0.13150760211464035,
+     0.48151734179678934
+    ]
+   },
+   "novel/hard": {
+    "n": 7,
+    "verified": 0,
+    "rate": 0.0,
+    "ci": [
+     -3.584186066408377e-17,
+     0.35433043867586833
+    ]
+   },
+   "novel/medium": {
+    "n": 24,
+    "verified": 2,
+    "rate": 0.08333333333333333,
+    "ci": [
+     0.023158815087796655,
+     0.25848802370497664
+    ]
+   }
+  },
   "rag": {
    "mathlib_heldout/easy": {
     "n": 38,
@@ -1421,6 +2309,174 @@
     "ci": [
      0.007393456083597231,
      0.20241806658845338
+    ]
+   }
+  },
+  "rag_repair": {
+   "mathlib_heldout/easy": {
+    "n": 38,
+    "verified": 2,
+    "rate": 0.05263157894736842,
+    "ci": [
+     0.01455420801606684,
+     0.17285462262586127
+    ]
+   },
+   "mathlib_heldout/hard": {
+    "n": 42,
+    "verified": 1,
+    "rate": 0.023809523809523808,
+    "ci": [
+     0.004215404087799039,
+     0.1232120169378307
+    ]
+   },
+   "mathlib_heldout/medium": {
+    "n": 41,
+    "verified": 1,
+    "rate": 0.024390243902439025,
+    "ci": [
+     0.004318531521135854,
+     0.12595062178093377
+    ]
+   },
+   "novel/easy": {
+    "n": 22,
+    "verified": 3,
+    "rate": 0.13636363636363635,
+    "ci": [
+     0.04749003676945512,
+     0.33334987348883255
+    ]
+   },
+   "novel/hard": {
+    "n": 7,
+    "verified": 0,
+    "rate": 0.0,
+    "ci": [
+     -3.584186066408377e-17,
+     0.35433043867586833
+    ]
+   },
+   "novel/medium": {
+    "n": 24,
+    "verified": 1,
+    "rate": 0.041666666666666664,
+    "ci": [
+     0.007393456083597231,
+     0.20241806658845338
+    ]
+   }
+  },
+  "rag_repair_bm25": {
+   "mathlib_heldout/easy": {
+    "n": 38,
+    "verified": 5,
+    "rate": 0.13157894736842105,
+    "ci": [
+     0.05753867653712513,
+     0.2732685957562274
+    ]
+   },
+   "mathlib_heldout/hard": {
+    "n": 42,
+    "verified": 1,
+    "rate": 0.023809523809523808,
+    "ci": [
+     0.004215404087799039,
+     0.1232120169378307
+    ]
+   },
+   "mathlib_heldout/medium": {
+    "n": 41,
+    "verified": 1,
+    "rate": 0.024390243902439025,
+    "ci": [
+     0.004318531521135854,
+     0.12595062178093377
+    ]
+   },
+   "novel/easy": {
+    "n": 22,
+    "verified": 5,
+    "rate": 0.22727272727272727,
+    "ci": [
+     0.10123039921206702,
+     0.4343995334816488
+    ]
+   },
+   "novel/hard": {
+    "n": 7,
+    "verified": 0,
+    "rate": 0.0,
+    "ci": [
+     -3.584186066408377e-17,
+     0.35433043867586833
+    ]
+   },
+   "novel/medium": {
+    "n": 24,
+    "verified": 1,
+    "rate": 0.041666666666666664,
+    "ci": [
+     0.007393456083597231,
+     0.20241806658845338
+    ]
+   }
+  },
+  "rag_repair_dense": {
+   "mathlib_heldout/easy": {
+    "n": 38,
+    "verified": 1,
+    "rate": 0.02631578947368421,
+    "ci": [
+     0.004660587634200073,
+     0.1349487624572532
+    ]
+   },
+   "mathlib_heldout/hard": {
+    "n": 42,
+    "verified": 1,
+    "rate": 0.023809523809523808,
+    "ci": [
+     0.004215404087799039,
+     0.1232120169378307
+    ]
+   },
+   "mathlib_heldout/medium": {
+    "n": 41,
+    "verified": 0,
+    "rate": 0.0,
+    "ci": [
+     0.0,
+     0.08566757142012449
+    ]
+   },
+   "novel/easy": {
+    "n": 22,
+    "verified": 5,
+    "rate": 0.22727272727272727,
+    "ci": [
+     0.10123039921206702,
+     0.4343995334816488
+    ]
+   },
+   "novel/hard": {
+    "n": 7,
+    "verified": 0,
+    "rate": 0.0,
+    "ci": [
+     -3.584186066408377e-17,
+     0.35433043867586833
+    ]
+   },
+   "novel/medium": {
+    "n": 24,
+    "verified": 2,
+    "rate": 0.08333333333333333,
+    "ci": [
+     0.023158815087796655,
+     0.25848802370497664
     ]
    }
   },
@@ -1593,16 +2649,7 @@
    }
   }
  },
- "configs_partial": {
-  "rag_repair": {
-   "n": 173,
-   "harness_errors_unresolved": 1
-  },
-  "rag_repair_bm25": {
-   "n": 38,
-   "harness_errors_unresolved": 0
-  }
- },
+ "configs_partial": {},
  "contrasts": [
   {
    "name": "feedback_repair",
@@ -1620,7 +2667,7 @@
    "only_a": 10,
    "only_b": 0,
    "p": 0.001953125,
-   "p_holm": 0.01171875
+   "p_holm": 0.025390625
   },
   {
    "name": "repair_vs_equal_budget",
@@ -1638,7 +2685,7 @@
    "only_a": 9,
    "only_b": 0,
    "p": 0.00390625,
-   "p_holm": 0.01953125
+   "p_holm": 0.046875
   },
   {
    "name": "retrieval",
@@ -1659,6 +2706,42 @@
    "p_holm": 1.0
   },
   {
+   "name": "retrieval_with_repair",
+   "treatment": "rag_repair",
+   "control": "repair",
+   "question": "RQ1 retrieval, with repair",
+   "n": 174,
+   "rate_treatment": 0.04597701149425287,
+   "rate_control": 0.06321839080459771,
+   "diff": -0.017241379310344827,
+   "diff_ci": [
+    -0.06321839080459771,
+    0.028735632183908046
+   ],
+   "only_a": 6,
+   "only_b": 9,
+   "p": 0.6072387695312499,
+   "p_holm": 1.0
+  },
+  {
+   "name": "planning",
+   "treatment": "full",
+   "control": "rag_repair",
+   "question": "RQ3 planning on top of retrieval + repair",
+   "n": 174,
+   "rate_treatment": 0.07471264367816093,
+   "rate_control": 0.04597701149425287,
+   "diff": 0.028735632183908046,
+   "diff_ci": [
+    -0.005747126436781609,
+    0.06321839080459771
+   ],
+   "only_a": 7,
+   "only_b": 2,
+   "p": 0.1796875,
+   "p_holm": 1.0
+  },
+  {
    "name": "agentic_vs_direct",
    "treatment": "full",
    "control": "direct",
@@ -1674,7 +2757,7 @@
    "only_a": 12,
    "only_b": 0,
    "p": 0.00048828125,
-   "p_holm": 0.00341796875
+   "p_holm": 0.0068359375
   },
   {
    "name": "abl_retrieval",
@@ -1695,6 +2778,96 @@
    "p_holm": 1.0
   },
   {
+   "name": "abl_feedback",
+   "treatment": "full",
+   "control": "full_no_feedback",
+   "question": "Ablation: compiler feedback",
+   "n": 174,
+   "rate_treatment": 0.07471264367816093,
+   "rate_control": 0.05747126436781609,
+   "diff": 0.017241379310344827,
+   "diff_ci": [
+    0.0,
+    0.040229885057471264
+   ],
+   "only_a": 3,
+   "only_b": 0,
+   "p": 0.25,
+   "p_holm": 1.0
+  },
+  {
+   "name": "abl_memory",
+   "treatment": "full",
+   "control": "full_no_memory",
+   "question": "Ablation: memory of earlier attempts",
+   "n": 174,
+   "rate_treatment": 0.07471264367816093,
+   "rate_control": 0.06321839080459771,
+   "diff": 0.011494252873563218,
+   "diff_ci": [
+    0.0,
+    0.028735632183908046
+   ],
+   "only_a": 2,
+   "only_b": 0,
+   "p": 0.5,
+   "p_holm": 1.0
+  },
+  {
+   "name": "abl_skeleton",
+   "treatment": "full",
+   "control": "full_no_skeleton",
+   "question": "Ablation: proof skeleton",
+   "n": 174,
+   "rate_treatment": 0.07471264367816093,
+   "rate_control": 0.07471264367816093,
+   "diff": 0.0,
+   "diff_ci": [
+    -0.034482758620689655,
+    0.034482758620689655
+   ],
+   "only_a": 4,
+   "only_b": 4,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "name": "bm25_vs_hybrid",
+   "treatment": "rag_repair_bm25",
+   "control": "rag_repair",
+   "question": "Retriever: BM25 vs hybrid",
+   "n": 174,
+   "rate_treatment": 0.07471264367816093,
+   "rate_control": 0.04597701149425287,
+   "diff": 0.028735632183908046,
+   "diff_ci": [
+    0.005747126436781609,
+    0.05747126436781609
+   ],
+   "only_a": 5,
+   "only_b": 0,
+   "p": 0.0625,
+   "p_holm": 0.6875
+  },
+  {
+   "name": "dense_vs_hybrid",
+   "treatment": "rag_repair_dense",
+   "control": "rag_repair",
+   "question": "Retriever: dense vs hybrid",
+   "n": 174,
+   "rate_treatment": 0.05172413793103448,
+   "rate_control": 0.04597701149425287,
+   "diff": 0.005747126436781609,
+   "diff_ci": [
+    -0.022988505747126436,
+    0.034482758620689655
+   ],
+   "only_a": 4,
+   "only_b": 3,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
    "name": "template_vs_direct",
    "treatment": "direct",
    "control": "template",
@@ -1710,7 +2883,7 @@
    "only_a": 0,
    "only_b": 45,
    "p": 5.684341886080802e-14,
-   "p_holm": 4.547473508864641e-13
+   "p_holm": 8.526512829121202e-13
   },
   {
    "name": "prompt_direct",
@@ -1728,7 +2901,7 @@
    "only_a": 4,
    "only_b": 0,
    "p": 0.125,
-   "p_holm": 0.5
+   "p_holm": 1.0
   },
   {
    "name": "prompt_repair",
@@ -1769,21 +2942,21 @@
    "other"
   ],
   "total": {
-   "syntax_error": 895,
-   "wrong_tactic": 2288,
-   "hallucinated_theorem": 586,
-   "lean3_syntax": 633,
-   "type_mismatch": 171,
-   "other": 560,
-   "wrong_namespace": 154,
-   "incorrect_rewrite": 144,
-   "valid_but_wrong": 266,
-   "forbidden": 466,
-   "checker_rejected": 1,
-   "unresolved_metavariable": 12,
-   "instance_resolution_failure": 23,
-   "bad_induction": 8,
-   "timeout": 1
+   "syntax_error": 1675,
+   "wrong_tactic": 2908,
+   "hallucinated_theorem": 948,
+   "lean3_syntax": 1232,
+   "type_mismatch": 470,
+   "other": 826,
+   "wrong_namespace": 286,
+   "incorrect_rewrite": 413,
+   "valid_but_wrong": 319,
+   "forbidden": 931,
+   "checker_rejected": 10,
+   "unresolved_metavariable": 17,
+   "bad_induction": 13,
+   "instance_resolution_failure": 121,
+   "timeout": 8
   },
   "per_config": {
    "direct": {
@@ -1833,6 +3006,36 @@
     "incorrect_rewrite": 38,
     "valid_but_wrong": 6
    },
+   "full_no_feedback": {
+    "forbidden": 187,
+    "unresolved_metavariable": 1,
+    "wrong_namespace": 26,
+    "hallucinated_theorem": 58,
+    "lean3_syntax": 97,
+    "type_mismatch": 45,
+    "syntax_error": 101,
+    "other": 41,
+    "incorrect_rewrite": 47,
+    "wrong_tactic": 40,
+    "checker_rejected": 4,
+    "valid_but_wrong": 10,
+    "bad_induction": 3
+   },
+   "full_no_memory": {
+    "forbidden": 226,
+    "other": 43,
+    "type_mismatch": 45,
+    "syntax_error": 88,
+    "unresolved_metavariable": 1,
+    "wrong_namespace": 19,
+    "hallucinated_theorem": 46,
+    "lean3_syntax": 104,
+    "checker_rejected": 1,
+    "wrong_tactic": 35,
+    "incorrect_rewrite": 41,
+    "instance_resolution_failure": 2,
+    "valid_but_wrong": 6
+   },
    "full_no_retrieval": {
     "wrong_tactic": 34,
     "wrong_namespace": 30,
@@ -1847,6 +3050,20 @@
     "incorrect_rewrite": 31,
     "valid_but_wrong": 4
    },
+   "full_no_skeleton": {
+    "lean3_syntax": 118,
+    "wrong_tactic": 118,
+    "instance_resolution_failure": 37,
+    "hallucinated_theorem": 56,
+    "type_mismatch": 56,
+    "wrong_namespace": 27,
+    "other": 34,
+    "syntax_error": 128,
+    "forbidden": 13,
+    "incorrect_rewrite": 55,
+    "bad_induction": 2,
+    "valid_but_wrong": 7
+   },
    "rag": {
     "wrong_tactic": 58,
     "lean3_syntax": 27,
@@ -1859,6 +3076,51 @@
     "incorrect_rewrite": 6,
     "valid_but_wrong": 1,
     "forbidden": 1
+   },
+   "rag_repair": {
+    "wrong_tactic": 144,
+    "wrong_namespace": 22,
+    "type_mismatch": 59,
+    "lean3_syntax": 84,
+    "syntax_error": 152,
+    "other": 55,
+    "instance_resolution_failure": 21,
+    "hallucinated_theorem": 69,
+    "forbidden": 13,
+    "unresolved_metavariable": 2,
+    "timeout": 4,
+    "valid_but_wrong": 8,
+    "incorrect_rewrite": 36,
+    "checker_rejected": 3
+   },
+   "rag_repair_bm25": {
+    "other": 40,
+    "wrong_tactic": 146,
+    "syntax_error": 152,
+    "instance_resolution_failure": 15,
+    "wrong_namespace": 23,
+    "lean3_syntax": 96,
+    "hallucinated_theorem": 74,
+    "type_mismatch": 34,
+    "forbidden": 17,
+    "incorrect_rewrite": 48,
+    "timeout": 3,
+    "valid_but_wrong": 10
+   },
+   "rag_repair_dense": {
+    "syntax_error": 159,
+    "wrong_tactic": 137,
+    "type_mismatch": 60,
+    "other": 53,
+    "lean3_syntax": 100,
+    "hallucinated_theorem": 59,
+    "instance_resolution_failure": 23,
+    "wrong_namespace": 15,
+    "checker_rejected": 1,
+    "incorrect_rewrite": 42,
+    "valid_but_wrong": 12,
+    "forbidden": 9,
+    "unresolved_metavariable": 1
    },
    "repair": {
     "wrong_tactic": 103,
@@ -1900,72 +3162,77 @@
   },
   "repair_by_class": {
    "forbidden": {
-    "n": 345,
-    "next_round_verified": 3,
-    "rate": 0.008695652173913044
+    "n": 700,
+    "next_round_verified": 7,
+    "rate": 0.01
    },
    "syntax_error": {
-    "n": 409,
-    "next_round_verified": 1,
-    "rate": 0.0024449877750611247
+    "n": 1000,
+    "next_round_verified": 4,
+    "rate": 0.004
    },
    "wrong_namespace": {
-    "n": 82,
-    "next_round_verified": 1,
-    "rate": 0.012195121951219513
+    "n": 171,
+    "next_round_verified": 3,
+    "rate": 0.017543859649122806
    },
    "hallucinated_theorem": {
-    "n": 311,
+    "n": 576,
     "next_round_verified": 0,
     "rate": 0.0
    },
    "other": {
-    "n": 88,
-    "next_round_verified": 1,
-    "rate": 0.011363636363636364
+    "n": 273,
+    "next_round_verified": 2,
+    "rate": 0.007326007326007326
    },
    "type_mismatch": {
-    "n": 98,
-    "next_round_verified": 0,
-    "rate": 0.0
+    "n": 316,
+    "next_round_verified": 3,
+    "rate": 0.00949367088607595
    },
    "lean3_syntax": {
-    "n": 302,
-    "next_round_verified": 13,
-    "rate": 0.04304635761589404
+    "n": 762,
+    "next_round_verified": 23,
+    "rate": 0.030183727034120734
    },
    "checker_rejected": {
-    "n": 1,
+    "n": 8,
     "next_round_verified": 0,
     "rate": 0.0
    },
    "wrong_tactic": {
-    "n": 229,
-    "next_round_verified": 1,
-    "rate": 0.004366812227074236
+    "n": 725,
+    "next_round_verified": 3,
+    "rate": 0.004137931034482759
    },
    "incorrect_rewrite": {
-    "n": 82,
+    "n": 279,
     "next_round_verified": 1,
-    "rate": 0.012195121951219513
+    "rate": 0.0035842293906810036
    },
    "valid_but_wrong": {
-    "n": 18,
-    "next_round_verified": 3,
-    "rate": 0.16666666666666666
+    "n": 59,
+    "next_round_verified": 7,
+    "rate": 0.11864406779661017
    },
    "unresolved_metavariable": {
-    "n": 9,
-    "next_round_verified": 0,
-    "rate": 0.0
-   },
-   "instance_resolution_failure": {
-    "n": 6,
+    "n": 13,
     "next_round_verified": 0,
     "rate": 0.0
    },
    "bad_induction": {
-    "n": 6,
+    "n": 10,
+    "next_round_verified": 0,
+    "rate": 0.0
+   },
+   "instance_resolution_failure": {
+    "n": 78,
+    "next_round_verified": 0,
+    "rate": 0.0
+   },
+   "timeout": {
+    "n": 5,
     "next_round_verified": 0,
     "rate": 0.0
    }
@@ -2357,14 +3624,50 @@
      "config": "full",
      "proof": "-- Since X has a Gaussian law, it is integrable by the properties of Gaussian distributions.\n-- In particular, Gaussian distributions on Euclidean spaces have finite moments of all orders.\n-- We can use the fact that the integral of X with respect to P exists and is finite.\n-- This follows from the lemma `ProbabilityTheory.HasLaw.integral_eq` which gives an explicit expression for the integral.\n--",
      "output": "The proof was rejected by the final checker: banned_premise:ProbabilityTheory.HasGaussianLaw.integrable"
+    },
+    {
+     "task_id": "mh_prob_7d2670",
+     "config": "full_no_feedback",
+     "proof": "-- Since X has a Gaussian law, it is integrable by the properties of Gaussian distributions.\n-- In particular, Gaussian distributions on Euclidean spaces have finite moments of all orders.\n-- We can use the fact that the integral of X with respect to P exists and is finite.\n-- This follows from the lemma `ProbabilityTheory.HasLaw.integral_eq` which gives an explicit expression for the integral.\n--",
+     "output": "The proof was rejected by the final checker: banned_premise:ProbabilityTheory.HasGaussianLaw.integrable"
+    },
+    {
+     "task_id": "mh_prob_7d2670",
+     "config": "full_no_feedback",
+     "proof": "exact ProbabilityTheory.HasGaussianLaw.integrable hX",
+     "output": "The proof was rejected by the final checker: banned_premise:ProbabilityTheory.HasGaussianLaw.integrable"
+    },
+    {
+     "task_id": "mh_prob_7d2670",
+     "config": "full_no_feedback",
+     "proof": "exact ProbabilityTheory.HasGaussianLaw.integrable hX",
+     "output": "The proof was rejected by the final checker: banned_premise:ProbabilityTheory.HasGaussianLaw.integrable"
+    },
+    {
+     "task_id": "mh_prob_7d2670",
+     "config": "full_no_feedback",
+     "proof": "exact ProbabilityTheory.HasGaussianLaw.integrable hX",
+     "output": "The proof was rejected by the final checker: banned_premise:ProbabilityTheory.HasGaussianLaw.integrable"
+    },
+    {
+     "task_id": "mh_prob_7d2670",
+     "config": "full_no_memory",
+     "proof": "-- Since X has a Gaussian law, it is integrable by the properties of Gaussian distributions.\n-- In particular, Gaussian distributions on Euclidean spaces have finite moments of all orders.\n-- We can use the fact that the integral of X with respect to P exists and is finite.\n-- This follows from the lemma `ProbabilityTheory.HasLaw.integral_eq` which gives an explicit expression for the integral.\n--",
+     "output": "The proof was rejected by the final checker: banned_premise:ProbabilityTheory.HasGaussianLaw.integrable"
     }
    ],
    "unresolved_metavariable": [
     {
-     "task_id": "mh_prob_9ba5af",
-     "config": "full_no_retrieval",
-     "proof": "have h_cont : Continuous (fun x => Real.exp (-(b * x))) := by\n  refine Continuous.comp _ _\n  \u00b7 exact Continuous.neg\n  \u00b7 exact Continuous.mul_left b\nhave h_measurable : MeasurableSet (Set.Ioc 0 x) := by\n  rw [MeasurableSet.def]\n  exact is_open_Ioc.measurable\nhave h_integrable : MeasureTheory.IntegrableOn (fun x => Real.exp (-(b * x))) (Set.Ioc 0 x) MeasureTheory.volume :=\n  by\n  have h3 : Continuou",
-     "output": "5:29: error: don't know how to synthesize placeholder for argument `hf`\ncontext:\nb x : \u211d\nhb : 0 < b\n\u22a2 Continuous fun x => Complex.exp \u2191(-(b * x))\n5:27: error: don't know how to synthesize placeholder for argument `hg`\ncontext:\nb x : \u211d\nhb : 0 < b\n\u22a2 Continuous Complex.re\n9:8: error: Unknown constant `MeasurableSet.def`\n14:10: error: Unknown constant `ContinuousOn.def`\n16:10: error: Unknown identifie"
+     "task_id": "mh_cate_cd9a3b",
+     "config": "full_no_feedback",
+     "proof": "have h_multiplicative := CategoryTheory.ObjectProperty.instIsMultiplicativeIsoModSerre\nhave h_two_out_of_three := CategoryTheory.ObjectProperty.instHasTwoOutOfThreePropertyIsoModSerre\nhave h_stable_under_retracts := CategoryTheory.ObjectProperty.instIsStableUnderRetractsIsoModSerre\nhave h_contains_isomorphisms := CategoryTheory.ObjectProperty.isomorphisms_le_isoModSerre\nexact CategoryTheory.Morphi",
+     "output": "4:27: error: typeclass instance problem is stuck\n  CategoryTheory.Abelian ?m.14\n\nNote: Lean will not try to resolve this typeclass instance problem because the first and second type arguments to `CategoryTheory.Abelian` are metavariables. These arguments must be fully determined before Lean will try to resolve the typeclass.\n\nHint: Adding type annotations and supplying implicit arguments to functi"
+    },
+    {
+     "task_id": "mh_cate_cd9a3b",
+     "config": "full_no_memory",
+     "proof": "have h_multiplicative := CategoryTheory.ObjectProperty.instIsMultiplicativeIsoModSerre\nhave h_two_out_of_three := CategoryTheory.ObjectProperty.instHasTwoOutOfThreePropertyIsoModSerre\nhave h_stable_under_retracts := CategoryTheory.ObjectProperty.instIsStableUnderRetractsIsoModSerre\nhave h_contains_isomorphisms := CategoryTheory.ObjectProperty.isomorphisms_le_isoModSerre\nexact CategoryTheory.Morphi",
+     "output": "4:27: error: typeclass instance problem is stuck\n  CategoryTheory.Abelian ?m.14\n\nNote: Lean will not try to resolve this typeclass instance problem because the first and second type arguments to `CategoryTheory.Abelian` are metavariables. These arguments must be fully determined before Lean will try to resolve the typeclass.\n\nHint: Adding type annotations and supplying implicit arguments to functi"
     },
     {
      "task_id": "mh_prob_9ba5af",
@@ -2379,16 +3682,10 @@
      "output": "5:29: error: don't know how to synthesize placeholder for argument `hf`\ncontext:\nb x : \u211d\nhb : 0 < b\n\u22a2 Continuous fun x => Complex.exp \u2191(-(b * x))\n5:27: error: don't know how to synthesize placeholder for argument `hg`\ncontext:\nb x : \u211d\nhb : 0 < b\n\u22a2 Continuous Complex.re\n9:8: error: Unknown constant `MeasurableSet.def`\n14:10: error: Unknown constant `ContinuousOn.def`\n16:10: error: Unknown identifie"
     },
     {
-     "task_id": "mh_sets_3ff207",
+     "task_id": "mh_prob_9ba5af",
      "config": "full_no_retrieval",
-     "proof": "let max_s := s.sup\nlet min_t := t.inf\nhave h_max_s : \u2200 x \u2208 s, x < max_s := s.sup_le\nhave h_min_t : \u2200 y \u2208 t, min_t < y := le_tinf\nhave h_between : \u2203 b, max_s < b \u2227 b < min_t :=\n  DenseOrder.exists_between_iff.2 \u27e8max_s, min_t\u27e9\nrcases h_between with \u27e8b, h1, h2\u27e9\nexact \u27e8b, h1, h2\u27e9",
-     "output": "4:15: error: typeclass instance problem is stuck\n  OrderBot ?m.30\n\nNote: Lean will not try to resolve this typeclass instance problem because the first and second type arguments to `OrderBot` contain metavariables. These arguments must be fully determined before Lean will try to resolve the typeclass.\n\nHint: Adding type annotations and supplying implicit arguments to functions can give Lean more i"
-    },
-    {
-     "task_id": "mh_sets_3ff207",
-     "config": "full_no_retrieval",
-     "proof": "let max_s := s.sup\nlet min_t := t.inf\nhave h_max_s : \u2200 x \u2208 s, x < max_s := s.sup_le\nhave h_min_t : \u2200 y \u2208 t, min_t < y := le_tinf\nhave h_between : \u2203 b, max_s < b \u2227 b < min_t :=\n  DenseOrder.exists_between_iff.2 \u27e8max_s, min_t\u27e9\nrcases h_between with \u27e8b, h1, h2\u27e9\nexact \u27e8b, h1, h2\u27e9",
-     "output": "4:15: error: typeclass instance problem is stuck\n  OrderBot ?m.30\n\nNote: Lean will not try to resolve this typeclass instance problem because the first and second type arguments to `OrderBot` contain metavariables. These arguments must be fully determined before Lean will try to resolve the typeclass.\n\nHint: Adding type annotations and supplying implicit arguments to functions can give Lean more i"
+     "proof": "have h_cont : Continuous (fun x => Real.exp (-(b * x))) := by\n  refine Continuous.comp _ _\n  \u00b7 exact Continuous.neg\n  \u00b7 exact Continuous.mul_left b\nhave h_measurable : MeasurableSet (Set.Ioc 0 x) := by\n  rw [MeasurableSet.def]\n  exact is_open_Ioc.measurable\nhave h_integrable : MeasureTheory.IntegrableOn (fun x => Real.exp (-(b * x))) (Set.Ioc 0 x) MeasureTheory.volume :=\n  by\n  have h3 : Continuou",
+     "output": "5:29: error: don't know how to synthesize placeholder for argument `hf`\ncontext:\nb x : \u211d\nhb : 0 < b\n\u22a2 Continuous fun x => Complex.exp \u2191(-(b * x))\n5:27: error: don't know how to synthesize placeholder for argument `hg`\ncontext:\nb x : \u211d\nhb : 0 < b\n\u22a2 Continuous Complex.re\n9:8: error: Unknown constant `MeasurableSet.def`\n14:10: error: Unknown constant `ContinuousOn.def`\n16:10: error: Unknown identifie"
     },
     {
      "task_id": "mh_sets_3ff207",
@@ -2397,7 +3694,57 @@
      "output": "4:15: error: typeclass instance problem is stuck\n  OrderBot ?m.30\n\nNote: Lean will not try to resolve this typeclass instance problem because the first and second type arguments to `OrderBot` contain metavariables. These arguments must be fully determined before Lean will try to resolve the typeclass.\n\nHint: Adding type annotations and supplying implicit arguments to functions can give Lean more i"
     }
    ],
+   "bad_induction": [
+    {
+     "task_id": "novel_set_02",
+     "config": "full_no_feedback",
+     "proof": "have h1 : A \u222a B \u2286 B := by\n  intro x\n  cases x\n  exact h\nhave h2 : B \u2286 A \u222a B := by\n  intro x\n  exact Or.inl x\nexact Set.Subset.antisymm h1 h2",
+     "output": "6:4: error: Tactic `cases` failed: major premise type is not an inductive type\n  \u03b1\n\nExplanation: the `cases` tactic is for constructor-based reasoning as well as for applying custom cases principles with a 'using' clause or a registered '@[cases_eliminator]' theorem. The above type neither is an inductive type nor has a registered theorem.\n\n\u03b1 : Type u_1\nA B : Set \u03b1\nh : A \u2286 B\nx : \u03b1\n\u22a2 x \u2208 A \u222a B \u2192 x "
+    },
+    {
+     "task_id": "novel_set_02",
+     "config": "full_no_feedback",
+     "proof": "have h1 : A \u222a B \u2286 B := by\n  intro x\n  cases x\n  exact h\nhave h2 : B \u2286 A \u222a B := by\n  intro x\n  exact Or.inl x\nexact Set.Subset.antisymm h1 h2",
+     "output": "6:4: error: Tactic `cases` failed: major premise type is not an inductive type\n  \u03b1\n\nExplanation: the `cases` tactic is for constructor-based reasoning as well as for applying custom cases principles with a 'using' clause or a registered '@[cases_eliminator]' theorem. The above type neither is an inductive type nor has a registered theorem.\n\n\u03b1 : Type u_1\nA B : Set \u03b1\nh : A \u2286 B\nx : \u03b1\n\u22a2 x \u2208 A \u222a B \u2192 x "
+    },
+    {
+     "task_id": "novel_set_02",
+     "config": "full_no_feedback",
+     "proof": "have h1 : A \u222a B \u2286 B := by intro x; cases x; exact h\nhave h2 : B \u2286 A \u222a B := by intro x; exact Or.inl x\nexact Set.Subset.antisymm h1 h2",
+     "output": "4:37: error: Tactic `cases` failed: major premise type is not an inductive type\n  \u03b1\n\nExplanation: the `cases` tactic is for constructor-based reasoning as well as for applying custom cases principles with a 'using' clause or a registered '@[cases_eliminator]' theorem. The above type neither is an inductive type nor has a registered theorem.\n\n\u03b1 : Type u_1\nA B : Set \u03b1\nh : A \u2286 B\nx : \u03b1\n\u22a2 x \u2208 A \u222a B \u2192 x"
+    },
+    {
+     "task_id": "mh_func_75745e",
+     "config": "full_no_skeleton",
+     "proof": "intro x y hxy\ncases' hxy with hxy1 hxy2\nconstructor\nobtain \u27e8a, b\u27e9 := exists_le_gt x y\nobtain \u27e8c, d\u27e9 := exists_le_gt y x\napply strictAntiOn_iff.1 h\u2082\napply (strictAntiOn_iff.2 h\u2082).1\napply (strictAntiOn_iff.2 h\u2082).2",
+     "output": "5:2: error: Tactic `cases` failed: major premise type is not an inductive type\n  instDistribLatticeOfLinearOrder.toSemilatticeInf.toLT.1 x y\n\nExplanation: the `cases` tactic is for constructor-based reasoning as well as for applying custom cases principles with a 'using' clause or a registered '@[cases_eliminator]' theorem. The above type neither is an inductive type nor has a registered theorem.\n"
+    },
+    {
+     "task_id": "novel_prob_02",
+     "config": "full_no_skeleton",
+     "proof": "cases h\u03bc : MeasureTheory.IsProbabilityMeasure \u03bc\nconstructor\nexact h\u03bc.1\nexact h\u03bc.2 s",
+     "output": "4:2: error: Tactic `cases` failed: major premise type is not an inductive type\n  Prop\n\nExplanation: the `cases` tactic is for constructor-based reasoning as well as for applying custom cases principles with a 'using' clause or a registered '@[cases_eliminator]' theorem. The above type neither is an inductive type nor has a registered theorem.\n\nConsider using the 'by_cases' tactic, which does true/"
+    },
+    {
+     "task_id": "mh_numb_485b85",
+     "config": "repair",
+     "proof": "intro n\ninduction' n with d hd\n\u00b7 simp only [functor.pow_zero, nat.cast_zero, zero_add, add_zero]\n  exact tendsto_const_nhds\n\u00b7 rw [functor.pow_succ, fwdDiff_pow]\n  simp only [nat.cast_succ, add_assoc, add_left_comm, add_left_inj]\n  have : (fwdDiff 1)^[d + 1] (\u21d1f) 0 = (fwdDiff 1)^[d] (fwdDiff 1 (\u21d1f)) 0\n  rw [this]\n  refine' tendsto.comp _ (tendsto_const_nhds)\n  exact tendsto_id\n  exact hd",
+     "output": "5:2: error: Tactic `induction` failed: major premise type is not an inductive type\n  E \u2192 Prop\n\nExplanation: the `induction` tactic is for constructor-based reasoning as well as for applying custom induction principles with a 'using' clause or a registered '@[induction_eliminator]' theorem. The above type neither is an inductive type nor has a registered theorem.\n\np : \u2115\nhp : Fact (Nat.Prime p)\nE : "
+    }
+   ],
    "instance_resolution_failure": [
+    {
+     "task_id": "mh_sets_42f697",
+     "config": "full_no_memory",
+     "proof": "constructor\n\u00b7 intro h_mono\n  intro s\n  intro a\n  intro ha\n  have : a \u2209 s := ha\n  rw [Finset.cons_eq_insert]\n  exact h_mono _ _ (Finset.insert_subset.2 ha) (Finset.insert_subset.1 (by assumption))\n\u00b7 intro h_add\n  intro a b\n  intro hab\n  have : b \u2208 Finset.singleton b := by constructor\n  have : b \u2209 Finset.singleton b := by constructor\n  let s := Finset.singleton b\n  have : a \u2209 s := by rfl\n  exact h_a",
+     "output": "10:8: error: failed to synthesize instance of type class\n  DecidableEq \u03b1\n\nHint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.\n11:10: error: Function expected at\n  h_mono ?m.37\nbut this term has type\n  f ?m.35 \u2264 f ?m.36\n\nNote: Expected a function because this term is being applied to the argument\n  _\n5:2: error: unsolved goals\n"
+    },
+    {
+     "task_id": "mh_numb_92dc99",
+     "config": "full_no_memory",
+     "proof": "let S := k\nhaveI : IsAlgebraic \u211a (\u2191S) := IntermediateField.isAlgebraic_tower_bot K S\nexact IntermediateField.isAlgebraic_tower_top K S",
+     "output": "5:10: error: failed to synthesize instance of type class\n  Ring (Subfield K)\n\nHint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.\n5:32: error: Function expected at\n  IntermediateField.isAlgebraic_tower_bot\nbut this term has type\n  Algebra.IsAlgebraic ?m.19 \u21a5?m.24\n\nNote: Expected a function because this term is being applied to"
+    },
     {
      "task_id": "mh_ineq_2410e2",
      "config": "full_no_retrieval",
@@ -2421,102 +3768,82 @@
      "config": "full_no_retrieval",
      "proof": "let a := (t \\ s).choose\nhave h1 : a \u2208 t := (t \\ s).choose_spec.2\nhave h2 : a \u2209 s := (t \\ s).choose_spec.1\nhave h3 : t.erase a = s :=\n  by\n    rw [Finset.erase_union_right_iff]\n    exact \u27e8h2, Finset.subset.antisymm (Finset.subset.trans (Finset.subset_union_left _) h) Finset.subset.refl\u27e9\nexact \u27e8a, h1, h2, h3\u27e9",
      "output": "4:11: error: failed to synthesize instance of type class\n  DecidablePred p\u271d\n\nHint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.\n5:12: error: failed to synthesize instance of type class\n  Membership ((p : \u03b1 \u2192 Prop) \u2192 (\u2203! a, a \u2208 t \\ s \u2227 p a) \u2192 \u03b1) (Finset \u03b1)\n\nHint: Type class instance resolution failures can be inspected with th"
-    },
-    {
-     "task_id": "mh_sets_8f88f1",
-     "config": "full_no_retrieval",
-     "proof": "let a := (t \\ s).choose\nhave h1 : a \u2208 t := (t \\ s).choose_spec.2\nhave h2 : a \u2209 s := (t \\ s).choose_spec.1\nhave h3 : t.erase a = s :=\n  by\n    rw [Finset.erase_union_right_iff]\n    exact \u27e8h2, Finset.subset.antisymm (Finset.subset.trans (Finset.subset_union_left _) h) Finset.subset.refl\u27e9\nexact \u27e8a, h1, h2, h3\u27e9",
-     "output": "4:11: error: failed to synthesize instance of type class\n  DecidablePred p\u271d\n\nHint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.\n5:12: error: failed to synthesize instance of type class\n  Membership ((p : \u03b1 \u2192 Prop) \u2192 (\u2203! a, a \u2208 t \\ s \u2227 p a) \u2192 \u03b1) (Finset \u03b1)\n\nHint: Type class instance resolution failures can be inspected with th"
-    },
-    {
-     "task_id": "mh_prob_d34b98",
-     "config": "rag",
-     "proof": "intro k hr\nlet f := fun n => \u2191(n.choose k) * p n ^ k\nlet g := fun n => \u2191n * p n\nhave h1 : Filter.Tendsto g Filter.atTop (nhds r) := hr\nhave h2 : \u2200 (n : \u2115), 0 \u2264 g n := by intro n; simp [g, n.choose, p, mul_nonneg]\nhave h3 : \u2200 (n : \u2115), 0 \u2264 p n := by intro n; simp [p, mul_nonneg]\nhave h4 : \u2200 (n : \u2115), 0 \u2264 f n := by intro n; simp [f, n.choose, p, pow_nonneg, mul_nonneg]\nlet s := fun n => \u2191(n.choose k) ",
-     "output": "5:36: error: failed to synthesize instance of type class\n  HPow \u211d (Set \u211d) ?m.57\n\nHint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.\n5:31: error: Application type mismatch: The argument\n  k\nhas type\n  Set \u211d\nbut is expected to have type\n  \u2115\nin the application\n  n.choose k\n3:208: error: unsolved goals\np : \u2115 \u2192 \u211d\nr : \u211d\nk\u271d : \u2115\nhr\u271d "
-    }
-   ],
-   "bad_induction": [
-    {
-     "task_id": "mh_numb_485b85",
-     "config": "repair",
-     "proof": "intro n\ninduction' n with d hd\n\u00b7 simp only [functor.pow_zero, nat.cast_zero, zero_add, add_zero]\n  exact tendsto_const_nhds\n\u00b7 rw [functor.pow_succ, fwdDiff_pow]\n  simp only [nat.cast_succ, add_assoc, add_left_comm, add_left_inj]\n  have : (fwdDiff 1)^[d + 1] (\u21d1f) 0 = (fwdDiff 1)^[d] (fwdDiff 1 (\u21d1f)) 0\n  rw [this]\n  refine' tendsto.comp _ (tendsto_const_nhds)\n  exact tendsto_id\n  exact hd",
-     "output": "5:2: error: Tactic `induction` failed: major premise type is not an inductive type\n  E \u2192 Prop\n\nExplanation: the `induction` tactic is for constructor-based reasoning as well as for applying custom induction principles with a 'using' clause or a registered '@[induction_eliminator]' theorem. The above type neither is an inductive type nor has a registered theorem.\n\np : \u2115\nhp : Fact (Nat.Prime p)\nE : "
-    },
-    {
-     "task_id": "mh_numb_485b85",
-     "config": "repair",
-     "proof": "intro n\ninduction' n with d hd\n\u00b7 simp only [functor.pow_zero, nat.cast_zero, zero_add, add_zero]\n  exact tendsto_const_nhds\n\u00b7 rw [functor.pow_succ, fwdDiff_pow]\n  simp only [nat.cast_succ, add_assoc, add_left_comm, add_left_inj]\n  have : (fwdDiff 1)^[d + 1] (\u21d1f) 0 = (fwdDiff 1)^[d] (fwdDiff 1 (\u21d1f)) 0\n  rw [this]\n  refine' tendsto.comp _ (tendsto_const_nhds)\n  exact tendsto_id\n  exact hd",
-     "output": "5:2: error: Tactic `induction` failed: major premise type is not an inductive type\n  E \u2192 Prop\n\nExplanation: the `induction` tactic is for constructor-based reasoning as well as for applying custom induction principles with a 'using' clause or a registered '@[induction_eliminator]' theorem. The above type neither is an inductive type nor has a registered theorem.\n\np : \u2115\nhp : Fact (Nat.Prime p)\nE : "
-    },
-    {
-     "task_id": "mh_numb_485b85",
-     "config": "repair",
-     "proof": "intro n\ninduction' n with d hd\n\u00b7 simp only [functor.pow_zero, nat.cast_zero, zero_add, add_zero]\n  exact tendsto_const_nhds\n\u00b7 rw [functor.pow_succ, fwdDiff_pow]\n  simp only [nat.cast_succ, add_assoc, add_left_comm, add_left_inj]\n  have : (fwdDiff 1)^[d + 1] (\u21d1f) 0 = (fwdDiff 1)^[d] (fwdDiff 1 (\u21d1f)) 0\n  rw [this]\n  refine' tendsto.comp _ (tendsto_const_nhds)\n  exact tendsto_id\n  exact hd",
-     "output": "5:2: error: Tactic `induction` failed: major premise type is not an inductive type\n  E \u2192 Prop\n\nExplanation: the `induction` tactic is for constructor-based reasoning as well as for applying custom induction principles with a 'using' clause or a registered '@[induction_eliminator]' theorem. The above type neither is an inductive type nor has a registered theorem.\n\np : \u2115\nhp : Fact (Nat.Prime p)\nE : "
-    },
-    {
-     "task_id": "novel_fun_01",
-     "config": "repair",
-     "proof": "intro x y\ncases h : (g \u2218 f) x = (g \u2218 f) y\napply hg at h\napply hf at h\nexact h",
-     "output": "5:2: error: Tactic `cases` failed: major premise type is not an inductive type\n  Prop\n\nExplanation: the `cases` tactic is for constructor-based reasoning as well as for applying custom cases principles with a 'using' clause or a registered '@[cases_eliminator]' theorem. The above type neither is an inductive type nor has a registered theorem.\n\nConsider using the 'by_cases' tactic, which does true/"
-    },
-    {
-     "task_id": "novel_fun_01",
-     "config": "repair",
-     "proof": "intro x y\ncases h : (g \u2218 f) x = (g \u2218 f) y\napply hg at h\napply hf at h\nexact h",
-     "output": "5:2: error: Tactic `cases` failed: major premise type is not an inductive type\n  Prop\n\nExplanation: the `cases` tactic is for constructor-based reasoning as well as for applying custom cases principles with a 'using' clause or a registered '@[cases_eliminator]' theorem. The above type neither is an inductive type nor has a registered theorem.\n\nConsider using the 'by_cases' tactic, which does true/"
-    },
-    {
-     "task_id": "mh_sets_185b9a",
-     "config": "repair_prompt_b",
-     "proof": "constructor\nobtain \u27e8t, ht\u27e9 := hf\nobtain \u27e8u, hu\u27e9 := hs\napply Finset.image_finite\nexact ht\nexact hu",
-     "output": "5:9: error: Tactic `cases` failed with a nested error:\nTactic `induction` failed: recursor `Finite.casesOn` can only eliminate into `Prop`\n\ncase a\n\u03b1 : Type u\n\u03b2 : Type v\nf : Set (\u03b1 \u2192 \u03b2)\ns : Set \u03b1\nhs : s.Finite\nhf : f.Finite\n\u22a2 \u2191(f.seq s) \u2243 Fin (?m.11 hf)"
     }
    ],
    "timeout": [
     {
-     "task_id": "mh_numb_7d6af5",
-     "config": "template",
-     "proof": "exact?",
-     "output": "4:2: error: (deterministic) timeout at `whnf`, maximum number of heartbeats (200000) has been reached\n\nNote: Use `set_option maxHeartbeats <num>` to set the limit.\n\nHint: Additional diagnostic information may be available using the `set_option diagnostics true` command."
+     "task_id": "mh_prob_51c110",
+     "config": "rag_repair",
+     "proof": "have : HasSum (fun n => Real.exp (-\u2191r) * \u2191r ^ n / \u2191n.factorial) 1 :=\n  by\n    let s := fun n => Real.exp (-\u2191r) * \u2191r ^ n / \u2191n.factorial\n    let f := fun n => \u2191r ^ n / \u2191n.factorial\n    have hf : HasSum f (Real.exp \u2191r) :=\n      by\n        refine' hasSum_converges_of_radius _ _\n        exact Real.exp_pos \u2191r\n        refine' hasSum_converges_of_radius _ _\n        exact Real.exp_pos \u2191r\n        exact Real",
+     "output": "wall-clock timeout after 60s"
+    },
+    {
+     "task_id": "mh_ineq_32dd0a",
+     "config": "rag_repair",
+     "proof": "apply Summable.clog_one_sub\nuse (-1 : \u2102)\nexact hf",
+     "output": "4:2: error: (deterministic) timeout at `isDefEq`, maximum number of heartbeats (200000) has been reached\n\nNote: Use `set_option maxHeartbeats <num>` to set the limit.\n\nHint: Additional diagnostic information may be available using the `set_option diagnostics true` command."
+    },
+    {
+     "task_id": "mh_ineq_32dd0a",
+     "config": "rag_repair",
+     "proof": "apply Summable.clog_one_sub\nuse (-1 : \u2102)\nexact hf",
+     "output": "4:2: error: (deterministic) timeout at `isDefEq`, maximum number of heartbeats (200000) has been reached\n\nNote: Use `set_option maxHeartbeats <num>` to set the limit.\n\nHint: Additional diagnostic information may be available using the `set_option diagnostics true` command."
+    },
+    {
+     "task_id": "mh_ineq_32dd0a",
+     "config": "rag_repair",
+     "proof": "apply Summable.clog_one_sub\nuse (-1 : \u2102)\nexact hf",
+     "output": "4:2: error: (deterministic) timeout at `isDefEq`, maximum number of heartbeats (200000) has been reached\n\nNote: Use `set_option maxHeartbeats <num>` to set the limit.\n\nHint: Additional diagnostic information may be available using the `set_option diagnostics true` command."
+    },
+    {
+     "task_id": "mh_ineq_32dd0a",
+     "config": "rag_repair_bm25",
+     "proof": "apply Summable.clog_one_sub\nuse (fun i => -f i)\nexact hf",
+     "output": "4:2: error: (deterministic) timeout at `isDefEq`, maximum number of heartbeats (200000) has been reached\n\nNote: Use `set_option maxHeartbeats <num>` to set the limit.\n\nHint: Additional diagnostic information may be available using the `set_option diagnostics true` command."
+    },
+    {
+     "task_id": "mh_ineq_32dd0a",
+     "config": "rag_repair_bm25",
+     "proof": "apply Summable.clog_one_sub\nuse fun i => -f i\nexact hf",
+     "output": "4:2: error: (deterministic) timeout at `isDefEq`, maximum number of heartbeats (200000) has been reached\n\nNote: Use `set_option maxHeartbeats <num>` to set the limit.\n\nHint: Additional diagnostic information may be available using the `set_option diagnostics true` command."
     }
    ]
   }
  },
  "difficulty_correlations": {
   "ref_proof_lines": {
-   "spearman_rho": -0.3311749991322937,
-   "p": 0.00020694750713369557,
+   "spearman_rho": -0.36147949047666517,
+   "p": 4.628598421122574e-05,
    "n": 121
   },
   "ref_tactic_diversity": {
-   "spearman_rho": -0.306276673058054,
-   "p": 0.0006341704605681479,
+   "spearman_rho": -0.34135685550877204,
+   "p": 0.00012725990327227011,
    "n": 121
   },
   "gt_premises_reachable": {
-   "spearman_rho": -0.34781666399673805,
-   "p": 9.266127498544248e-05,
+   "spearman_rho": -0.3664632430199858,
+   "p": 3.5648150270480536e-05,
    "n": 121
   },
   "type_depth": {
-   "spearman_rho": -0.09469430296423686,
-   "p": 0.30153425803204226,
+   "spearman_rho": -0.08508014197471676,
+   "p": 0.35348493839159195,
    "n": 121
   },
   "statement_chars": {
-   "spearman_rho": -0.13702247390974204,
-   "p": 0.1339566104464722,
+   "spearman_rho": -0.10580196062702471,
+   "p": 0.2480961057425278,
    "n": 121
   },
   "difficulty_score": {
-   "spearman_rho": -0.3134377523299686,
-   "p": 0.00046408965380583824,
+   "spearman_rho": -0.3220179674009278,
+   "p": 0.00031594417355763503,
    "n": 121
   },
   "binder_groups": {
-   "spearman_rho": -0.08635370640310168,
-   "p": 0.3462993399541458,
+   "spearman_rho": -0.049644646579305104,
+   "p": 0.5886755700930815,
    "n": 121
   }
  }

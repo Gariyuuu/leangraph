@@ -1,0 +1,1 @@
+{"text": "```lean\ninduction n with d hd\n· rw [h0, pow_zero]\n· rw [hs d, hd, pow_succ]\n```", "reasoning": "", "prompt_tokens": 1265, "completion_tokens": 35, "reasoning_tokens": 0, "cost_usd": 0.00016393, "latency_s": 1.5787341594696045, "finish_reason": "stop", "provider": "Alibaba", "key": "2266eac49c7da1f805673c6681021330b32d2ffa88b2f1adafc370037a56b23e", "cached": false}

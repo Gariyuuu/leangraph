@@ -1,0 +1,1 @@
+{"text": "```lean\nintros x y hxy,\nconstructor,\nexact hxy.1,\nexact hxy.2\n```", "reasoning": "", "prompt_tokens": 1174, "completion_tokens": 28, "reasoning_tokens": 0, "cost_usd": 0.000150098, "latency_s": 1.386357069015503, "finish_reason": "stop", "provider": "Alibaba", "key": "bc421e9dc6f16cc706f00cd65a29b2046aac4b96a0b84a76c9ba6a31b70f03f6", "cached": false}

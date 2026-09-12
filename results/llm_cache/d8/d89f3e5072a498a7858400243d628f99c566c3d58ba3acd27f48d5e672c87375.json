@@ -1,0 +1,1 @@
+{"text": ":= by\n  constructor\n  · exact h\n  · exact Set.union_subset_left B A", "reasoning": "", "prompt_tokens": 848, "completion_tokens": 24, "reasoning_tokens": 0, "cost_usd": 0.000110136, "latency_s": 2.437741994857788, "finish_reason": "stop", "provider": "Alibaba", "key": "d89f3e5072a498a7858400243d628f99c566c3d58ba3acd27f48d5e672c87375", "cached": false}

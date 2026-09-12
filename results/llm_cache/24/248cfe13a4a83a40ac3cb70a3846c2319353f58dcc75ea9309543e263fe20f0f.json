@@ -1,0 +1,1 @@
+{"text": "```lean\nrw [Sum.elim_le_elim_iff]\nexact ⟨le_zero (0 : β), le_zero (0 : β)⟩\n```", "reasoning": "", "prompt_tokens": 2213, "completion_tokens": 35, "reasoning_tokens": 0, "cost_usd": 0.000274846, "latency_s": 1.7511029243469238, "finish_reason": "stop", "provider": "Alibaba", "key": "248cfe13a4a83a40ac3cb70a3846c2319353f58dcc75ea9309543e263fe20f0f", "cached": false}

@@ -1,0 +1,1 @@
+{"text": ":= by\n  rw [inv_mul_eq_one]\n  exact Eq.refl (a * b)", "reasoning": "", "prompt_tokens": 808, "completion_tokens": 25, "reasoning_tokens": 0, "cost_usd": 0.000105911, "latency_s": 1.5200848579406738, "finish_reason": "stop", "provider": "Alibaba", "key": "d8b7cf103fd35282a6d8c45fc07c2bf2ad75d524e5c35a140fc3eb0d4a8dce70", "cached": false}

@@ -1,0 +1,1 @@
+{"text": "```lean\nintro f g h\napply (CategoryTheory.Injective.lift i p f g h)\n```", "reasoning": "", "prompt_tokens": 2000, "completion_tokens": 26, "reasoning_tokens": 0, "cost_usd": 0.00024583, "latency_s": 1.6683142185211182, "finish_reason": "stop", "provider": "Alibaba", "key": "779d960bfce7c6a5c5dfaf62cfce48c67d737d40768285dd50d4c9b6bd434d5f", "cached": false}

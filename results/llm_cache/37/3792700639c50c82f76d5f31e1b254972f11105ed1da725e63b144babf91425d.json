@@ -1,0 +1,1 @@
+{"text": "```lean\nby exact MeasureTheory.IsProbabilityMeasure.toMeasure_le_one μ s\n```", "reasoning": "", "prompt_tokens": 1266, "completion_tokens": 22, "reasoning_tokens": 0, "cost_usd": 0.000158132, "latency_s": 1.487550973892212, "finish_reason": "stop", "provider": "Alibaba", "key": "3792700639c50c82f76d5f31e1b254972f11105ed1da725e63b144babf91425d", "cached": false}

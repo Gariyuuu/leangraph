@@ -1,0 +1,1 @@
+{"text": "```lean\nexact CategoryTheory.IsIso.comp_isIso f g\n```", "reasoning": "", "prompt_tokens": 1573, "completion_tokens": 19, "reasoning_tokens": 0, "cost_usd": 0.000192686, "latency_s": 1.2377419471740723, "finish_reason": "stop", "provider": "Alibaba", "key": "8146527234be507139cdb3c27bddb54374b6ef5e4bb7f90ac0b446c06cc9a160", "cached": false}

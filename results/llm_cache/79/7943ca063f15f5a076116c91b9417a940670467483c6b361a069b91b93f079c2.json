@@ -1,0 +1,1 @@
+{"text": ":= by\n  induction n with d hd\n  · rw [h0, pow_zero]\n  · rw [hs d, hd, pow_succ]", "reasoning": "", "prompt_tokens": 1457, "completion_tokens": 36, "reasoning_tokens": 0, "cost_usd": 0.000186849, "latency_s": 1.615816354751587, "finish_reason": "stop", "provider": "Alibaba", "key": "7943ca063f15f5a076116c91b9417a940670467483c6b361a069b91b93f079c2", "cached": false}

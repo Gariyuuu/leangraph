@@ -1,0 +1,1 @@
+{"text": "```lean\nby\n  rw [add_right_inj_iff]\n  apply hf\n  exact le_tsub_add _ _\n```", "reasoning": "", "prompt_tokens": 1290, "completion_tokens": 31, "reasoning_tokens": 0, "cost_usd": 0.000165035, "latency_s": 1.465461015701294, "finish_reason": "stop", "provider": "Alibaba", "key": "de59d6cca7dd747930fd3e6bebfbda0b512276772c5b9682519732bc150b21ae", "cached": false}

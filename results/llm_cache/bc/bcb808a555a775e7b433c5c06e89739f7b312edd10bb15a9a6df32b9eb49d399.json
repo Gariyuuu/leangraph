@@ -1,0 +1,1 @@
+{"text": "```lean\napply Set.inter_union_distrib_left\n```", "reasoning": "", "prompt_tokens": 791, "completion_tokens": 16, "reasoning_tokens": 0, "cost_usd": 9.9827e-05, "latency_s": 1.3906140327453613, "finish_reason": "stop", "provider": "Alibaba", "key": "bcb808a555a775e7b433c5c06e89739f7b312edd10bb15a9a6df32b9eb49d399", "cached": false}

@@ -1,0 +1,1 @@
+{"text": "```lean\nrw [disjointed_succ]\n```", "reasoning": "", "prompt_tokens": 1326, "completion_tokens": 15, "reasoning_tokens": 0, "cost_usd": 0.000161967, "latency_s": 1.2621510028839111, "finish_reason": "stop", "provider": "Alibaba", "key": "62268886ef80cbaff9224e50cdcfaf83e42292471dd6630e00c74df39862c08d", "cached": false}

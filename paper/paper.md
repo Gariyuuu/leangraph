@@ -2,9 +2,7 @@
 
 ## Abstract
 
-We ask when verifier-guided agentic reasoning improves formal proof generation over direct generation by a language model. LeanGraph poses 203 Lean 4 theorems (150 held out from Mathlib by module boundary, with every downstream module banned, and 53 written for the study) to one open-weight model under 9 configurations that switch retrieval, planning and compiler-feedback repair on and off. A proof counts only if a fresh Lean process accepts it with standard axioms and no banned premise. The best configuration, planning, retrieval and repair, verified 7.5%. Direct generation verified 0.6%; a fixed list of automation tactics with no model verified 26.4%. The full agent's advantage over direct generation is statistically reliable (difference +6.9 points, Holm p = 0.00342). Against independent resampling at the same number of model calls, repair differs reliably (+5.2 points, Holm p = 0.0195).
-
-**Status of this version.** Interim: 9 of 15 configurations are complete. Still running: retrieval with repair, BM25 retrieval with repair, dense retrieval with repair, the full agent without compiler feedback, the full agent without memory of earlier attempts, the full agent without a proof skeleton. Contrasts that need them are omitted, and the Holm adjustment covers only the contrasts reported here; both change when the grid is complete.
+We ask when verifier-guided agentic reasoning improves formal proof generation over direct generation by a language model. LeanGraph poses 203 Lean 4 theorems (150 held out from Mathlib by module boundary, with every downstream module banned, and 53 written for the study) to one open-weight model under 15 configurations that switch retrieval, planning and compiler-feedback repair on and off. A proof counts only if a fresh Lean process accepts it with standard axioms and no banned premise. The best of the six headline configurations (planning, retrieval and repair) verified 7.5%, a rate matched by 2 other configurations. Direct generation verified 0.6%; a fixed list of automation tactics with no model verified 26.4%. The full agent's advantage over direct generation is statistically reliable (difference +6.9 points, Holm p = 0.00684). Against independent resampling at the same number of model calls, repair differs reliably (+5.2 points, Holm p = 0.0469).
 
 ## 1 Introduction
 
@@ -55,9 +53,9 @@ The index holds every Mathlib theorem (signature and docstring) outside the bann
 
 | Retriever | Theorems | MRR | Recall@8 | Recall@20 | Recall@50 |
 |---|---:|---:|---:|---:|---:|
-| bm25 | 164 | 0.117 | 8.6% | 13.6% | 16.6% |
-| dense | 164 | 0.088 | 7.3% | 10.8% | 15.6% |
-| hybrid | 164 | 0.125 | 10.1% | 13.3% | 19.4% |
+| BM25 | 164 | 0.117 | 8.6% | 13.6% | 16.6% |
+| Dense (bge-small-en-v1.5) | 164 | 0.088 | 7.3% | 10.8% | 15.6% |
+| Hybrid (reciprocal-rank fusion) | 164 | 0.125 | 10.1% | 13.3% | 19.4% |
 
 ![Retrieval recall](../results/figures/main/retrieval_recall.png)
 
@@ -67,7 +65,7 @@ All configurations are one loop. *Direct*: one draft. *Direct ×4*: four indepen
 
 ## 7 Evaluation
 
-The primary metric is the share of theorems verified. Intervals are 95% Wilson intervals; differences between configurations are paired over theorems, with percentile-bootstrap intervals and exact McNemar tests, Holm-adjusted across all pre-registered contrasts. Secondary metrics: success within N model calls, calls to first success, Lean time, tokens and provider-reported cost, proof length, retrieval recall inside runs, repair success and timeout rate.
+The primary metric is the share of theorems verified. Intervals are 95% Wilson intervals; differences between configurations are paired over theorems, with percentile-bootstrap intervals and exact McNemar tests, Holm-adjusted across all pre-registered contrasts. Secondary metrics: success within N model calls, calls to first success, Lean time, tokens and provider-reported cost, proof length, retrieval recall inside runs, repair success and timeout rate. A model call that failed at the gateway (rate limits, upstream provider errors, dropped connections) is not a proof attempt: failed tasks were re-run until every configuration had a real trace for every theorem, and no failed call is scored.
 
 ## 8 Results
 
@@ -75,80 +73,96 @@ The primary metric is the share of theorems verified. Intervals are 95% Wilson i
 |---|---:|---:|---:|---:|---:|
 | template automation (no LLM) | 46/174 | 26.4% [20.4%, 33.4%] | 26.4% | 26.4% | n/a |
 | planning, retrieval and repair | 13/174 | 7.5% [4.4%, 12.4%] | 0.0% | 6.9% | $0.0256 |
+| the full agent without a proof skeleton | 13/174 | 7.5% [4.4%, 12.4%] | 0.0% | 6.9% | $0.0193 |
+| BM25 retrieval with repair | 13/174 | 7.5% [4.4%, 12.4%] | 3.4% | 7.5% | $0.0153 |
 | repair with the paraphrased prompt | 12/174 | 6.9% [4.0%, 11.7%] | 2.9% | 6.9% | $0.0108 |
+| the full agent without memory of earlier attempts | 11/174 | 6.3% [3.6%, 11.0%] | 0.0% | 6.3% | $0.0275 |
 | direct generation with compiler-feedback repair | 11/174 | 6.3% [3.6%, 11.0%] | 0.6% | 6.3% | $0.0150 |
+| the full agent without compiler feedback | 10/174 | 5.7% [3.2%, 10.3%] | 0.0% | 5.7% | $0.0311 |
 | the full agent without retrieval | 9/174 | 5.2% [2.7%, 9.5%] | 0.0% | 5.2% | $0.0295 |
+| dense retrieval with repair | 9/174 | 5.2% [2.7%, 9.5%] | 1.7% | 5.2% | $0.0208 |
+| hybrid retrieval with repair | 8/174 | 4.6% [2.3%, 8.8%] | 1.7% | 4.6% | $0.0234 |
 | direct generation with the paraphrased prompt | 5/174 | 2.9% [1.2%, 6.5%] | 2.9% | 2.9% | $0.0040 |
-| retrieval-augmented generation | 3/174 | 1.7% [0.6%, 4.9%] | 1.7% | 1.7% | $0.0120 |
+| hybrid retrieval-augmented generation | 3/174 | 1.7% [0.6%, 4.9%] | 1.7% | 1.7% | $0.0120 |
 | four independent drafts | 2/174 | 1.1% [0.3%, 4.1%] | 0.6% | 1.1% | $0.0593 |
 | direct generation | 1/174 | 0.6% [0.1%, 3.2%] | 0.6% | 0.6% | $0.0304 |
 
 ![Verified rate by configuration](../results/figures/main/verified_rate.png)
 
-- **Primary: full agent vs direct generation.** planning, retrieval and repair verified 7.5% and direct generation 0.6% of the same 174 theorems (difference +6.9 points, 95% CI [+3.4, +10.9]; 12 theorems solved only by the first, 0 only by the second; exact McNemar p = 0.000488, Holm-adjusted p = 0.00342). The difference survives correction: planning, retrieval and repair outperforms direct generation.
-- **RQ2 compiler-feedback repair vs one draft.** direct generation with compiler-feedback repair verified 6.3% and direct generation 0.6% of the same 174 theorems (difference +5.7 points, 95% CI [+2.3, +9.2]; 10 theorems solved only by the first, 0 only by the second; exact McNemar p = 0.00195, Holm-adjusted p = 0.0117). The difference survives correction: direct generation with compiler-feedback repair outperforms direct generation.
-- **RQ2 repair vs independent resampling at equal LLM calls.** direct generation with compiler-feedback repair verified 6.3% and four independent drafts 1.1% of the same 174 theorems (difference +5.2 points, 95% CI [+2.3, +8.6]; 9 theorems solved only by the first, 0 only by the second; exact McNemar p = 0.00391, Holm-adjusted p = 0.0195). The difference survives correction: direct generation with compiler-feedback repair outperforms four independent drafts.
-- **RQ1 retrieval, single draft.** retrieval-augmented generation verified 1.7% and direct generation 0.6% of the same 174 theorems (difference +1.1 points, 95% CI [-1.1, +3.4]; 3 theorems solved only by the first, 1 only by the second; exact McNemar p = 0.625, Holm-adjusted p = 1). At this sample size the data cannot distinguish the two.
-- **LLM vs no-LLM automation.** direct generation verified 0.6% and template automation (no LLM) 26.4% of the same 174 theorems (difference -25.9 points, 95% CI [-32.2, -19.5]; 0 theorems solved only by the first, 45 only by the second; exact McNemar p = 5.68e-14, Holm-adjusted p = 4.55e-13). The difference survives correction: direct generation underperforms template automation (no LLM).
-- **Prompt sensitivity: paraphrased prompt, direct.** direct generation with the paraphrased prompt verified 2.9% and direct generation 0.6% of the same 174 theorems (difference +2.3 points, 95% CI [+0.6, +4.6]; 4 theorems solved only by the first, 0 only by the second; exact McNemar p = 0.125, Holm-adjusted p = 0.5). At this sample size the data cannot distinguish the two.
-- **Prompt sensitivity: paraphrased prompt, repair.** repair with the paraphrased prompt verified 6.9% and direct generation with compiler-feedback repair 6.3% of the same 174 theorems (difference +0.6 points, 95% CI [+0.0, +1.7]; 1 theorems solved only by the first, 0 only by the second; exact McNemar p = 1, Holm-adjusted p = 1). At this sample size the data cannot distinguish the two.
+- **Primary: full agent vs direct generation.** Planning, retrieval and repair verified 7.5% and direct generation 0.6% of the same 174 theorems (difference +6.9 points, 95% CI [+3.4, +10.9]; 12 theorems solved only by the first, 0 only by the second; exact McNemar p = 0.000488, Holm-adjusted p = 0.00684). The difference survives correction: planning, retrieval and repair outperforms direct generation.
+- **RQ2 compiler-feedback repair vs one draft.** Direct generation with compiler-feedback repair verified 6.3% and direct generation 0.6% of the same 174 theorems (difference +5.7 points, 95% CI [+2.3, +9.2]; 10 theorems solved only by the first, 0 only by the second; exact McNemar p = 0.00195, Holm-adjusted p = 0.0254). The difference survives correction: direct generation with compiler-feedback repair outperforms direct generation.
+- **RQ2 repair vs independent resampling at equal LLM calls.** Direct generation with compiler-feedback repair verified 6.3% and four independent drafts 1.1% of the same 174 theorems (difference +5.2 points, 95% CI [+2.3, +8.6]; 9 theorems solved only by the first, 0 only by the second; exact McNemar p = 0.00391, Holm-adjusted p = 0.0469). The difference survives correction: direct generation with compiler-feedback repair outperforms four independent drafts.
+- **RQ1 retrieval, single draft.** Hybrid retrieval-augmented generation verified 1.7% and direct generation 0.6% of the same 174 theorems (difference +1.1 points, 95% CI [-1.1, +3.4]; 3 theorems solved only by the first, 1 only by the second; exact McNemar p = 0.625, Holm-adjusted p = 1). At this sample size the data cannot distinguish the two.
+- **RQ1 retrieval, with repair.** Hybrid retrieval with repair verified 4.6% and direct generation with compiler-feedback repair 6.3% of the same 174 theorems (difference -1.7 points, 95% CI [-6.3, +2.9]; 6 theorems solved only by the first, 9 only by the second; exact McNemar p = 0.607, Holm-adjusted p = 1). At this sample size the data cannot distinguish the two.
+- **RQ3 planning on top of retrieval + repair.** Planning, retrieval and repair verified 7.5% and hybrid retrieval with repair 4.6% of the same 174 theorems (difference +2.9 points, 95% CI [-0.6, +6.3]; 7 theorems solved only by the first, 2 only by the second; exact McNemar p = 0.18, Holm-adjusted p = 1). At this sample size the data cannot distinguish the two.
+- **LLM vs no-LLM automation.** Direct generation verified 0.6% and template automation (no LLM) 26.4% of the same 174 theorems (difference -25.9 points, 95% CI [-32.2, -19.5]; 0 theorems solved only by the first, 45 only by the second; exact McNemar p = 5.68e-14, Holm-adjusted p = 8.53e-13). The difference survives correction: direct generation underperforms template automation (no LLM).
+- **Retriever: BM25 vs hybrid.** BM25 retrieval with repair verified 7.5% and hybrid retrieval with repair 4.6% of the same 174 theorems (difference +2.9 points, 95% CI [+0.6, +5.7]; 5 theorems solved only by the first, 0 only by the second; exact McNemar p = 0.0625, Holm-adjusted p = 0.688). At this sample size the data cannot distinguish the two.
+- **Retriever: dense vs hybrid.** Dense retrieval with repair verified 5.2% and hybrid retrieval with repair 4.6% of the same 174 theorems (difference +0.6 points, 95% CI [-2.3, +3.4]; 4 theorems solved only by the first, 3 only by the second; exact McNemar p = 1, Holm-adjusted p = 1). At this sample size the data cannot distinguish the two.
+- **Prompt sensitivity: paraphrased prompt, direct.** Direct generation with the paraphrased prompt verified 2.9% and direct generation 0.6% of the same 174 theorems (difference +2.3 points, 95% CI [+0.6, +4.6]; 4 theorems solved only by the first, 0 only by the second; exact McNemar p = 0.125, Holm-adjusted p = 1). At this sample size the data cannot distinguish the two.
+- **Prompt sensitivity: paraphrased prompt, repair.** Repair with the paraphrased prompt verified 6.9% and direct generation with compiler-feedback repair 6.3% of the same 174 theorems (difference +0.6 points, 95% CI [+0.0, +1.7]; 1 theorem solved only by the first, 0 only by the second; exact McNemar p = 1, Holm-adjusted p = 1). At this sample size the data cannot distinguish the two.
 
 **Ablations.** Each removes one part of the full agent:
 
-- Ablation: retrieval: planning, retrieval and repair verified 7.5% and the full agent without retrieval 5.2% of the same 174 theorems (difference +2.3 points, 95% CI [-1.7, +6.3]; 9 theorems solved only by the first, 5 only by the second; exact McNemar p = 0.424, Holm-adjusted p = 1). At this sample size the data cannot distinguish the two.
+- **Ablation: retrieval.** Planning, retrieval and repair verified 7.5% and the full agent without retrieval 5.2% of the same 174 theorems (difference +2.3 points, 95% CI [-1.7, +6.3]; 9 theorems solved only by the first, 5 only by the second; exact McNemar p = 0.424, Holm-adjusted p = 1). At this sample size the data cannot distinguish the two.
+- **Ablation: compiler feedback.** Planning, retrieval and repair verified 7.5% and the full agent without compiler feedback 5.7% of the same 174 theorems (difference +1.7 points, 95% CI [+0.0, +4.0]; 3 theorems solved only by the first, 0 only by the second; exact McNemar p = 0.25, Holm-adjusted p = 1). At this sample size the data cannot distinguish the two.
+- **Ablation: memory of earlier attempts.** Planning, retrieval and repair verified 7.5% and the full agent without memory of earlier attempts 6.3% of the same 174 theorems (difference +1.1 points, 95% CI [+0.0, +2.9]; 2 theorems solved only by the first, 0 only by the second; exact McNemar p = 0.5, Holm-adjusted p = 1). At this sample size the data cannot distinguish the two.
+- **Ablation: proof skeleton.** Planning, retrieval and repair verified 7.5% and the full agent without a proof skeleton 7.5% of the same 174 theorems (difference +0.0 points, 95% CI [-3.4, +3.4]; 4 theorems solved only by the first, 4 only by the second; exact McNemar p = 1, Holm-adjusted p = 1). At this sample size the data cannot distinguish the two.
 
 **Held-out versus authored theorems.**
-- direct generation: 0.0% on held-out Mathlib theorems vs 1.9% on authored theorems.
-- planning, retrieval and repair: 4.1% on held-out Mathlib theorems vs 15.1% on authored theorems.
+- Direct generation: 0.0% on held-out Mathlib theorems vs 1.9% on authored theorems.
+- Planning, retrieval and repair: 4.1% on held-out Mathlib theorems vs 15.1% on authored theorems.
 
 ## 9 Repair Dynamics
 
 ![Success within N calls](../results/figures/main/success_within_calls.png)
 
-- direct generation with compiler-feedback repair: of 173 theorems whose first draft failed, 5.8% were later verified.
-- planning, retrieval and repair: of 167 theorems whose first draft failed, 3.6% were later verified.
+- Direct generation with compiler-feedback repair: of 173 theorems whose first draft failed, 5.8% were later verified.
+- Hybrid retrieval with repair: of 171 theorems whose first draft failed, 2.9% were later verified.
+- Planning, retrieval and repair: of 167 theorems whose first draft failed, 3.6% were later verified.
 
 Next-round success by the class of the error being repaired (classes with at least five cases):
 
 | First error | Cases | Next round verified |
 |---|---:|---:|
-| valid but wrong | 18 | 16.7% |
-| lean3 syntax | 302 | 4.3% |
-| wrong namespace | 82 | 1.2% |
-| incorrect rewrite | 82 | 1.2% |
-| other | 88 | 1.1% |
-| forbidden | 345 | 0.9% |
-| wrong tactic | 229 | 0.4% |
-| syntax error | 409 | 0.2% |
-| hallucinated theorem | 311 | 0.0% |
-| type mismatch | 98 | 0.0% |
-| unresolved metavariable | 9 | 0.0% |
-| instance resolution failure | 6 | 0.0% |
-| bad induction | 6 | 0.0% |
+| valid but wrong | 59 | 11.9% |
+| Lean 3 syntax | 762 | 3.0% |
+| wrong namespace | 171 | 1.8% |
+| forbidden | 700 | 1.0% |
+| type mismatch | 316 | 0.9% |
+| other | 273 | 0.7% |
+| wrong tactic | 725 | 0.4% |
+| syntax error | 1000 | 0.4% |
+| incorrect rewrite | 279 | 0.4% |
+| hallucinated theorem | 576 | 0.0% |
+| checker rejected | 8 | 0.0% |
+| unresolved metavariable | 13 | 0.0% |
+| bad induction | 10 | 0.0% |
+| instance resolution failure | 78 | 0.0% |
+| timeout | 5 | 0.0% |
 
 ![Repair by error class](../results/figures/main/repair_by_class.png)
 
 ## 10 Error Analysis
 
-We classify all 6208 failed attempts by their first Lean error; unknown names are split into hallucinated and wrong-namespace by lookup in the table of all 473,141 constants of the pinned Mathlib.
+We classify all 10,177 failed attempts by their first Lean error; unknown names are split into hallucinated and wrong-namespace by lookup in the table of all 473,141 constants of the pinned Mathlib.
 
 | Class | Attempts | Share |
 |---|---:|---:|
-| wrong tactic | 2288 | 36.9% |
-| syntax error | 895 | 14.4% |
-| lean3 syntax | 633 | 10.2% |
-| hallucinated theorem | 586 | 9.4% |
-| other | 560 | 9.0% |
-| forbidden | 466 | 7.5% |
-| valid but wrong | 266 | 4.3% |
-| type mismatch | 171 | 2.8% |
-| wrong namespace | 154 | 2.5% |
-| incorrect rewrite | 144 | 2.3% |
-| instance resolution failure | 23 | 0.4% |
-| unresolved metavariable | 12 | 0.2% |
-| bad induction | 8 | 0.1% |
-| checker rejected | 1 | 0.0% |
-| timeout | 1 | 0.0% |
+| wrong tactic | 2908 | 28.6% |
+| syntax error | 1675 | 16.5% |
+| Lean 3 syntax | 1232 | 12.1% |
+| hallucinated theorem | 948 | 9.3% |
+| forbidden | 931 | 9.1% |
+| other | 826 | 8.1% |
+| type mismatch | 470 | 4.6% |
+| incorrect rewrite | 413 | 4.1% |
+| valid but wrong | 319 | 3.1% |
+| wrong namespace | 286 | 2.8% |
+| instance resolution failure | 121 | 1.2% |
+| unresolved metavariable | 17 | 0.2% |
+| bad induction | 13 | 0.1% |
+| checker rejected | 10 | 0.1% |
+| timeout | 8 | 0.1% |
 
 ![Error taxonomy](../results/figures/main/error_taxonomy.png)
 
@@ -156,13 +170,13 @@ We classify all 6208 failed attempts by their first Lean error; unknown names ar
 
 | Proxy | ρ | p | n |
 |---|---:|---:|---:|
-| ref proof lines | -0.33 | 0.000207 | 121 |
-| ref tactic diversity | -0.31 | 0.000634 | 121 |
-| gt premises reachable | -0.35 | 9.27e-05 | 121 |
-| type depth | -0.09 | 0.302 | 121 |
-| statement chars | -0.14 | 0.134 | 121 |
-| difficulty score | -0.31 | 0.000464 | 121 |
-| binder groups | -0.09 | 0.346 | 121 |
+| ref proof lines | -0.36 | 4.63e-05 | 121 |
+| ref tactic diversity | -0.34 | 0.000127 | 121 |
+| gt premises reachable | -0.37 | 3.56e-05 | 121 |
+| type depth | -0.09 | 0.353 | 121 |
+| statement chars | -0.11 | 0.248 | 121 |
+| difficulty score | -0.32 | 0.000316 | 121 |
+| binder groups | -0.05 | 0.589 | 121 |
 
 ![Success by difficulty](../results/figures/main/difficulty.png)
 
@@ -172,11 +186,17 @@ We classify all 6208 failed attempts by their first Lean error; unknown names ar
 |---|---:|---:|---:|---:|
 | direct generation with the paraphrased prompt | 174 | 82,020 | $0.0201 | $0.0040 |
 | repair with the paraphrased prompt | 670 | 703,436 | $0.1293 | $0.0108 |
-| retrieval-augmented generation | 174 | 198,715 | $0.0359 | $0.0120 |
+| hybrid retrieval-augmented generation | 174 | 198,715 | $0.0359 | $0.0120 |
 | direct generation with compiler-feedback repair | 675 | 861,900 | $0.1648 | $0.0150 |
+| BM25 retrieval with repair | 671 | 1,262,354 | $0.1987 | $0.0153 |
+| the full agent without a proof skeleton | 838 | 1,571,091 | $0.2509 | $0.0193 |
+| dense retrieval with repair | 680 | 1,163,873 | $0.1871 | $0.0208 |
+| hybrid retrieval with repair | 680 | 1,187,433 | $0.1868 | $0.0234 |
 | planning, retrieval and repair | 841 | 1,952,639 | $0.3332 | $0.0256 |
+| the full agent without memory of earlier attempts | 842 | 1,705,014 | $0.3030 | $0.0275 |
 | the full agent without retrieval | 844 | 1,405,154 | $0.2657 | $0.0295 |
 | direct generation | 174 | 104,753 | $0.0304 | $0.0304 |
+| the full agent without compiler feedback | 844 | 1,820,390 | $0.3108 | $0.0311 |
 | four independent drafts | 691 | 411,650 | $0.1186 | $0.0593 |
 | template automation (no LLM) | 0 | 0 | $0.0000 | n/a |
 
@@ -208,7 +228,7 @@ We classify all 6208 failed attempts by their first Lean error; unknown names ar
 
 ## 14 Conclusion
 
-With Lean as the only judge, the full agent verified reliably more theorems than direct generation (7.5% vs 0.6%). Repair did beat spending the same calls on independent drafts. All traces, prompts, cached model responses and certificates are released so that each number can be recomputed.
+With Lean as the only judge, the full agent verified reliably more theorems than direct generation (7.5% vs 0.6%). Yet a fixed list of automation tactics, with no model, verified 26.4%, 3.5 times the best agent. Retrieval, planning and each ablated component of the full agent, including Lean's error text, showed no reliable effect at this sample size. Repair beat independent drafts made with the same number of calls, so the gain comes from revising earlier attempts rather than from attempting more often; but because the no-feedback ablation still shows the model its previous proofs, these data cannot separate the value of Lean's error messages from the value of revising one's own failed proof. All traces, prompts, cached model responses and certificates are released so that each number can be recomputed.
 
 ## References
 

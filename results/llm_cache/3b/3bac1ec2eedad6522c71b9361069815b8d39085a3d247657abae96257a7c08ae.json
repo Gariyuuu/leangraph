@@ -1,0 +1,1 @@
+{"text": ":= by apply CategoryTheory.IsIso.comp_isIso; assumption*", "reasoning": "", "prompt_tokens": 1156, "completion_tokens": 17, "reasoning_tokens": 0, "cost_usd": 0.000142987, "latency_s": 1.4296679496765137, "finish_reason": "stop", "provider": "Alibaba", "key": "3bac1ec2eedad6522c71b9361069815b8d39085a3d247657abae96257a7c08ae", "cached": false}

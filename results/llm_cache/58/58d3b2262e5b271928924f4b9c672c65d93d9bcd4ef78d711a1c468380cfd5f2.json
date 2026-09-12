@@ -1,0 +1,1 @@
+{"text": "```lean\napply CategoryTheory.Abelian.instIsStableUnderCobaseChangeMonomorphisms\n```", "reasoning": "", "prompt_tokens": 997, "completion_tokens": 28, "reasoning_tokens": 0, "cost_usd": 0.000129389, "latency_s": 1.4408130645751953, "finish_reason": "stop", "provider": "Alibaba", "key": "58d3b2262e5b271928924f4b9c672c65d93d9bcd4ef78d711a1c468380cfd5f2", "cached": false}

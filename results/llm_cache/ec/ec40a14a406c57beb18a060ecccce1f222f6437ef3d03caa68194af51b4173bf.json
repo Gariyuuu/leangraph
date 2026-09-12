@@ -1,0 +1,1 @@
+{"text": "```lean\nintro hfg\napply Antivary.sum_mul_le_sum_mul_comp_perm\nexact hfg\n```", "reasoning": "", "prompt_tokens": 1678, "completion_tokens": 28, "reasoning_tokens": 0, "cost_usd": 0.000209066, "latency_s": 1.6428890228271484, "finish_reason": "stop", "provider": "Alibaba", "key": "ec40a14a406c57beb18a060ecccce1f222f6437ef3d03caa68194af51b4173bf", "cached": false}

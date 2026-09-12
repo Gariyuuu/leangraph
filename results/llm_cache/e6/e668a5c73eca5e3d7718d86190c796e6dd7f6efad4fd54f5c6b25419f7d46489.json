@@ -1,0 +1,1 @@
+{"text": "```lean\napply CategoryTheory.yonedaFunctor_preservesLimits\n```", "reasoning": "", "prompt_tokens": 1286, "completion_tokens": 20, "reasoning_tokens": 0, "cost_usd": 0.000159562, "latency_s": 1.2531969547271729, "finish_reason": "stop", "provider": "Alibaba", "key": "e668a5c73eca5e3d7718d86190c796e6dd7f6efad4fd54f5c6b25419f7d46489", "cached": false}

@@ -1,0 +1,1 @@
+{"text": "```lean\nintro hF\napply CategoryTheory.IsPullback.map F h\nexact hF\n```", "reasoning": "", "prompt_tokens": 1351, "completion_tokens": 26, "reasoning_tokens": 0, "cost_usd": 0.000169897, "latency_s": 1.4968531131744385, "finish_reason": "stop", "provider": "Alibaba", "key": "241e24b1e1418af230fb933d4d3d466ca6334e29cc84030aa128dbec8a4d221b", "cached": false}

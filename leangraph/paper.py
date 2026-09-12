@@ -22,8 +22,8 @@ TITLE = "LeanGraph: Evaluating Retrieval and Verifier-Guided Repair for LLM Theo
 
 LABEL = {
     "template": "template automation (no LLM)", "direct": "direct generation", "direct_at4": "four independent drafts",
-    "repair": "direct generation with compiler-feedback repair", "rag": "retrieval-augmented generation",
-    "rag_repair": "retrieval with repair", "full": "planning, retrieval and repair",
+    "repair": "direct generation with compiler-feedback repair", "rag": "hybrid retrieval-augmented generation",
+    "rag_repair": "hybrid retrieval with repair", "full": "planning, retrieval and repair",
     "rag_repair_bm25": "BM25 retrieval with repair", "rag_repair_dense": "dense retrieval with repair",
     "full_no_retrieval": "the full agent without retrieval", "full_no_feedback": "the full agent without compiler feedback",
     "full_no_memory": "the full agent without memory of earlier attempts", "full_no_skeleton": "the full agent without a proof skeleton",
@@ -91,6 +91,13 @@ against the publishers' records before submission.
 """
 
 
+RETRIEVER_NAMES = {"bm25": "BM25", "dense": "Dense (bge-small-en-v1.5)", "hybrid": "Hybrid (reciprocal-rank fusion)"}
+
+
+def error_name(k: str) -> str:
+    return k.replace("_", " ").replace("lean3", "Lean 3")
+
+
 def pct(x, d=1):
     return "n/a" if x is None else f"{100 * x:.{d}f}%"
 
@@ -103,8 +110,9 @@ def contrast_sentence(c: dict) -> str:
     a, b = LABEL.get(c["treatment"], c["treatment"]), LABEL.get(c["control"], c["control"])
     core = (f"{a} verified {pct(c['rate_treatment'])} and {b} {pct(c['rate_control'])} of the same {c['n']} theorems "
             f"(difference {100 * c['diff']:+.1f} points, 95% CI [{100 * c['diff_ci'][0]:+.1f}, {100 * c['diff_ci'][1]:+.1f}]; "
-            f"{c['only_a']} theorems solved only by the first, {c['only_b']} only by the second; exact McNemar p = {c['p']:.3g}, "
+            f"{c['only_a']} {'theorem' if c['only_a'] == 1 else 'theorems'} solved only by the first, {c['only_b']} only by the second; exact McNemar p = {c['p']:.3g}, "
             f"Holm-adjusted p = {c['p_holm']:.3g})")
+    core = core[:1].upper() + core[1:]
     if c["p_holm"] < ALPHA:
         return core + f". The difference survives correction: {a} {'outperforms' if c['diff'] > 0 else 'underperforms'} {b}."
     return core + ". At this sample size the data cannot distinguish the two."
@@ -150,7 +158,10 @@ def build(run_id: str) -> str:
         f"under {len(s['configs'])} configurations that switch retrieval, planning and compiler-feedback repair on and off. "
         f"A proof counts only if a fresh Lean process accepts it with standard axioms and no banned premise. ")
     if best:
-        abstract += f"The best configuration, {LABEL.get(best[0], best[0])}, verified {pct(best[1]['rate'])}. "
+        ties = [c for c, m in s["configs"].items() if c not in (best[0], "template") and m["rate"] == best[1]["rate"]]
+        tie_note = f", a rate matched by {len(ties)} other {'configuration' if len(ties) == 1 else 'configurations'}" if ties else ""
+        abstract += (f"The best of the six headline configurations ({LABEL.get(best[0], best[0])}) verified "
+                     f"{pct(best[1]['rate'])}{tie_note}. ")
     if direct and template:
         abstract += f"Direct generation verified {pct(direct['rate'])}; a fixed list of automation tactics with no model verified {pct(template['rate'])}. "
     if primary:
@@ -218,7 +229,7 @@ def build(run_id: str) -> str:
         rsec += "| Retriever | Theorems | MRR | Recall@8 | Recall@20 | Recall@50 |\n|---|---:|---:|---:|---:|---:|\n"
         for m, by in retr["methods"].items():
             a = by["all"]
-            rsec += f"| {m} | {a['n']} | {a['rr']['mean']:.3f} | {pct(a['recall@8']['mean'])} | {pct(a['recall@20']['mean'])} | {pct(a['recall@50']['mean'])} |\n"
+            rsec += f"| {RETRIEVER_NAMES.get(m, m)} | {a['n']} | {a['rr']['mean']:.3f} | {pct(a['recall@8']['mean'])} | {pct(a['recall@20']['mean'])} | {pct(a['recall@50']['mean'])} |\n"
         rsec += f"\n![Retrieval recall]({figs}/retrieval_recall.png)\n"
     else:
         rsec += "_The retrieval benchmark was not part of this run._\n"
@@ -240,7 +251,9 @@ def build(run_id: str) -> str:
         "The primary metric is the share of theorems verified. Intervals are 95% Wilson intervals; differences between configurations are "
         "paired over theorems, with percentile-bootstrap intervals and exact McNemar tests, Holm-adjusted across all pre-registered contrasts. "
         "Secondary metrics: success within N model calls, calls to first success, Lean time, tokens and provider-reported cost, proof length, "
-        "retrieval recall inside runs, repair success and timeout rate.\n")
+        "retrieval recall inside runs, repair success and timeout rate. A model call that failed at the gateway (rate limits, "
+        "upstream provider errors, dropped connections) is not a proof attempt: failed tasks were re-run until every "
+        "configuration had a real trace for every theorem, and no failed call is scored.\n")
 
     res = ["## 8 Results\n", leaderboard_table(s), f"\n![Verified rate by configuration]({figs}/verified_rate.png)\n"]
     for name in ["agentic_vs_direct", "feedback_repair", "repair_vs_equal_budget", "retrieval", "retrieval_with_repair", "planning",
@@ -252,13 +265,13 @@ def build(run_id: str) -> str:
     abl = [c for c in s["contrasts"] if c["name"].startswith("abl_")]
     if abl:
         res.append("\n**Ablations.** Each removes one part of the full agent:\n")
-        res += [f"- {c['question']}: " + contrast_sentence(c) for c in abl]
+        res += [f"- **{c['question']}.** " + contrast_sentence(c) for c in abl]
     if held and novel:
         res.append("\n**Held-out versus authored theorems.**")
         for c in ["direct", "full"]:
             bs = s["by_split"].get(c, {})
             if "mathlib_heldout" in bs and "novel" in bs:
-                res.append(f"- {LABEL[c]}: {pct(bs['mathlib_heldout']['rate'])} on held-out Mathlib theorems vs "
+                res.append(f"- {LABEL[c][:1].upper() + LABEL[c][1:]}: {pct(bs['mathlib_heldout']['rate'])} on held-out Mathlib theorems vs "
                            f"{pct(bs['novel']['rate'])} on authored theorems.")
     parts.append("\n".join(res) + "\n")
 
@@ -266,22 +279,23 @@ def build(run_id: str) -> str:
     for c in ["repair", "rag_repair", "full"]:
         m = _cfg(s, c)
         if m and m.get("repair_success") is not None:
-            rd.append(f"- {LABEL[c]}: of {m['n_first_failed']} theorems whose first draft failed, {pct(m['repair_success'])} were later verified.")
+            name = LABEL[c][:1].upper() + LABEL[c][1:]
+            rd.append(f"- {name}: of {m['n_first_failed']} theorems whose first draft failed, {pct(m['repair_success'])} were later verified.")
     rb = sorted(((k, v) for k, v in s["errors"]["repair_by_class"].items() if v["n"] >= 5), key=lambda kv: -kv[1]["rate"])
     if rb:
         rd.append("\nNext-round success by the class of the error being repaired (classes with at least five cases):\n")
         rd.append("| First error | Cases | Next round verified |\n|---|---:|---:|")
-        rd += [f"| {k.replace('_', ' ')} | {v['n']} | {pct(v['rate'])} |" for k, v in rb]
+        rd += [f"| {error_name(k)} | {v['n']} | {pct(v['rate'])} |" for k, v in rb]
         rd.append(f"\n![Repair by error class]({figs}/repair_by_class.png)")
     parts.append("\n".join(rd) + "\n")
 
     tot = s["errors"]["total"]
     n_err = sum(tot.values())
     er = ["## 10 Error Analysis\n",
-          f"We classify all {n_err} failed attempts by their first Lean error; unknown names are split into hallucinated and "
+          f"We classify all {n_err:,} failed attempts by their first Lean error; unknown names are split into hallucinated and "
           "wrong-namespace by lookup in the table of all 473,141 constants of the pinned Mathlib.\n",
           "| Class | Attempts | Share |\n|---|---:|---:|"]
-    er += [f"| {k.replace('_', ' ')} | {v} | {pct(v / n_err)} |" for k, v in sorted(tot.items(), key=lambda kv: -kv[1])]
+    er += [f"| {error_name(k)} | {v} | {pct(v / n_err)} |" for k, v in sorted(tot.items(), key=lambda kv: -kv[1])]
     er.append(f"\n![Error taxonomy]({figs}/error_taxonomy.png)")
     parts.append("\n".join(er) + "\n")
 
@@ -289,7 +303,7 @@ def build(run_id: str) -> str:
     if dc:
         d = ["**Difficulty.** Spearman correlation between each proxy and a held-out theorem's solve rate across all configurations:\n",
              "| Proxy | ρ | p | n |\n|---|---:|---:|---:|"]
-        d += [f"| {k.replace('_', ' ')} | {v['spearman_rho']:+.2f} | {v['p']:.3g} | {v['n']} |" for k, v in dc.items()]
+        d += [f"| {error_name(k)} | {v['spearman_rho']:+.2f} | {v['p']:.3g} | {v['n']} |" for k, v in dc.items()]
         d.append(f"\n![Success by difficulty]({figs}/difficulty.png)")
         parts.append("\n".join(d) + "\n")
 
@@ -345,13 +359,28 @@ def build(run_id: str) -> str:
     parts.append("\n".join(r2) + "\n")
 
     concl = "## 14 Conclusion\n\n"
+    sig = lambda c: c is not None and c["p_holm"] < ALPHA
     if primary:
         concl += ("With Lean as the only judge, " + ("the full agent verified reliably more theorems than direct generation"
-                   if primary["p_holm"] < ALPHA and primary["diff"] > 0 else "we could not show that the full agent verifies more theorems than direct generation")
+                  if sig(primary) and primary["diff"] > 0 else "we could not show that the full agent verifies more theorems than direct generation")
                   + f" ({pct(primary['rate_treatment'])} vs {pct(primary['rate_control'])}). ")
-    if budget:
-        concl += ("Repair " + ("did" if budget["p_holm"] < ALPHA and budget["diff"] > 0 else "did not")
-                  + " beat spending the same calls on independent drafts. ")
+    nulls_all_null = False
+    _nulls = [c for c in s["contrasts"] if c["name"] in ("retrieval", "retrieval_with_repair", "planning") or c["name"].startswith("abl_")]
+    nulls_all_null = bool(_nulls) and not any(sig(c) for c in _nulls)
+    if budget and not (nulls_all_null and sig(budget) and budget["diff"] > 0):  # otherwise stated in the attribution sentence
+        concl += ("Compiler-feedback repair " + ("also beat" if sig(budget) and budget["diff"] > 0 else "did not reliably beat")
+                  + " spending the same number of model calls on independent drafts. ")
+    if template and best and best[1]["rate"] > 0:
+        ratio = template["rate"] / best[1]["rate"]
+        concl += (f"Yet a fixed list of automation tactics, with no model, verified {pct(template['rate'])}, "
+                  f"{ratio:.1f} times the best agent. ")
+    nulls = [c for c in s["contrasts"] if c["name"] in ("retrieval", "retrieval_with_repair", "planning") or c["name"].startswith("abl_")]
+    if nulls and not any(sig(c) for c in nulls):
+        concl += ("Retrieval, planning and each ablated component of the full agent, including Lean's error text, showed no "
+                  "reliable effect at this sample size. Repair beat independent drafts made with the same number of calls, so "
+                  "the gain comes from revising earlier attempts rather than from attempting more often; but because the "
+                  "no-feedback ablation still shows the model its previous proofs, these data cannot separate the value "
+                  "of Lean's error messages from the value of revising one's own failed proof. ")
     concl += "All traces, prompts, cached model responses and certificates are released so that each number can be recomputed.\n"
     parts.append(concl)
     parts.append("## References\n\n" + REFERENCES)

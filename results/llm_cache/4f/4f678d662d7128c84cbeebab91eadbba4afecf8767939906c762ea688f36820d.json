@@ -1,0 +1,1 @@
+{"text": "```lean\nrw [Finset.sum_range_id (n + 1), Nat.add_right_inj_iff, Nat.add_comm]\n```", "reasoning": "", "prompt_tokens": 1787, "completion_tokens": 32, "reasoning_tokens": 0, "cost_usd": 0.000223639, "latency_s": 1.7439391613006592, "finish_reason": "stop", "provider": "Alibaba", "key": "4f678d662d7128c84cbeebab91eadbba4afecf8767939906c762ea688f36820d", "cached": false}

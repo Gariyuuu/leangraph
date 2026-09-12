@@ -1,0 +1,1 @@
+{"text": ":= by\n  apply CategoryTheory.cancel_mono f", "reasoning": "", "prompt_tokens": 1847, "completion_tokens": 14, "reasoning_tokens": 0, "cost_usd": 0.000222469, "latency_s": 1.2462549209594727, "finish_reason": "stop", "provider": "Alibaba", "key": "d07953abdc8d95058e29d9bf81434299b164a1179513d91fad6dfb175d5c9aaa", "cached": false}

@@ -1,0 +1,1 @@
+{"text": "```lean\napply CategoryTheory.IsPullback.map F h\n```", "reasoning": "", "prompt_tokens": 1662, "completion_tokens": 18, "reasoning_tokens": 0, "cost_usd": 0.000202644, "latency_s": 1.5510008335113525, "finish_reason": "stop", "provider": "Alibaba", "key": "6fdf9a067354986d4fe14b5fb09077b7741b964ce911f9aac50a36dc35aef845", "cached": false}

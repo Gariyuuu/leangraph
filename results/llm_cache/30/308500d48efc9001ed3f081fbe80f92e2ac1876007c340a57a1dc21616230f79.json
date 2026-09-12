@@ -1,0 +1,1 @@
+{"text": "```lean\napply exp_neg_integrableOn_Ioi hb\nexact Set.Ioc.zero_right x\n```", "reasoning": "", "prompt_tokens": 1469, "completion_tokens": 27, "reasoning_tokens": 0, "cost_usd": 0.000184158, "latency_s": 1.8403170108795166, "finish_reason": "stop", "provider": "Alibaba", "key": "308500d48efc9001ed3f081fbe80f92e2ac1876007c340a57a1dc21616230f79", "cached": false}

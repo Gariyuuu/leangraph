@@ -1,0 +1,1 @@
+{"text": "```lean\nexact Order.exists_between_finsets s t H\n```", "reasoning": "", "prompt_tokens": 1203, "completion_tokens": 18, "reasoning_tokens": 0, "cost_usd": 0.000148941, "latency_s": 1.5398731231689453, "finish_reason": "stop", "provider": "Alibaba", "key": "618442fff6bba7ffa2a114561a193e3b195f31631a15bfb682c0d58b7f4aee0f", "cached": false}

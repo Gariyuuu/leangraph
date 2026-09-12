@@ -1,0 +1,1 @@
+{"text": "```lean\nrefl\n```", "reasoning": "", "prompt_tokens": 1430, "completion_tokens": 11, "reasoning_tokens": 0, "cost_usd": 0.000172315, "latency_s": 1.6290900707244873, "finish_reason": "stop", "provider": "Alibaba", "key": "77d45f0996e5f7d5dcb2c7f0dc25320ca7a7d59c8fc78f08606cdc86c1fb0b43", "cached": false}

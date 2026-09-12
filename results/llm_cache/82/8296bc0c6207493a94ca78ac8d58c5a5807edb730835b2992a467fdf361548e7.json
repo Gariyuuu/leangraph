@@ -1,0 +1,1 @@
+{"text": "```lean\napply Finset.Iic_sub_one_eq_Iio_of_not_isMin\n```", "reasoning": "", "prompt_tokens": 1377, "completion_tokens": 23, "reasoning_tokens": 0, "cost_usd": 0.000171574, "latency_s": 1.2802119255065918, "finish_reason": "stop", "provider": "Alibaba", "key": "8296bc0c6207493a94ca78ac8d58c5a5807edb730835b2992a467fdf361548e7", "cached": false}

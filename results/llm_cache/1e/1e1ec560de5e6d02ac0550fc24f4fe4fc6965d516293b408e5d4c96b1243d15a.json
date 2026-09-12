@@ -1,0 +1,1 @@
+{"text": "```lean\nby\n  apply univLE_of_max\n  exact w\n```", "reasoning": "", "prompt_tokens": 1508, "completion_tokens": 22, "reasoning_tokens": 0, "cost_usd": 0.000186446, "latency_s": 1.426987886428833, "finish_reason": "stop", "provider": "Alibaba", "key": "1e1ec560de5e6d02ac0550fc24f4fe4fc6965d516293b408e5d4c96b1243d15a", "cached": false}

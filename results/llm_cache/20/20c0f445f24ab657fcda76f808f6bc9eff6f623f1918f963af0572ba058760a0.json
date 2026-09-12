@@ -1,0 +1,1 @@
+{"text": "```lean\nintro y\napply_fun f at hg\nobtain ⟨x, rfl⟩ := hf y\nrw [hg, rfl]\n```", "reasoning": "", "prompt_tokens": 1551, "completion_tokens": 34, "reasoning_tokens": 0, "cost_usd": 0.000196937, "latency_s": 1.3802318572998047, "finish_reason": "stop", "provider": "Alibaba", "key": "20c0f445f24ab657fcda76f808f6bc9eff6f623f1918f963af0572ba058760a0", "cached": false}

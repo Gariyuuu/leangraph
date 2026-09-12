@@ -1,31 +1,59 @@
 # Handoff
 
-Last updated: 2026-09-10. Everything below was checked in this session; nothing is aspirational.
+Last updated: 2026-09-12. **The study is complete and released.** Everything below was checked; nothing is aspirational.
 
 ## State
 
 | Piece | Status |
 |---|---|
-| Lean 4.33.1 + Mathlib v4.33.1 (`lean_env/`, 7.4 GB `.lake`) | installed, `lake build` OK |
-| Lean REPL (`.lean_repl/`, commit in `lean_env/repl.commit`) | built against 4.33.1; ~40 s warm import, ~4.7 GB RSS per worker, 0.01–0.2 s per check |
-| Verifier (`leangraph/verify.py`) | 16/17 Lean tests passed on first run; the one failure was a wrong test assumption (see gotchas), test fixed, not yet re-run |
-| Premise dump | 262,216 theorems, 7,772 modules (`corpus/premises.jsonl`, not committed, 113 MB) |
-| Name table | 473,141 constants (`corpus/all_names.txt`, not committed) |
-| Tasks | 203 in `corpus/tasks.jsonl`: 150 held-out (121 test / 29 dev), 53 authored (all certified) |
-| BM25 | sparse implementation, 33 s build, 7 ms/query |
-| Dense embeddings | not built: the first attempt was killed to relieve memory before any 20k chunk was saved; rerun `build_dense_embeddings` |
-| Agent runs | demo (`results/runs/demo/`, prompt p1, pre-extraction-fix) and dev pilots (`pilot/` = prompt p1, `pilot_v2/` = prompt v2); main grid not run. **Prompt v2 is canonical**; p1/p2 exist only to reproduce demo and pilot-1 traces. 19 configurations registered in `leangraph/run.py`, including a paraphrased-prompt pair (`direct_prompt_b`, `repair_prompt_b`) for prompt sensitivity |
-| Site | builds (`next build` exit 0) with empty data; not yet checked with real data in a browser; not deployed |
-| Git | `git init` only; nothing committed; no remote |
-| Tests | 45 fast tests pass (`make test`), including a synthetic end-to-end pipeline test, a freeze-integrity test and a concurrent-embedding test. Lean suite: 16/17 on first run; the failing test's assumption was wrong and it was rewritten; not yet re-run |
-| Freezing | `make freeze RUN_ID=main` pins every result file and the response cache by SHA-256; `python -m leangraph.freeze --check` fails on any change |
+| Lean 4.33.1 + Mathlib v4.33.1 (`lean_env/`, 7.6 GB `.lake`, not committed) | installed, `lake build` OK; restore with `make setup` |
+| Lean REPL (`.lean_repl/`, commit in `lean_env/repl.commit`) | built against 4.33.1; ~40 s warm import, ~4.7 GB RSS per worker |
+| Verifier (`leangraph/verify.py`) | Lean suite 18/18 (2026-09-11, `LG_TEST_WORKERS=1 pytest -m lean`, 19 min) |
+| Tasks | 203 in `corpus/tasks.jsonl`: 150 Mathlib held-out (121 test / 29 dev) + 53 authored (all certified); **test split = 174** |
+| Premises | 262,216-theorem dump; 260,003 user-facing theorems indexed (dump and embeddings not committed; rebuildable) |
+| Retrieval benchmark | done, n = 164: recall@8 BM25 8.6% (MRR 0.117), dense 7.3% (MRR 0.088), hybrid 10.1% (MRR 0.125) (`results/retrieval/`) |
+| Main grid (run `main`) | **complete: 15 configurations × 174 theorems, no unresolved harness errors**; 8,798 model calls, $2.54 total model cost |
+| Analysis / figures / paper | final (`results/analysis/main/`, `results/figures/main/`, `paper/paper.md`); no interim status text |
+| Frozen | `results/FROZEN_main.json` pins every result file and the response cache by SHA-256; `python -m leangraph.freeze --check --run-id main` |
+| Site | Next.js 16.3.4; browser smoke test 20/20 page views OK (10 routes × desktop/phone, `scripts/site_smoke.mjs`) |
+| Release | public repo https://github.com/Gariyuuu/leangraph; Vercel project `leangraph` auto-deploys `main` (root `site/`, SSO off); live https://leangraph.vercel.app |
+| Tests | 66 fast tests pass (`make test`) |
+
+## Results (test split, 174 theorems)
+
+| Configuration | Verified | Rate [95% Wilson CI] |
+|---|---:|---:|
+| Template (no LLM) | 46/174 | 26.4% [20.4, 33.4] |
+| Full (plan + retrieval + repair) | 13/174 | 7.5% [4.4, 12.4] |
+| Full − skeleton | 13/174 | 7.5% [4.4, 12.4] |
+| BM25 retrieval + repair | 13/174 | 7.5% [4.4, 12.4] |
+| Repair (paraphrased prompt) | 12/174 | 6.9% [4.0, 11.7] |
+| Full − memory | 11/174 | 6.3% [3.6, 11.0] |
+| Repair | 11/174 | 6.3% [3.6, 11.0] |
+| Full − compiler feedback | 10/174 | 5.7% [3.2, 10.3] |
+| Full − retrieval | 9/174 | 5.2% [2.7, 9.5] |
+| Dense retrieval + repair | 9/174 | 5.2% [2.7, 9.5] |
+| Hybrid retrieval + repair | 8/174 | 4.6% [2.3, 8.8] |
+| Direct (paraphrased prompt) | 5/174 | 2.9% [1.2, 6.5] |
+| Hybrid retrieval | 3/174 | 1.7% [0.6, 4.9] |
+| Direct ×4 | 2/174 | 1.1% [0.3, 4.1] |
+| Direct | 1/174 | 0.6% [0.1, 3.2] |
+
+4 of 15 pre-registered contrasts survive Holm correction:
+  * RQ2 compiler-feedback repair vs one draft: +5.7 points [+2.3, +9.2], Holm p = 0.0254
+  * RQ2 repair vs independent resampling at equal LLM calls: +5.2 points [+2.3, +8.6], Holm p = 0.0469
+  * Primary: full agent vs direct generation: +6.9 points [+3.4, +10.9], Holm p = 0.00684
+  * LLM vs no-LLM automation: -25.9 points [-32.2, -19.5], Holm p = 8.53e-13
+
+Retrieval, planning, every full-agent ablation (including withholding Lean's error text), BM25/dense vs hybrid and the
+paraphrased prompts show no reliable effect. See the paper's conclusion for the careful attribution: repair beats
+equal-budget independent drafts, but the data cannot separate Lean's error text from revising one's own failed proof.
 
 ## Model
 
-One model is available: the owner's gateway `api.gariyuuu.com/v1`, model id `Yuu no Sekai`. The gateway's own docs
-(gariyuuu-web) say the upstream is OpenRouter `qwen/qwen3-8b`; responses report provider "Alibaba" and a real cost.
-Reasoning on: ~100 s and ~$0.003 per call. `/no_think`: ~4 s and ~$0.00007. RQ6 (model scale) needs a second
-model the owner has to supply; until then it is answered only by the reasoning-on/off tier.
+One model: the owner's gateway `api.gariyuuu.com/v1`, model id `Yuu no Sekai`; its docs (gariyuuu-web) name the upstream
+as OpenRouter `qwen/qwen3-8b` (responses report provider "Alibaba"). Reasoning off (`/no_think`), replies capped at 2,048
+tokens. **By the owner's decision (2026-09-10) there is no reasoning-on tier and no second model: RQ6 is not answered.**
 
 ## Gotchas found here
 
@@ -77,53 +105,13 @@ model the owner has to supply; until then it is answered only by the reasoning-o
 * A `SIGSTOP`ped process keeps its memory. Pausing the embedder did not relieve pressure; killing it dropped swap from ~10 GB to 2.5 GB.
   Run embeddings when no REPL is up: `python -c "from leangraph.retrieval import *; build_dense_embeddings(load_premises())"` (resumable in 20k chunks).
 
-## Release status (2026-09-11)
+## If you pick this up
 
-* **Public repo:** https://github.com/Gariyuuu/leangraph (MIT code; Mathlib content Apache-2.0, see NOTICE).
-* **Live site:** https://leangraph.vercel.app (Vercel project `leangraph`, Root Directory `site`, framework Next.js,
-  SSO protection off; the domain was read from the project's own domain list). Pushes to `main` redeploy.
-  CLI deploys must run from the repo root with `.vercelignore` (uploads only `site/`, ~9 MB); without it the upload
-  exceeds Vercel's 10 MB request limit.
-* **This is an interim release:** 9 of 15 configurations complete. The main grid was stopped at 14:5x because free disk
-  fell to ~2.1 GB (other sessions' swap, not this project). BM25 retrieval + repair had 38/174 traces; retrieval +
-  repair 173/174; dense retrieval + repair and the three full-agent ablations not started. Resume when free disk is
-  back above ~4 GB: `LG_MIN_FREE_GB_GRID=4 bash scripts/run_main_grid.sh >> results/main_grid.log 2>&1`, then
-  analysis → figures → paper → README results → export → `npm run build` → `scripts/site_smoke.mjs` → `make freeze`
-  → commit + push (the site redeploys itself).
-
-## Next steps, in order
-
-1. Dense embeddings → `make retrieve` (retrieval benchmark). 7/13 chunks saved; the build resumes from
-   `corpus/embeddings/chunk_*.npy`. **Run it only while no grid is running**: embedder (3 GB) + two REPLs + two
-   certify processes pushed swap to 6.9 GB and free disk to 4.6 GB on 2026-09-10, so it was stopped mid-grid.
-2. Dev pilots are closed (see DECISIONS 2026-09-10): prompt v2 canonical; reasoning-off replies capped at 2,048 tokens.
-3. Main grid, reasoning-off tier, run id `main`, test split (174 theorems): **running unattended via
-   `scripts/run_main_grid.sh`** (no-retrieval configurations → embeddings + retrieval benchmark → retrieval
-   configurations; model-driven phases use 1 REPL worker to spare memory). State on 2026-09-11 ~15:00: 9 of 15 configurations complete (template 46, direct 1, direct ×4 2, repair 11,
-   full 13, full − retrieval 9, retrieval 3, paraphrased direct 5, paraphrased repair 12, of 174); retrieval + repair
-   173/174 and the five remaining configurations still running. Published as an interim release (site banner,
-   paper status paragraph and README note are generated from `site/data/status.json`). After any interruption just re-run `bash scripts/run_main_grid.sh >> results/main_grid.log 2>&1`:
-   finished work is skipped and harness-errored tasks are retried. **Do not run `make prove-think`.**
-4. ~~Re-run the Lean verifier suite~~ Done 2026-09-11: `LG_TEST_WORKERS=1 pytest -m lean` → 18 passed (19 min).
-5. Final results, once `results/runs/main/` has all 15 configurations at 174/174 and
-   `harness_errors_unresolved` is 0 everywhere:
-   * Check `results/retrieval/summary.json` is newer than the retrieval benchmark's start in the chain log
-     (a stale 08:49 copy from an earlier session existed on 2026-09-11).
-   * `make analyze figures paper site RUN_ID=main`, then `python -m leangraph.readme_results --run-id main`.
-   * `cd site && npm run build`; open every route in a browser with the real data (not just curl).
-5b. **Interim release (decided 2026-09-11):** once `full` is 174/174 (all six mandatory baselines done), release
-   without freezing: `site/data/status.json` (from `leangraph.export_site.run_status`) drives an "Interim release"
-   banner on the overview and leaderboard, and the paper gets a "Status of this version" paragraph listing the
-   configurations still running. When the grid finishes, re-run analysis/figures/paper/site, `make freeze`, and push
-   again (the banner and paragraph disappear once every `MAIN_GRID` configuration is complete).
-6. Release (owner-approved 2026-09-10; public repo, MIT code licence + Mathlib NOTICE):
-   * `make freeze RUN_ID=main` (refuses while harness errors remain); `make test`.
-   * `git add -A && git commit`; `gh repo create Gariyuuu/leangraph --public --source=. --push`.
-   * Vercel (see the owner's notes): from the repo root `vercel link --yes --project leangraph`; set Root
-     Directory to `site` with `PATCH https://api.vercel.com/v9/projects/leangraph` body `{"rootDirectory":"site"}`
-     using the CLI token in `~/Library/Application Support/com.vercel.cli/auth.json` (no CLI flag exists);
-     `vercel project update leangraph --framework nextjs`; `vercel deploy --prod`;
-     `vercel project protection disable leangraph --sso`.
-   * Verify the URL Vercel lists for the project (`vercel projects ls` / project domains), never a guessed
-     `leangraph.vercel.app` (strangers squat names); load it logged out.
-   No second model: RQ6 stays unanswered by design. No `make prove-think`.
+* Nothing is pending. To verify the release: `python -m leangraph.freeze --check --run-id main`, `make test`, and
+  `make reproduce` (recomputes everything from cached model responses, no API calls; needs `make setup` first).
+* Regenerating outputs: `make analyze figures paper site RUN_ID=main` then `python -m leangraph.readme_results --run-id main`;
+  commit and push (the site redeploys itself). Re-freeze only if traces change.
+* **Do not** run `make prove-think` (declined spend) or add configurations to run `main` without re-freezing and
+  re-deriving the Holm family.
+* Other Claude sessions share `~/Projects`; one committed and pushed this repo mid-run on 2026-09-12. Check
+  `git log origin/main` before pushing.

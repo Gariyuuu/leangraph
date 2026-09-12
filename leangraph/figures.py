@@ -41,6 +41,11 @@ plt.rcParams.update({
 })
 
 
+def error_display(k: str) -> str:
+    """Error-class key as printed in figures and the paper (e.g. lean3_syntax -> Lean 3 syntax)."""
+    return k.replace("_", " ").replace("lean3", "Lean 3")
+
+
 def _save(fig, out: Path, name: str, rows: list[dict]) -> None:
     out.mkdir(parents=True, exist_ok=True)
     fig.savefig(out / f"{name}.png", dpi=200, bbox_inches="tight")
@@ -64,7 +69,7 @@ def fig_verified_rate(s: dict, out: Path, emphasis: str = "full") -> None:
         col = SERIES[0] if cfg == emphasis else MUTED
         ax.plot(m["ci"], [y, y], color=col, lw=2, solid_capstyle="round")
         ax.scatter([m["rate"]], [y], s=42, color=col, edgecolor=SURFACE, linewidth=2, zorder=3)
-        ax.text(m["ci"][1] + 0.01, y, f"{m['rate']:.0%}  ({m['verified']}/{m['n']})", va="center", color=INK2, fontsize=8)
+        ax.text(m["ci"][1] + 0.01, y, f"{m['rate']:.1%}  ({m['verified']}/{m['n']})", va="center", color=INK2, fontsize=8)
     ax.set_yticks(range(len(items)), [LABELS.get(c, c) for c, _ in items])
     ax.set_xlim(0, min(1.0, max(m["ci"][1] for _, m in items) + 0.2))
     ax.xaxis.set_major_formatter(matplotlib.ticker.PercentFormatter(1.0, decimals=0))
@@ -122,7 +127,7 @@ def fig_errors(s: dict, out: Path, top: int = 8) -> None:
     head = head[::-1]
     n = sum(total.values()) or 1
     fig, ax = plt.subplots(figsize=(5.6, 0.3 * len(head) + 0.9))
-    _hbar(ax, [k.replace("_", " ") for k, _ in head], [v / n for _, v in head], lambda v: f"{v:.0%}")
+    _hbar(ax, [error_display(k) for k, _ in head], [v / n for _, v in head], lambda v: f"{v:.0%}")
     ax.xaxis.set_major_formatter(matplotlib.ticker.PercentFormatter(1.0, decimals=0))
     ax.set_xlabel(f"Share of failed attempts (n = {n}), by first Lean error")
     _save(fig, out, "error_taxonomy", [{"class": k, "count": v, "share": v / n} for k, v in items])
@@ -138,7 +143,7 @@ def fig_repair_by_class(s: dict, out: Path, min_n: int = 5) -> None:
     rates = [v["rate"] for _, v in items]
     cis = [wilson(v["next_round_verified"], v["n"]) for _, v in items]
     errs = [[r - lo for r, (lo, _) in zip(rates, cis)], [hi - r for r, (_, hi) in zip(rates, cis)]]
-    _hbar(ax, [f"{k.replace('_', ' ')} (n={v['n']})" for k, v in items], rates, lambda v: f"{v:.0%}", errs)
+    _hbar(ax, [f"{error_display(k)} (n={v['n']})" for k, v in items], rates, lambda v: f"{v:.0%}", errs)
     ax.xaxis.set_major_formatter(matplotlib.ticker.PercentFormatter(1.0, decimals=0))
     ax.set_xlabel("Next repair round verified, given this error (95% Wilson interval)")
     _save(fig, out, "repair_by_class", [{"class": k, **v} for k, v in items])

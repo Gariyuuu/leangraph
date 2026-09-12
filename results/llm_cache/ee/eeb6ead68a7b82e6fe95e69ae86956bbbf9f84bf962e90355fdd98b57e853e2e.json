@@ -1,0 +1,1 @@
+{"text": ":= by\n  constructor\n  intro p\n  apply not_not p", "reasoning": "", "prompt_tokens": 845, "completion_tokens": 19, "reasoning_tokens": 0, "cost_usd": 0.00010751, "latency_s": 1.537867784500122, "finish_reason": "stop", "provider": "Alibaba", "key": "eeb6ead68a7b82e6fe95e69ae86956bbbf9f84bf962e90355fdd98b57e853e2e", "cached": false}

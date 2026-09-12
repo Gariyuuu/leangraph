@@ -1,0 +1,1 @@
+{"text": "```lean\nrw [hf 0 0] at rfl\nexact eq.symm (add_right_cancel (f 0) (f 0) 0)\n```", "reasoning": "", "prompt_tokens": 1501, "completion_tokens": 40, "reasoning_tokens": 0, "cost_usd": 0.000193817, "latency_s": 1.5821478366851807, "finish_reason": "stop", "provider": "Alibaba", "key": "930a298e53d003a0466e7822c24c73561ef313937ac8957443db1b14b53f60d7", "cached": false}

@@ -1,0 +1,1 @@
+{"text": "```lean\napply Set.Finite.image2; exact hs; exact hf\n```", "reasoning": "", "prompt_tokens": 1512, "completion_tokens": 21, "reasoning_tokens": 0, "cost_usd": 0.000186459, "latency_s": 1.5237150192260742, "finish_reason": "stop", "provider": "Alibaba", "key": "2ce510f8379df4fea00b59aa5c5364a0f44edaecbfb96e4666f573c9a7f74c2f", "cached": false}

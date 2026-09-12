@@ -192,3 +192,20 @@ circuit breaker, then completed on retry). `leangraph/llm.py` already retries 4x
 the body (a change made earlier, on the evidence of those retries); this probe confirms the cause. With ~50%
 of attempts failing and 7 attempts per call, a call fails outright about 0.8% of the time, and those tasks
 are retried by the grid.
+
+
+## 2026-09-12 · Final results frozen
+The grid finished at 14:10: all 15 configurations have a real trace for each of the 174 test theorems and no
+unresolved harness errors. `results/FROZEN_main.json` pins the result files and the response cache. Of the 15
+pre-registered contrasts (Holm-adjusted together), four survive: the full agent over direct generation
+(+6.9 points, Holm p = 0.00684), repair over one draft (+5.7 points, Holm p = 0.0254), repair over equal-budget seeded drafts
+(+5.2 points, Holm p = 0.0469), and fixed automation tactics with no model over direct generation
+(-25.9 points, Holm p = 8.53e-13). Retrieval, planning, all four full-agent ablations, the retriever comparisons and
+the paraphrased prompts do not. The best agents reach 7.5% (13/174); the
+tactic baseline reaches 26.4% (46/174).
+**Attribution was deliberately limited in the generated conclusion.** A first draft said the gain was "attributable to
+repair from Lean's feedback"; that outran the data, because withholding Lean's error text from the full agent was
+itself non-significant (+1.7 points, Holm p = 1). The conclusion now says only what the contrasts support: repair beats
+equal-budget independent drafts, so revising earlier attempts matters, but the data cannot separate Lean's error
+messages from revising one's own failed proof. The abstract's "best configuration" also now names the tie
+(three configurations at 7.5%).
