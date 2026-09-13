@@ -29,6 +29,7 @@ const solved = theorems.find((t) => t.solved_by && t.solved_by.length) ?? theore
 const routes = ["/", "/benchmark", "/theorems", `/theorem/${solved.id}`, "/retrieval", "/repair", "/errors", "/cost", "/methods", "/paper"];
 const browser = await pw.chromium.launch();
 const report = [];
+const iconProblems = [];
 try {
 for (const [vw, vh, tag] of [[1280, 900, "desktop"], [390, 844, "phone"]]) {
   const page = await browser.newPage({ viewport: { width: vw, height: vh } });
@@ -53,6 +54,18 @@ for (const [vw, vh, tag] of [[1280, 900, "desktop"], [390, 844, "phone"]]) {
   }
   await page.close();
 }
+  // Icons: the head must declare them and every icon URL (plus the conventional /favicon.ico) must resolve.
+  const iconPage = await browser.newPage();
+  await iconPage.goto(base + "/", { waitUntil: "networkidle" });
+  const iconHrefs = await iconPage.evaluate(() =>
+    [...document.querySelectorAll('link[rel~="icon"], link[rel="apple-touch-icon"]')].map((l) => l.getAttribute("href")));
+  await iconPage.close();
+  if (!iconHrefs.length) iconProblems.push("no <link rel=icon> in <head>");
+  for (const href of [...iconHrefs, "/favicon.ico"]) {
+    const r = await fetch(new URL(href, base));
+    if (!r.ok) iconProblems.push(`HTTP ${r.status} ${href}`);
+  }
+  console.log(iconProblems.length ? `ICON PROBLEMS: ${iconProblems.join("; ")}` : `icons OK: ${iconHrefs.join(", ")} + /favicon.ico`);
 } catch (e) {
   console.error("smoke test crashed:", e?.stack ?? e);
   await browser.close().catch(() => {});
@@ -65,4 +78,4 @@ fs.writeFileSync(path.join(outDir, "report.json"), JSON.stringify(report, null, 
 const bad = report.filter((r) => r.status !== 200 || r.errors.length || !r.title.includes("LeanGraph") || r.overflowX > 1 || !r.h1);
 for (const r of report) console.log(`${r.viewport.padEnd(7)} ${String(r.status).padEnd(4)} ${r.route.padEnd(28)} h1=${JSON.stringify(r.h1)} overflowX=${r.overflowX} errors=${r.errors.length}`);
 console.log(bad.length ? `PROBLEMS on ${bad.length} page views` : "all page views OK");
-process.exit(bad.length ? 1 : 0);
+process.exit(bad.length || iconProblems.length ? 1 : 0);

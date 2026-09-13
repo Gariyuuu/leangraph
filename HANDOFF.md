@@ -111,6 +111,10 @@ tokens. **By the owner's decision (2026-09-10) there is no reasoning-on tier and
   `make reproduce` (recomputes everything from cached model responses, no API calls; needs `make setup` first).
 * Regenerating outputs: `make analyze figures paper site RUN_ID=main` then `python -m leangraph.readme_results --run-id main`;
   commit and push (the site redeploys itself). Re-freeze only if traces change.
+* **Site icon:** `site/app/icon.svg` is the single source (⊢ ending in a graph node, accent `#1c5cab`). Never
+  hand-edit `site/app/apple-icon.png` or `site/app/favicon.ico`; regenerate them with
+  `PLAYWRIGHT_DIR=<node_modules with playwright> node scripts/make_icons.mjs && .venv/bin/python scripts/make_favicon.py`.
+  `scripts/site_smoke.mjs` fails if the head stops declaring the icons or any icon URL stops resolving.
 * **Do not** run `make prove-think` (declined spend) or add configurations to run `main` without re-freezing and
   re-deriving the Holm family.
 * Other Claude sessions share `~/Projects`; one committed and pushed this repo mid-run on 2026-09-12. Check
